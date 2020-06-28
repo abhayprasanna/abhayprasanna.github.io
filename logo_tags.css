@@ -1,0 +1,11 @@
+span.rm-page-ref[data-tag="Aragon"]:before,
+span[data-link-title^="Aragon"] .rm-page-ref:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-image: url(https://cryptologos.cc/logos/aragon-ant-logo.png?v=003);
+    filter: hue-rotate(11deg) contrast(200%) grayscale(20%);
+    display: inline-block;
+}

@@ -2,14 +2,14 @@
 /* ORIGINAL COLOR SCHEME: https://draculatheme.com */
 
 /* IMPORT ZENITH LAYOUT */
-  @import url('https://jacklaing.github.io/roam-themes/zenith_without_colors.css');
+  @import url('https://orgtech-network.github.io/daobase-roam/themes/zenith_without_colors.css');
 
 :root {	
 
     --page-width: 616px;
     
-    --header-font: 'Avenir Next', sans-serif;	
-    --body-font: 'Avenir Next', sans-serif;	
+    --header-font: "Avenir Next", sans-serif;	
+    --body-font: "Avenir Next", sans-serif;	
     --code-font: 'Source Code Pro', 'Courier New', Courier, monospace;
     	
     --main-background: #1B1A23;	
@@ -34,7 +34,7 @@
     --highlight: #FEFF7F;
 
   /* Primary fonts */
-  --main-font: 'Avenir Next', sans-serif;
+  --main-font: 'Inter', sans-serif;
   --main-font-size: 1.0em;
   --code-font: 'Source Code Pro', 'Courier New', Courier, monospace;
   --code-font-size: 1.0em;
@@ -60,11 +60,11 @@
   --filter-bg-add: rgba(141, 187, 64, 0.5); */
   
   /* Misc */
-  --kanban-board-bg: #333333;
-  --kanban-column-bg: #454545;
-  --kanban-card-bg: #555555;
-  --kanban-column-font-color: #e98924;
-  --kanban-card-font-color: #6d9cbe;
+  --kanban-board-bg: var(--secondary-background);
+  --kanban-column-bg: var(--main-background);
+  --kanban-card-bg: var(--highlighted-background);
+  --kanban-column-font-color: var(--main-font);
+  --kanban-card-font-color: var(--main-font);
   
   --table-border: #444;
   
