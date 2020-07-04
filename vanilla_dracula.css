@@ -19,7 +19,7 @@
   --reference: #FE9580;
   --italics: #FE9580;
   --highlight: #FEFF7F;
-    
+
   /* Primary fonts */
   --main-font: 'Avenir Next', sans-serif;
   --main-font-color: var(--font);
@@ -57,7 +57,7 @@
   --breadcrumb-color: var(--font-dark);
   --breadcrumb-font-size: 13px;
   --breadcrumb-line-height: 0.85em;
-  
+
   /* backgrounds and outlines */
   --body-bg: var(--main-background);
   --left-sidebar-bg: var(--secondary-background);
@@ -87,7 +87,7 @@
   --select-bg: var(--secondary-background);
   --datepicker-bg: transparent;
   --datepicker-day-wrapper: var(--primary);
-  
+
     /* --pages-row-highlight: #292929; */
   --pages-header-row: var(--highlighted-background);
   --pages-search-bg: var(--secondary-background);
@@ -97,45 +97,45 @@
   --pages-mentions-bg-empty: var(--secondary-background);
   --pages-mentions-color-empty: var(--primary);
   --pages-delete-bg: var(--secondary-backgrounnd);
-  
+
   /* fragile styles that may break with the next update */
   --block-embed-bg: #073642;
   --block-embed-font-size: 0.85em;
   --alias-font-color: #268bd2;
   --alias-bg: transparent;
   /*RR change: no longer needed? Already broken?*/
-  /* --filter-bg-subtract: rgba(228, 33, 35, 0.6); 
+  /* --filter-bg-subtract: rgba(228, 33, 35, 0.6);
   --filter-bg-add: rgba(141, 187, 64, 0.5); */
-  
+
   /* Misc */
   --kanban-board-bg: var(--secondary-background);
   --kanban-column-bg: var(--main-background);
   --kanban-card-bg: var(--highlighted-background);
   --kanban-column-font-color: var(--main-font);
   --kanban-card-font-color: var(--main-font);
-  
+
   --table-border: #444;
-  
+
   --blockquote-font-color: rgba(109, 156, 190, 0.89);
   --blockquote-border-color: #444;
   --blockquote-bg: none;
   --blockquote-cite: #777;
-  
+
   --encrypted-font-color:#ff6000;
   --encrypted-bg:#353535;
-  
-  --emoji-bg: #2d2d2d;
+
+  --emoji-bg: var(--secondary-background);
   --emoji-border: rgba(225, 117, 28, 0.40);
-  --emoji-color: #aaa;
-  
+  --emoji-color: var(--primary);
+
   --no-query-results: "Query returned no results";
   --no-query-results-color: #FC5963;
-  
+
   /* Scrollbar settings - to disable set values to none */
 
     --scrollbar-track: #2b2b2b;
     --scrollbar-thumb: rgba(153, 153, 153, 0.1);
-  
+
 }
 .check-container {
   top: -6px; /*RR change: adjust this value to move the checkbox up or down to better align with the font selected above - the default font Inter uses -6px*/
@@ -147,83 +147,8 @@
 
 /* ----------------------------------------- */
 
-/*RR change: Un-comment the section below to maximize page width, line length, and images */
-
-/* 
-.roam-block-container {
-  max-width: 100% !important; 
-}
-div.roam-center > div:first-child {
-    padding-right: calc((100% - 950px) / 2) !important;
-    padding-left: calc((100% - 1500px) / 2) !important;
-}
-.hoverparent[style^='position: relative; width: 500px;'] {
-    width: 100% !important;
-}
-.hoverparent .react-resizable[style^='width: 500px;'] {
-    width: 100% !important;
-}
-.react-resizable[style^='width: 580px;'] {
-  width: 100% !important;
-}
-.hoverparent[style^="position: relative; width: 580px;"] {
-  width: 100% !important;
-}
-*/ 
-
-/* ----------------------------------------- */
-
-/*RR change: Uncomment the following section to hide the tool bar when not in use. A great idea from @Devon. Source: https://gist.github.com/devonzuegel/f54de76cbf0c0355d93e721c89f45787;
- */
-
-#roam-right-sidebar-content > div {
-  border-bottom: none !important;
-}
-.check-container {
-  padding-right: 4px;
-}
-.roam-body-main {
-  height: 100% !important;
-  top: 10 !important;
-}
-.roam-topbar {
-    opacity: 0;
-    transition: opacity 200ms;
-    z-index: 1;
-    background: none;
-    /* Making space for the close sidebar button */
-    width: calc(100% - 40px);
-    height: 45px;
-    padding-right: 16px;
-    padding-left: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.roam-topbar:hover, .roam-topbar:focus-within {
-  opacity: 1;
-  transition: opacity 200ms;
-}
-#right-sidebar button {
-    z-index: 100;
-} 
-
-
-/* ----------------------------------------- */
-
-/* Hide topbar border and add shadow */
-
-.roam-topbar {  
-  background-position: 0 -30px;
-  /**/
-  box-shadow: 0 1.5px 4px rgba(0,0,0,0.7);
-  border-bottom: none;
-}
-
-/* ----------------------------------------- */
-
 /*RR change: Comment/un-comment this section to toggle scrollbars on or off
-inspired by @Malcolm Ocean*/
+inspired by @Malcolm Ocean
 
 div::-webkit-scrollbar {
   width: 10px;
@@ -237,6 +162,67 @@ div::-webkit-scrollbar-thumb {
 
 /* ----------------------------------------- */
 
+/* Mobile Bar */
+
+#mobile-capture {
+    background-color: var(--main-background) !important;
+}
+
+#mobile-capture textarea, #mobile-capture input {
+    background-color: var(--secondary-background) !important;
+}
+#mobile-capture textarea::placeholder, #mobile-capture input::placeholder {
+    color: var(--font) !important;
+}
+#rm-mobile-bar {
+    background-color: var(--highlighted-background) !important;
+}
+#rm-mobile-bar .bp3-button::before, #rm-mobile-bar .bp3-button i::before {
+    color: var(--primary) !important;
+}
+
+/* ----------------------------------------- */
+
+/* Graph Dropdown Menu */
+
+.roam-sidebar-container .rm-db-title-container {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  width: 100%;
+  max-width: 80%;
+}
+.roam-sidebar-container .rm-db-title-container:hover {
+  cursor: pointer;
+  background-color: var(--highlighted-background);
+}
+.roam-sidebar-container .rm-db-title-container .rm-db-title {
+  margin-top: 4px;
+  padding: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  color: var(--font);
+}
+.roam-sidebar-container .rm-graph-dropdown {
+  max-height: 70vh;
+  overflow: scroll;
+  font-size: 14px;
+  font-family: var(--main-font);
+}
+.roam-sidebar-container .rm-graph-dropdown a {
+  color: var(--font);
+}
+.bp3-menu-header {
+  border-top: 1px solid var(--highlighted-background);
+}
+.bp3-menu-header > h6 {
+  color: var(--font);
+}
+ul.bp3-menu.rm-graph-dropdown {
+  background-color: var(--main-background);
+  border: 1px solid var(--highlighted-background);
+}
 
 /* ----------------------------------------- */
 
@@ -404,7 +390,7 @@ div::-webkit-scrollbar-thumb {
   overflow-y: scroll;
   margin-bottom: 25px;
 }
-#scroll-1::-webkit-scrollbar-track {  
+#scroll-1::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   background-color: #F5F5F5;
@@ -862,7 +848,7 @@ body {
   color: var(--h1-font-color);
   /* background-color: var(--h1-bg); */
   padding-left: 0px;
-  font-family: var(--main-font); 
+  font-family: var(--main-font);
 }
 .roam-body .roam-app .roam-sidebar-container {
   position: absolute;
@@ -900,7 +886,7 @@ body {
   cursor: pointer;
   /*font-size: 14px;*/
   /*color: #5c7080;*/
-  /*RR change: brighten text and font size*/ 
+  /*RR change: brighten text and font size*/
   color: var(--sidebar-font-color);
   font-size: 1em;
 }
@@ -913,7 +899,7 @@ body {
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper {
   /*color: #5c7080;*/
-  /*RR change: brighten text and font size*/ 
+  /*RR change: brighten text and font size*/
   color: var(--sidebar-font-color);
 ;
 }
@@ -927,7 +913,7 @@ body {
   /*font-size: 14px;*/
   padding: 8px 0px 8px 4px;
   /*color: #5c7080;*/
-  /*RR change: brighten text and font size*/ 
+  /*RR change: brighten text and font size*/
   color: var(--sidebar-font-color);
   font-size: 1em;
 }
@@ -2005,7 +1991,7 @@ div.rm-reference-container {
   padding-left: 0px;
   margin-top: -5px !important;
 }
-.roam-app h3 { 
+.roam-app h3 {
   font-weight: bold;
   color: var(--h3-font-color);
   /* background-color: var(--h1-bg); */
@@ -2101,6 +2087,9 @@ div.rm-reference-container {
 div.roam-block {
   font-family: var(--main-font);
   font-size: var(--main-font-size);
+}
+#roam-right-sidebar-content > div {
+    border-bottom: 1px solid var(--highlighted-background) !important;
 }
 #roam-right-sidebar-content div {
   font-family: var(--main-font);
@@ -2392,9 +2381,9 @@ font-size: 1.0em;
 }
 
 /*RR change: Icon color*/
-.bp3-button .bp3-icon, 
-.bp3-button .bp3-icon-standard, 
-.bp3-button 
+.bp3-button .bp3-icon,
+.bp3-button .bp3-icon-standard,
+.bp3-button
 .bp3-icon-large {
   color: var(--icon-color);
 }
@@ -2404,9 +2393,9 @@ font-size: 1.0em;
 .bp3-icon-star-empty:before,
 .bp3-icon-more:before,
 .bp3-icon-menu:before,
-.bp3-button:before, 
-.bp3-minimal:before, 
-.bp3-small:before, 
+.bp3-button:before,
+.bp3-minimal:before,
+.bp3-small:before,
 .bp3-icon-filter {
   color: var(--icon-color);
 }
@@ -2470,7 +2459,7 @@ bp3-button bp3-small block-ref-count-button*/
 
 /* Roam Search Box Field and Border */
 .bp3-input,
-.bp3-input[readonly]{ 
+.bp3-input[readonly]{
   background: var(--search-bg);
   box-shadow: inset 0 0 0 1px var(--search-outline);
   font-size: 0.85em;
@@ -2491,7 +2480,7 @@ bp3-button bp3-small block-ref-count-button*/
   color: var(--external-link-color);
 }
 
-.roam-app a:focus, 
+.roam-app a:focus,
 .roam-app a:hover {
   color: var(--external-link-color);
   text-decoration: underline;
@@ -2500,7 +2489,7 @@ bp3-button bp3-small block-ref-count-button*/
 #roam-right-sidebar-content a {
   color: var(--sidebar-link-color);
 }
-.roam-right-sidebar-content a:focus, 
+.roam-right-sidebar-content a:focus,
 .roam-right-sidebar-content a:hover {
   color: var(--sidebar-link-color);
   text-decoration: underline;
@@ -2543,7 +2532,7 @@ hr {
 
 .bp3-html-select.bp3-minimal select {
   color: var(--search-font-color);
-  background-color: var(--select-bg);  
+  background-color: var(--select-bg);
 }
 
 /* Slash Popup */
@@ -2562,7 +2551,7 @@ div.bp3-elevation-3 {
 }
 .bp3-elevation-3 .dont-unfocus-block[style*="background-color: rgb(213, 218, 223);"],
 .bp3-popover-content .rm-menu-item[style*="background-color: rgb(213, 218, 223);"]  {
-  background-color: #4c4c4c !important;    
+  background-color: #4c4c4c !important;
 /*filter: invert(100%); /*RR change: Inverts the colors of the / and link search menus*/
 
 }
@@ -2665,8 +2654,8 @@ background-color: transparent;
 }
 
 /*RR change: Diagram styles*/
-div[style*="position: absolute;background-color: white;border: 1px solid lightgrey;border-radius: 0px 0px 4px;padding: 5px;top: 0px;left: 0px;"], 
-div[style*="position: absolute; background-color: white; border: 1px solid lightgrey; border-radius: 0px 0px 4px; padding: 5px; top: 0px; left: 0px;"] 
+div[style*="position: absolute;background-color: white;border: 1px solid lightgrey;border-radius: 0px 0px 4px;padding: 5px;top: 0px;left: 0px;"],
+div[style*="position: absolute; background-color: white; border: 1px solid lightgrey; border-radius: 0px 0px 4px; padding: 5px; top: 0px; left: 0px;"]
 {
   background-color: var(--kanban-board-bg) !important;
   border-color: var(--kanban-card-bg) !important;
@@ -2712,7 +2701,7 @@ input, button {
   border: 1px solid var(--bullet);
   padding: 5px;
 }
-  
+
 button[style*="border: 0.5px solid rgb(206, 217, 224);"] {
   background-color: var(--reference-item-bg) !important;
   border: 1px solid var(--reference-item-bg) !important;
@@ -2725,7 +2714,7 @@ button[style*="background-color: rgba(72, 176, 240, 0.5);"]{
 /*RR change: Codemirror adjustments*/
 
 /* RR Change: single backtick code snippets */
-code { 
+code {
     background-color: var(--code-bg);
     border-radius: 3px;
     color: var(--code-font-color);
