@@ -104,9 +104,9 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
   box-shadow   : 0 3px 20px rgba(0, 0, 0, 0.2) !important;
   overflow     : visible !important;
   background   : var(--background) !important;
-  margin-right : 12px !important;
-  margin-left  : 12px !important;
-  padding-left : 10px !important;
+  margin-right : 3px !important;
+  margin-left  : 7px !important;
+  padding-left : 0 !important;
   max-height   : 98% !important;
 }
 
