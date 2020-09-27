@@ -38,6 +38,57 @@ body {
 .bp3-menu .bp3-icon-standard {
   color: var(--background) !important;
 }
+
+/* Block reference */
+
+.block-ref-count-button {
+  color        : var(--icons) !important;
+  background   : transparent !important;
+  border       : 1px solid var(--icons) !important;
+  border-radius: 100px !important;
+  z-index      : 1000 !important;
+  transition   : color 0.3s ease, border 0.3s ease !important;
+  opacity      : 1 !important;
+  font-family  : var(--secondary-font) !important;
+  margin-right : 4px;
+}
+
+.block-ref-count-button:hover {
+  color        : var(--icons-hover) !important;
+  background   : transparent !important;
+  border       : 1px solid var(--icons-hover) !important;
+  border-radius: 100px !important;
+  z-index      : 1000 !important;
+  transition   : color 0.3s ease, border 0.3s ease !important;
+}
+
+.rm-block-ref dont-focus-block {
+  font-size: var(--main-font-size) !important;
+}
+
+.roam-block .rm-block-ref,
+span[style*="color: red"] {
+  background-color: transparent !important;
+  color           : var(--block-reference-text) !important;
+  transition      : color 0.3s ease, border 0.3s ease;
+  border-bottom   : 1px solid var(--block-reference-text);
+}
+
+.rm-block-ref:hover {
+  background-color: transparent !important;
+  color           : var(--links-hover) !important;
+  transition      : color 0.3s ease, border 0.3s ease;
+  border-bottom   : 1px solid var(--block-reference-text);
+}
+
+.bp3-icon.bp3-icon-filter[style*="color: rgb(168, 42, 42);"] {
+  color: var(--filter-icon) !important;
+}
+
+div[style*="position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.5;"] {
+  opacity: 1 !important;
+}
+
 /* BETTERROAM-LIKE STYLE
 Original BetterRoam theme by @linuz90
 Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
@@ -298,55 +349,6 @@ a:hover {
 /* Attribute links */
 strong[tabindex="-1"] {
   color: var(--attributes-color) !important;
-}
-
-/* Block reference */
-
-.block-ref-count-button {
-  color        : var(--icons) !important;
-  border       : 1px solid var(--icons) !important;
-  border-radius: 100px !important;
-  z-index      : 1000 !important;
-  transition   : color 0.3s ease, border 0.3s ease !important;
-  opacity      : 1 !important;
-  font-family  : var(--secondary-font) !important;
-  margin-right : 4px;
-}
-
-.block-ref-count-button:hover {
-  color        : var(--icons-hover) !important;
-  background   : transparent !important;
-  border       : 1px solid var(--icons-hover) !important;
-  border-radius: 100px !important;
-  z-index      : 1000 !important;
-  transition   : color 0.3s ease, border 0.3s ease !important;
-}
-
-.rm-block-ref dont-focus-block {
-  font-size: var(--main-font-size) !important;
-}
-
-.roam-block .rm-block-ref,
-span[style*="color: red"] {
-  background-color: transparent !important;
-  color           : var(--block-reference-text) !important;
-  transition      : color 0.3s ease, border 0.3s ease;
-  border-bottom   : 1px solid var(--block-reference-text);
-}
-
-.rm-block-ref:hover {
-  background-color: transparent !important;
-  color           : var(--links-hover) !important;
-  transition      : color 0.3s ease, border 0.3s ease;
-  border-bottom   : 1px solid var(--block-reference-text);
-}
-
-.bp3-icon.bp3-icon-filter[style*="color: rgb(168, 42, 42);"] {
-  color: var(--filter-icon) !important;
-}
-
-div[style*="position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.5;"] {
-  opacity: 1 !important;
 }
 
 /* Block embed */
