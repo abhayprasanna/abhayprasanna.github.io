@@ -42,10 +42,6 @@ body {
 /* Block reference */
 
 .block-ref-count-button {
-  border: 1px solid var(--icons) !important;
-}
-
-.block-ref-count-button {
   color        : var(--icons) !important;
   background   : transparent !important;
   border-radius: 100px !important;
@@ -1087,4 +1083,8 @@ div::-webkit-scrollbar-track {
 div::-webkit-scrollbar-thumb:hover {
   background-color: rgba(0, 0, 0, 0.4);
   border          : 5px var(--icons-hover) solid;
+}
+
+.block-ref-count-button {
+  border: 1px solid var(--icons) !important;
 }
