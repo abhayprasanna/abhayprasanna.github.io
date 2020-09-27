@@ -155,9 +155,13 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
 
 /*---------------------------------------------------------------------------*/
 /* TOPBAR  & SIDEBAR STYLE AND COLORS */
-#right-sidebar,
+
 .roam-sidebar-container,
 .roam-topbar {
+  background-color: var(--sidebar-background) !important;
+}
+
+#right-sidebar {
   background-color: var(--sidebar-background) !important;
 }
 
@@ -165,7 +169,7 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
   border-bottom: 0;
 }
 
-.roam-topbar .bp3-popover-wrapper {
+.roam-topbar.bp3-popover-wrapper {
   background: var(--sidebar-background) !important;
   z-index   : 10;
 }
