@@ -2,97 +2,6 @@
 Love this theme? Say thanks via Paypal: https://paypal.me/RobertLandsburg */
 
 /*---------------------------------------------------------------------------*/
-/* OPTIONAL FIXES */
-
-/* Align vertical lines and remove notches (HT: Hasan Yalcinkaya) */
-.block-border-left {
-  margin-left   : 5px;
-  border-radius : 0;
-  padding-left  : 8px;
-  padding-bottom: 5px;
-}
-
-/* Remove second small line (HT Hasan Yalcinkaya) */
-.rm-reference-container .dont-focus-block {
-  border-top: 0;
-}
-
-/* Left sidebar hover size */
-div.roam-sidebar-container[style*="box-shadow"] {
-  bottom    : 0 !important;
-  box-shadow: unset !important;
-}
-
-/* Compact formatting */
-.log-button,
-.page,
-.starred-pages-wrapper,
-td {
-  line-height: normal !important;
-}
-
-/* Vertical centering Horizontal rules and headings  */
-hr {
-  margin-top   : 10px;
-  margin-bottom: 0;
-}
-
-h3.rm-level3 {
-  margin-top: -3px !important;
-}
-
-h2.rm-level2 {
-  margin-top: -4px !important;
-}
-
-h1.rm-level1 {
-  margin-top: -5px !important;
-}
-
-/* ToDo Checkbox Fixes */
-
-.check-container input:checked ~ .checkmark {
-  background-color: #FFFFFF;
-  background-color: rgb(27, 159, 28);
-}
-
-.check-container:hover input ~ .checkmark {
-  background-color: var(--icons);
-}
-
-.check-container {
-  padding-bottom: 1px;
-  padding-right : 2px;
-}
-
-/* Scrollbar improvements
-HT: Palash Karia */
-
-div::-webkit-scrollbar-track {
-  background-color: transparent !important;
-}
-
-div::-webkit-scrollbar-thumb {
-  background-color: var(--icons)!important;
-}
-
-div::-webkit-scrollbar {
-  width        : 5px;
-  height       : 5px;
-  border-radius: 8px;
-}
-
-div::-webkit-scrollbar-track {
-  background   : transparent;
-  border-radius: 20px;
-}
-
-div::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.4);
-  border          : 5px var(--icons-hover) solid;
-}
-
-/*---------------------------------------------------------------------------*/
 /* MAIN BODY AND BLOCK COLORS */
 .roam-body-main,
 body {
@@ -1090,4 +999,94 @@ div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * 
 /* Original code block CSS had this */
 .roam-block.dont-unfocus-block.hoverparent.rm-block-text.rm-pomodoro:first-child {
   padding-right: 15px !important;
+}
+/*---------------------------------------------------------------------------*/
+/* OPTIONAL FIXES */
+
+/* Align vertical lines and remove notches (HT: Hasan Yalcinkaya) */
+.block-border-left {
+  margin-left   : 5px;
+  border-radius : 0;
+  padding-left  : 8px;
+  padding-bottom: 5px;
+}
+
+/* Remove second small line (HT Hasan Yalcinkaya) */
+.rm-reference-container .dont-focus-block {
+  border-top: 0;
+}
+
+/* Left sidebar hover size */
+div.roam-sidebar-container[style*="box-shadow"] {
+  bottom    : 0 !important;
+  box-shadow: unset !important;
+}
+
+/* Compact formatting */
+.log-button,
+.page,
+.starred-pages-wrapper,
+td {
+  line-height: normal !important;
+}
+
+/* Vertical centering Horizontal rules and headings  */
+hr {
+  margin-top   : 10px;
+  margin-bottom: 0;
+}
+
+h3.rm-level3 {
+  margin-top: -3px !important;
+}
+
+h2.rm-level2 {
+  margin-top: -4px !important;
+}
+
+h1.rm-level1 {
+  margin-top: -5px !important;
+}
+
+/* ToDo Checkbox Fixes */
+
+.check-container input:checked ~ .checkmark {
+  background-color: #FFFFFF;
+  background-color: rgb(27, 159, 28);
+}
+
+.check-container:hover input ~ .checkmark {
+  background-color: var(--icons);
+}
+
+.check-container {
+  padding-bottom: 1px;
+  padding-right : 2px;
+}
+
+/* Scrollbar improvements
+HT: Palash Karia */
+
+div::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: var(--icons)!important;
+}
+
+div::-webkit-scrollbar {
+  width        : 5px;
+  height       : 5px;
+  border-radius: 8px;
+}
+
+div::-webkit-scrollbar-track {
+  background   : transparent;
+  border-radius: 20px;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  border          : 5px var(--icons-hover) solid;
 }
