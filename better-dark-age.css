@@ -154,6 +154,65 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
 }
 
 /*---------------------------------------------------------------------------*/
+/* TOPBAR  & SIDEBAR STYLE AND COLORS */
+#right-sidebar,
+.roam-sidebar-container,
+.roam-topbar {
+  background-color: var(--sidebar-background) !important;
+}
+
+.roam-topbar {
+  border-bottom: 0;
+}
+
+.roam-topbar .bp3-popover-wrapper {
+  background: var(--sidebar-background) !important;
+  z-index   : 10;
+}
+
+/* Hide sidebar button visibility */
+.bp3-icon-menu-closed {
+  transition: opacity 0.3s ease !important;
+}
+
+/* sidebar dropdown menu */
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
+  color: var(--dropdown-menu-text) !important;
+}
+
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting {
+  background: transparent !important;
+}
+/* hide sidebar button visibility */
+.bp3-icon-menu-closed {
+  transition: opacity 0.3s ease !important;
+}
+
+/* sidebar dropdown menu */
+.rm-autocomplete-result,
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
+  color: var(--dropdown-menu-text) !important;
+}
+
+/* left sidebar text color (CREDIT - Roam-util)*/
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .rm-db-title .expand-icon,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
+.roam-sidebar-container .rm-db-title-container .rm-db-title,
+.starred-pages-wrapper > div > span {
+  color: var(--icons);
+}
+
+/* left sidebar hover color (CREDIT - Roam-util)*/
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover {
+  background-color: unset;
+  color           : var(--icons-hover) !important;
+  font-weight     : bold;
+}
+
+/*---------------------------------------------------------------------------*/
 /* FONTS. TEXT STYLING, AND COLORS */
 
 /* Global Font */
@@ -657,66 +716,6 @@ div[style*="background: rgb(255, 243, 205);"] {
 /* Path text color for Linked References */
 .parent-path-wrapper {
   color: var(--references);
-}
-
-/*---------------------------------------------------------------------------*/
-/* TOPBAR  & SIDEBAR STYLE AND COLORS */
-,
-#right-sidebar,
-.roam-sidebar-container,
-.roam-topbar {
-  background-color: var(--sidebar-background) !important;
-}
-
-.roam-topbar {
-  border-bottom: 0;
-}
-
-.roam-topbar .bp3-popover-wrapper {
-  background: var(--sidebar-background) !important;
-  z-index   : 10;
-}
-
-/* Hide sidebar button visibility */
-.bp3-icon-menu-closed {
-  transition: opacity 0.3s ease !important;
-}
-
-/* sidebar dropdown menu */
-.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
-  color: var(--dropdown-menu-text) !important;
-}
-
-.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting {
-  background: transparent !important;
-}
-/* hide sidebar button visibility */
-.bp3-icon-menu-closed {
-  transition: opacity 0.3s ease !important;
-}
-
-/* sidebar dropdown menu */
-.rm-autocomplete-result,
-.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
-  color: var(--dropdown-menu-text) !important;
-}
-
-/* left sidebar text color (CREDIT - Roam-util)*/
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .rm-db-title .expand-icon,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
-.roam-sidebar-container .rm-db-title-container .rm-db-title,
-.starred-pages-wrapper > div > span {
-  color: var(--icons);
-}
-
-/* left sidebar hover color (CREDIT - Roam-util)*/
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover {
-  background-color: unset;
-  color           : var(--icons-hover) !important;
-  font-weight     : bold;
 }
 
 /*---------------------------------------------------------------------------*/
