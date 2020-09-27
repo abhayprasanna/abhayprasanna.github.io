@@ -12,6 +12,7 @@ Copy the following code and paste it into a css code block in your [[roam/css]].
 Feel free to customize the fonts, colors, etc. and add any other code you like below this as needed.
 
     @import url('https://abhayprasanna.github.io/better-dark-age.css');
+
     /* IMPORT FONTS */
     @import url('https://fonts.googleapis.com/css?family=Nunito|Cutive+Mono');
     
@@ -22,7 +23,7 @@ Feel free to customize the fonts, colors, etc. and add any other code you like b
       /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
       --reduce-padding-right    : 3400px;
       --reduce-padding-left     : 3400px;
-      /* COLORS */
+      /* COLORS (HT: Jack Laing for Dracula Pro color theme) */
       --page-links              : #9580FF;
       --attributes-color        : #FF9580;
       --external-links          : #8AFF80;
