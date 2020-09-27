@@ -794,10 +794,10 @@ button[style*="padding: 4px 8px;"] {
 
 /*     Button Styling     */
 .bp3-button {
-  background-color: transparent !important;
+  background-color: transparent;
   text-transform  : initial;
   /*margin-right: 5px;*/
-  border          : 0 !important;
+  border          : 0;
 }
 
 .bp3-button[class*="bp3-icon-"]::before,

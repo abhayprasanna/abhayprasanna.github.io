@@ -1,5 +1,4 @@
 @import url('https://abhayprasanna.github.io/better-dark-age.css');
-/* HT: Jack Laing for Dracula Pro color theme */
 
 /* IMPORT FONTS */
 @import url('https://fonts.googleapis.com/css?family=Nunito|Cutive+Mono');
@@ -11,7 +10,7 @@
   /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
   --reduce-padding-right    : 3400px;
   --reduce-padding-left     : 3400px;
-  /* COLORS */
+  /* COLORS (HT: Jack Laing for Dracula Pro color theme) */
   --page-links              : #9580FF;
   --attributes-color        : #FF9580;
   --external-links          : #8AFF80;
