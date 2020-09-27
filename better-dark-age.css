@@ -96,7 +96,7 @@ div::-webkit-scrollbar-thumb:hover {
 /* MAIN BODY AND BLOCK COLORS */
 .roam-body-main,
 body {
-  background-color: var(--background);
+  background-color: var(--background) !important;
 }
 
 .roam-block > span > div {
