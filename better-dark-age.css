@@ -42,9 +42,12 @@ body {
 /* Block reference */
 
 .block-ref-count-button {
+  border: 1px solid var(--icons) !important;
+}
+
+.block-ref-count-button {
   color        : var(--icons) !important;
   background   : transparent !important;
-  border       : 1px solid var(--icons) !important;
   border-radius: 100px !important;
   z-index      : 1000 !important;
   transition   : color 0.3s ease, border 0.3s ease !important;
