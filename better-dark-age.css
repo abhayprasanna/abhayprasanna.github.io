@@ -247,6 +247,7 @@ h1 {
   background     : transparent !important;
 }
 
+/* Left sidebar separator color  */
 div[style*="background-color: rgb(57, 75, 89);"] {
   background-color: var(--icons) !important;
 }
@@ -633,8 +634,13 @@ div[style*="background: rgb(255, 243, 205);"] {
 
 /* Reference Section Divider */
 .rm-reference-container {
-  border-top : 3px double var(--references);
+  border-top : 1px double var(--references);
   padding-top: 15px;
+}
+
+/* Daily Notes Divider */
+.roam-log-page {
+  border-top: 1px solid var(--references) !important;
 }
 
 /* Path text color for Linked References */
