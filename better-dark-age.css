@@ -1,11 +1,8 @@
-/* Original Dark Age theme by @shodty
-Love this theme? Say thanks via Paypal: https://paypal.me/RobertLandsburg */
+/* Original Dark Age theme by @shodty */
+/* Love this theme? Say thanks via Paypal: https://paypal.me/RobertLandsburg */
 
 /*---------------------------------------------------------------------------*/
 /* MAIN BODY AND BLOCK COLORS */
-.block-ref-count-button {
-  border: 1px solid var(--icons) !important;
-}
 
 .roam-body-main,
 body {
@@ -49,6 +46,7 @@ body {
   color        : var(--icons) !important;
   background   : transparent !important;
   border       : 1px solid var(--icons) !important;
+  border-color : var(--icons) !important;
   border-radius: 100px !important;
   z-index      : 1000 !important;
   transition   : color 0.3s ease, border 0.3s ease !important;
