@@ -303,15 +303,14 @@ strong[tabindex="-1"] {
 /* Block reference */
 
 .block-ref-count-button {
-  font-family  : var(--secondary-font) !important;
   color        : var(--icons) !important;
   background   : transparent !important;
   border       : 1px solid var(--icons) !important;
-  border-color : var(--icons) !important;
   border-radius: 100px !important;
   z-index      : 1000 !important;
   transition   : color 0.3s ease, border 0.3s ease !important;
   opacity      : 1 !important;
+  font-family  : var(--secondary-font) !important;
 }
 
 .block-ref-count-button:hover {
