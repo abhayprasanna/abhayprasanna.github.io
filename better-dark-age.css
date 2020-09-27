@@ -247,6 +247,10 @@ h1 {
   background     : transparent !important;
 }
 
+div[style*="background-color: rgb(57, 75, 89);"] {
+  background-color: var(--icons) !important;
+}
+
 /* Heading/Header Colors */
 h1,
 h2,
