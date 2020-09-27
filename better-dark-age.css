@@ -396,25 +396,6 @@ strong[tabindex="-1"] {
 
 /* Block reference */
 
-.rm-block-ref dont-focus-block {
-  font-size: var(--main-font-size) !important;
-}
-
-.roam-block .rm-block-ref,
-span[style*="color: red"] {
-  background-color: transparent !important;
-  color           : var(--block-reference-text) !important;
-  transition      : color 0.3s ease, border 0.3s ease;
-  border-bottom   : 1px solid var(--block-reference-text);
-}
-
-.rm-block-ref:hover {
-  background-color: transparent !important;
-  color           : var(--links-hover) !important;
-  transition      : color 0.3s ease, border 0.3s ease;
-  border-bottom   : 1px solid var(--block-reference-text);
-}
-
 .block-ref-count-button {
   font-family  : var(--secondary-font) !important;
   color        : var(--icons) !important;
@@ -433,6 +414,25 @@ span[style*="color: red"] {
   border-radius: 100px !important;
   z-index      : 1000 !important;
   transition   : color 0.3s ease, border 0.3s ease !important;
+}
+
+.rm-block-ref dont-focus-block {
+  font-size: var(--main-font-size) !important;
+}
+
+.roam-block .rm-block-ref,
+span[style*="color: red"] {
+  background-color: transparent !important;
+  color           : var(--block-reference-text) !important;
+  transition      : color 0.3s ease, border 0.3s ease;
+  border-bottom   : 1px solid var(--block-reference-text);
+}
+
+.rm-block-ref:hover {
+  background-color: transparent !important;
+  color           : var(--links-hover) !important;
+  transition      : color 0.3s ease, border 0.3s ease;
+  border-bottom   : 1px solid var(--block-reference-text);
 }
 
 .bp3-icon.bp3-icon-filter[style*="color: rgb(168, 42, 42);"] {
@@ -796,7 +796,7 @@ div[style*="background: rgb(255, 243, 205);"] {
 .bp3-text-overflow-ellipsis,
 .rm-pages-col,
 .rm-pages-sort-header {
-  font-size: 0.9em !important;
+  font-size: 0.85em !important;
   color    : var(--links-hover);
 }
 
