@@ -93,6 +93,67 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 /*---------------------------------------------------------------------------*/
+/* MAIN BODY AND BLOCK COLORS */
+.roam-body-main,
+body {
+  background-color: var(--background);
+}
+
+.roam-block > span > div {
+  background-color: inherit !important;
+}
+
+.roam-bullet-closed {
+  background-color: var(--closed-bullets) !important;
+}
+
+.simple-bullet-inner {
+  background-color: var(--bullets) !important;
+}
+
+.simple-bullet-inner:hover {
+  background-color: var(--icons-hover) !important;
+}
+
+.bp3-icon-standard,
+.rm-caret {
+  color  : var(--links--hover) !important;
+  opacity: 1 !important;
+}
+
+.bp3-icon-standard:hover {
+  color: var(--icons-hover) !important;
+}
+
+.bp3-input,
+.bp3-menu .bp3-icon-standard {
+  color: var(--background) !important;
+}
+/* BETTERROAM-LIKE STYLE
+Original BetterRoam theme by @linuz90
+Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
+
+.roam-center {
+  border-left  : 1px solid var(--sidebar-background) !important;
+  border-top   : 1px solid var(--sidebar-background) !important;
+  border-right : 1px solid var(--sidebar-background) !important;
+  border-bottom: 1px solid var(--sidebar-background) !important;
+  border-radius: 12px !important;
+  box-shadow   : 0 3px 20px rgba(0, 0, 0, 0.2) !important;
+  overflow     : visible !important;
+  background   : var(--background) !important;
+  margin-right : 12px !important;
+  margin-left  : 12px !important;
+  padding-left : 10px !important;
+  max-height   : 98% !important;
+}
+
+.roam-app,
+.roam-body-main.flex-h-box {
+  background: var(--sidebar-background) !important;
+}
+
+/*---------------------------------------------------------------------------*/
 /* FONTS. TEXT STYLING, AND COLORS */
 
 /* Global Font */
@@ -573,44 +634,6 @@ div[style*="background: rgb(255, 243, 205);"] {
 }
 
 /*---------------------------------------------------------------------------*/
-/* MAIN BODY AND BLOCK COLORS */
-.roam-body-main,
-body {
-  background-color: var(--background);
-}
-
-.roam-block > span > div {
-  background-color: inherit !important;
-}
-
-.roam-bullet-closed {
-  background-color: var(--closed-bullets) !important;
-}
-
-.simple-bullet-inner {
-  background-color: var(--bullets) !important;
-}
-
-.simple-bullet-inner:hover {
-  background-color: var(--icons-hover) !important;
-}
-
-.bp3-icon-standard,
-.rm-caret {
-  color  : var(--links--hover) !important;
-  opacity: 1 !important;
-}
-
-.bp3-icon-standard:hover {
-  color: var(--icons-hover) !important;
-}
-
-.bp3-input,
-.bp3-menu .bp3-icon-standard {
-  color: var(--background) !important;
-}
-
-/*---------------------------------------------------------------------------*/
 /* REFERENCE SECTION */
 
 /* Reference Background Color + Spacing Fixes */
@@ -702,13 +725,13 @@ body {
 /* Search box background color */
 .bp3-input,
 .rm-pages-toolbar .toolbar-search-group .search-input {
-  background: var(--search-bar-background);
+  background: var(--search-bar-background) !important;
 }
 
 /* Search box placeholder text color */
 .bp3-input::placeholder {
   color  : var(--search-bar-text);
-  opacity: 0.33;
+  opacity: 0.5;
 }
 
 /* Search box input text color */
@@ -937,30 +960,6 @@ div[style*="padding-right: calc(0.5 * (100% - 568px)); padding-left: calc(0.5 * 
 div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * (100% - 800px));"] {
   padding-right: calc(0.5 * (100% - var(--reduce-padding-right))) !important;
   padding-left : calc(0.5 * (100% - var(--reduce-padding-left))) !important;
-}
-
-/* BETTERROAM-LIKE STYLE
-Original BetterRoam theme by @linuz90
-Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
-
-.roam-center {
-  border-left  : 1px solid var(--sidebar-background) !important;
-  border-top   : 1px solid var(--sidebar-background) !important;
-  border-right : 1px solid var(--sidebar-background) !important;
-  border-bottom: 1px solid var(--sidebar-background) !important;
-  border-radius: 12px !important;
-  box-shadow   : 0 3px 20px rgba(0, 0, 0, 0.2) !important;
-  overflow     : visible !important;
-  background   : var(--background) !important;
-  margin-right : 12px !important;
-  margin-left  : 12px !important;
-  padding-left : 10px !important;
-  max-height   : 98% !important;
-}
-
-.roam-app,
-.roam-body-main.flex-h-box {
-  background: var(--sidebar-background) !important;
 }
 
 /* CODEBLOCK */
