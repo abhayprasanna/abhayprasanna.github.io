@@ -304,13 +304,13 @@ strong[tabindex="-1"] {
 
 .block-ref-count-button {
   color        : var(--icons) !important;
-  background   : transparent !important;
   border       : 1px solid var(--icons) !important;
   border-radius: 100px !important;
   z-index      : 1000 !important;
   transition   : color 0.3s ease, border 0.3s ease !important;
   opacity      : 1 !important;
   font-family  : var(--secondary-font) !important;
+  margin-right : 4px;
 }
 
 .block-ref-count-button:hover {
@@ -371,10 +371,6 @@ div[style*="position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.
 
 .rm-embed-inner-block-hide {
   margin-left: 0 !important;
-}
-
-.bp3-button.bp3-small.bp3-minimal.block-ref-count-button {
-  margin-right: 4px;
 }
 
 /* Namespace text color [[roam/css]] when using CTRL+C CTRL+L || CMD+C CMD+L */
