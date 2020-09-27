@@ -44,7 +44,7 @@ Feel free to customize the fonts, colors, etc. and add any other code you like b
       --headings                : #F2F2F2;
       --bullets                 : #9580FF;
       --closed-bullets          : #2A2C37;
-      --references              : #9580FF;
+      --references              : #7C6EAD;
       --block-reference-text    : #FF9580;
       --namespaces              : #81FFEA;
       --all-pages-mentions      : #FF9580;

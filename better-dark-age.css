@@ -138,7 +138,7 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
   transition: opacity 0.3s ease !important;
 }
 
-/* sidebar dropdown menu */
+/* Sidebar dropdown menu */
 .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
   color: var(--dropdown-menu-text) !important;
 }
@@ -146,18 +146,18 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
 .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting {
   background: transparent !important;
 }
-/* hide sidebar button visibility */
+/* Hide sidebar button visibility */
 .bp3-icon-menu-closed {
   transition: opacity 0.3s ease !important;
 }
 
-/* sidebar dropdown menu */
+/* Sidebar dropdown menu */
 .rm-autocomplete-result,
 .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
   color: var(--dropdown-menu-text) !important;
 }
 
-/* left sidebar text color (CREDIT - Roam-util)*/
+/* Left sidebar text color (CREDIT - Roam-util)*/
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .rm-db-title .expand-icon,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
@@ -166,7 +166,7 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
   color: var(--icons);
 }
 
-/* left sidebar hover color (CREDIT - Roam-util)*/
+/* Left sidebar hover color (CREDIT - Roam-util)*/
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover {
@@ -600,7 +600,7 @@ span[style*="color: rgb(14, 90, 138);"] {
   background: #4CAF50 !important;
   color     : var(--body-text) !important;
 }
-/* Dracula Pro JSS warning */
+/* JSS warning */
 .bp3-button.dont-focus-block {
   background : var(--icons) !important;
   color      : var(--body-text) !important;
@@ -772,7 +772,7 @@ div[style*="background: rgb(255, 243, 205);"] {
   border-radius: 25px;
 }
 
-/*     Dropdown Menu Styling     */
+/* Dropdown Menu Styling */
 .bp3-elevation-3,
 .bp3-menu,
 .bp3-popover-content {
@@ -812,7 +812,7 @@ button[style*="padding: 4px 8px;"] {
   background: var(--sidebar-background) !important;
 }
 
-/*     Button Styling     */
+/* Button Styling */
 .bp3-button {
   background-color: transparent;
   text-transform  : initial;
@@ -825,7 +825,8 @@ button[style*="padding: 4px 8px;"] {
 .bp3-button.bp3-minimal.bp3-small,
 .bp3-icon.bp3-icon-calendar.filter-icon,
 .bp3-icon.filter-icon.bp3-icon-eye-open,
-.bp3-button.bp3-icon-calendar {
+.bp3-button.bp3-icon-calendar,
+.bp3-icon.bp3-icon-sort {
   color     : var(--icons) !important;
   background: transparent !important;
   opacity   : 1;
@@ -836,7 +837,8 @@ button[style*="padding: 4px 8px;"] {
 .bp3-icon-filter:hover,
 .bp3-button.bp3-minimal:hover,
 .bp3-icon.bp3-icon-calendar.filter-icon:hover,
-.bp3-icon.filter-icon.bp3-icon-eye-open:hover {
+.bp3-icon.filter-icon.bp3-icon-eye-open:hover,
+.bp3-icon.bp3-icon-sort:hover {
   background: transparent !important;
   transition: background 0.1s ease, color 0.3s ease;
   color     : var(--icons-hover) !important;
@@ -848,7 +850,7 @@ button[style*="padding: 4px 8px;"] {
   font-weight: bold;
 }
 
-/* remove shadow border around calendar icon */
+/* Remove shadow border around calendar icon */
 .bp3-button:not([class*="bp3-intent-"]),
 .bp3-button:not([class*="bp3-intent-"]):hover {
   box-shadow: none;
@@ -891,6 +893,7 @@ div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * 
   padding-left : calc(0.5 * (100% - var(--reduce-padding-left))) !important;
 }
 
+/*---------------------------------------------------------------------------*/
 /* CODEBLOCK */
 /* Dracula CodeMirror theme from https://github.com/codemirror/CodeMirror/blob/master/theme/dracula.css */
 
@@ -1107,7 +1110,7 @@ div::-webkit-scrollbar-thumb:hover {
   background-color: rgba(0, 0, 0, 0.4);
   border          : 5px var(--icons-hover) solid;
 }
-
+/*---------------------------------------------------------------------------*/
 /* MERMAID Customization */
 
 .bp3-card.dont-focus-block,
@@ -1118,3 +1121,4 @@ div::-webkit-scrollbar-thumb:hover {
 .bp3-card {
   background: var(--background) !important;
 }
+/*---------------------------------------------------------------------------*/
