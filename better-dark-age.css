@@ -65,12 +65,9 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
 /*---------------------------------------------------------------------------*/
 /* TOPBAR  & SIDEBAR STYLE AND COLORS */
 
+#right-sidebar,
 .roam-sidebar-container,
 .roam-topbar {
-  background-color: var(--sidebar-background) !important;
-}
-
-#right-sidebar {
   background-color: var(--sidebar-background) !important;
 }
 
@@ -310,6 +307,7 @@ strong[tabindex="-1"] {
   color        : var(--icons) !important;
   background   : transparent !important;
   border       : 1px solid var(--icons) !important;
+  border-color : var(--icons) !important;
   border-radius: 100px !important;
   z-index      : 1000 !important;
   transition   : color 0.3s ease, border 0.3s ease !important;
