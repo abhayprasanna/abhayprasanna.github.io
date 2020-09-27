@@ -1,6 +1,8 @@
 ﻿# 🧛🏿‍♂️ Dracula Pro - Dark Age Roam Theme
 
-Welcome to the Dracula Pro color theme for Roam Research, which includes a ton of customizations building off @shodty's  [Dark Age theme](https://github.com/shodty/) + various RoamCult contributions. 
+Welcome to the Dracula Pro color theme for Roam Research, which includes a ton of customizations building off @shodty's  [Dark Age theme](https://github.com/shodty/) + various RoamCult contributions.
+
+![](Dracula%20Pro%20-%20Screenshot.jpg)
 
 Love this theme? Say thanks to [@shodty](https://twitter.com/shodty) via [Paypal](https://paypal.me/RobertLandsburg)
 
@@ -15,7 +17,7 @@ Feel free to customize the fonts, colors, etc. and add any other code you like b
 
     /* IMPORT FONTS */
     @import url('https://fonts.googleapis.com/css?family=Nunito|Cutive+Mono');
-    
+
     :root {
       /* FONTS */
       --global-font             : 'Nunito', sans-serif;
@@ -72,29 +74,29 @@ Feel free to customize the fonts, colors, etc. and add any other code you like b
       --kanban-text-hover       : #81FFEA;
     }
     /* OPTIONAL CUSTOMIZATIONS */
-    
+
     /* Separators in the sidebar (change position or add more as needed) */
     .starred-pages a:nth-child(2):after {
       content    : '____________________________';
       color      : #394B59;
       font-weight: bold;
     }
-    
+
     /* Dracula Pro easter egg */
     .bp3-icon-large.bp3-icon-help:before {
       content  : '🧛🏿‍♂️';
       font-size: 25px;
     }
-    
+
     /* Add emoji in front of external links
     HT: Can Sar */
     .rm-alias-external:before {
       content: '🔗 ';
     }
 
-This works by linking to an outside .css file, actually located [here](https://abhayprasanna.github.io/better-dark-age.css) to handle all the styling, as it keeps the roam/css page much cleaner/faster. 
+This works by linking to an outside .css file, actually located [here](https://abhayprasanna.github.io/better-dark-age.css) to handle all the styling, as it keeps the roam/css page much cleaner/faster.
 
-If you do in fact want to manipulate the source code, just [navigate to the source .css file](https://abhayprasanna.github.io/better-dark-age.css) manually, copy it, and paste it all into your roam/css page. 
+If you do in fact want to manipulate the source code, just [navigate to the source .css file](https://abhayprasanna.github.io/better-dark-age.css) manually, copy it, and paste it all into your roam/css page.
 
 ### How to setup your roam/css page:
 
