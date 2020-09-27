@@ -3,6 +3,10 @@ Love this theme? Say thanks via Paypal: https://paypal.me/RobertLandsburg */
 
 /*---------------------------------------------------------------------------*/
 /* MAIN BODY AND BLOCK COLORS */
+.block-ref-count-button {
+  border: 1px solid var(--icons) !important;
+}
+
 .roam-body-main,
 body {
   background-color: var(--background) !important;
