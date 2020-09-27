@@ -1,11 +1,13 @@
+@import url('https://abhayprasanna.github.io/better-dark-age.css');
 /* HT: Jack Laing for Dracula Pro color theme */
+
 /* IMPORT FONTS */
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Cutive+Mono');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Cutive+Mono');
 
 :root {
   /* FONTS */
-  --global-font             : 'Maven Pro', sans-serif;
-  --secondary-font          : 'Cutive+Mono', serif;
+  --global-font             : 'Nunito', sans-serif;
+  --secondary-font          : 'Cutive Mono', serif;
   /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
   --reduce-padding-right    : 3400px;
   --reduce-padding-left     : 3400px;
@@ -29,16 +31,16 @@
   --bullets                 : #9580FF;
   --closed-bullets          : #2A2C37;
   --references              : #9580FF;
-  --block-reference-text    : #FE9580;
+  --block-reference-text    : #FF9580;
   --namespaces              : #81FFEA;
-  --all-pages-mentions      : #FE9580;
+  --all-pages-mentions      : #FF9580;
   --cursor                  : #F2F2F2;
   --icons                   : #7C6EAD;
   --icons-hover             : #81FFEA;
   --filter-icon             : #8AFF80;
   /* FONT SIZES */
   --main-font-size          : 1em;
-  --page-head-font-size     : 36px;
+  --page-head-font-size     : 34px;
   --h1-font-size            : 2em;
   --h2-font-size            : 1.6em;
   --h3-font-size            : 1.2em;
@@ -57,14 +59,3 @@
   --kanban-card-background  : #1B1A23;
   --kanban-text-hover       : #81FFEA;
 }
-
-/* Separators in the sidebar (change position or add more as needed) */
-.starred-pages a:nth-child(2):after {
-  content    : '____________________________';
-  color      : #394B59;
-  font-weight: bold;
-}
-
-/* Dracula Pro easter egg */
-.bp3-icon-large.bp3-icon-help:before {
-  content  : '
