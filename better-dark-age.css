@@ -420,6 +420,16 @@ strong[tabindex="-1"] {
   font-weight: 600;
 }
 
+.rm-query {
+  border        : var(--references) solid;
+  border-radius : 10px;
+  border-width  : 1.5px;
+  padding-top   : 5px;
+  padding-bottom: 5px;
+  padding-right : 10px;
+  margin-left   : 0;
+}
+
 /* Alias */
 span[style*="background-color: rgb(235, 241, 245);"] {
   background: var(--sidebar-background) !important;
