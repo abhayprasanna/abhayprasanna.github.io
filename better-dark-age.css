@@ -293,8 +293,8 @@ a {
 .rm-page-ref-tag {
   color        : var(--hashtags) !important;
   font-weight  : 500;
-  padding-left : 4px;
-  padding-right: 4px;
+  padding-left : 2px;
+  padding-right: 2px;
   transition   : color 0.3s ease;
 }
 
