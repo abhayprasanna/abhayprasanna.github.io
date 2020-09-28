@@ -52,7 +52,8 @@ body {
   transition   : color 0.3s ease, border 0.3s ease !important;
   opacity      : 1 !important;
   font-family  : var(--secondary-font) !important;
-  margin-right : 4px;
+  margin-right : 10px;
+  margin-top   : 2px;
 }
 
 .block-ref-count-button:hover {
@@ -360,13 +361,11 @@ strong[tabindex="-1"] {
 
 /* Block embed */
 .rm-embed-container {
-  border        : var(--references) solid;
-  border-radius : 10px;
-  border-width  : 1.5px;
-  padding-top   : 5px;
-  padding-bottom: 5px;
-  padding-right : 10px;
-  margin-left   : 0;
+  border       : var(--references) solid;
+  border-radius: 10px;
+  border-width : 1.5px;
+  padding      : 5px 5px 5px 0;
+  margin-left  : -2px !important;
 }
 
 .rm-embed-container:hover > .rm-embed-edit {
