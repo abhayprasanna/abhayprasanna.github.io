@@ -54,7 +54,7 @@ Feel free to customize the fonts, colors, etc. and add any other code you like b
       --filter-icon             : #8AFF80;
       /* FONT SIZES */
       --main-font-size          : 1em;
-      --page-head-font-size     : 34px;
+      --page-head-font-size     : 32px;
       --h1-font-size            : 2em;
       --h2-font-size            : 1.6em;
       --h3-font-size            : 1.2em;
