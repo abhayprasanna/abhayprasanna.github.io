@@ -181,6 +181,7 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
 
 /* Global Font */
 .level2,
+body,
 div,
 textarea {
   font-family: var(--global-font) !important;
