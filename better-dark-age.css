@@ -176,6 +176,44 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
   font-weight     : bold;
 }
 
+/* Mobile bar (HT: Azlen) */
+#rm-mobile-bar {
+  background-color: var(--sidebar-background)) !important;
+}
+
+/* ASTROLABE (HT: Azlen) */
+
+/* Breathing Loader */
+/* https://codepen.io/Mathi_C/pen/mMWaaW */
+.loading-astrolabe {
+  height       : 100px;
+  width        : 100px;
+  border-radius: 200px;
+  margin       : auto;
+
+}
+
+.loading-astrolabe {
+  animation-name           : orb_1;
+  animation-duration       : 3s;
+  animation-delay          : 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction      : alternate;
+}
+
+@keyframes orb_1 {
+  from {
+    transform : scale(0.2);
+    background: var(--sidebar-background);
+  }
+
+  to {
+    transform : scale(2);
+    background: var(--background);
+  }
+}
+
 /*---------------------------------------------------------------------------*/
 /* FONTS. TEXT STYLING, AND COLORS */
 
