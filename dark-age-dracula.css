@@ -1,18 +1,19 @@
 @import url('https://abhayprasanna.github.io/better-dark-age.css');
 
 /* IMPORT FONTS */
-@import url('https://fonts.googleapis.com/css?family=Nunito|Cutive+Mono');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Cutive+Mono|Playfair+Display');
 
 :root {
   /* FONTS */
   --global-font             : 'Nunito', sans-serif;
   --secondary-font          : 'Cutive Mono', serif;
+  --header-font             : 'Playfair Display', serif;
   /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
   --reduce-padding-right    : 3400px;
   --reduce-padding-left     : 3400px;
-  /* COLORS (HT: Jack Laing for Dracula Pro color theme) */
+  /* COLORS (HT: Jack Laing for [[Dracula Pro]] color theme) */
   --page-links              : #9580FF;
-  --attributes-color        : #FF9580;
+  --attributes-color        : #FFFF80;
   --external-links          : #8AFF80;
   --links-hover             : #F2F2F2;
   --hashtags                : #FE7FBF;
@@ -20,15 +21,15 @@
   --italics-color           : #92FFFF;
   --bold-color              : #FF9580;
   --highlight-text-color    : #1B1A23;
-  --highlighter             : #FEFF80;
+  --highlighter             : #FFFF80;
   --background              : #1B1A23;
   --sidebar-background      : #2B2640;
   --sidebar-text            : #F2F2F2;
   --page-heading            : #9580FF;
   --daily-heading           : #9580FF;
   --headings                : #F2F2F2;
-  --bullets                 : #9580FF;
-  --closed-bullets          : #2A2C37;
+  --bullets                 : #7C6EAD;
+  --closed-bullets          : #313340;
   --references              : #7C6EAD;
   --block-reference-text    : #FF9580;
   --namespaces              : #81FFEA;
@@ -39,7 +40,7 @@
   --filter-icon             : #8AFF80;
   /* FONT SIZES */
   --main-font-size          : 1em;
-  --page-head-font-size     : 34px;
+  --page-head-font-size     : 32px;
   --h1-font-size            : 2em;
   --h2-font-size            : 1.6em;
   --h3-font-size            : 1.2em;

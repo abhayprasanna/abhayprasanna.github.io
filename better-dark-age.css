@@ -262,7 +262,8 @@ h3 {
 
 /* Page title & Daily date color */
 .rm-title-display {
-  color: var(--page-heading) !important;
+  color      : var(--page-heading) !important;
+  font-family: var(--header-font) !important;
 }
 
 .roam-log-page .rm-title-display {
