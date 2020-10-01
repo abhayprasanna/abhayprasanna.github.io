@@ -304,6 +304,10 @@ a {
   transition : color 0.3s ease;
 }
 
+.rm-page-ref-brackets {
+  color: var(--references);
+}
+
 .rm-page-ref-tag {
   color        : var(--hashtags) !important;
   font-weight  : 500;
