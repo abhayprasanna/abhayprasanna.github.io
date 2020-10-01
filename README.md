@@ -2,7 +2,7 @@
 
 Welcome to the Dracula Pro-inspired color theme for Roam Research, which includes a ton of customizations building off @shodty's  [Dark Age theme](https://github.com/shodty/) + various RoamCult contributions.
 
-![](Dracula%20Pro%20-%20Screenshot.jpg)
+![](Dracula%20Pro%20-%20Screenshot.png)
 
 Love this theme? Say thanks to [@shodty](https://twitter.com/shodty) via [Paypal](https://paypal.me/RobertLandsburg)
 
