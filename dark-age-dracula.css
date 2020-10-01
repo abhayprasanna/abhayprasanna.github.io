@@ -40,11 +40,11 @@
   --filter-icon             : #8AFF80;
   /* FONT SIZES */
   --main-font-size          : 1em;
-  --page-head-font-size     : 28px;
+  --page-head-font-size     : 2.2em;
   --h1-font-size            : 2em;
   --h2-font-size            : 1.6em;
   --h3-font-size            : 1.2em;
-  --sidebar-h1-size         : 26px;
+  --sidebar-h1-size         : 2em;
   /* DROPDOWN MENU */
   --dropdown-menu-background: #2B2640;
   --dropdown-menu-highlight : #1B1A23;
