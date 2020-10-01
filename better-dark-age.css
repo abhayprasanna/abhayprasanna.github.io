@@ -181,7 +181,6 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
 #rm-mobile-bar {
   background-color: var(--sidebar-background) !important;
   position        : fixed !important;
-  z-index         : 999999;
 }
 
 #rm-mobile-bar .bp3-button i::before,
