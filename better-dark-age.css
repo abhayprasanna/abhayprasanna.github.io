@@ -176,33 +176,7 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
   font-weight     : bold;
 }
 
-/* Mobile capture and bar (HT: Azlen) */
-
-#mobile-capture {
-  height          : 100vh !important;
-  background-color: var(--sidebar-background) !important;
-}
-
-#mobile-capture input,
-#mobile-capture textarea {
-  background-color: var(--background) !important;
-}
-
-#mobile-capture input::placeholder,
-#mobile-capture textarea::placeholder {
-  color  : var(--body-text) !important;
-  opacity: 0.3;
-}
-
-#mobile-capture textarea {
-  margin-top: 10px;
-}
-
-#rm-mobile-bar .bp3-button {
-  vertical-align: top;
-  margin        : 5px 0 !important;
-
-}
+/* Mobile bar (HT: Azlen) */
 
 #rm-mobile-bar {
   background-color: var(--sidebar-background) !important;
@@ -213,10 +187,6 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
 #rm-mobile-bar .bp3-button i::before,
 #rm-mobile-bar .bp3-button::before {
   color: var(--icons) !important;
-}
-
-.rm-find-or-create-wrapper .bp3-transition-container {
-  transform: none !important;
 }
 
 /*---------------------------------------------------------------------------*/
