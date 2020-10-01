@@ -176,42 +176,47 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
   font-weight     : bold;
 }
 
-/* Mobile bar (HT: Azlen) */
+/* Mobile capture and bar (HT: Azlen) */
+
+#mobile-capture {
+  height          : 100vh !important;
+  background-color: var(--sidebar-background) !important;
+}
+
+#mobile-capture input,
+#mobile-capture textarea {
+  background-color: var(--background) !important;
+}
+
+#mobile-capture input::placeholder,
+#mobile-capture textarea::placeholder {
+  color  : var(--body-text) !important;
+  opacity: 0.3;
+}
+
+#mobile-capture textarea {
+  margin-top: 10px;
+}
+
+#rm-mobile-bar .bp3-button {
+  vertical-align: top;
+  margin        : 5px 0 !important;
+
+}
+
 #rm-mobile-bar {
-  background-color: var(--sidebar-background)) !important;
+  background-color: var(--sidebar-background) !important;
+  position        : fixed !important;
+  z-index         : 999999;
 }
 
-/* ASTROLABE (HT: Azlen) */
-
-/* Breathing Loader */
-/* https://codepen.io/Mathi_C/pen/mMWaaW */
-.loading-astrolabe {
-  height       : 100px;
-  width        : 100px;
-  border-radius: 200px;
-  margin       : auto;
-
+#rm-mobile-bar .bp3-button i::before,
+#rm-mobile-bar .bp3-button::before {
+  color: var(--icons) !important;
 }
 
-.loading-astrolabe {
-  animation-name           : orb_1;
-  animation-duration       : 3s;
-  animation-delay          : 0s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction      : alternate;
-}
-
-@keyframes orb_1 {
-  from {
-    transform : scale(0.2);
-    background: var(--sidebar-background);
-  }
-
-  to {
-    transform : scale(2);
-    background: var(--background);
-  }
+.rm-find-or-create-wrapper .bp3-transition-container {
+  transform: none !important;
 }
 
 /*---------------------------------------------------------------------------*/
