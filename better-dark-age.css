@@ -93,6 +93,10 @@ span[style*="color: red"] {
   color: var(--filter-icon) !important;
 }
 
+.bp3-input.bp3-minimal.search-input {
+  color: var(--body-text) !important;
+}
+
 div[style*="position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.5;"] {
   opacity: 1 !important;
 }
