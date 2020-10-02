@@ -40,6 +40,11 @@ body {
   color: var(--background) !important;
 }
 
+.version-bullet {
+  background-color: var(--bullets) !important;
+  color           : var(--body-text) !important;
+}
+
 /* Block reference */
 
 .block-ref-count-button {
