@@ -1033,6 +1033,10 @@ div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * 
   color          : white !important;
 }
 
+.CodeMirror * {
+  font-family: var(--secondary-font);
+}
+
 /*---------------------------------------------------------------------------*/
 /* LEGACY DARK AGE STUFF
 (Not sure what this stuff does, leaving in case it breaks something) */
@@ -1148,3 +1152,10 @@ div::-webkit-scrollbar-thumb:hover {
   background: var(--background) !important;
 }
 /*---------------------------------------------------------------------------*/
+
+/* Hide mobile bar on iPad */
+@media (min-device-width : 1024px) {
+  #rm-mobile-bar {
+    opacity: 0 !important;
+  }
+}
