@@ -1140,6 +1140,31 @@ div::-webkit-scrollbar-thumb:hover {
   background-color: rgba(0, 0, 0, 0.4);
   border          : 5px var(--icons-hover) solid;
 }
+
+/* Hide mobile bar on iPad */
+@media (min-device-width : 1024px) {
+  #rm-mobile-bar {
+    opacity: 0 !important;
+  }
+}
+
+/* Compact borderless references and queries */
+
+.rm-reference-item {
+  padding: 0 !important;
+  margin : 0 !important;
+  border : 0 !important;
+}
+
+.rm-ref-page-view {
+  padding-bottom: 10px !important;
+}
+
+/* Compact block spacing */
+.block-border-left {
+  padding: 0 !important;
+}
+
 /*---------------------------------------------------------------------------*/
 /* MERMAID Customization */
 
@@ -1152,10 +1177,3 @@ div::-webkit-scrollbar-thumb:hover {
   background: var(--background) !important;
 }
 /*---------------------------------------------------------------------------*/
-
-/* Hide mobile bar on iPad */
-@media (min-device-width : 1024px) {
-  #rm-mobile-bar {
-    opacity: 0 !important;
-  }
-}
