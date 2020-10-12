@@ -723,7 +723,7 @@ div[style*="background: rgb(255, 243, 205);"] {
 
 /* Daily Notes Divider */
 .roam-log-page {
-  border-bottom : 1.5px dashed var(--bold-color) !important;
+  border-bottom : 1.5px dashed var(--hashtags) !important;
   border-top    : 0 !important;
   padding       : 0 !important;
   margin        : 0 !important;
