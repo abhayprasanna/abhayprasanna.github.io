@@ -1378,3 +1378,19 @@ canvas[data-id="layer2-node"] {
   box-shadow   : 0 1px 5px rgba(0, 0, 0, 0.6);
 }
 /*---------------------------------------------------------------------------*/
+/* UPDATE TOAST */
+body > div:nth-child(10) > div > div > span > div > span > strong {
+  color: var(--body-text) !important;
+}
+
+body > div:nth-child(10) > div > div {
+  background-color: rgb(var(--kanban-column-background), 0.7) !important;
+  backdrop-filter: blur(20px) !important;
+  border-radius   : 5px;
+  box-shadow      : 0 1px 5px rgba(0, 0, 0, 1);
+}
+
+body > div:nth-child(10) > div > div > div > button > span > svg > path {
+  color: var(--body-text) !important;
+}
+/*---------------------------------------------------------------------------*/
