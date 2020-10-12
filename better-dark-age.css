@@ -1365,8 +1365,8 @@ canvas[data-id="layer2-node"] {
 }
 
 #roam-right-sidebar-content > div > div:nth-child(n) > div {
-  padding-top   : 14px !important;
-  padding-bottom: 14px !important;
+  padding-top   : 11px !important;
+  padding-bottom: 11px !important;
 }
 
 /* Hide close button if sidebar page is pinned */
