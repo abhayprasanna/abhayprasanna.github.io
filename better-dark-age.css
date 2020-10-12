@@ -101,6 +101,35 @@ div[style*="position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.
   opacity: 1 !important;
 }
 
+/* Inline Block References */
+
+.rm-inline-references {
+  background-color: transparent;
+  border          : 1px solid var(--block-reference-text);
+  border-radius   : 6px;
+  padding-top     : 5px;
+  padding-bottom  : 5px;
+  padding-right   : 20px;
+}
+
+.rm-inline-references:before {
+  color  : var(--block-reference-text);
+  content: "Block References";
+}
+
+.rm-block-ref.dont-focus-block {
+  color: var(--block-reference-text);
+}
+
+.rm-zoom-mask {
+  color: var(--page-links);
+}
+
+.rm-zoom-item-content.rm-zoom-collapsed-item {
+  color          : var(--references);
+  text-decoration: underline;
+}
+
 /* BETTERROAM-LIKE STYLE
 Original BetterRoam theme by @linuz90
 Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
