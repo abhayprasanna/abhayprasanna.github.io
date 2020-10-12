@@ -385,7 +385,7 @@ h4.level1 a,
 h4.level2 a,
 h4.level3 a {
   color      : var(--page-links) !important;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h1.level1 a:hover,
@@ -405,7 +405,7 @@ h4.level2 a:hover,
 h4.level3 a:hover,
 h4.level4 a:hover {
   color      : var(--links-hover) !important;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .rm-page-ref-link-color:hover,
