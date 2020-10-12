@@ -1268,7 +1268,7 @@ div::-webkit-scrollbar-thumb:hover {
 
 #buffer > div {
   z-index      : 99999 !important;
-  background   : var(--kanban-column-background), 0.7) !important;
+  background   : var(--kanban-column-background, 0.7) !important;
   backdrop-filter: blur(20px);
   border-radius: 10px;
   padding      : 2px 8px 8px;
@@ -1332,5 +1332,49 @@ canvas[data-id="layer2-node"] {
 
 #right-sidebar div[style*="padding: 8px;"] {
   display: none;
+}
+/*---------------------------------------------------------------------------*/
+/* DB DROPDOWN SELECTOR */
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
+  color: var(--dropdown-menu-text) !important;
+}
+
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting {
+  background: transparent !important;
+}
+
+.bp3-icon.bp3-icon-cog.icon.settings {
+  color         : var(--icons) !important;
+  padding-bottom: 3px !important;
+}
+
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row .bp3-menu-item.setting > a,
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row a:nth-child(n) > li {
+  color  : var(--body-text) !important;
+  opacity: 1 !important;
+}
+
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row .bp3-menu-item.setting > a:hover,
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row > div > div > span > div > div > div > div > ul > li:nth-child(n):hover,
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row a:nth-child(n) > li:hover {
+  background-color: var(--dropdown-menu-highlight) !important;
+}
+
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row > div > div > span > div > div > div > div > ul > div > li:nth-child(n) {
+  color: var(--page-links) !important;
+}
+
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row > div > div > span > div > div > div > div > ul > li:nth-child(n) {
+  color: var(--bold-color) !important;
+}
+
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row > div > div > span > div > div > div > div > ul {
+  opacity      : 1 !important;
+  border-radius: 8px !important;
+}
+
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown {
+  border-radius: 10px;
+  box-shadow   : 0 1px 5px rgba(0, 0, 0, 1);
 }
 /*---------------------------------------------------------------------------*/
