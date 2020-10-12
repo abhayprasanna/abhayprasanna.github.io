@@ -715,10 +715,11 @@ div[style*="background: rgb(255, 243, 205);"] {
 
 /* Daily Notes Divider */
 .roam-log-page {
-  border-bottom: 1px solid var(--references) !important;
-  border-top   : 0 !important;
-  padding      : 0 !important;
-  margin       : 0 !important;
+  border-bottom : 1.5px dashed var(--references) !important;
+  border-top    : 0 !important;
+  padding       : 0 !important;
+  margin        : 0 !important;
+  padding-bottom: 30px !important;
 }
 
 /* Path text color for Linked References */
@@ -936,6 +937,13 @@ button[style*="padding: 4px 8px;"] {
 .bp3-button:not([class*="bp3-intent-"]),
 .bp3-button:not([class*="bp3-intent-"]):hover {
   box-shadow: none;
+}
+
+/* Reposition left sidebar menu button */
+#app .roam-app .roam-main .roam-topbar > div > span.bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small,
+#app .roam-app .roam-main .roam-topbar > div > span.bp3-button.bp3-minimal.bp3-icon-menu.pointer.bp3-small {
+  position: relative !important;
+  left    : -30px !important;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -1335,6 +1343,11 @@ canvas[data-id="layer2-node"] {
 
 #right-sidebar div[style*="padding: 8px;"] {
   display: none;
+}
+
+#roam-right-sidebar-content > div > div:nth-child(n) > div {
+  padding-top   : 14px !important;
+  padding-bottom: 14px !important;
 }
 
 /*---------------------------------------------------------------------------*/
