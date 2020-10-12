@@ -1268,7 +1268,7 @@ div::-webkit-scrollbar-thumb:hover {
 
 #buffer > div {
   z-index      : 99999 !important;
-  background   : var(--kanban-column-background, 0.7) !important;
+  background   : var(--kanban-column-background) !important;
   backdrop-filter: blur(20px);
   border-radius: 10px;
   padding      : 2px 8px 8px;
