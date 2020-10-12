@@ -591,6 +591,37 @@ span[style*="color: rgb(14, 90, 138);"] {
 
 /* Calendar */
 
+.bp3-datepicker {
+  background-color: var(--sidebar-background);
+}
+
+.DayPicker-Day:hover {
+  background: var(--references) !important;
+}
+
+.bp3-divider {
+  border-color: var(--references) !important;
+}
+
+.bp3-datepicker-caption {
+  background-color: var(--body-text) !important;
+  border-radius   : 5px !important;
+}
+
+.bp3-datepicker-day-wrapper {
+  color: var(--body-text) !important;
+}
+
+.bp3-datepicker .DayPicker-Day.DayPicker-Day--outside {
+  opacity: 0.4;
+}
+
+.bp3-icon-chevron-left,
+.bp3-icon-chevron-right,
+.bp3-icon-double-caret-vertical {
+  color: var(--icons) !important;
+}
+
 /* Kanban Card Styling */
 
 ,
