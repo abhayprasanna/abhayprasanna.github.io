@@ -139,18 +139,19 @@ Original BetterRoam theme by @linuz90
 Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
 
 .roam-center {
-  border-left  : 1px solid var(--sidebar-background) !important;
-  border-top   : 1px solid var(--sidebar-background) !important;
-  border-right : 1px solid var(--sidebar-background) !important;
-  border-bottom: 1px solid var(--sidebar-background) !important;
+  border       : 1px solid var(--sidebar-background) !important;
   border-radius: 12px !important;
-  box-shadow   : 0 3px 20px rgba(0, 0, 0, 0.2) !important;
   overflow     : visible !important;
   background   : var(--background) !important;
-  margin-right : 3px !important;
-  margin-left  : 3px !important;
+  margin-right : 6px !important;
+  margin-left  : 6px !important;
   padding-left : 0 !important;
   max-height   : 98% !important;
+}
+
+.roam-article {
+  padding-left: 20px !important;
+  padding-top : 0 !important;
 }
 
 .roam-app,
@@ -238,7 +239,6 @@ div[style*="border-bottom: 1px solid rgb(138, 155, 168);"] {
 /* FONTS. TEXT STYLING, AND COLORS */
 
 /* Global Font */
-.level2,
 body,
 div,
 textarea {
@@ -320,6 +320,7 @@ h3 {
 }
 
 /* Page title & Daily date color */
+.level2,
 .rm-title-display {
   color      : var(--page-heading) !important;
   font-family: var(--header-font) !important;
@@ -723,7 +724,7 @@ div[style*="background: rgb(255, 243, 205);"] {
 
 /* Daily Notes Divider */
 .roam-log-page {
-  border-top: 1px solid var(--references) !important;
+  border-bottom: 1px solid var(--references) !important;
 }
 
 /* Path text color for Linked References */
@@ -1321,5 +1322,23 @@ canvas[data-id="layer2-node"] {
 
 *[id*="cyto-wrapper"]:hover canvas[data-id="layer2-node"] {
   opacity: 1;
+}
+/*---------------------------------------------------------------------------*/
+/* BETTER SIDEBAR */
+
+.sidebar-content {
+  background-color: var(--background) !important;
+  border-radius   : 12px !important;
+  margin-left     : 5px !important;
+  margin-right    : 8px !important;
+  padding         : 5px !important;
+}
+
+#roam-right-sidebar-content {
+  margin-bottom: 17px !important;
+}
+
+div[style*="padding: 8px;"] {
+  display: none;
 }
 /*---------------------------------------------------------------------------*/
