@@ -591,19 +591,6 @@ span[style*="color: rgb(14, 90, 138);"] {
 
 /* Calendar */
 
-.DayPicker-Weekday,
-.bp3-datepicker-day-wrapper {
-  color: var(--background);
-}
-
-.bp3-datepicker .DayPicker-Day.DayPicker-Day--outside {
-  opacity: 0.4;
-}
-
-.roam-block-container {
-  max-width: 100%;
-}
-
 /* Kanban Card Styling */
 
 ,
@@ -1289,3 +1276,19 @@ div::-webkit-scrollbar-thumb:hover {
 #buffer a:hover {
   opacity: 0.5;
 }
+
+/*---------------------------------------------------------------------------*/
+/* GRAPH VIEW */
+
+/* you can't actually style the graph view because it uses canvas elements, but we *can* apply CSS filters to it to slightly change the appearance */
+canvas[data-id="layer2-node"] {
+  /*filter: invert(1) drop-shadow(0px 3px 4px rgba(0,0,0,0.1));*/
+  filter: invert(1) hue-rotate(110deg) saturate(2.5);
+  opacity   : 0.3;
+  transition: opacity 0.2s ease-out;
+}
+
+*[id*="cyto-wrapper"]:hover canvas[data-id="layer2-node"] {
+  opacity: 1;
+}
+/*---------------------------------------------------------------------------*/
