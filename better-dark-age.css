@@ -1365,6 +1365,12 @@ canvas[data-id="layer2-node"] {
   padding-bottom: 14px !important;
 }
 
+/* Hide close button if sidebar page is pinned */
+
+.pinned + .bp3-icon-cross {
+  display: none;
+}
+
 /*---------------------------------------------------------------------------*/
 /* DB DROPDOWN SELECTOR */
 .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
