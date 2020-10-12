@@ -176,6 +176,10 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
   z-index   : 10;
 }
 
+div[style*="border-bottom: 1px solid rgb(138, 155, 168);"] {
+  border-bottom: 1px solid var(--references) !important;
+}
+
 /* Hide sidebar button visibility */
 .bp3-icon-menu-closed {
   transition: opacity 0.3s ease !important;
