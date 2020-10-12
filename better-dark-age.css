@@ -331,6 +331,12 @@ a {
   transition: color 0.3s ease;
 }
 
+/* Add emoji in front of external links
+HT: Can Sar */
+.rm-alias-external:before {
+  content: '🔗 ';
+}
+
 /* Internal Roam Links [[Roam]] & #Roam & #[[Roam]] */
 .bp3-text-overflow-ellipsis a,
 .rm-page-ref,
