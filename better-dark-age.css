@@ -1438,3 +1438,13 @@ body > div:nth-child(10) > div > div > div > button > span > svg > path {
   color: var(--body-text) !important;
 }
 /*---------------------------------------------------------------------------*/
+/* FIX SELECTION COLOR AND BLOCK-HIGLIGHTS */
+.block-highlight-blue {
+  background-color: var(--closed-bullets) !important;
+
+}
+
+::selection {
+  background-color: #A19DA9 !important;
+}
+/*---------------------------------------------------------------------------*/
