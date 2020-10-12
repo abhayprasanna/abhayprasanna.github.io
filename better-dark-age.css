@@ -31,6 +31,10 @@ body {
   opacity: 1 !important;
 }
 
+.rm-caret-hidden {
+  opacity: 0 !important;
+}
+
 .bp3-icon-standard:hover {
   color: var(--icons-hover) !important;
 }
@@ -465,6 +469,8 @@ strong[tabindex="-1"] {
 .bp3-button:not([class*="bp3-intent-"]) {
   color      : var(--body-text) !important;
   font-family: var(--secondary-font);
+  background : var(--kanban-column-background) !important;
+  font-size  : 90% !important;
   transition : color 0.3s ease;
 }
 
