@@ -1230,4 +1230,9 @@ div::-webkit-scrollbar-thumb:hover {
 .bp3-dialog-container.bp3-overlay-content.bp3-overlay-enter-done {
   color: var(--body-text) !important;
 }
+
+.bp3-button.bp3-minimal {
+  background-color: transparent !important;
+  padding         : 0 !important;
+}
 /*---------------------------------------------------------------------------*/
