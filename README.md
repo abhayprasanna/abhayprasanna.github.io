@@ -6,7 +6,7 @@ Welcome to the Dracula Pro-inspired color theme for Roam Research, which include
 
 Love this theme? Say thanks to [@shodty](https://twitter.com/shodty) via [Paypal](https://paypal.me/RobertLandsburg)
 
-Other acknowledgements: Jack Laing, @linuz90, Hasan Yalcinkaya, Palash Karia, and many others!
+Other acknowledgements: Jack Laing, @linuz90, @Azlen, Hasan Yalcinkaya, Palash Karia, and many others!
 
 # Instructions for Installation
 
