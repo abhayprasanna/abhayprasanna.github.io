@@ -1330,12 +1330,13 @@ canvas[data-id="layer2-node"] {
 }
 
 #roam-right-sidebar-content {
-  margin-bottom: 17px !important;
+  max-height: 98% !important;
 }
 
 #right-sidebar div[style*="padding: 8px;"] {
   display: none;
 }
+
 /*---------------------------------------------------------------------------*/
 /* DB DROPDOWN SELECTOR */
 .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
