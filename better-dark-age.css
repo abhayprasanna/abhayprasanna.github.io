@@ -981,6 +981,7 @@ div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * 
   background-color: #282a36 !important;
   color           : #f8f8f2 !important;
   border          : none;
+  border-radius   : 6px;
 }
 
 .cm-s-default .CodeMirror-gutters {
