@@ -1212,3 +1212,18 @@ div::-webkit-scrollbar-thumb:hover {
   background: var(--background) !important;
 }
 /*---------------------------------------------------------------------------*/
+/* MISCELLANEOUS MENUS, BUTTONS, POP-UPS */
+
+.bp3-dialog-container.bp3-overlay-content.bp3-overlay-appear-done.bp3-overlay-enter-done {
+  color: var(--body-text) !important;
+}
+
+.bp3-button.bp3-intent-danger {
+  color     : var(--body-text) !important;
+  background: #E91E63 !important;
+}
+
+.bp3-dialog-container.bp3-overlay-content.bp3-overlay-enter-done {
+  color: var(--body-text) !important;
+}
+/*---------------------------------------------------------------------------*/
