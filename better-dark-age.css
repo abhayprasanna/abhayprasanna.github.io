@@ -186,22 +186,13 @@ div[style*="border-bottom: 1px solid rgb(138, 155, 168);"] {
   transition: opacity 0.3s ease !important;
 }
 
-/* Sidebar dropdown menu */
-.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
-  color: var(--dropdown-menu-text) !important;
-}
-
-.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting {
-  background: transparent !important;
-}
 /* Hide sidebar button visibility */
 .bp3-icon-menu-closed {
   transition: opacity 0.3s ease !important;
 }
 
 /* Sidebar dropdown menu */
-.rm-autocomplete-result,
-.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
+.rm-autocomplete-result {
   color: var(--dropdown-menu-text) !important;
 }
 
@@ -1338,7 +1329,7 @@ canvas[data-id="layer2-node"] {
   margin-bottom: 17px !important;
 }
 
-div[style*="padding: 8px;"] {
+#right-sidebar div[style*="padding: 8px;"] {
   display: none;
 }
 /*---------------------------------------------------------------------------*/
