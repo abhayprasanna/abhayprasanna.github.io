@@ -688,8 +688,16 @@ div[style*="background: rgb(255, 243, 205);"] {
   color           : var(--body-text) !important;
 }
 
-.zoom-path-view.rm-zoom {
-  color: var(--body-text) !important;
+.rm-zoom.zoom-path-view {
+  margin: 0 !important;
+}
+
+.rm-zoom-item-content {
+  color: var(--page-links) !important;
+}
+
+.rm-zoom-mask {
+  background: transparent !important;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -981,6 +989,13 @@ div[style*="padding-right: calc(0.5 * (100% - 568px)); padding-left: calc(0.5 * 
 div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * (100% - 800px));"] {
   padding-right: calc(0.5 * (100% - var(--reduce-padding-right))) !important;
   padding-left : calc(0.5 * (100% - var(--reduce-padding-left))) !important;
+}
+
+/* David's flex width fix */
+.roam-center {
+  flex-basis: auto !important;
+  resize    : horizontal !important;
+  overflow  : auto !important;
 }
 
 /*---------------------------------------------------------------------------*/
