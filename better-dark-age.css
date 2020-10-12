@@ -1235,8 +1235,57 @@ div::-webkit-scrollbar-thumb:hover {
   color: var(--body-text) !important;
 }
 
+/*---------------------------------------------------------------------------*/
+/* HELP BUTTON / POPUP */
+
 .bp3-button.bp3-minimal {
   background-color: transparent !important;
   padding         : 0 !important;
 }
-/*---------------------------------------------------------------------------*/
+
+#buffer {
+  background: transparent !important;
+  right     : 7px !important;
+  bottom    : 10px !important;
+}
+
+#buffer .bp3-popover-target > .bp3-button {
+  background: rgba(0, 0, 0, 0.1);
+  height    : 30px;
+  width     : 30px;
+}
+
+#buffer > div {
+  z-index      : 99999 !important;
+  background   : var(--kanban-column-background), 0.7) !important;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding      : 2px 8px 8px;
+  box-shadow   : 0 8px 14px rgba(0, 0, 0, 1);
+}
+
+#buffer > div .bp3-button::before {
+  color: #FFFFFF !important;
+
+}
+
+#buffer .help-title {
+  color: var(--page-links) !important;
+}
+
+#buffer .help-sub-title {
+  color: var(--italics-color) !important;
+}
+
+#buffer span {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+#buffer a {
+  text-decoration: underline;
+  color          : var(--external-links) !important;
+}
+
+#buffer a:hover {
+  opacity: 0.5;
+}
