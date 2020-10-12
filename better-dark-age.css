@@ -953,13 +953,6 @@ button[style*="padding: 4px 8px;"] {
   box-shadow: none;
 }
 
-/* Reposition left sidebar menu button */
-#app .roam-app .roam-main .roam-topbar > div > span.bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small,
-#app .roam-app .roam-main .roam-topbar > div > span.bp3-button.bp3-minimal.bp3-icon-menu.pointer.bp3-small {
-  position: relative !important;
-  left    : -30px !important;
-}
-
 /*---------------------------------------------------------------------------*/
 /* WIDTH FIXES */
 
