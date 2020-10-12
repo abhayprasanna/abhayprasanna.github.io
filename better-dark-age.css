@@ -779,6 +779,10 @@ div[style*="background: rgb(255, 243, 205);"] {
   color: var(--icons-hover);
 }
 
+.rm-zoom-chevron {
+  color: var(--icons) !important;
+}
+
 /* Title Header */
 .bp3-text-overflow-ellipsis,
 .rm-pages-col,
