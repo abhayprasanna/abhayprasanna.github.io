@@ -716,6 +716,9 @@ div[style*="background: rgb(255, 243, 205);"] {
 /* Daily Notes Divider */
 .roam-log-page {
   border-bottom: 1px solid var(--references) !important;
+  border-top   : 0 !important;
+  padding      : 0 !important;
+  margin       : 0 !important;
 }
 
 /* Path text color for Linked References */
