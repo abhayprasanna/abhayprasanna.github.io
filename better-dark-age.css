@@ -1360,10 +1360,6 @@ canvas[data-id="layer2-node"] {
   max-height: 98% !important;
 }
 
-#right-sidebar div[style*="padding: 8px;"] {
-  display: none;
-}
-
 #roam-right-sidebar-content > div > div:nth-child(n) > div {
   padding-top   : 11px !important;
   padding-bottom: 11px !important;
