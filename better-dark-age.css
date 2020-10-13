@@ -1441,7 +1441,6 @@ body > div:nth-child(10) > div > div > span > div > span > strong {
   color: var(--body-text) !important;
 }
 
-body > div.bp3-portal > div > div,
 body > div:nth-child(10) > div > div {
   background-color: rgb(var(--kanban-column-background), 0.7) !important;
   backdrop-filter: blur(5px) !important;
