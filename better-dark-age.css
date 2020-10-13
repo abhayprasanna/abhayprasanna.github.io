@@ -1159,7 +1159,7 @@ div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * 
 .block-border-left {
   margin-left  : 6px;
   border-radius: 0;
-  padding      : 8px 8px 5px;
+  padding      : 0 !important;
 }
 
 /* Remove second small line (HT Hasan Yalcinkaya) */
