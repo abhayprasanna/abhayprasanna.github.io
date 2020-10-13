@@ -175,6 +175,16 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
 
 .roam-topbar {
   border-bottom: 0;
+  padding-right: 3px !important;
+}
+
+.roam-topbar > div > div:nth-child(n) {
+  margin: 0 !important;
+}
+
+.roam-topbar div[style*="flex: 0 0 4px;"],
+.roam-topbar div[style*="flex: 0 0 3px"] {
+  flex: 0 0 0 !important;
 }
 
 .roam-topbar.bp3-popover-wrapper {
