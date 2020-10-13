@@ -1386,87 +1386,87 @@ canvas[data-id="layer2-node"] {
 
 .pinned + .bp3-icon-cross {
   display: none;
+}
+/* Kill Right sidebar top gap and button */
+#right-sidebar div[style*="padding: 8px;"] {
+  padding: 0 !important;
+}
 
-  /* Kill Right sidebar top gap and button */
-  #right-sidebar div[style*="padding: 8px;"] {
-    padding: 0 !important;
-  }
+#right-sidebar > div.flex-h-box > button {
+  display: none;
+}
 
-  #right-sidebar > div.flex-h-box > button {
-    display: none;
-  }
+/*---------------------------------------------------------------------------*/
+/* DB DROPDOWN SELECTOR */
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
+  color: var(--dropdown-menu-text) !important;
+}
 
-  /*---------------------------------------------------------------------------*/
-  /* DB DROPDOWN SELECTOR */
-  .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
-    color: var(--dropdown-menu-text) !important;
-  }
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting {
+  background: transparent !important;
+}
 
-  .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting {
-    background: transparent !important;
-  }
+.bp3-icon.bp3-icon-cog.icon.settings {
+  color         : var(--icons) !important;
+  padding-bottom: 3px !important;
+}
 
-  .bp3-icon.bp3-icon-cog.icon.settings {
-    color         : var(--icons) !important;
-    padding-bottom: 3px !important;
-  }
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row .bp3-menu-item.setting > a,
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row a:nth-child(n) > li {
+  color  : var(--body-text) !important;
+  opacity: 1 !important;
+}
 
-  #app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row .bp3-menu-item.setting > a,
-  #app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row a:nth-child(n) > li {
-    color  : var(--body-text) !important;
-    opacity: 1 !important;
-  }
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row .bp3-menu-item.setting > a:hover,
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row > div > div > span > div > div > div > div > ul > li:nth-child(n):hover,
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row a:nth-child(n) > li:hover {
+  background-color: var(--dropdown-menu-highlight) !important;
+}
 
-  #app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row .bp3-menu-item.setting > a:hover,
-  #app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row > div > div > span > div > div > div > div > ul > li:nth-child(n):hover,
-  #app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row a:nth-child(n) > li:hover {
-    background-color: var(--dropdown-menu-highlight) !important;
-  }
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row > div > div > span > div > div > div > div > ul > div > li:nth-child(n) {
+  color: var(--page-links) !important;
+}
 
-  #app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row > div > div > span > div > div > div > div > ul > div > li:nth-child(n) {
-    color: var(--page-links) !important;
-  }
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row > div > div > span > div > div > div > div > ul > li:nth-child(n) {
+  color: var(--bold-color) !important;
+}
 
-  #app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row > div > div > span > div > div > div > div > ul > li:nth-child(n) {
-    color: var(--bold-color) !important;
-  }
+#app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row > div > div > span > div > div > div > div > ul {
+  opacity      : 1 !important;
+  border-radius: 8px !important;
+}
 
-  #app .roam-app .roam-sidebar-container.noselect .flex-h-box.top-row > div > div > span > div > div > div > div > ul {
-    opacity      : 1 !important;
-    border-radius: 8px !important;
-  }
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown {
+  border-radius: 10px;
+  box-shadow   : 0 1px 5px rgba(0, 0, 0, 0.6);
+}
+/*---------------------------------------------------------------------------*/
+/* UPDATE TOAST */
+body > div.bp3-portal > div > div > span > div > span > strong,
+body > div:nth-child(10) > div > div > span > div > span > strong {
+  color: var(--body-text) !important;
+}
 
-  .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown {
-    border-radius: 10px;
-    box-shadow   : 0 1px 5px rgba(0, 0, 0, 0.6);
-  }
-  /*---------------------------------------------------------------------------*/
-  /* UPDATE TOAST */
-  body > div.bp3-portal > div > div > span > div > span > strong,
-  body > div:nth-child(10) > div > div > span > div > span > strong {
-    color: var(--body-text) !important;
-  }
+body > div:nth-child(10) > div > div {
+  background-color: rgb(var(--kanban-column-background), 0.7) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px);
+  border-radius   : 5px;
+  box-shadow      : 0 1px 5px rgba(0, 0, 0, 1);
+}
 
-  body > div:nth-child(10) > div > div {
-    background-color: rgb(var(--kanban-column-background), 0.7) !important;
-    backdrop-filter: blur(5px) !important;
-    -webkit-backdrop-filter: blur(5px);
-    border-radius   : 5px;
-    box-shadow      : 0 1px 5px rgba(0, 0, 0, 1);
-  }
+body > div.bp3-portal > div > div > div > button > span > svg > path,
+body > div:nth-child(10) > div > div > div > button > span > svg > path {
+  color: var(--body-text) !important;
+}
+/*---------------------------------------------------------------------------*/
+/* FIX SELECTION COLOR AND BLOCK-HIGLIGHTS */
+.block-highlight-blue {
+  background-color: var(--closed-bullets) !important;
 
-  body > div.bp3-portal > div > div > div > button > span > svg > path,
-  body > div:nth-child(10) > div > div > div > button > span > svg > path {
-    color: var(--body-text) !important;
-  }
-  /*---------------------------------------------------------------------------*/
-  /* FIX SELECTION COLOR AND BLOCK-HIGLIGHTS */
-  .block-highlight-blue {
-    background-color: var(--closed-bullets) !important;
+}
 
-  }
-
-  ::selection {
-    background-color: #A19DA9 !important;
-  }
-  /*---------------------------------------------------------------------------*/
+::selection {
+  background-color: #A19DA9 !important;
+}
+/*---------------------------------------------------------------------------*/
