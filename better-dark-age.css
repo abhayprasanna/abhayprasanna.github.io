@@ -175,6 +175,7 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
 
 .roam-topbar {
   border-bottom: 0;
+  padding      : 1px !important;
 }
 
 .roam-topbar.bp3-popover-wrapper {
