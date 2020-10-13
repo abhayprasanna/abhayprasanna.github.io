@@ -54,6 +54,13 @@ body {
   color           : var(--body-text) !important;
 }
 
+.rm-block-input {
+  color           : var(--body-text) !important;
+  background-color: var(--sidebar-background);
+  padding-left    : 6px;
+  border-radius   : 5px;
+}
+
 /* Block reference */
 
 .block-ref-count-button {
@@ -1160,6 +1167,7 @@ div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * 
   margin-left  : 6px;
   border-radius: 0;
   padding      : 0 !important;
+  border-color : var(--references) !important;
 }
 
 /* Remove second small line (HT Hasan Yalcinkaya) */
