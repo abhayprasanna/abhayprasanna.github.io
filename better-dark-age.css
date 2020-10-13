@@ -35,6 +35,11 @@ body {
   opacity: 0 !important;
 }
 
+.rm-caret {
+  position: relative !important;
+  top     : -0.5px !important;
+}
+
 .bp3-icon-standard:hover {
   color: var(--icons-hover) !important;
 }
@@ -47,11 +52,6 @@ body {
 .version-bullet {
   background-color: var(--bullets) !important;
   color           : var(--body-text) !important;
-}
-
-.block-border-left {
-  border-color: var(--references) !important;
-  margin-left : 6px !important;
 }
 
 /* Block reference */
@@ -1157,10 +1157,9 @@ div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * 
 
 /* Align vertical lines and remove notches (HT: Hasan Yalcinkaya) */
 .block-border-left {
-  margin-left   : 5px;
-  border-radius : 0;
-  padding-left  : 8px;
-  padding-bottom: 5px;
+  margin-left  : 6px;
+  border-radius: 0;
+  padding      : 8px 8px 5px;
 }
 
 /* Remove second small line (HT Hasan Yalcinkaya) */
@@ -1198,6 +1197,10 @@ h2.rm-level2 {
 
 h1.rm-level1 {
   margin-top: -5px !important;
+}
+
+span[style*="margin-top: 4px;"] {
+  margin-top: 3px !important;
 }
 
 /* ToDo Checkbox Fixes */
@@ -1260,11 +1263,6 @@ div::-webkit-scrollbar-thumb:hover {
 
 .rm-ref-page-view {
   padding-bottom: 10px !important;
-}
-
-/* Compact block spacing */
-.block-border-left {
-  padding: 0 !important;
 }
 
 /*---------------------------------------------------------------------------*/
