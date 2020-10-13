@@ -49,6 +49,11 @@ body {
   color           : var(--body-text) !important;
 }
 
+.block-border-left {
+  border-color: var(--references) !important;
+  margin-left : 6px !important;
+}
+
 /* Block reference */
 
 .block-ref-count-button {
@@ -733,11 +738,15 @@ div[style*="background: rgb(255, 243, 205);"] {
 
 /* Daily Notes Divider */
 .roam-log-page {
-  border-bottom : 1.5px dashed var(--hashtags) !important;
+  border-bottom : 1.5px solid var(--references) !important;
   border-top    : 0 !important;
   padding       : 0 !important;
   margin        : 0 !important;
   padding-bottom: 30px !important;
+}
+
+.roam-log-page.roam-log-preview {
+  color: var(--references) !important;
 }
 
 /* Path text color for Linked References */
