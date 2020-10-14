@@ -122,6 +122,7 @@ div[style*="position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.
 
 .rm-inline-references {
   background-color: transparent;
+  border          : transparent;
   box-shadow      : 0 0 3px 1px var(--references);
   border-radius   : 5px;
   padding-top     : 5px;
@@ -510,14 +511,15 @@ strong[tabindex="-1"] {
 /* Query */
 .rm-query-title {
   background   : var(--sidebar-background) !important;
-  color        : var(--hashtags) !important;
+  color        : var(--body-text) !important;
   border-bottom: 1px solid var(--references) !important;
   border-radius: 5px;
 }
 
 .rm-query {
   box-shadow   : 0 0 2px 1px var(--references);
-  border-radius: 5px;
+  border-radius:5px border   : transparent;
+  padding      : 0;
 }
 
 /* Alias */
