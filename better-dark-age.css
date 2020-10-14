@@ -74,6 +74,7 @@ body {
   font-family  : var(--header-font) !important;
   margin-right : 6px;
   margin-top   : 2px;
+  border-radius: 0;
 }
 
 .block-ref-count-button:hover {
