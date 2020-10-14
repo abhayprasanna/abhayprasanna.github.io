@@ -518,7 +518,8 @@ strong[tabindex="-1"] {
 
 .rm-query {
   box-shadow   : 0 0 2px 1px var(--references);
-  border-radius:5px border   : transparent;
+  border-radius: 5px;
+  border       : transparent;
   padding      : 0;
 }
 
