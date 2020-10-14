@@ -1469,7 +1469,7 @@ canvas[data-id="layer2-node"] {
   box-shadow   : 0 1px 5px rgba(0, 0, 0, 0.6);
 }
 /*---------------------------------------------------------------------------*/
-/* UPDATE TOAST */
+/* UPDATE ALERTS AND VARIOUS SPECIAL MENUS */
 body > div.bp3-portal > div > div > span > div > span > strong,
 body > div:nth-child(10) > div > div > span > div > span > strong {
   color: var(--body-text) !important;
@@ -1486,6 +1486,16 @@ body > div.bp3-portal > div > div > div > button > span > svg > path,
 body > div:nth-child(10) > div > div > div > button > span > svg > path {
   color: var(--body-text) !important;
 }
+
+/* Share menu */
+.flex-h-box.permission-change-container > div:nth-child(n) > div > textarea {
+  background-color: var(--background) !important;
+  padding         : 5px !important;
+  border          : transparent;
+  border-radius   : 5px;
+  margin-top      : 10px;
+}
+
 /*---------------------------------------------------------------------------*/
 /* FIX SELECTION COLOR AND BLOCK-HIGLIGHTS */
 .block-highlight-blue {
