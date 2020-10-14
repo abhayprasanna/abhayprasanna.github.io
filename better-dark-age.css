@@ -89,19 +89,27 @@ body {
   font-size: var(--main-font-size) !important;
 }
 
+.rm-block-ref,
 .roam-block .rm-block-ref,
 span[style*="color: red"] {
-  background-color: transparent !important;
-  color           : var(--block-reference-text) !important;
-  transition      : color 0.3s ease, border 0.3s ease;
-  border-bottom   : 1px solid var(--block-reference-text);
+  color             : var(--body-text) !important;
+  border-bottom     : none !important;
+  border-right-color: var(--references) !important;
+  border-right-width: 3px !important;
+  border-right-style: solid;
+  padding-right     : 5px !important;
+  border-left-color : var(--references) !important;
+  border-left-width : 3px !important;
+  border-left-style : solid;
+  padding-left      : 5px !important;
+  border-radius     : 5px !important;
+  padding-top       : 2px !important;
+  padding-bottom    : 4px !important;
 }
 
 .rm-block-ref:hover {
-  background-color: transparent !important;
-  color           : var(--links-hover) !important;
-  transition      : color 0.3s ease, border 0.3s ease;
-  border-bottom   : 1px solid var(--block-reference-text);
+  background-color: var(--kanban-column-background) !important;
+  transition      : color 0.3s ease;
 }
 
 .bp3-icon.bp3-icon-filter[style*="color: rgb(168, 42, 42);"] {
@@ -129,8 +137,9 @@ div[style*="position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.
 }
 
 .rm-inline-references:before {
-  color  : var(--block-reference-text);
-  content: "Block References";
+  color      : var(--block-reference-text);
+  content    : "Block References";
+  font-weight: 600 !important;
 }
 
 .rm-block-ref.dont-focus-block {
@@ -162,8 +171,9 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
 }
 
 .roam-article {
-  padding-left: 20px !important;
-  padding-top : 0 !important;
+  padding-left : 20px !important;
+  padding-top  : 0 !important;
+  padding-right: 30px !important;
 }
 
 .roam-app,
@@ -259,7 +269,9 @@ div[style*="border-bottom-color: rgb(138, 155, 168);"] {
 body,
 div,
 textarea {
-  font-family: var(--global-font) !important;
+  font-family            : var(--global-font) !important;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 div {
@@ -339,8 +351,10 @@ h3 {
 /* Page title & Daily date color */
 .level2,
 .rm-title-display {
-  color      : var(--page-heading) !important;
-  font-family: var(--header-font) !important;
+  color                  : var(--page-heading) !important;
+  font-family            : var(--header-font) !important;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .roam-log-page .rm-title-display {
@@ -454,7 +468,7 @@ strong[tabindex="-1"] {
 }
 
 .rm-embed-container:hover > .rm-embed-edit {
-  right: 30px;
+  right: 6px;
 }
 
 .rm-embed-edit {
@@ -463,11 +477,22 @@ strong[tabindex="-1"] {
 }
 
 .rm-embed-inner-block-hide {
-  margin-left  : 0 !important;
+  margin       : 2px 2px 2px 4px !important;
   background   : var(--kanban-column-background) !important;
-  padding      : 4px !important;
-  margin-top   : 4px !important;
-  margin-bottom: 4px !important;
+  padding      : 3px !important;
+  border-radius: 5px;
+  box-shadow   : 0 0 2px 1px var(--references);
+}
+
+.rm-embed-inner-block-hide:before {
+  content     : "Block Embed";
+  color       : var(--block-reference-text);
+  padding-left: 20px !important;
+  font-weight : 600 !important;
+}
+
+.rm-embed-inner-block-hide .flex-v-box.roam-block-container.block-bullet-view {
+  margin: 0 !important;
 }
 
 /* Namespace text color [[roam/css]] when using CTRL+C CTRL+L || CMD+C CMD+L */
@@ -512,6 +537,7 @@ strong[tabindex="-1"] {
 .rm-query-title {
   background    : var(--sidebar-background) !important;
   color         : var(--block-reference-text) !important;
+  font-weight   : 600;
   border-bottom : 1px solid var(--references) !important;
   border-radius : 5px;
   padding-top   : 4px !important;
