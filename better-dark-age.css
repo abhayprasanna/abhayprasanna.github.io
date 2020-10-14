@@ -610,10 +610,6 @@ button[style*="border: none"] {
   border    : 1px solid #7C6EAD !important;
 }
 
-div[style*="color: rgb(14, 90, 138);"] {
-  color: var(--page-links) !important;
-}
-
 /* chart */
 svg[style*="background-color: white;"] {
   background: transparent !important;
@@ -626,9 +622,11 @@ g circle {
 /* Calculation */
 
 span[style*="color: rgb(14, 90, 138);"] {
-  font-family: var(--secondary-font);
-  color      : var(--page-links) !important;
-  font-weight: 600;
+  font-family     : var(--secondary-font);
+  color           : var(--page-links) !important;
+  font-weight     : 600;
+  background-color: grey !important;
+  border-radius   : 5px;
 }
 
 .bp3-popover-arrow-fill {
@@ -1538,3 +1536,10 @@ body > div:nth-child(10) > div > div > div > button > span > svg > path {
   background-color: #BEB9C8 !important;
 }
 /*---------------------------------------------------------------------------*/
+/* ATTRIBUTE TABLE */
+
+.roam-table .rm-block-ref,
+.roam-table .rm-block-ref:hover {
+  border-color: var(--background) !important;
+  background  : transparent !important;
+}
