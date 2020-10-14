@@ -67,22 +67,19 @@ body {
 .block-ref-count-button {
   color        : var(--icons) !important;
   background   : transparent !important;
-  border       : 1px solid var(--icons) !important;
-  border-color : var(--icons) !important;
-  border-radius: 100px !important;
+  border-bottom: 1.5px solid var(--block-reference-text) !important;
   z-index      : 1000 !important;
   transition   : color 0.3s ease, border 0.3s ease !important;
   opacity      : 1 !important;
-  font-family  : var(--secondary-font) !important;
-  margin-right : 10px;
+  font-family  : var(--header-font) !important;
+  margin-right : 6px;
   margin-top   : 2px;
 }
 
 .block-ref-count-button:hover {
   color        : var(--icons-hover) !important;
   background   : transparent !important;
-  border       : 1px solid var(--icons-hover) !important;
-  border-radius: 100px !important;
+  border-bottom: 1.5px solid var(--block-reference-text) !important;
   z-index      : 1000 !important;
   transition   : color 0.3s ease, border 0.3s ease !important;
 }
@@ -451,10 +448,8 @@ strong[tabindex="-1"] {
 
 /* Block embed */
 .rm-embed-container {
-  box-shadow   : 0 0 3px 1px var(--references);
-  border-radius: 5px;
-  padding      : 5px 5px 5px 0;
-  margin-left  : -2px !important;
+  padding    : 0 !important;
+  margin-left: -20px !important;
 }
 
 .rm-embed-container:hover > .rm-embed-edit {
@@ -462,12 +457,16 @@ strong[tabindex="-1"] {
 }
 
 .rm-embed-edit {
-  margin-right: 5px;
-  z-index     : 1000;
+  margin : 0 !important;
+  z-index: 1000;
 }
 
 .rm-embed-inner-block-hide {
-  margin-left: 0 !important;
+  margin-left  : 0 !important;
+  background   : var(--kanban-column-background) !important;
+  padding      : 4px !important;
+  margin-top   : 4px !important;
+  margin-bottom: 4px !important;
 }
 
 /* Namespace text color [[roam/css]] when using CTRL+C CTRL+L || CMD+C CMD+L */
@@ -510,10 +509,12 @@ strong[tabindex="-1"] {
 
 /* Query */
 .rm-query-title {
-  background   : var(--sidebar-background) !important;
-  color        : var(--body-text) !important;
-  border-bottom: 1px solid var(--references) !important;
-  border-radius: 5px;
+  background    : var(--sidebar-background) !important;
+  color         : var(--block-reference-text) !important;
+  border-bottom : 1px solid var(--references) !important;
+  border-radius : 5px;
+  padding-top   : 4px !important;
+  padding-bottom: 4px !important;
 }
 
 .rm-query {
