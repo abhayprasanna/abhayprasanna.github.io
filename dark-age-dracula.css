@@ -1,11 +1,9 @@
-@import url('https://abhayprasanna.github.io/better-dark-age.css');
-
 /* IMPORT FONTS */
-@import url('https://fonts.googleapis.com/css?family=Nunito|Fira+Code|Bitter');
+@import url('https://fonts.googleapis.com/css?family=Commissioner|Fira+Code|Bitter');
 
 :root {
   /* FONTS */
-  --global-font             : 'Nunito', sans-serif;
+  --global-font             : 'Commissioner', sans-serif;
   --secondary-font          : 'Fira Code', monospace;
   --header-font             : 'Bitter', serif;
   /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
@@ -15,7 +13,7 @@
   --page-links              : #9580FF;
   --attributes-color        : #FFFF80;
   --external-links          : #8AFF80;
-  --links-hover             : #F2F2F2;
+  --links-hover             : #F2F2F2E5;
   --hashtags                : #FE7FBF;
   --body-text               : #F2F2F2;
   --italics-color           : #92FFFF;
@@ -44,7 +42,7 @@
   --h1-font-size            : 2em;
   --h2-font-size            : 1.6em;
   --h3-font-size            : 1.2em;
-  --sidebar-h1-size         : 2em;
+  --sidebar-h1-size         : 2.2em;
   /* DROPDOWN MENU */
   --dropdown-menu-background: #2B2640;
   --dropdown-menu-highlight : #1B1A23;
