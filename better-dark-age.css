@@ -122,8 +122,8 @@ div[style*="position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.
 
 .rm-inline-references {
   background-color: transparent;
-  border          : 1px solid var(--block-reference-text);
-  border-radius   : 6px;
+  box-shadow      : 0 0 3px 1px var(--references);
+  border-radius   : 5px;
   padding-top     : 5px;
   padding-bottom  : 5px;
   padding-right   : 20px;
@@ -450,9 +450,8 @@ strong[tabindex="-1"] {
 
 /* Block embed */
 .rm-embed-container {
-  border       : var(--references) solid;
-  border-radius: 10px;
-  border-width : 1.5px;
+  box-shadow   : 0 0 3px 1px var(--references);
+  border-radius: 5px;
   padding      : 5px 5px 5px 0;
   margin-left  : -2px !important;
 }
@@ -510,19 +509,15 @@ strong[tabindex="-1"] {
 
 /* Query */
 .rm-query-title {
-  background : inherit !important;
-  color      : var(--references) !important;
-  font-weight: 600;
+  background   : var(--sidebar-background) !important;
+  color        : var(--hashtags) !important;
+  border-bottom: 1px solid var(--references) !important;
+  border-radius: 5px;
 }
 
 .rm-query {
-  border        : var(--references) solid;
-  border-radius : 10px;
-  border-width  : 1.5px;
-  padding-top   : 5px;
-  padding-bottom: 5px;
-  padding-right : 10px;
-  margin-left   : 0;
+  box-shadow   : 0 0 2px 1px var(--references);
+  border-radius: 5px;
 }
 
 /* Alias */
