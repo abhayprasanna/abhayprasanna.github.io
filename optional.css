@@ -1,0 +1,62 @@
+/* OPTIONAL CUSTOMIZATIONS */
+
+/* Separators in the sidebar (change position or add more as needed) */
+.starred-pages a:nth-child(2):after {
+  content    : '___________________________';
+  color      : var(--icons);
+  font-weight: bold;
+}
+
+/* [[Dracula Pro]] easter egg */
+.bp3-icon-large.bp3-icon-help:before {
+  content  : '🧛🏿‍♀️';
+  font-size: 30px;
+}
+
+/* Dharam's back/forward JS customization */
+#roam-navigation-controls_back:hover,
+#roam-navigation-controls_forward:hover {
+  border      : solid var(--icons-hover)!important;
+  border-width: 0 3px 3px 0!important;
+  transition  : color 0.1s ease, border 0.3s ease;
+}
+
+.left-sidebar-open {
+  position: absolute;
+  top     : 3px!important;
+  left    : 8px!important;
+}
+
+.left-sidebar-closed {
+  position: absolute;
+  top     : 3px!important;
+  left    : 50px!important;
+}
+/* Reposition left sidebar menu button */
+.bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small,
+.bp3-button.bp3-minimal.bp3-icon-menu.pointer.bp3-small {
+  position: relative !important;
+  left    : -2% !important;
+}
+
+/* Roam42 Daily Notes day name */
+#roam-title-day-banner {
+  color      : var(--bold-color);
+  font-size  : 15px !important;
+  font-family: var(--header-font) !important;
+}
+
+/* Murf attr-table filter results */
+#filterRowCt {
+  color: var(--italics-color) !important;
+}
+
+/* Hide Roam Logo */
+#roam-sidebar-logo {
+  display: none;
+}
+
+/* Hide graph button in top bar */
+.bp3-button.bp3-minimal.bp3-icon-graph.bp3-small {
+  display: none !important;
+}
