@@ -57,6 +57,7 @@ body {
 .rm-block-input {
   color           : var(--body-text) !important;
   background-color: var(--sidebar-background);
+  box-shadow      : 0 0 2px 1px var(--references);
   padding-left    : 6px;
   border-radius   : 5px;
 }
@@ -786,6 +787,11 @@ div[style*="background: rgb(255, 243, 205);"] {
   opacity: 0.5;
 }
 
+.bp3-input.bp3-active,
+.bp3-input:focus {
+  box-shadow: 0 0 4px 1px var(--references) !important;
+}
+
 /* Search box input text color */
 .bp3-input-group input {
   color: var(--search-bar-text) !important;
@@ -799,6 +805,15 @@ div[style*="background: rgb(255, 243, 205);"] {
 /* New page text color */
 .rm-new-page {
   color: var(--dropdown-newpage) !important;
+}
+
+/* Ctrl-Shift-9 menu */
+.bp3-dialog-container.bp3-overlay-content.bp3-overlay-enter-done > div > div > div > div:nth-child(n) > input {
+  background-color: var(--background) !important;
+  color           : var(--body-text) !important;
+  margin-top      : 5px !important;
+  padding         : 5px !important;
+  border-radius   : 10px !important;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -905,6 +920,17 @@ div[style*="background: rgb(255, 243, 205);"] {
 .bp3-popover-content {
   background-color: var(--dropdown-menu-background) !important;
   color           : var(--page-links) !important;
+}
+
+.bp3-menu {
+  border-radius: 10px;
+  padding      : 2px 8px 8px;
+  box-shadow   : 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.bp3-popover-content {
+  box-shadow   : 0 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 10px !important;
 }
 
 .bp3-elevation-3 .dont-unfocus-block:hover,
@@ -1322,7 +1348,6 @@ div::-webkit-scrollbar-thumb:hover {
 
 #buffer > div {
   z-index      : 99999 !important;
-  background   : rgb(var(--kanban-column-background), 0.7) !important;
   backdrop-filter: blur(30px) !important;
   -webkit-backdrop-filter: blur(30px);
   border-radius: 10px;
@@ -1456,11 +1481,10 @@ body > div:nth-child(10) > div > div > span > div > span > strong {
 }
 
 body > div:nth-child(10) > div > div {
-  background-color: rgb(var(--kanban-column-background), 0.7) !important;
   backdrop-filter: blur(5px) !important;
   -webkit-backdrop-filter: blur(5px);
-  border-radius   : 5px;
-  box-shadow      : 0 1px 5px rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  box-shadow   : 0 1px 5px rgba(0, 0, 0, 1);
 }
 
 body > div.bp3-portal > div > div > div > button > span > svg > path,
@@ -1475,6 +1499,6 @@ body > div:nth-child(10) > div > div > div > button > span > svg > path {
 }
 
 ::selection {
-  background-color: #A19DA9 !important;
+  background-color: #BEB9C8 !important;
 }
 /*---------------------------------------------------------------------------*/
