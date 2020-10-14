@@ -17,6 +17,13 @@ This works by linking to an outside .css file, actually located [here](https://a
 
 If you do in fact want to manipulate the source code, just [navigate to the source .css file](https://abhayprasanna.github.io/better-dark-age.css) manually, copy it, and paste it all into your roam/css page.
 
+I highly recommend installing the following Javascript extensions (the theme is designed to work in conjunction with them):
+* [Roam42](http://roam42.com/)
+* [Shodty's Right side bar button JS](https://gist.github.com/shodty/e4f718108b401a830b272da62ba6cfc3)
+* [Dharam's Back/Forward JS](https://gist.github.com/dkapila/2155820441d19708948767d4bf85a444)
+
+Here are some [optional CSS](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/optional.css) additions and tweaks you can play with.
+
 ### How to setup your roam/css page:
 
 [Applying custom themes in Roam Research](https://www.youtube.com/watch?v=UY-sAC2eGyI)
