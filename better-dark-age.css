@@ -551,6 +551,10 @@ strong[tabindex="-1"] {
   padding      : 0;
 }
 
+.rm-ref-page-view {
+  margin-right: 20px !important;
+}
+
 /* Alias */
 span[style*="background-color: rgb(235, 241, 245);"] {
   background: var(--sidebar-background) !important;
