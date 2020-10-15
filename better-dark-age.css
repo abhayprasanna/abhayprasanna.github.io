@@ -37,7 +37,12 @@ body {
 
 .rm-caret {
   position: relative !important;
-  top     : -0.5px !important;
+  top     : -1.5px !important;
+}
+
+.controls {
+  position: relative !important;
+  top     : 1px !important;
 }
 
 .bp3-icon-standard:hover {
@@ -57,7 +62,6 @@ body {
 .rm-block-input {
   color           : var(--body-text) !important;
   background-color: var(--sidebar-background);
-  box-shadow      : 0 0 2px 1px var(--references);
   padding-left    : 6px;
   border-radius   : 5px;
 }
@@ -139,7 +143,7 @@ div[style*="position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.
 .rm-inline-references:before {
   color      : var(--block-reference-text);
   content    : "Block References";
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
 
 .rm-block-ref.dont-focus-block {
@@ -488,7 +492,7 @@ strong[tabindex="-1"] {
   content     : "Block Embed";
   color       : var(--block-reference-text);
   padding-left: 20px !important;
-  font-weight : 600 !important;
+  font-weight : 500 !important;
 }
 
 .rm-embed-inner-block-hide .flex-v-box.roam-block-container.block-bullet-view {
@@ -537,7 +541,7 @@ strong[tabindex="-1"] {
 .rm-query-title {
   background    : var(--sidebar-background) !important;
   color         : var(--block-reference-text) !important;
-  font-weight   : 600;
+  font-weight   : 500;
   border-bottom : 1px solid var(--references) !important;
   border-radius : 5px;
   padding-top   : 4px !important;
@@ -625,21 +629,16 @@ g circle {
 
 /* Calculation */
 
-span[style*="color: rgb(14, 90, 138);"] {
-  font-family     : var(--secondary-font);
-  color           : var(--page-links) !important;
-  font-weight     : 600;
-  background-color: grey !important;
-  border-radius   : 5px;
+.dont-focus-block.rm-calc-val {
+  background   : var(--kanban-column-background);
+  padding      : 1px 6px 4px;
+  color        : var(--body-text);
+  border-radius: 5px;
 }
 
-.bp3-popover-arrow-fill {
-  fill: transparent !important;
-}
-
-.bp3-popover[style*="transform-origin: left 15px;"] .bp3-popover-content {
-  color  : var(--page-links) !important;
-  padding: 0 10px;
+.dont-focus-block.rm-calc-val:before {
+  content: "Calc: ";
+  color  : var(--bold-color);
 }
 
 /* Calendar */
@@ -1277,8 +1276,9 @@ span[style*="margin-top: 4px;"] {
 }
 
 .check-container {
-  padding-bottom: 1px;
-  padding-right : 2px;
+  position     : relative !important;
+  top          : -5.5px !important;
+  padding-right: 2px;
 }
 
 /* Scrollbar improvements
@@ -1325,6 +1325,10 @@ div::-webkit-scrollbar-thumb:hover {
 
 .rm-ref-page-view {
   padding-bottom: 10px !important;
+}
+
+.flex-h-box.rm-title-arrow-wrapper {
+  padding-bottom: 3px !important;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -1547,3 +1551,9 @@ body > div:nth-child(10) > div > div > div > button > span > svg > path {
   border-color: var(--background) !important;
   background  : transparent !important;
 }
+
+span[style*="background-color: rgb(14, 90, 138);"] {
+  background-color: unset !important;
+  border-radius   : 5px;
+}
+/*---------------------------------------------------------------------------*/
