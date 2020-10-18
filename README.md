@@ -23,6 +23,8 @@ I highly recommend installing the following Javascript extensions (the theme is 
 * [Dharam's Back/Forward JS](https://gist.github.com/dkapila/2155820441d19708948767d4bf85a444)
 
 Here are some [optional CSS](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/optional.css) additions and tweaks you can play with.
+If youd' like to include *rainbow indents* please add [this CSS snippet](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/rainbow-indent.css).
+![](rainbow-indent.png =200x)
 
 ### How to setup your roam/css page:
 
