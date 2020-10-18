@@ -5,7 +5,7 @@ Feel free to adjust the colors - this one loops every
 cycle earlier or choose more unique colors.
 To add deeper indents:
 1. Add { > div.flex-v-box > div } incrementally to the first line, and
-2. Add {> div.flex-v-box > div:nth-child(n) } incrementally to the second line
+2. Add { > div.flex-v-box > div:nth-child(n) } incrementally to the second line
 */
 #rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
 .flex-v-box > div:nth-child(n) > div.flex-v-box > div {
