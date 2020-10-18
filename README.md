@@ -24,7 +24,8 @@ I highly recommend installing the following Javascript extensions (the theme is 
 
 Here are some [optional CSS](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/optional.css) additions and tweaks you can play with.
 If youd' like to include *rainbow indents* please add [this CSS snippet](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/rainbow-indent.css).
-![](rainbow-indent.png =200x)
+
+![](rainbow-indent.png)
 
 ### How to setup your roam/css page:
 
