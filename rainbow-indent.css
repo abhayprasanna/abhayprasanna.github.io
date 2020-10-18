@@ -3,6 +3,8 @@
 Feel free to adjust the colors - this one loops every
 7 colors like the rainbow but you can change that to 
 cycle earlier or choose more unique colors.
+I also recommend adding opacity suffixes to the HEX or RGB codes;
+e.g., #9580FFB2 is a subtler violet.
 To add deeper indents:
 1. Add { > div.flex-v-box > div } incrementally to the first line, and
 2. Add { > div.flex-v-box > div:nth-child(n) } incrementally to the second line
