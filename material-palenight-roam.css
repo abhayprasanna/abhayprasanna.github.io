@@ -1,0 +1,61 @@
+@import url('https://abhayprasanna.github.io/better-dark-age.css');
+
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css?family=Nunito|Fira+Code|Bitter');
+
+:root {
+  /* FONTS */
+  --global-font             : 'Nunito', sans-serif;
+  --secondary-font          : 'Fira Code', monospace;
+  --header-font             : 'Bitter', serif;
+  /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
+  --reduce-padding-right    : 3400px;
+  --reduce-padding-left     : 3400px;
+  /* COLORS (HT: Jack Laing for [[Dracula Pro]] color theme) */
+  --page-links              : #80cbc4;
+  --attributes-color        : #f07178;
+  --external-links          : #c3e88d;
+  --links-hover             : #c792ea;
+  --hashtags                : #89ddff;
+  --body-text               : #e8e6e3;
+  --italics-color           : #f78c6c;
+  --bold-color              : #ffcb6b;
+  --highlight-text-color    : #e8e6e3;
+  --highlighter             : #444267;
+  --background              : #292D3E;
+  --sidebar-background      : #3B415C;
+  --sidebar-text            : #e8e6e3;
+  --page-heading            : #80cbc4;
+  --daily-heading           : #80cbc4;
+  --headings                : #e8e6e3;
+  --bullets                 : #80cbc4;
+  --closed-bullets          : #444267;
+  --references              : #80cbc4;
+  --block-reference-text    : #ffcb6b;
+  --namespaces              : #f78c6c;
+  --all-pages-mentions      : #ffcb6b;
+  --cursor                  : #e8e6e3;
+  --icons                   : #80cbc4;
+  --icons-hover             : #c792ea;
+  --filter-icon             : #c3e88d;
+  /* FONT SIZES */
+  --main-font-size          : 1em;
+  --page-head-font-size     : 2.2em;
+  --h1-font-size            : 2em;
+  --h2-font-size            : 1.6em;
+  --h3-font-size            : 1.2em;
+  --sidebar-h1-size         : 2.2em;
+  /* DROPDOWN MENU */
+  --dropdown-menu-background: #3B415C;
+  --dropdown-menu-highlight : #292D3E;
+  --dropdown-menu-text      : #e8e6e3;
+  --dropdown-newpage        : #80cbc4;
+  /* SEARCH BAR */
+  --search-bar-background   : #202331;
+  --search-bar-text         : #e8e6e3;
+  /* KANBAN CARD COLORS */
+  --kanban-main-background  : #292D3E;
+  --kanban-column-background: #3B415C;
+  --kanban-card-background  : #292D3E;
+  --kanban-text-hover       : #c792ea;
+}
