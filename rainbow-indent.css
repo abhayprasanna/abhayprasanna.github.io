@@ -1,0 +1,75 @@
+/* Rainbow indentation */
+/* 
+Feel free to adjust the colors - this one loops every
+7 colors like the rainbow but you can change that to 
+cycle earlier or choose more unique colors.
+To add deeper indents:
+1. Add { > div.flex-v-box > div } incrementally to the first line, and
+2. Add {> div.flex-v-box > div:nth-child(n) } incrementally to the second line
+*/
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div {
+    border-left-color: #F2F2F2AD!important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div,
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #9580FFAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #92FFFFAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #8AFF80AD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #FFFF80AD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #FF9580AD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #FE7FBFAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #DA53EEAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #6600EDAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #0079FFAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #00F11DAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #FFEF00AD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #FF7F00AD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #FF0900AD !important;
+}
+
+/* 
+Optional border adjustments:
+1. You can add a border-radius: 5px or more to get an interesting delineation
+2. You can adjust the width of the border but make sure to adjust margin to align the border with the bullets  
+*/
+.block-border-left {
+    border-left-width: 2px !important;
+    margin-left: 5px !important;
+}
