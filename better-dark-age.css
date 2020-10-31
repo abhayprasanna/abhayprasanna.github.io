@@ -1461,14 +1461,6 @@ canvas[data-id="layer2-node"] {
 .pinned + .bp3-icon-cross {
   display: none;
 }
-/* Kill Right sidebar top gap and button */
-#right-sidebar div[style*="padding: 8px;"] {
-  padding: 0 !important;
-}
-
-#right-sidebar > div.flex-h-box > button {
-  display: none;
-}
 
 /*---------------------------------------------------------------------------*/
 /* DB DROPDOWN SELECTOR */
