@@ -514,7 +514,8 @@ strong[tabindex="-1"] {
 }
 
 /* Highlights */
-.roam-highlight {
+.roam-highlight,
+.roam-highlight:hover {
   color           : var(--highlight-text-color);
   background-color: var(--highlighter);
 }
@@ -841,6 +842,15 @@ div[style*="background: rgb(255, 243, 205);"] {
   margin-top      : 5px !important;
   padding         : 5px !important;
   border-radius   : 10px !important;
+}
+
+.bp3-menu-item {
+  color: var(--body-text) !important;
+}
+
+.bp3-menu-item.bp3-active,
+.bp3-menu-item:hover {
+  background-color: var(--background) !important;
 }
 
 /*---------------------------------------------------------------------------*/
