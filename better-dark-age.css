@@ -161,18 +161,7 @@ div[style*="position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.
 
 /* BETTERROAM-LIKE STYLE
 Original BetterRoam theme by @linuz90
-Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
-
-.roam-center {
-  border       : 1px solid var(--sidebar-background) !important;
-  border-radius: 12px !important;
-  overflow     : visible !important;
-  background   : var(--background) !important;
-  margin-right : 6px !important;
-  margin-left  : 6px !important;
-  padding-left : 0 !important;
-  max-height   : 98% !important;
-}
+Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 
 .roam-article {
   padding-left : 20px !important;
@@ -197,6 +186,8 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 */
 .roam-topbar {
   border-bottom: 0;
   padding-right: 3px !important;
+  width        : 100vw;
+  z-index      : 5;
 }
 
 .roam-topbar > div > div:nth-child(n) {
@@ -219,6 +210,11 @@ div[style*="border-bottom: 1px solid rgb(138, 155, 168);"] {
 
 div[style*="border-bottom-color: rgb(138, 155, 168);"] {
   border-bottom-color: var(--references) !important;
+}
+
+/* Ensure right sidebar properly resizable via Murf */
+#right-sidebar .rm-resize-handle {
+  z-index: 1;
 }
 
 /* Hide sidebar button visibility */
@@ -825,6 +821,12 @@ div[style*="background: rgb(255, 243, 205);"] {
   color: var(--search-bar-text) !important;
 }
 
+/* Wider search bar */
+
+.rm-find-or-create-wrapper {
+  flex: 0 1 50% !important;
+}
+
 /* Dropdown page menu hover highlight */
 .rm-menu-item:hover {
   background: var(--dropdown-menu-highlight) !important;
@@ -1050,8 +1052,7 @@ button[style*="padding: 4px 8px;"] {
 
 .rm-block-text,
 .roam-article,
-.roam-block-container,
-.roam-center {
+.roam-block-container {
   max-width: 100% !important;
 }
 
@@ -1080,13 +1081,6 @@ div[style*="padding-right: calc(0.5 * (100% - 568px)); padding-left: calc(0.5 * 
 div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * (100% - 800px));"] {
   padding-right: calc(0.5 * (100% - var(--reduce-padding-right))) !important;
   padding-left : calc(0.5 * (100% - var(--reduce-padding-left))) !important;
-}
-
-/* David's flex width fix */
-.roam-center {
-  flex-basis: auto !important;
-  resize    : horizontal !important;
-  overflow  : auto !important;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -1437,29 +1431,18 @@ canvas[data-id="layer2-node"] {
   opacity: 1;
 }
 /*---------------------------------------------------------------------------*/
-/* BETTER SIDEBAR */
+/* BETTER SIDEBAR - UPDATE */
 
 .sidebar-content {
   background-color: var(--background) !important;
-  border-radius   : 12px !important;
   margin-left     : 4px !important;
   margin-right    : 6px !important;
   padding         : 5px !important;
 }
 
-#roam-right-sidebar-content {
-  max-height: 98% !important;
-}
-
 #roam-right-sidebar-content > div > div:nth-child(n) > div {
   padding-top   : 11px !important;
   padding-bottom: 11px !important;
-}
-
-/* Hide close button if sidebar page is pinned */
-
-.pinned + .bp3-icon-cross {
-  display: none;
 }
 
 /*---------------------------------------------------------------------------*/
