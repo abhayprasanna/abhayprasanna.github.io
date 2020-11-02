@@ -9,7 +9,7 @@ To add deeper indents:
 */
 #rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
 .flex-v-box > div:nth-child(n) > div.flex-v-box > div {
-    border-left-color: #F2F2F2AD!important;
+    border-left-color: #D0CECEAD !important;
 }
 #rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div,
 .flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div {
