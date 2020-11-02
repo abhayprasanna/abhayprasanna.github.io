@@ -822,6 +822,12 @@ div[style*="background: rgb(255, 243, 205);"] {
   box-shadow: 0 0 4px 1px var(--references) !important;
 }
 
+/* Search box "Recent" color */
+div[style*="padding: 6px; color: rgb(206, 217, 224);"] {
+  padding: 6px;
+  color  : var(--page-links) !important;
+}
+
 /* Search box input text color */
 .bp3-input-group input {
   color: var(--search-bar-text) !important;
