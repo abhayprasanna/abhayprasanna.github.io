@@ -385,12 +385,17 @@ HT: Can Sar */
 
 /* Internal Roam Links [[Roam]] & #Roam & #[[Roam]] */
 .bp3-text-overflow-ellipsis a,
-.rm-page-ref,
-.rm-page-ref-link-color,
 .rm-pages-title-text strong,
 .rm-ref-page-view-title a {
   color      : var(--page-links) !important;
   font-weight: 700;
+  transition : color 0.3s ease;
+}
+
+.rm-page-ref,
+.rm-page-ref-link-color {
+  color      : var(--page-links) !important;
+  font-weight: 500;
   transition : color 0.3s ease;
 }
 
@@ -1305,7 +1310,7 @@ div::-webkit-scrollbar-track {
 }
 
 div::-webkit-scrollbar-thumb {
-  background-color: var(--sidebar-background)!important;
+  background-color: var(--closed-bullets)!important;
 }
 
 div::-webkit-scrollbar {
@@ -1423,6 +1428,7 @@ div::-webkit-scrollbar-thumb:hover {
 #buffer a {
   text-decoration: underline;
   color          : var(--external-links) !important;
+  font-weight    : 500;
 }
 
 #buffer a:hover {
