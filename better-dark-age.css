@@ -1405,7 +1405,7 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 #buffer span {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: var(--body-text) !important;
 }
 
 #buffer a {
