@@ -1293,7 +1293,7 @@ div::-webkit-scrollbar-track {
 }
 
 div::-webkit-scrollbar-thumb {
-  background-color: var(--icons)!important;
+  background-color: var(--sidebar-background)!important;
 }
 
 div::-webkit-scrollbar {
