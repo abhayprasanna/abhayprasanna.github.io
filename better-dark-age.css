@@ -910,7 +910,7 @@ div[style*="background: rgb(255, 243, 205);"] {
 .rm-pages-col,
 .rm-pages-sort-header {
   font-size: 0.85em !important;
-  color    : var(--links-hover);
+  color    : var(--body-text);
 }
 
 /* Mentions Pill */
