@@ -6,11 +6,12 @@ Welcome to the Dracula Pro-inspired color theme for Roam Research, which include
 
 Love this theme? Say thanks to [@shodty](https://twitter.com/shodty) via [Paypal](https://paypal.me/RobertLandsburg)
 
-Other acknowledgements: Jack Laing, @linuz90, @Azlen, Hasan Yalcinkaya, Palash Karia, and many others!
+Other acknowledgements: Jack Laing, @linuz90, @Azlen, Shawn Murphy, Hasan Yalcinkaya, Palash Karia, and many others!
 
 # Instructions for Installation
 
 Copy [this code](http://abhayprasanna.github.io/dark-age-dracula.css) and paste it into a css code block in your [[roam/css]].
+This now follows the light/dark theme of your OS.
 Feel free to customize the fonts, colors, etc. and add any other code you like below this as needed.
 
 This works by linking to an outside .css file, actually located [here](https://abhayprasanna.github.io/better-dark-age.css) to handle all the styling, as it keeps the roam/css page much cleaner/faster.
@@ -23,7 +24,7 @@ I highly recommend installing the following Javascript extensions (the theme is 
 * [Dharam's Back/Forward JS](https://gist.github.com/dkapila/2155820441d19708948767d4bf85a444)
 
 Here are some [optional CSS](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/optional.css) additions and tweaks you can play with.
-If youd' like to include *rainbow indents* please add [this CSS snippet](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/rainbow-indent.css).
+If you'd like to include *rainbow indents* please add [this CSS snippet](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/rainbow-indent.css).
 
 ![](rainbow-indent.png)
 
