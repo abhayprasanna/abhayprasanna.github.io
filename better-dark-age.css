@@ -10,7 +10,12 @@ body {
 }
 
 .roam-body-main {
-  margin-top: 45px;
+  margin-top   : 45px;
+  border       : 1px solid var(--sidebar-background) !important;
+  border-radius: 12px !important;
+  background   : var(--background) !important;
+  margin-right : 6px !important;
+  margin-left  : 6px !important;
 }
 
 .roam-block > span > div {
@@ -170,7 +175,7 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 .roam-article {
   padding-left : 20px !important;
   padding-top  : 0 !important;
-  padding-right: 30px !important;
+  padding-right: 20px !important;
 }
 
 .roam-app,
@@ -189,7 +194,7 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 
 .roam-topbar {
   border-bottom: 0;
-  padding-right: 3px !important;
+  padding-right: 35px !important;
   width        : 100vw;
   z-index      : 5;
   position     : fixed !important;
@@ -218,9 +223,19 @@ div[style*="border-bottom-color: rgb(138, 155, 168);"] {
   border-bottom-color: var(--references) !important;
 }
 
-/* Ensure right sidebar properly resizable via Murf */
+/* Ensure right sidebar properly styled via Murf */
+
 #right-sidebar .rm-resize-handle {
   z-index: 1;
+}
+
+#right-sidebar {
+  height: 99%;
+}
+
+#right-sidebar > div.flex-h-box > button {
+  z-index    : 5;
+  padding-top: 5px !important;
 }
 
 /* Hide sidebar button visibility */
@@ -1464,6 +1479,22 @@ canvas[data-id="layer2-node"] {
 #roam-right-sidebar-content > div > div:nth-child(n) > div {
   padding-top   : 11px !important;
   padding-bottom: 11px !important;
+}
+
+#roam-right-sidebar-content {
+  margin-top   : 9px;
+  border       : 1px solid var(--sidebar-background) !important;
+  border-radius: 12px !important;
+  background   : var(--background) !important;
+  margin-right : 6px !important;
+}
+
+#right-sidebar .rm-title-textarea {
+  width: 95%;
+}
+
+.roam-main {
+  height: 99%;
 }
 
 /* fix references layout in right sidebar */
