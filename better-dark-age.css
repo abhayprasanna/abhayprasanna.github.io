@@ -9,6 +9,10 @@ body {
   background-color: var(--background) !important;
 }
 
+.roam-body-main {
+  margin-top: 45px;
+}
+
 .roam-block > span > div {
   background-color: inherit !important;
 }
@@ -188,6 +192,8 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
   padding-right: 3px !important;
   width        : 100vw;
   z-index      : 5;
+  position     : fixed !important;
+  right        : 0 !important;
 }
 
 .roam-topbar > div > div:nth-child(n) {
