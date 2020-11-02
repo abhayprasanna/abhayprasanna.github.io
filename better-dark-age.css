@@ -1438,11 +1438,19 @@ canvas[data-id="layer2-node"] {
   margin-left     : 4px !important;
   margin-right    : 6px !important;
   padding         : 5px !important;
+  min-width       : 100%;
+  min-height      : 100%;
 }
 
 #roam-right-sidebar-content > div > div:nth-child(n) > div {
   padding-top   : 11px !important;
   padding-bottom: 11px !important;
+}
+
+/* fix references layout in right sidebar */
+.sidebar-content .rm-reference-container {
+  border : 0;
+  padding: 0;
 }
 
 /*---------------------------------------------------------------------------*/
