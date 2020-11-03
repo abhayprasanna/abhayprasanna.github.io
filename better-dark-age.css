@@ -268,7 +268,6 @@ div[style*="border-bottom-color: rgb(138, 155, 168);"] {
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover {
   background-color: unset;
   color           : var(--icons-hover) !important;
-  font-weight     : bold;
 }
 
 /* Mobile bar (HT: Azlen) */
@@ -343,9 +342,8 @@ h1 {
 .log-button,
 .page,
 .starred-pages-wrapper {
-  color      : var(--sidebar-text) !important;
-  font-weight: 600;
-  transition : color 0.3s ease;
+  color     : var(--sidebar-text) !important;
+  transition: color 0.3s ease;
 }
 
 /* Left sidebar text hover color */
