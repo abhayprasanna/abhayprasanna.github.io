@@ -281,6 +281,16 @@ div[style*="border-bottom-color: rgb(138, 155, 168);"] {
 #rm-mobile-bar .bp3-button::before {
   color: var(--icons) !important;
 }
+/* align mobile bar buttons */
+.bp3-button.bp3-minimal.rm-mobile-button.dont-unfocus-block[style*="padding: 6px 4px 4px;"],
+.bp3-button.bp3-minimal.rm-mobile-button.dont-unfocus-block[style*="padding: 6.1px 4px 4px;"] {
+  margin   : 6px 4px;
+  transform: scale(1.2);
+}
+
+#mobile-more-icon-button > i {
+  margin: 14px 4px !important;
+}
 
 /*---------------------------------------------------------------------------*/
 /* FONTS. TEXT STYLING, AND COLORS */
