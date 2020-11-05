@@ -276,6 +276,7 @@ div[style*="border-bottom-color: rgb(138, 155, 168);"] {
 #rm-mobile-bar {
   background-color: var(--sidebar-background) !important;
   position        : fixed !important;
+  z-index         : 1 !important;
 }
 
 #rm-mobile-bar .bp3-button i::before,
