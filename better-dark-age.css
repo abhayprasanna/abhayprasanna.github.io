@@ -549,6 +549,17 @@ strong[tabindex="-1"] {
   background: var(--dropdown-menu-background) !important;
 }
 
+/* highlight adjustments */
+.roam-highlight .rm-page-ref-brackets,
+.roam-highlight .rm-page-ref-link-color,
+.roam-highlight .rm-page-ref-tag,
+.roam-highlight em,
+.roam-highlight strong {
+  background-color: var(--background) !important;
+  border-radius   : 2px;
+  opacity         : 0.9;
+}
+
 /* Word Count */
 .bp3-button:not([class*="bp3-intent-"]) {
   color      : var(--body-text) !important;
@@ -825,6 +836,11 @@ div[style*="background: rgb(255, 243, 205);"] {
   color: var(--references);
 }
 
+/* Unlinked References */
+strong[style*='color: rgb(206, 217, 224);'] {
+  color: var(--body-text) !important;
+}
+
 /*---------------------------------------------------------------------------*/
 /* SEARCH BOX */
 
@@ -870,6 +886,10 @@ div[style*="padding: 6px; color: rgb(206, 217, 224);"] {
 /* New page text color */
 .rm-new-page {
   color: var(--dropdown-newpage) !important;
+}
+
+.rm-search-list-item {
+  color: var(--dropdown-menu-text) !important;
 }
 
 /* Ctrl-Shift-9 menu */
@@ -1027,7 +1047,7 @@ div[style*="padding: 6px; color: rgb(206, 217, 224);"] {
 }
 
 .bp3-text-overflow-ellipsis {
-  color: var(--dropdown-menu-text) !important;
+  color: var(--page-links) !important;
 }
 
 button[style*="padding: 4px 8px;"] {
@@ -1318,6 +1338,12 @@ span[style*="margin-top: 4px;"] {
   position     : relative !important;
   top          : -5.5px !important;
   padding-right: 2px;
+}
+
+.checkmark {
+  transform   : scale(1.1);
+  border-width: 1.5px !important;
+  border-color: var(--references) !important;
 }
 
 /* Scrollbar improvements
