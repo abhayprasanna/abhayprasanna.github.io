@@ -891,12 +891,6 @@ div[style*="padding: 6px; color: rgb(206, 217, 224);"] {
   color: var(--search-bar-text) !important;
 }
 
-/* Wider search bar */
-
-.rm-find-or-create-wrapper {
-  flex: 0 1 50% !important;
-}
-
 /* Dropdown page menu hover highlight */
 .rm-menu-item:hover {
   background: var(--dropdown-menu-highlight) !important;
