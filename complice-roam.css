@@ -1,0 +1,120 @@
+@import url('https://abhayprasanna.github.io/better-dark-age.css');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Fira+Code|Open+Sans');
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* FONTS */
+    --global-font             : 'Open Sans', sans-serif;
+    --secondary-font          : 'Fira Code', monospace;
+    --header-font             : 'Montserrat', serif;
+    /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
+    --reduce-padding-right    : 3400px;
+    --reduce-padding-left     : 3400px;
+    /* COLORS - One light*/
+    --page-links              : #2A2352;
+    --attributes-color        : #003D5B;
+    --external-links          : #5500FF;
+    --links-hover             : #8F26D9;
+    --hashtags                : #3498DB;
+    --body-text               : #333333;
+    --italics-color           : #8F26D9;
+    --bold-color              : #0088CC;
+    --highlight-text-color    : #333333;
+    --highlighter             : #FFFF80;
+    --background              : #FFFFFF;
+    --sidebar-background      : #F8E8F8;
+    --sidebar-text            : #333333;
+    --page-heading            : #2A2352;
+    --daily-heading           : #2A2352;
+    --headings                : #333333;
+    --bullets                 : #3E366C;
+    --closed-bullets          : #3E366C77;
+    --references              : #3E366C;
+    --block-reference-text    : #3E366C;
+    --namespaces              : #8F26D9;
+    --all-pages-mentions      : #0088CC;
+    --cursor                  : #333333;
+    --icons                   : #3E366C;
+    --icons-hover             : #8F26D9;
+    --filter-icon             : #5500FF;
+    /* FONT SIZES */
+    --main-font-size          : 1em;
+    --page-head-font-size     : 2.2em;
+    --h1-font-size            : 2em;
+    --h2-font-size            : 1.6em;
+    --h3-font-size            : 1.2em;
+    --sidebar-h1-size         : 2.2em;
+    /* DROPDOWN MENU */
+    --dropdown-menu-background: #F8E8F8;
+    --dropdown-menu-highlight : #FFFFFF;
+    --dropdown-menu-text      : #333333;
+    --dropdown-newpage        : #2A2352;
+    /* SEARCH BAR */
+    --search-bar-background   : #FFFFFF;
+    --search-bar-text         : #333333;
+    /* KANBAN CARD COLORS */
+    --kanban-main-background  : #FAFAFA;
+    --kanban-column-background: #F8E8F8;
+    --kanban-card-background  : #FFFFFF;
+    --kanban-text-hover       : #F8E8F8;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* FONTS */
+    --global-font             : 'Open Sans', sans-serif;
+    --secondary-font          : 'Fira Code', monospace;
+    --header-font             : 'Montserrat', serif;
+    /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
+    --reduce-padding-right    : 3400px;
+    --reduce-padding-left     : 3400px;
+    /* COLORS - One light*/
+    --page-links              : #988C9C;
+    --attributes-color        : #887C8C;
+    --external-links          : #5F5792;
+    --links-hover             : #8F26D9;
+    --hashtags                : #3498DB;
+    --body-text               : #949494;
+    --italics-color           : #8F26D9;
+    --bold-color              : #988C9C;
+    --highlight-text-color    : #333333;
+    --highlighter             : #FFFF80;
+    --background              : #000000;
+    --sidebar-background      : #110817;
+    --sidebar-text            : #949494;
+    --page-heading            : #988C9C;
+    --daily-heading           : #988C9C;
+    --headings                : #949494;
+    --bullets                 : #887C8C;
+    --closed-bullets          : #887C8C77;
+    --references              : #887C8C;
+    --block-reference-text    : #887C8C;
+    --namespaces              : #8F26D9;
+    --all-pages-mentions      : #988C9C;
+    --cursor                  : #949494;
+    --icons                   : #887C8C;
+    --icons-hover             : #8F26D9;
+    --filter-icon             : #5F5792;
+    /* FONT SIZES */
+    --main-font-size          : 1em;
+    --page-head-font-size     : 2.2em;
+    --h1-font-size            : 2em;
+    --h2-font-size            : 1.6em;
+    --h3-font-size            : 1.2em;
+    --sidebar-h1-size         : 2.2em;
+    /* DROPDOWN MENU */
+    --dropdown-menu-background: #110817;
+    --dropdown-menu-highlight : #000000;
+    --dropdown-menu-text      : #949494;
+    --dropdown-newpage        : #988C9C;
+    /* SEARCH BAR */
+    --search-bar-background   : #110817;
+    --search-bar-text         : #949494;
+    /* KANBAN CARD COLORS */
+    --kanban-main-background  : #FAFAFA;
+    --kanban-column-background: #110817;
+    --kanban-card-background  : #000000;
+    --kanban-text-hover       : #110817;
+  }
+}
