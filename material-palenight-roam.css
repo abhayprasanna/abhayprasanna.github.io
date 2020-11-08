@@ -1,6 +1,6 @@
 @import url('https://abhayprasanna.github.io/better-dark-age.css');
 
-@import url('https://fonts.googleapis.com/css?family=Commissioner|Crimson+Text|Fira+Code|Bitter|Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Fira+Code|Bitter|Work+Sans');
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -64,7 +64,7 @@
 @media (prefers-color-scheme: dark) {
 :root {
   /* FONTS */
-  --global-font             : 'Nunito', sans-serif;
+  --global-font             : 'Work Sans', sans-serif;
   --secondary-font          : 'Fira Code', monospace;
   --header-font             : 'Bitter', serif;
   /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
