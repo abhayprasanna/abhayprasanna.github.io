@@ -1620,6 +1620,15 @@ body > div:nth-child(10) > div > div > div > button > span > svg > path {
 ::selection {
   background-color: #BEB9C8 !important;
 }
+
+/* {{or}} dropdown */
+
+select {
+  background-color: var(--sidebar-background) !important;
+  color           : var(--body-text);
+  border-radius   : 3px;
+}
+
 /*---------------------------------------------------------------------------*/
 /* ATTRIBUTE TABLE */
 
