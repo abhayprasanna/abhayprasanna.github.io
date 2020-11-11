@@ -1623,10 +1623,13 @@ body > div:nth-child(10) > div > div > div > button > span > svg > path {
 
 /* {{or}} dropdown */
 
-select {
+div:not(.bp3-datepicker-month-select):not(.bp3-datepicker-year-select) > select {
   background-color: var(--sidebar-background) !important;
-  color           : var(--body-text);
-  border-radius   : 3px;
+  color           : var(--italics-color);
+  font-style      : italic;
+  border          : 1px dashed var(--references) !important;
+  border-radius   : 4px;
+  padding-right   : 2px;
 }
 
 /*---------------------------------------------------------------------------*/
