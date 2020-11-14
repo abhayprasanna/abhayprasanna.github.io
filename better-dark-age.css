@@ -1658,3 +1658,13 @@ span[style*="background-color: rgb(14, 90, 138);"] {
   border-radius   : 5px;
 }
 /*---------------------------------------------------------------------------*/
+/* Emoji reactions panel */
+
+.rm-emoji-tooltip {
+  color: var(--page-links);
+}
+
+span[style*="color: rgb(167, 182, 194);"] {
+  color: var(--body-text) !important;
+}
+/*---------------------------------------------------------------------------*/
