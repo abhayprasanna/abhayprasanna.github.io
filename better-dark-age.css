@@ -64,7 +64,7 @@ body {
 }
 
 .version-bullet {
-  background-color: var(--bullets) !important;
+  background-color: var(--sidebar-background) !important;
   color           : var(--body-text) !important;
 }
 
@@ -889,6 +889,12 @@ div[style*="padding: 6px; color: rgb(206, 217, 224);"] {
 /* Search box input text color */
 .bp3-input-group input {
   color: var(--search-bar-text) !important;
+}
+
+.rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item span[style*="yellow"],
+.rm-pages-title-col span[style*="yellow"] {
+  background-color: var(--highlighter) !important;
+  color           : var(--highlight-text-color);
 }
 
 /* Dropdown page menu hover highlight */

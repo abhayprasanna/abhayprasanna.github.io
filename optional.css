@@ -1,18 +1,5 @@
 /* OPTIONAL CUSTOMIZATIONS */
 
-/* Separators in the sidebar (change position or add more as needed) */
-.starred-pages a:nth-child(2):after {
-  content    : '___________________________';
-  color      : var(--icons);
-  font-weight: bold;
-}
-
-/* [[Dracula Pro]] easter egg */
-.bp3-icon-large.bp3-icon-help:before {
-  content  : '🧛🏿‍♀️';
-  font-size: 30px;
-}
-
 /* Dharam's back/forward JS customization */
 #roam-navigation-controls_back:hover,
 #roam-navigation-controls_forward:hover {
@@ -24,26 +11,38 @@
 .left-sidebar-open {
   position: absolute;
   top     : 3px!important;
-  left    : 8px!important;
+  left    : 220px!important;
+}
+@media only screen and (max-width: 600px) {
+  .left-sidebar-open {
+    left: 2px !important;
+  }
 }
 
 .left-sidebar-closed {
   position: absolute;
   top     : 3px!important;
-  left    : 50px!important;
+  left    : 25px!important;
 }
+
 /* Reposition left sidebar menu button */
 .bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small,
 .bp3-button.bp3-minimal.bp3-icon-menu.pointer.bp3-small {
   position: relative !important;
-  left    : -2% !important;
+  left    : -40px !important;
+}
+
+/* Hide Roam logo */
+#roam-sidebar-logo {
+  display: none;
 }
 
 /* Roam42 Daily Notes day name */
-#roam-title-day-banner {
+.roam-title-day-banner {
   color      : var(--bold-color);
   font-size  : 15px !important;
   font-family: var(--header-font) !important;
+  padding-top: 5px !important;
 }
 
 /* Murf attr-table filter results */
@@ -51,12 +50,228 @@
   color: var(--italics-color) !important;
 }
 
-/* Hide Roam Logo */
-#roam-sidebar-logo {
+/* Hide graph button and calendar (daily notes) in top bar */
+.bp3-button.bp3-minimal.bp3-icon-calendar.bp3-small,
+.bp3-button.bp3-minimal.bp3-icon-graph.bp3-small {
+  display: none !important;
+}
+
+/* Resize Images and iFrames to max */
+
+.hoverparent .rm-resize-img[style^='width: 580px;'],
+.react-resizable[style^='width: 580px; height: 580px;'],
+.react-resizable[style^='width: 720px; height: 720px;'],
+.hoverparent[style^="position: relative; width: 580px;"],
+.hoverparent[style^="position: relative; width: 720px;"] {
+  width : 100% !important;
+  height: 80vh !important;
+}
+
+/* Fix top bar */
+.roam-topbar {
+  padding-right: 0 !important;
+  z-index      : 100 !important;
+}
+
+/* Twitter preview only on hover */
+
+.twitter-tweet iframe {
+  margin-top: -8px;
+  display   : none !important;
+}
+
+.twitter-tweet iframe:hover {
+  display: flex !important;
+}
+
+sub + button:hover + div > div.twitter-tweet > iframe {
+  display: flex !important;
+}
+
+/* Rainbow indentation */
+/*
+Feel free to adjust the colors - this one loops every
+7 colors like the rainbow but you can change that to
+cycle earlier or choose more unique colors.
+To add deeper indents:
+1. Add { > div.flex-v-box > div } incrementally to the first line, and
+2. Add {> div.flex-v-box > div:nth-child(n) } incrementally to the second line
+*/
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div {
+  border-left-color: #D0CECEAD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div,
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #9580FFAD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #92FFFFAD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #8AFF80AD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #FFFF80AD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #FF9580AD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #FE7FBFAD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #DA53EEAD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #6600EDAD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #0079FFAD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #00F11DAD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #FFEF00AD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #FF7F00AD !important;
+}
+
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+  border-left-color: #FF0900AD !important;
+}
+
+/*
+Optional border adjustments:
+1. You can add a border-radius: 5px or more to get an interesting delineation
+2. You can adjust the width of the border but make sure to adjust margin to align the border with the bullets
+*/
+.block-border-left {
+  border-left-width: 2px !important;
+  margin-left      : 5px !important;
+}
+
+/* Hide mobile bar on iPad */
+@media (min-device-width : 1024px) {
+  #rm-mobile-bar {
+    opacity: 0 !important;
+  }
+}
+
+/* Justify as block quote */
+.text-align-justify {
+  background-color : var(--sidebar-background);
+  padding-left     : 2%;
+  padding-right    : 2%;
+  color            : var(--italics-color) !important;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: var(--references);
+  font-family      : var(--header-font) !important;
+}
+.text
+
+/*
+  Kanban > Eisenhower 2x2 (v1.3)
+
+  Usage: `#2x2 {{kanban}}`
+*/
+
+[data-tag="2x2"] ~ .rm-full-width .kanban-board {
+  padding: 0 !important;
+  /* remove whitespace around quadrant */
+}
+
+[data-tag="2x2"] ~ .rm-full-width .kanban-board .kanban-column-container {
+  overflow-x: unset !important;
+  flex-wrap : wrap !important;
+  padding   : 12px 0;
+}
+
+[data-tag="2x2"] ~ .rm-full-width .kanban-board .kanban-column-container .kanban-column {
+  flex: 0 48% !important;
+  /* Any percentage over this doesn't wrap correctly, may need tweaking if you're using other custom CSS, */
+}
+
+/* Hide any columns after the first 4 */
+[data-tag="2x2"] ~ .rm-full-width .kanban-board .kanban-column-container .kanban-column:nth-child(n + 5) {
   display: none;
 }
 
-/* Hide graph button in top bar */
-.bp3-button.bp3-minimal.bp3-icon-graph.bp3-small {
-  display: none !important;
+/*
+  Sidebar
+*/
+
+/* (Shrink and) make all quadrants viewable in breadcrumbs */
+.rm-sidebar-outline .rm-zoom-item [data-tag="2x2"] ~ .rm-full-width .kanban-board .kanban-column-container .kanban-column {
+  flex     : 0 23% !important;
+  font-size: 10px;
+}
+
+/*
+  Linked References
+*/
+
+.rm-reference-main .rm-reference-container .rm-reference-item .roam-block [data-tag="2x2"] ~ .rm-full-width {
+  margin-right: 0 !important;
+  /* keeps a full width kanban within the bounds of the linked ref container */
+}
+
+/*
+  Mobile
+*/
+
+@media (max-width: 576px) {
+  /* so the board stays within the viewport */
+  [data-tag="2x2"] ~ .rm-full-width .kanban-board .kanban-column-container {
+    max-width: 80vw;
+  }
+
+  /* Stack the columns on mobile */
+  [data-tag="2x2"] ~ .rm-full-width .kanban-board .kanban-column-container .kanban-column {
+    flex: 100% !important;
+  }
+}
+
+/* Resize iframes */
+:root {
+  --iframe-height: 60vh;
+}
+
+iframe {
+  width             : 100%;
+  max-width         : calc(var(--iframe-height)*16/9);
+  height            : var(--iframe-height);
+  border            : 0;
+  border-radius     : 5px;
+  -webkit-box-shadow: 0 0 13px 3px var(--sidebar-background);
+  -moz-box-shadow   : 0 0 13px 3px var(--sidebar-background);
+  box-shadow        : 0 0 13px 3px var(--sidebar-background);
 }
