@@ -1103,7 +1103,9 @@ button[style*="padding: 4px 8px;"] {
 .bp3-button.bp3-minimal:hover,
 .bp3-icon.bp3-icon-calendar.filter-icon:hover,
 .bp3-icon.filter-icon.bp3-icon-eye-open:hover,
-.bp3-icon.bp3-icon-sort:hover {
+.bp3-icon.bp3-icon-sort:hover,
+.bp3-button.bp3-minimal.bp3-icon-pin.bp3-small.pinned,
+.bp3-button.bp3-minimal.bp3-icon-pin.bp3-small.pinned:before {
   background: transparent !important;
   transition: background 0.1s ease, color 0.3s ease;
   color     : var(--icons-hover) !important;
