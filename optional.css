@@ -196,7 +196,6 @@ Optional border adjustments:
   border-left-color: var(--references);
   font-family      : var(--header-font) !important;
 }
-.text
 
 /*
   Kanban > Eisenhower 2x2 (v1.3)
