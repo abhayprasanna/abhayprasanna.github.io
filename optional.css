@@ -258,19 +258,3 @@ Optional border adjustments:
     flex: 100% !important;
   }
 }
-
-/* Resize iframes */
-:root {
-  --iframe-height: 60vh;
-}
-
-iframe {
-  width             : 100%;
-  max-width         : calc(var(--iframe-height)*16/9);
-  height            : var(--iframe-height);
-  border            : 0;
-  border-radius     : 5px;
-  -webkit-box-shadow: 0 0 13px 3px var(--sidebar-background);
-  -moz-box-shadow   : 0 0 13px 3px var(--sidebar-background);
-  box-shadow        : 0 0 13px 3px var(--sidebar-background);
-}
