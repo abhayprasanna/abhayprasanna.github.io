@@ -201,13 +201,13 @@ Optional border adjustments:
   content: "❝\A";
   white-space: pre;
   font-size: 100%;
-  color: var(--quote-border-color);
+  color: var(--references);
 }
 
 .text-align-justify::after{
   content: "\A❞";
   white-space: pre;
-  color: var(--quote-border-color);
+  color: var(--references);
   font-size: 100%;
 }
 
