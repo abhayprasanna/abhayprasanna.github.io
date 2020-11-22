@@ -197,6 +197,20 @@ Optional border adjustments:
   font-family      : var(--header-font) !important;
 }
 
+.text-align-justify::before{
+  content: "❝\A";
+  white-space: pre;
+  font-size: 100%;
+  color: var(--quote-border-color);
+}
+
+.text-align-justify::after{
+  content: "\A❞";
+  white-space: pre;
+  color: var(--quote-border-color);
+  font-size: 100%;
+}
+
 /*
   Kanban > Eisenhower 2x2 (v1.3)
 
