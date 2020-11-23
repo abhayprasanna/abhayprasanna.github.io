@@ -73,21 +73,6 @@
   z-index      : 100 !important;
 }
 
-/* Twitter preview only on hover */
-
-.twitter-tweet iframe {
-  margin-top: -8px;
-  display   : none !important;
-}
-
-.twitter-tweet iframe:hover {
-  display: flex !important;
-}
-
-sub + button:hover + div > div.twitter-tweet > iframe {
-  display: flex !important;
-}
-
 /* Rainbow indentation */
 /*
 Feel free to adjust the colors - this one loops every
