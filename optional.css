@@ -56,17 +56,6 @@
   display: none !important;
 }
 
-/* Resize Images and PDFs to max */
-
-.hoverparent .rm-resize-img[style^='width: 580px;'],
-.react-resizable[style^='width: 580px; height: 580px;'],
-.react-resizable[style^='width: 720px; height: 720px;'],
-.hoverparent[style^="position: relative; width: 580px;"],
-.hoverparent[style^="position: relative; width: 720px;"] {
-  width : 100% !important;
-  height: 80vh !important;
-}
-
 /* Fix top bar */
 .roam-topbar {
   padding-right: 0 !important;
