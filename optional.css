@@ -246,3 +246,17 @@ Optional border adjustments:
     flex: 100% !important;
   }
 }
+
+/* Override image, iframe, pdf resize */
+
+div[style*="width: 580px;"],
+div[style*="width: 720px;"] {
+  width: 100% !important;
+}
+div[style*="height: 720px;"] {
+  height: 85vh !important;
+}
+
+.react-resizable-handle-se {
+ background: url('https://cdn.onlinewebfonts.com/svg/img_2146.svg') !important;
+}
