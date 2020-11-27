@@ -505,7 +505,7 @@ a:hover {
 }
 
 /* Attribute links */
-strong[tabindex="-1"] {
+.rm-attr-ref {
   color: var(--attributes-color) !important;
 }
 
