@@ -260,3 +260,26 @@ div[style*="height: 720px;"] {
 .react-resizable-handle-se {
  background: url('https://cdn.onlinewebfonts.com/svg/img_2146.svg') !important;
 }
+
+/* CCC's YT Timestamps JS customization */
+
+.timestamp-control {
+  color: var(--icons);
+  margin-top: 3px;
+  border: none;
+  transition   : color 0.3s ease, border 0.3s ease;
+}
+.timestamp-control:hover {
+  color: var(--icons-hover);
+  transition   : color 0.3s ease, border 0.3s ease;
+}
+
+/* Custom Tags */
+
+.rm-page-ref-tag[data-tag="42SmartBlock"] {
+  color: rgba(0,0,0,0.7) !important;
+  font-weight: 600;
+  padding: 3px 6px 4px 4px;
+  border-radius: 5px;
+  background-image: linear-gradient(to left, #DA53EEAD, #FE7FBFAD, #FF9580AD, #FFFF80AD, #8AFF80AD, #92FFFFAD, #9580FFAD )
+}
