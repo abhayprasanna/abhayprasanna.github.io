@@ -155,7 +155,7 @@ Optional border adjustments:
 /* Hide mobile bar on iPad */
 @media (min-device-width : 1024px) {
   #rm-mobile-bar {
-    opacity: 0 !important;
+    display: none !important;
   }
 }
 
