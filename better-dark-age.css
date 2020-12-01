@@ -22,15 +22,14 @@ body {
   background-color: inherit !important;
 }
 
-.roam-bullet-closed {
-  background-color: var(--closed-bullets) !important;
-}
-
-.simple-bullet-inner {
+.rm-bullet__inner {
   background-color: var(--bullets) !important;
 }
 
-.simple-bullet-inner:hover {
+.rm-bullet--closed .rm-bullet__inner{
+  background-color: var(--closed-bullets) !important;
+}
+.rm-bullet__inner:hover {
   background-color: var(--icons-hover) !important;
 }
 
