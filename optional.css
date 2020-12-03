@@ -37,14 +37,6 @@
   display: none;
 }
 
-/* Roam42 Daily Notes day name */
-.roam-title-day-banner {
-  color      : var(--bold-color);
-  font-size  : 15px !important;
-  font-family: var(--header-font) !important;
-  padding-top: 5px !important;
-}
-
 /* Murf attr-table filter results */
 #filterRowCt {
   color: var(--italics-color) !important;
