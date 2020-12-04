@@ -1670,3 +1670,31 @@ span[style*="color: rgb(167, 182, 194);"] {
   color: var(--body-text) !important;
 }
 /*---------------------------------------------------------------------------*/
+/* Block quote styling */
+.rm-bq {
+  background-color : var(--sidebar-background);
+  color            : var(--italics-color) !important;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: var(--references);
+  font-family      : var(--header-font) !important;
+  width            : 100% !important;
+  margin           : 0px !important;
+  padding-top      : 0px;
+  padding-bottom   : 0px;
+}
+
+.rm-bq::before{
+  content: "❝\A";
+  white-space: pre;
+  font-size: 100%;
+  color: var(--references);
+}
+
+.rm-bq::after{
+  content: "\A❞";
+  white-space: pre;
+  color: var(--references);
+  font-size: 100%;
+}
+/*---------------------------------------------------------------------------*/
