@@ -1739,8 +1739,13 @@ span[style*="color: rgb(167, 182, 194);"] {
   font-family: var(--header-font) !important;
   font-size: 20px !important;
 }
-/*---------------------------------------------------------------------------*/
 
 #quick-capture-history > div > li {
   color: var(--body-text) !important;
 }
+/*---------------------------------------------------------------------------*/
+/* HR line styling */
+.rm-hr {
+  border-color: var(--references);
+}
+/*---------------------------------------------------------------------------*/
