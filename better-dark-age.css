@@ -1698,3 +1698,49 @@ span[style*="color: rgb(167, 182, 194);"] {
   font-size: 100%;
 }
 /*---------------------------------------------------------------------------*/
+/* Smaller bullet tooltips */
+.rm-bullet__tooltip {
+  font-size: 10px !important;
+  color: var(--body-text) !important;
+}
+.bp3-popover-content {
+  padding: 5px !important;
+}
+/*---------------------------------------------------------------------------*/
+/* Better Quick Capture Sync Modal */
+.rm-quick-capture-sync-modal {
+  border-radius: 5px !important;
+  background-color: var(--sidebar-background) !important;
+}
+
+.bp3-button.bp3-intent-primary.bp3-large {
+  color: var(--body-text) !important;
+  background-color: #D9822B !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.bp3-button.bp3-intent-primary.bp3-large:hover {
+  color: var(--links-hover) !important;
+}
+
+#quick-capture-history {
+  color: var(--bold-color) !important;
+  font-size: 16px !important;
+  width: 90% !important;
+  padding: 20px !important;
+  border-radius: 5px !important;
+  background-color: var(--background) !important;
+  opacity: 1 !important;
+}
+
+#quick-capture-history .level3 {
+  color: var(--page-links) !important;
+  font-family: var(--header-font) !important;
+  font-size: 20px !important;
+}
+/*---------------------------------------------------------------------------*/
+
+#quick-capture-history > div > li {
+  color: var(--body-text) !important;
+}
