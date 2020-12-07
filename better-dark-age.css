@@ -1692,7 +1692,7 @@ span[style*="color: rgb(167, 182, 194);"] {
 }
 
 .rm-bq::after{
-  content: "\A❞";
+  content: "\A\A❞";
   white-space: pre;
   color: var(--references);
   font-size: 100%;
