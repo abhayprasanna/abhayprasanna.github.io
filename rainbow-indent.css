@@ -11,7 +11,7 @@ The 3 selectors for each level correspond to:
 @import url('https://abhayprasanna.github.io/rainbow-indent-core.css');
 
 :root {
-    --box-shadow-values: 25px 0px 20px -25px; /* Set to "none" to remove shadow */
+    --box-shadow-values: 25px 0px 20px -30px; /* Set to "none" to remove shadow */
     --indent1: #5F388BAD;
     --indent2: #4A57BAAD;
     --indent3: #48864DAD;
