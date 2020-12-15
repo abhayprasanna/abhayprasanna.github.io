@@ -139,3 +139,19 @@ div[style*="height: 720px;"] {
   border-radius: 5px;
   background-image: linear-gradient(to left, #DA53EEAD, #FE7FBFAD, #FF9580AD, #FFFF80AD, #8AFF80AD, #92FFFFAD, #9580FFAD )
 }
+
+/* Cato Minor's bullet transitions */
+.roam-block-container:focus-within > .rm-block-main > div:nth-child(1) .rm-bullet .rm-bullet__inner {
+  background-color: var(--icons-hover) !important;
+  width: 8px;
+  height: 3px;
+  border-radius: 0px;
+  transition: width 100ms linear, height 100ms linear, border-radius 100ms linear;
+}
+.roam-block-container > .rm-block-main > div:nth-child(1) .rm-bullet .rm-bullet__inner  {
+  background-color: default;
+  width: default;
+  height: default;
+  border-radius: default;
+  transition: width 100ms linear, height 100ms linear, border-radius 100ms linear;
+}
