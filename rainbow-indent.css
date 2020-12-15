@@ -12,24 +12,24 @@ The 3 selectors for each level correspond to:
 
 :root {
     --box-shadow-values: 25px 0px 20px -25px; /* Set to "none" to remove shadow */
-    --indent1: #5F388B;
-    --indent2: #4A57BA;
-    --indent3: #48864D;
-    --indent4: #A7A15A;
-    --indent5: #AD7E48;
-    --indent6: #A5494F;
-    --indent7: #634071;
-    --indent8: #303472;
-    --indent9: #395C45;
-    --indent10: #7C7948;
-    --indent11: #7D5039;
-    --indent12: #A5494F;
-    --indent13: #706597;
-    --indent14: #657D91;
-    --indent15: #6D8D76;
-    --indent16: #A09A84;
-    --indent17: #987174;
-    --indent18: #8B5F78;
+    --indent1: #5F388BAD;
+    --indent2: #4A57BAAD;
+    --indent3: #48864DAD;
+    --indent4: #A7A15AAD;
+    --indent5: #AD7E48AD;
+    --indent6: #A5494FAD;
+    --indent7: #634071AD;
+    --indent8: #303472AD;
+    --indent9: #395C45AD;
+    --indent10: #7C7948AD;
+    --indent11: #7D5039AD;
+    --indent12: #A5494FAD;
+    --indent13: #706597AD;
+    --indent14: #657D91AD;
+    --indent15: #6D8D76AD;
+    --indent16: #A09A84AD;
+    --indent17: #987174AD;
+    --indent18: #8B5F78AD;
 }
 
 .block-border-left {
