@@ -1749,3 +1749,44 @@ span[style*="color: rgb(167, 182, 194);"] {
   border-color: var(--references);
 }
 /*---------------------------------------------------------------------------*/
+/* In-line comments */
+.rm-paren  {
+  color: var(--body-text);
+  background-color: var(--kanban-column-background);
+  border: none;
+  border-radius: 8px;
+  padding: 2px 5px 4px 5px;
+  transition      : color 0.3s ease;
+}
+.rm-spacer {
+  font-size: 1.1em;
+  position: relative;
+  top: 2px;
+  color: var(--references);
+}
+
+.rm-spacer:hover {
+  color: var(--links-hover);
+}
+
+.rm-paren__paren {
+  color: var(--references);
+}
+
+.rm-paren__paren--left {
+  padding-right: 3px;
+}
+
+.rm-paren__paren--right {
+  padding-left: 3px;
+}
+
+.rm-paren__paren:hover {
+  color: var(--links-hover);
+  background-color: transparent;
+}
+
+.rm-paren:hover {
+  cursor: crosshair;
+  background-color: var(--kanban-column-background);
+}
