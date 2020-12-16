@@ -1678,7 +1678,7 @@ body > div:nth-child(10) > div > div > div > button > span > svg > path {
 
 /* {{or}} dropdown */
 
-div:not(.bp3-datepicker-month-select):not(.bp3-datepicker-year-select):not(.flatpickr-monthDropdown-months) > select {
+div:not(.bp3-datepicker-month-select):not(.bp3-datepicker-year-select):not(.flatpickr-current-month) > select {
   background-color: var(--sidebar-background) !important;
   color           : var(--italics-color);
   font-style      : italic;
