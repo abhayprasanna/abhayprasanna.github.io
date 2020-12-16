@@ -98,10 +98,6 @@ body {
   transition   : color 0.3s ease, border 0.3s ease !important;
 }
 
-.rm-block-ref dont-focus-block {
-  font-size: var(--main-font-size) !important;
-}
-
 .rm-block-ref,
 .roam-block .rm-block-ref,
 span[style*="color: red"] {
@@ -324,10 +320,6 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 
-div {
-  font-size: var(--main-font-size) !important;
-}
-
 em {
   color: var(--italics-color);
 }
@@ -336,22 +328,14 @@ strong {
   color: var(--bold-color);
 }
 
-/* Heading Sizes */
+/* Headings */
 h1 {
   font-size: var(--page-head-font-size) !important;
 }
 
-.rm-level1 {
-  font-size: var(--h1-font-size) !important;
-}
-
-.rm-level2 {
-  font-size: var(--h2-font-size) !important;
-}
-
-.rm-level3 {
-  font-size: var(--h3-font-size) !important;
-}
+.rm-level3, .rm-heading-level-3 > .rm-block__self .rm-block__input {
+  color: var(--body-text) !important;
+  opacity: 0.8;
 
 /* Right sidebar h1 */
 .level2[style*="margin: 0px"] {
