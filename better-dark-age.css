@@ -507,6 +507,7 @@ a:hover {
   background-color: var(--kanban-column-background) !important;
   margin-left: -16px !important;
   margin-right: 2px !important;
+  margin-bottom: 0px;
   padding: 10px 20px 10px 15px !important;
   border-radius: 5px;
   box-shadow   : 0 0 2px 1px var(--references);
@@ -1824,3 +1825,17 @@ span[style*="color: rgb(167, 182, 194);"] {
   cursor: crosshair;
   background-color: var(--kanban-column-background);
 }
+/*---------------------------------------------------------------------------*/
+/* Resize styling */
+
+.rm-resize-handle:hover {
+  border-left: dashed var(--icons-hover) !important;
+  opacity: 0.5 !important;
+  transition      : color 0.3s ease;
+}
+div::-webkit-resizer {
+  border-style: solid;
+  border-color: transparent var(--references) var(--references) transparent;
+  background-color: var(--background);
+}
+/*---------------------------------------------------------------------------*/
