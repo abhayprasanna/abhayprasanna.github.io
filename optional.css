@@ -114,7 +114,13 @@ div[style*="height: 720px;"] {
 }
 
 .react-resizable-handle-se {
- background: url('https://cdn.onlinewebfonts.com/svg/img_2146.svg') !important;
+  border-style: solid;
+  border-color: transparent var(--references) var(--references) transparent;
+}
+
+.react-resizable-handle-se:hover {
+  border-style: solid;
+  border-color: transparent var(--icons-hover) var(--icons-hover) transparent;
 }
 
 /* CCC's YT Timestamps JS customization */
