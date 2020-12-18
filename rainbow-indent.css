@@ -1,11 +1,10 @@
 /* Rainbow indentation */
 /* 
 Feel free to adjust the color variables!
-This one loops every 6 colors, and goes 18 levels deep (3 cycles).
-The 3 selectors for each level correspond to:
-1. Daily notes scrolling view
-2. Single page view
-3. Right sidebar outline view
+This one has 18 colors deep (3 cycles of 3 rainbow flavored palettes).
+This loops 3 times so it goes 54 levels deep!
+To add more levels just target
+.rm-level-n > div for every nth level
 */
 
 @import url('https://abhayprasanna.github.io/rainbow-indent-core.css');
