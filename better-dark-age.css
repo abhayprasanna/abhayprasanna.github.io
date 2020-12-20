@@ -415,10 +415,9 @@ a {
 
 /* Internal Roam Links [[Roam]] & #Roam & #[[Roam]] */
 .bp3-text-overflow-ellipsis a,
-.rm-pages-title-text strong,
-.rm-ref-page-view-title a {
+.rm-pages-title-text strong {
   color      : var(--page-links) !important;
-  font-weight: 700;
+  font-weight: 500;
   transition : color 0.3s ease;
 }
 
@@ -887,7 +886,7 @@ div[style*="background: rgb(255, 243, 205);"] {
 
 /* Path text color for Linked References */
 .parent-path-wrapper {
-  color: var(--references);
+  color: var(--body-text);
 }
 
 /* Unlinked References */
