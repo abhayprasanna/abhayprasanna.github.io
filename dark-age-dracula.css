@@ -12,7 +12,7 @@
     --reduce-padding-right    : 3400px;
     --reduce-padding-left     : 3400px;
     /* COLORS - One light*/
-    --page-links              : #2979ff;
+    --page-links              : #283593;
     --attributes-color        : #986801;
     --external-links          : #50A14E;
     --links-hover             : #E4564A;
@@ -25,8 +25,8 @@
     --background              : #FAFAFA;
     --sidebar-background      : #EAEAEB;
     --sidebar-text            : #292D31;
-    --page-heading            : #2979ff;
-    --daily-heading           : #2979ff;
+    --page-heading            : #283593;
+    --daily-heading           : #283593;
     --headings                : #292D31;
     --bullets                 : #4078F2;
     --closed-bullets          : #4078F277;
@@ -49,7 +49,7 @@
     --dropdown-menu-background: #EAEAEB;
     --dropdown-menu-highlight : #FAFAFA;
     --dropdown-menu-text      : #292D31;
-    --dropdown-newpage        : #2979ff;
+    --dropdown-newpage        : #283593;
     /* SEARCH BAR */
     --search-bar-background   : #F7F8FA;
     --search-bar-text         : #292D31;
@@ -65,7 +65,7 @@
     /* FONTS */
     --global-font             : 'Work Sans', sans-serif;
     --secondary-font          : 'Fira Code', monospace;
-    --header-font             : 'Bitter', serif;
+    --header-font             : 'Crimson Text', serif;
     /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
     --reduce-padding-right    : 3400px;
     --reduce-padding-left     : 3400px;
