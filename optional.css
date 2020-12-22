@@ -161,3 +161,44 @@ div[style*="height: 720px;"] {
   border-radius: default;
   transition: width 100ms linear, height 100ms linear, border-radius 100ms linear;
 }
+/* Remove partial iframes from path */
+.parent-path-wrapper > div > span > div > iframe,
+.parent-path-wrapper > div > span > .hoverparent {
+  opacity: 0;
+}
+/* Old style block focus - header size */
+.roam-article .rm-zoom.zoom-path-view ~ div > div > div:nth-child(1) {
+  font-size: 30px;
+}
+/* Hide controls of focus block */
+.roam-article .rm-zoom.zoom-path-view ~ div > div > div:nth-child(1) > div:nth-child(1) {
+  opacity: 0;
+}
+/* Minimal right sidebar */
+#roam-right-sidebar-content > div > div:nth-child(n) > div > div > div:nth-child(n) > span:nth-child(1):not(.bp3-button) {
+  display: none;
+}
+.flex-h-box.window-headers {
+  padding: 0 !important;
+  height: 35px !important;
+}
+#roam-right-sidebar-content > div > div:nth-child(n) > div {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+.rm-sidebar-outline {
+  position: relative;
+  top: -10px;
+}
+.rm-sidebar-outline .rm-block-children.rm-block__children.rm-level-0 {
+  padding-top: 10px;
+}
+/* Don't let images and iframes extend outside box */
+.rm-inline-img__resize, .react-resizable, .hoverparent {
+  max-width: 100%;
+  margin: 0 !important;
+}
+/* Move the edit icon to the left */
+.hoveronly {
+  right: 10px !important;
+}
