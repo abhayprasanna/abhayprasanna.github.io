@@ -87,22 +87,6 @@
   font-size: 100%;
 }
 
-/*
-  Mobile
-*/
-
-@media (max-width: 576px) {
-  /* so the board stays within the viewport */
-  [data-tag="2x2"] ~ .rm-full-width .kanban-board .kanban-column-container {
-    max-width: 80vw;
-  }
-
-  /* Stack the columns on mobile */
-  [data-tag="2x2"] ~ .rm-full-width .kanban-board .kanban-column-container .kanban-column {
-    flex: 100% !important;
-  }
-}
-
 /* Override image, iframe, pdf resize */
 
 div[style*="width: 580px;"],
