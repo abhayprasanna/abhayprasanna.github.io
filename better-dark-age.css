@@ -1830,7 +1830,7 @@ span[style*="color: rgb(167, 182, 194);"] {
 .rm-resize-handle:hover {
   border-left: dashed var(--icons-hover) !important;
   opacity: 0.5 !important;
-  transition      : border 0.5s ease;
+  transition      : border 0.3s ease;
 }
 div::-webkit-resizer {
   border-style: solid;
