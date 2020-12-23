@@ -122,7 +122,7 @@ div[style*="height: 720px;"] {
 
 /* Custom Tags */
 
-.rm-page-ref-tag[data-tag="42SmartBlock"] {
+.rm-page-ref--tag[data-tag="42SmartBlock"] {
   color: rgba(0,0,0,0.7) !important;
   font-weight: 600;
   padding: 3px 6px 4px 4px;
