@@ -138,14 +138,12 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 }
 .sidebar-content .rm-dnd-separator .rm-dnd-drop-bar {
   top: 3px;
+  left: 1px;
   background-color: var(--icons-hover);
-}
-.sidebar-content .rm-dnd-separator .rm-dnd-drop-area {
-  left: -12px;
 }
 .sidebar-content .rm-dnd-separator {
   width: unset;
 }
 .rm-dnd-drop-area, .rm-dnd-drop-bar {
-  min-width: calc(var(--masonry-minWidth) + 50px);
+  min-width: calc(var(--masonry-minWidth) + 55px);
 }
