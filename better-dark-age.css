@@ -592,8 +592,8 @@ a:hover {
 }
 
 /* Highlights */
-.roam-highlight,
-.roam-highlight:hover {
+.rm-highlight,
+.rm-highlight:hover {
   color           : var(--highlight-text-color) !important;
   background-color: var(--highlighter);
 }
@@ -603,9 +603,9 @@ a:hover {
 }
 
 /* highlight adjustments */
-.roam-highlight .rm-page-ref-brackets,
-.roam-highlight .rm-page-ref-link-color,
-.roam-highlight .rm-page-ref-tag,
+.rm-highlight .rm-page-ref__brackets,
+.rm-highlight .rm-page-ref--link,
+.rm-highlight .rm-page-ref--tag,
 .roam-highlight em,
 .roam-highlight strong {
   background-color: var(--background) !important;
