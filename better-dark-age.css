@@ -426,7 +426,7 @@ a {
 .rm-alias--page {
   color     : var(--page-links);
   transition: color 0.3s ease;
-  font-style: bold;
+  font-style: italic;
 }
 
 .rm-alias--external {
