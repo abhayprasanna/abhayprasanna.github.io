@@ -26,7 +26,7 @@ body {
   background-color: var(--bullets) !important;
 }
 
-.rm-bullet--closed .rm-bullet__inner{
+.rm-bullet--closed .rm-bullet__inner {
   border: 4px solid var(--closed-bullets) !important;
 }
 
@@ -320,10 +320,12 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.rm-italics,
 em {
   color: var(--italics-color);
 }
 
+.rm-bold,
 strong {
   color: var(--bold-color);
 }
@@ -341,9 +343,10 @@ h1 {
   font-size: var(--h2-font-size) !important;
 }
 
-.rm-level3, .rm-heading-level-3 > .rm-block__self .rm-block__input {
+.rm-heading-level-3 > .rm-block__self .rm-block__input,
+.rm-level3 {
   font-size: var(--h3-font-size) !important;
-  color: var(--body-text) !important;
+  color    : var(--body-text) !important;
 }
 
 /* Right sidebar h1 */
@@ -409,7 +412,25 @@ h3 {
 
 /* Main link coloring + hover */
 a {
-  color     : var(--external-links) !important;
+  color     : var(--external-links);
+  transition: color 0.3s ease;
+}
+
+.rm-alias--block {
+  color          : var(--page-links);
+  transition     : color 0.3s ease;
+  text-decoration: underline dotted var(--references);
+  font-style     : italic;
+}
+
+.rm-alias--page {
+  color     : var(--page-links);
+  transition: color 0.3s ease;
+  font-style: bold;
+}
+
+.rm-alias--external {
+  color     : var(--external-links);
   transition: color 0.3s ease;
 }
 
@@ -422,17 +443,17 @@ a {
 }
 
 .rm-page-ref,
-.rm-page-ref-link-color {
+.rm-page-ref--link {
   color      : var(--page-links) !important;
   font-weight: 500;
   transition : color 0.3s ease;
 }
 
-.rm-page-ref-brackets {
+.rm-page-ref__brackets {
   color: var(--references);
 }
 
-.rm-page-ref-tag {
+.rm-page-ref--tag {
   color        : var(--hashtags) !important;
   font-weight  : 500;
   padding-left : 2px;
@@ -440,7 +461,7 @@ a {
   transition   : color 0.3s ease;
 }
 
-.rm-page-ref-tag:hover,
+.rm-page-ref--tag:hover,
 .rm-page-ref:hover,
 .rm-pages-title-text strong:hover {
   color          : var(--links-hover) !important;
@@ -488,7 +509,7 @@ h4.level4 a:hover {
   font-weight: 500;
 }
 
-.rm-page-ref-link-color:hover,
+.rm-page-ref--link:hover,
 a:focus,
 a:hover {
   color          : var(--links-hover) !important;
@@ -502,20 +523,20 @@ a:hover {
 }
 
 /* Block and Page embed */
-.rm-embed--page.rm-embed-container{
+.rm-embed--page.rm-embed-container {
   background-color: var(--kanban-column-background) !important;
-  margin-left: -16px !important;
-  margin-right: 2px !important;
-  margin-bottom: 0px;
-  padding: 10px 20px 10px 15px !important;
-  border-radius: 5px;
-  box-shadow   : 0 0 2px 1px var(--references);
+  margin-left     : -16px !important;
+  margin-right    : 2px !important;
+  margin-bottom   : 0;
+  padding         : 10px 20px 10px 15px !important;
+  border-radius   : 5px;
+  box-shadow      : 0 0 2px 1px var(--references);
 }
 
-.rm-embed--page.rm-embed-container::before{
-  content: "Page Embed";
-   color       : var(--block-reference-text);
-  font-weight : 500 !important;
+.rm-embed--page.rm-embed-container::before {
+  content    : "Page Embed";
+  color      : var(--block-reference-text);
+  font-weight: 500 !important;
 }
 
 .rm-embed__content .rm-reference-container {
@@ -531,11 +552,11 @@ a:hover {
 }
 
 .rm-embed-margin-action.rm-not {
- margin-left: -7px;
+  margin-left: -7px;
 }
 
 .rm-embed-margin-action.rm-active {
- margin-left: -7px;
+  margin-left: -7px;
 }
 
 .rm-embed-container {
@@ -572,20 +593,21 @@ a:hover {
 }
 
 .rm-embed-container .rm-page__title {
-  color: var(--page-heading) !important;
+  color      : var(--page-heading) !important;
   font-family: var(--header-font) !important;
-  padding-top: 5px; !important;
+  padding-top: 5px;
+  !important;
 }
 
 /* Namespace text color [[roam/css]] when using CTRL+C CTRL+L || CMD+C CMD+L */
 
-.rm-page-ref-namespace-color {
+.rm-page-ref--namespace {
   color      : var(--namespaces) !important;
   font-weight: 600;
   transition : color 0.3s ease;
 }
 
-.rm-page-ref-namespace-color:hover {
+.rm-page-ref--namespace:hover {
   color          : var(--links-hover);
   text-decoration: none;
   transition     : color 0.3s ease;
@@ -603,9 +625,9 @@ a:hover {
 }
 
 /* highlight adjustments */
-.rm-highlight .rm-page-ref__brackets,
 .rm-highlight .rm-page-ref--link,
 .rm-highlight .rm-page-ref--tag,
+.rm-highlight .rm-page-ref__brackets,
 .roam-highlight em,
 .roam-highlight strong {
   background-color: var(--background) !important;
@@ -1713,45 +1735,46 @@ span[style*="color: rgb(167, 182, 194);"] {
   border-left-color: var(--references);
   font-family      : var(--header-font) !important;
   width            : 100% !important;
-  margin           : 0px !important;
-  padding-top      : 0px;
-  padding-bottom   : 0px;
+  margin           : 0 !important;
+  padding-top      : 0;
+  padding-bottom   : 0;
 }
 
-.rm-bq::before{
-  content: "❝\A";
+.rm-bq::before {
+  content    : "❝\A";
   white-space: pre;
-  font-size: 100%;
-  color: var(--references);
+  font-size  : 100%;
+  color      : var(--references);
 }
 
-.rm-bq::after{
-  content: "\A❞";
+.rm-bq::after {
+  content    : "\A❞";
   white-space: pre;
-  color: var(--references);
-  font-size: 100%;
+  color      : var(--references);
+  font-size  : 100%;
 }
 /*---------------------------------------------------------------------------*/
 /* Smaller bullet tooltips */
 .rm-bullet__tooltip {
   font-size: 10px !important;
-  color: var(--body-text) !important;
+  color    : var(--body-text) !important;
 }
+
 .bp3-popover-content {
   padding: 5px !important;
 }
 /*---------------------------------------------------------------------------*/
 /* Better Quick Capture Sync Modal */
 .rm-quick-capture-sync-modal {
-  border-radius: 5px !important;
+  border-radius   : 5px !important;
   background-color: var(--sidebar-background) !important;
 }
 
 .bp3-button.bp3-intent-primary.bp3-large {
-  color: var(--body-text) !important;
+  color           : var(--body-text) !important;
   background-color: #D9822B !important;
-  border: none !important;
-  box-shadow: none !important;
+  border          : none !important;
+  box-shadow      : none !important;
 }
 
 .bp3-button.bp3-intent-primary.bp3-large:hover {
@@ -1759,19 +1782,19 @@ span[style*="color: rgb(167, 182, 194);"] {
 }
 
 #quick-capture-history {
-  color: var(--bold-color) !important;
-  font-size: 16px !important;
-  width: 90% !important;
-  padding: 20px !important;
-  border-radius: 5px !important;
+  color           : var(--bold-color) !important;
+  font-size       : 16px !important;
+  width           : 90% !important;
+  padding         : 20px !important;
+  border-radius   : 5px !important;
   background-color: var(--background) !important;
-  opacity: 1 !important;
+  opacity         : 1 !important;
 }
 
 #quick-capture-history .level3 {
-  color: var(--page-links) !important;
+  color      : var(--page-links) !important;
   font-family: var(--header-font) !important;
-  font-size: 20px !important;
+  font-size  : 20px !important;
 }
 
 #quick-capture-history > div > li {
@@ -1784,19 +1807,20 @@ span[style*="color: rgb(167, 182, 194);"] {
 }
 /*---------------------------------------------------------------------------*/
 /* In-line comments */
-.rm-paren  {
-  color: var(--body-text);
+.rm-paren {
+  color           : var(--body-text);
   background-color: var(--kanban-column-background);
-  border: none;
-  border-radius: 8px;
-  padding: 2px 5px 4px 5px;
+  border          : none;
+  border-radius   : 8px;
+  padding         : 2px 5px 4px;
   transition      : color 0.3s ease;
 }
+
 .rm-spacer {
   font-size: 1.1em;
-  position: relative;
-  top: 2px;
-  color: var(--references);
+  position : relative;
+  top      : 2px;
+  color    : var(--references);
 }
 
 .rm-spacer:hover {
@@ -1816,12 +1840,12 @@ span[style*="color: rgb(167, 182, 194);"] {
 }
 
 .rm-paren__paren:hover {
-  color: var(--links-hover);
+  color           : var(--links-hover);
   background-color: transparent;
 }
 
 .rm-paren:hover {
-  cursor: crosshair;
+  cursor          : crosshair;
   background-color: var(--kanban-column-background);
 }
 /*---------------------------------------------------------------------------*/
@@ -1829,12 +1853,13 @@ span[style*="color: rgb(167, 182, 194);"] {
 
 .rm-resize-handle:hover {
   border-left: dashed var(--icons-hover) !important;
-  opacity: 0.5 !important;
-  transition      : border 0.3s ease;
+  opacity    : 0.5 !important;
+  transition : border 0.3s ease;
 }
+
 div::-webkit-resizer {
-  border-style: solid;
-  border-color: transparent var(--references) var(--references) transparent;
+  border-style    : solid;
+  border-color    : transparent var(--references) var(--references) transparent;
   background-color: var(--background);
 }
 /*---------------------------------------------------------------------------*/
