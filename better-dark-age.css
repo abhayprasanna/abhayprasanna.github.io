@@ -15,7 +15,7 @@ body {
   border-radius: 12px !important;
   background   : var(--background) !important;
   margin-right : 6px !important;
-  margin-left  : 6px !important;
+  margin-left  : 9px !important;
 }
 
 .roam-block > span > div {
@@ -169,9 +169,9 @@ Original BetterRoam theme by @linuz90
 Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 
 .roam-article {
-  padding-left : 20px !important;
-  padding-top  : 0 !important;
-  padding-right: 20px !important;
+  padding-left : 30px !important;
+  padding-top  : 10px !important;
+  padding-right: 30px !important;
 }
 
 .roam-app,
