@@ -123,11 +123,7 @@ div[style*="height: 720px;"] {
 /* Custom Tags */
 
 .rm-page-ref--tag[data-tag="42SmartBlock"] {
-  color: rgba(0,0,0,0.7) !important;
-  font-weight: 600;
-  padding: 3px 6px 4px 4px;
-  border-radius: 5px;
-  background-image: linear-gradient(to left, #DA53EEAD, #FE7FBFAD, #FF9580AD, #FFFF80AD, #8AFF80AD, #92FFFFAD, #9580FFAD )
+font-size: 0 !important;
 }
 
 /* Cato Minor's bullet transitions */
