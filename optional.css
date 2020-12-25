@@ -182,3 +182,36 @@ font-size: 0 !important;
 .hoveronly {
   right: 10px !important;
 }
+/* Minimal right sidebar mentions */
+#right-sidebar .rm-ref-page-view .flex-h-box.rm-title-arrow-wrapper,
+#right-sidebar .rm-ref-page-view .parent-path-wrapper,
+#right-sidebar .rm-ref-page-view .rm-zoom {
+  display: none;
+}
+
+#right-sidebar .rm-ref-page-view {
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
+  right: 25px;
+  width: 104.5% !important;
+}
+
+#roam-right-sidebar-content a[style*="font-weight: bold; cursor: pointer;"] {
+color: var(--page-links) !important;
+  font-size: 1.6em;
+  font-family: var(--header-font);
+  font-weight: normal !important;
+}
+
+.flex-h-box .window-headers {
+  padding: 20px 0px 15px 10px !important;
+}
+
+#right-sidebar .rm-reference-container {
+  padding-bottom: 15px !important;
+}
+
+#right-sidebar .roam-block-container.rm-block.rm-not-focused {
+  width: 98.5% !important;
+}
