@@ -98,8 +98,13 @@ div[style*="height: 720px;"] {
 }
 
 .react-resizable-handle-se {
+  opacity: 0;
   border-style: solid;
   border-color: transparent var(--references) var(--references) transparent;
+}
+
+.react-resizable:hover .react-resizable-handle-se {
+  opacity: 1;
 }
 
 .react-resizable-handle-se:hover {
@@ -214,4 +219,15 @@ color: var(--page-links) !important;
 
 #right-sidebar .roam-block-container.rm-block.rm-not-focused {
   width: 98.5% !important;
+}
+
+/* Horizontal layout */
+
+span.rm-page-ref[data-tag*="rm-"] {
+    display: none;
+}
+
+.roam-block-container[data-page-links*="rm-h"] .rm-block-children {
+  display: flex;
+  flex-direction: row;
 }
