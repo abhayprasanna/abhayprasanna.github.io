@@ -1863,3 +1863,33 @@ div::-webkit-resizer {
   background-color: var(--background);
 }
 /*---------------------------------------------------------------------------*/
+/* Cloze styling */
+.rm-block__part--equals {
+  background-color: #A5494F;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 3px 3px 4px;
+  cursor: help;
+}
+
+.rm-block__part--equals:hover {
+  background-color: #48864D;
+}
+
+.bp3-card {
+  background-color: var(--sidebar-background) !important;
+  border: none !important;
+  color: var(--body-text);
+  padding: 3px 5px 3px 5px;
+  box-shadow: none;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  width: unset;
+  max-width: 30vw;
+  text-align: justify;
+  text-justify: inter-word;
+}
+/*---------------------------------------------------------------------------*/
