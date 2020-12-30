@@ -188,37 +188,39 @@ font-size: 0 !important;
   right: 10px !important;
 }
 /* Minimal right sidebar mentions */
-#right-sidebar .rm-ref-page-view .flex-h-box.rm-title-arrow-wrapper,
-#right-sidebar .rm-ref-page-view .parent-path-wrapper,
+/* Change chevron path separator color */
+#right-sidebar .rm-ref-page-view .rm-zoom .bp3-icon-chevron-right {
+  color: var(--bold-color) !important;
+  transform: scale(1.5);
+}
+/* Hide page title and path */
+#right-sidebar .rm-ref-page-view .flex-h-box.rm-title-arrow-wrapper span {
+  height: 1px;
+  color: transparent;
+}
+/* Add light grey dashed line to separate pages & to help know where to hover */
+#right-sidebar .rm-ref-page-view .flex-h-box.rm-title-arrow-wrapper {
+  border-bottom: 1px dashed var(--references);
+}
+/* Hide parent path until hover */
 #right-sidebar .rm-ref-page-view .rm-zoom {
   display: none;
 }
-
-#right-sidebar .rm-ref-page-view {
-  padding: 0 !important;
-  margin: 0 !important;
+#right-sidebar .rm-ref-page-view .rm-reference-item {
   position: relative;
   right: 25px;
-  width: 104.5% !important;
 }
-
-#roam-right-sidebar-content a[style*="font-weight: bold; cursor: pointer;"] {
-color: var(--page-links) !important;
-  font-size: 1.6em;
-  font-family: var(--header-font);
-  font-weight: normal !important;
+/* Show the path and page title on hover */
+#right-sidebar .rm-ref-page-view .rm-reference-item:hover .rm-zoom {
+  display: flex;
+  padding-left: 5px;
+  padding-bottom: 10px;
 }
-
-.flex-h-box .window-headers {
-  padding: 20px 0px 20px 10px !important;
-}
-
-#right-sidebar .rm-reference-container {
-  padding-bottom: 15px !important;
-}
-
-#right-sidebar .roam-block-container.rm-block.rm-not-focused {
-  width: 98.5% !important;
+#right-sidebar .rm-ref-page-view .flex-h-box.rm-title-arrow-wrapper:hover,
+#right-sidebar .rm-ref-page-view .flex-h-box.rm-title-arrow-wrapper:hover span {
+  height: unset;
+  color: unset;
+  border-bottom: unset;
 }
 
 /* Horizontal layout */
@@ -230,4 +232,71 @@ span.rm-page-ref[data-tag*="rm-"] {
 .roam-block-container[data-page-links*="rm-h"] .rm-block-children {
   display: flex;
   flex-direction: row;
+}
+
+/* Diagram expands on hover */
+button + div svg:not(:first-child):hover {
+  position: fixed;
+  width: 90vw !important;
+  height: 90vh !important;
+  z-index: 9999;
+  top: 5vh !important;
+  left: 5vw !important;
+}
+/* Makes diagram look better */
+/* Some of these sizes might need to be adjusted */
+button + div svg:not(:first-child) {
+  border-radius: 10px;
+}
+div > span > div > span > div[style*="max-height"]{
+  position: relative;
+  top: -40px;
+}
+div > span > div > span > div[style*="max-height"] > button{
+  position: relative;
+  top: 32px;
+  left: 100px;
+  z-index: 9000;
+  text-decoration: none !important;
+  border: none;
+  background: transparent;
+}
+div > span > div > span > div[style*="max-height"] > div > div{
+  width: 40%;
+  border-radius: 5px 5px 5px 0 !important;
+}
+
+/* David PPT mode custom Serif theme */
+.reveal {
+  cursor: url(https://cdn.custom-cursor.com/db/cursor/32/Laser_Cursor.png), default !important;
+}
+
+.reveal h1 {
+  font-size: 2.5em !important;
+  border-bottom: solid 2px orangered;
+  color: black !important;
+}
+
+/* Tyler's Unlink Finder */
+
+.exact-word-match[recommend="underline"],
+.unlink-finder-legend.exact-word-match.unlink-finder {
+  background-color: darkgreen;
+  border-radius: 2px;
+  text-decoration: none !important;
+}
+.fuzzy-word-match[recommend="underline"],
+.unlink-finder-legend.fuzzy-word-match.unlink-finder {
+  background-color:  darkorange !important;
+  text-decoration: none !important;
+}
+.partial-word-match[recommend="underline"],
+.unlink-finder-legend.partial-word-match.unlink-finder {
+  background-color:  brown !important;
+  text-decoration: none !important;
+}
+.redundant-word-match[recommend="underline"],
+.unlink-finder-legend.redundant-word-match.unlink-finder {
+  background-color: slategray !important;
+  text-decoration: none !important;
 }
