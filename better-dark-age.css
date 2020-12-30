@@ -628,11 +628,11 @@ a:hover {
 .rm-highlight .rm-page-ref--link,
 .rm-highlight .rm-page-ref--tag,
 .rm-highlight .rm-page-ref__brackets,
-.roam-highlight em,
-.roam-highlight strong {
+.rm-highlight .rm-bold,
+.rm-highlight .rm-italics {
   background-color: var(--background) !important;
-  border-radius   : 2px;
   opacity         : 0.9;
+  padding: 0px 3px 0px 3px;
 }
 
 /* Word Count */
@@ -1654,16 +1654,10 @@ canvas[data-id="layer2-node"] {
 }
 /*---------------------------------------------------------------------------*/
 /* UPDATE ALERTS AND VARIOUS SPECIAL MENUS */
+
 body > div.bp3-portal > div > div > span > div > span > strong,
 body > div:nth-child(10) > div > div > span > div > span > strong {
   color: var(--body-text) !important;
-}
-
-body > div:nth-child(10) > div > div {
-  backdrop-filter: blur(5px) !important;
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 5px;
-  box-shadow   : 0 1px 5px rgba(0, 0, 0, 1);
 }
 
 body > div.bp3-portal > div > div > div > button > span > svg > path,
@@ -1684,7 +1678,6 @@ body > div:nth-child(10) > div > div > div > button > span > svg > path {
 /* FIX SELECTION COLOR AND BLOCK-HIGLIGHTS */
 .block-highlight-blue {
   background-color: var(--closed-bullets) !important;
-
 }
 
 ::selection {
