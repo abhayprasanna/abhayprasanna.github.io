@@ -1884,7 +1884,7 @@ div::-webkit-resizer {
   max-width: 30vw;
   text-align: justify;
   text-justify: inter-word;
-  max-height: 60vw;
+  max-height: 60vh;
   overflow-y: auto;
 }
 /*---------------------------------------------------------------------------*/
