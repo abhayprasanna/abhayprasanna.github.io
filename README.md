@@ -4,7 +4,7 @@ Welcome to the Dracula Pro-inspired color theme for Roam Research, which include
 
 ![](Dracula%20Pro%20-%20Screenshot.png)
 
-Love this theme? Say thanks to [@shodty](https://twitter.com/shodty) via [Paypal](https://paypal.me/RobertLandsburg)
+Love this theme? Say thanks via [PayPal](https://www.paypal.me/abhayprasanna) or Venmo @Abhay-Prasanna
 
 Other acknowledgements: Jack Laing, @linuz90, @Azlen, Shawn Murphy, Hasan Yalcinkaya, Palash Karia, and many others!
 
