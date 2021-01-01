@@ -300,3 +300,8 @@ div > span > div > span > div[style*="max-height"] > div > div{
   background-color: slategray !important;
   text-decoration: none !important;
 }
+.alias-word-match[recommend="underline"],
+.unlink-finder-legend.alias-word-match.unlink-finder {
+  background-color: forestgreen !important;
+  text-decoration: none !important;
+}
