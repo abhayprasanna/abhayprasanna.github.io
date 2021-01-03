@@ -11,8 +11,8 @@
     /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
     --reduce-padding-right    : 3400px;
     --reduce-padding-left     : 3400px;
-    /* COLORS - One light*/
-    --page-links              : #2979ff;
+   /* COLORS - One light*/
+    --page-links              : #283593;
     --attributes-color        : #986801;
     --external-links          : #50A14E;
     --links-hover             : #E4564A;
@@ -25,17 +25,17 @@
     --background              : #FAFAFA;
     --sidebar-background      : #EAEAEB;
     --sidebar-text            : #292D31;
-    --page-heading            : #2979ff;
-    --daily-heading           : #2979ff;
+    --page-heading            : #283593;
+    --daily-heading           : #283593;
     --headings                : #292D31;
-    --bullets                 : #4078F2;
-    --closed-bullets          : #4078F277;
-    --references              : #4078F2;
+    --bullets                 : #3F51B5;
+    --closed-bullets          : #3F51B577;
+    --references              : #3F51B5;
     --block-reference-text    : #0184BC;
     --namespaces              : #E4564A;
     --all-pages-mentions      : #0184BC;
     --cursor                  : #292D31;
-    --icons                   : #4078F2;
+    --icons                   : #3F51B5;
     --icons-hover             : #E4564A;
     --filter-icon             : #50A14E;
     /* FONT SIZES */
@@ -49,7 +49,7 @@
     --dropdown-menu-background: #EAEAEB;
     --dropdown-menu-highlight : #FAFAFA;
     --dropdown-menu-text      : #292D31;
-    --dropdown-newpage        : #2979ff;
+    --dropdown-newpage        : #283593;
     /* SEARCH BAR */
     --search-bar-background   : #F7F8FA;
     --search-bar-text         : #292D31;
