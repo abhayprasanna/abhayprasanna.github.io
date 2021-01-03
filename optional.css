@@ -276,32 +276,3 @@ div > span > div > span > div[style*="max-height"] > div > div{
   border-bottom: solid 2px orangered;
   color: black !important;
 }
-
-/* Tyler's Unlink Finder */
-
-.exact-word-match[recommend="underline"],
-.unlink-finder-legend.exact-word-match.unlink-finder {
-  background-color: darkgreen;
-  border-radius: 2px;
-  text-decoration: none !important;
-}
-.fuzzy-word-match[recommend="underline"],
-.unlink-finder-legend.fuzzy-word-match.unlink-finder {
-  background-color:  darkorange !important;
-  text-decoration: none !important;
-}
-.partial-word-match[recommend="underline"],
-.unlink-finder-legend.partial-word-match.unlink-finder {
-  background-color:  brown !important;
-  text-decoration: none !important;
-}
-.redundant-word-match[recommend="underline"],
-.unlink-finder-legend.redundant-word-match.unlink-finder {
-  background-color: slategray !important;
-  text-decoration: none !important;
-}
-.alias-word-match[recommend="underline"],
-.unlink-finder-legend.alias-word-match.unlink-finder {
-  background-color: forestgreen !important;
-  text-decoration: none !important;
-}
