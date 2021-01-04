@@ -4,8 +4,8 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 */
 @media screen and (min-width: 927px) {
 :root {
-    --masonry-startWidth: 30vw; /* 400px; Change this to "unset" if you don't want the sidebar pages to be reset in grid like format each time*/
-    --masonry-minWidth: 30vw;
+    --masonry-startWidth: 20vw; /* 400px; Change this to "unset" if you don't want the sidebar pages to be reset in grid like format each time*/
+    --masonry-minWidth: 20vw;
     --masonry-maxWidth: 30vw;
     --masonry-startHeight: unset; /* 242px; Change this to "unset" if you don't want the sidebar pages to be reset in grid like format each time*/
     --masonry-minHeight: 15vh;
