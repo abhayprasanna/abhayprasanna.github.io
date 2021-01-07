@@ -1887,4 +1887,11 @@ div::-webkit-resizer {
   max-height: 60vh;
   overflow-y: auto;
 }
+/* Cloze block embeds */
+.bp3-card .rm-embed-container {
+  margin-left: -2px !important;
+}
+.bp3-card .rm-hide-bullet {
+  background-color: transparent;
+}
 /*---------------------------------------------------------------------------*/
