@@ -1,8 +1,7 @@
 /* MASONRY MODE FOR BETTER DARK AGE
 Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
-@media selector makes it so it only works when screen width is > 927px, so excludes smartphones.
 */
-@media screen and (min-width: 927px) {
+
 :root {
     --masonry-startWidth: 25vw; /* 400px; Change this to "unset" if you don't want the sidebar pages to be reset in grid like format each time*/
     --masonry-minWidth: 25vw;
@@ -147,4 +146,6 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 .rm-dnd-drop-area, .rm-dnd-drop-bar {
   min-width: calc(var(--masonry-minWidth) + 55px);
 }
+#right-sidebar .__________cytoscape_container {
+  width: var(--masonry-minWidth) !important;
 }
