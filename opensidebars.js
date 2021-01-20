@@ -1,4 +1,5 @@
-const rightsidebar = new KeyboardEvent("keydown", {
+async function loadToggleSidebars() {
+  const rightsidebar = new KeyboardEvent("keydown", {
   bubbles: true, cancelable: true, keyCode: 220, ctrlKey: true, shiftKey: true
   });
 const rightsidebarMac = new KeyboardEvent("keydown", {
@@ -21,3 +22,6 @@ if (typeof firstRun == 'undefined') {
   console.log('Both sidebars open!');
   window.firstRun = false;
 }
+}
+
+loadToggleSidebars();
