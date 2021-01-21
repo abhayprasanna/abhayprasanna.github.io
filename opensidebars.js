@@ -1,3 +1,4 @@
+setTimeout(loadToggleSidebars, 1000);
 async function loadToggleSidebars() {
   const rightsidebar = new KeyboardEvent("keydown", {
   bubbles: true, cancelable: true, keyCode: 220, ctrlKey: true, shiftKey: true
@@ -23,5 +24,3 @@ if (typeof firstRun == 'undefined') {
   window.firstRun = false;
 }
 }
-
-loadToggleSidebars();
