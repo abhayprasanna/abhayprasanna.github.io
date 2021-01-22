@@ -768,7 +768,7 @@ g circle {
 }
 
 .bp3-datepicker-caption {
-  background-color: var(--body-text) !important;
+  background-color: #FAFAFA !important;
   border-radius   : 5px !important;
 }
 
