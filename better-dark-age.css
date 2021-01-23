@@ -1184,7 +1184,8 @@ button[style*="padding: 4px 8px;"] {
 
 .rm-block-text,
 .roam-article,
-.roam-block-container {
+.roam-block-container,
+.rm-full-width {
   max-width: 100% !important;
 }
 
