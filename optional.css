@@ -1,39 +1,6 @@
-/* OPTIONAL CUSTOMIZATIONS */
-
-/* Dharam's back/forward JS customization */
-#roam-navigation-controls_back:hover,
-#roam-navigation-controls_forward:hover {
-  border      : solid var(--icons-hover)!important;
-  border-width: 0 3px 3px 0!important;
-  transition  : color 0.1s ease, border 0.3s ease;
-}
-
-.left-sidebar-open {
-  position: absolute;
-  top     : 3px!important;
-  left    : 220px!important;
-}
-@media only screen and (max-width: 600px) {
-  .left-sidebar-open {
-    left: 2px !important;
-  }
-}
-
-.left-sidebar-closed {
-  position: absolute;
-  top     : 3px!important;
-  left    : 25px!important;
-}
-
-/* Reposition left sidebar menu button */
-.bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small,
-.bp3-button.bp3-minimal.bp3-icon-menu.pointer.bp3-small {
-  position: relative !important;
-  left    : -40px !important;
-}
-
-/* Hide Roam logo */
-#roam-sidebar-logo {
+/* Hide Roam logo and help button */
+#roam-sidebar-logo,
+#buffer {
   display: none;
 }
 
