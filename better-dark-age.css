@@ -1880,3 +1880,22 @@ div::-webkit-resizer {
   background-color: transparent;
 }
 /*---------------------------------------------------------------------------*/
+/* Mobile scrollable right sidebar in portrait mode */
+
+@media only screen and (max-width: 390px) {
+  .roam-body {
+    overflow-x: scroll !important;
+    display   : flex;
+    background-color: var(--sidebar-background);
+    max-width: 100%;
+  }
+
+  .roam-main {
+    min-width: 95vw;
+  }
+
+  #right-sidebar[style*="flex: 0 0 40%;"] {
+    flex: 0 0 95% !important;
+  }
+}
+/*---------------------------------------------------------------------------*/
