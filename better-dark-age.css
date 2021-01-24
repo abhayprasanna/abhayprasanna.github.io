@@ -1637,6 +1637,11 @@ canvas[data-id="layer2-node"] {
   border-radius: 10px;
   box-shadow   : 0 1px 5px rgba(0, 0, 0, 0.6);
 }
+
+.bp3-menu.rm-graph-dropdown {
+  box-shadow: none !important;
+}
+
 /*---------------------------------------------------------------------------*/
 /* UPDATE ALERTS AND VARIOUS SPECIAL MENUS */
 
@@ -1657,6 +1662,11 @@ body > div:nth-child(10) > div > div > div > button > span > svg > path {
   border          : transparent;
   border-radius   : 5px;
   margin-top      : 10px;
+}
+
+/* User settings */
+.rm-display-name-settings > input {
+  background-color: var(--background) !important;
 }
 
 /*---------------------------------------------------------------------------*/
