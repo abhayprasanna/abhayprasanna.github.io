@@ -175,7 +175,8 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 }
 
 .roam-app,
-.roam-body-main.flex-h-box {
+.roam-body-main.flex-h-box,
+.roam-body {
   background: var(--sidebar-background) !important;
 }
 
