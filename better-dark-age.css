@@ -291,23 +291,6 @@ div[style*="border-bottom-color: rgb(138, 155, 168);"] {
   transform: scale(1.2) !important;
 }
 
-/* Mobile scrollable right sidebar in portrait mode */
-
-@media only screen and (max-width: 600px) {
-  .roam-body {
-    overflow-x: scroll !important;
-    display   : flex;
-  }
-
-  .roam-main {
-    min-width: 95vw;
-  }
-
-  #right-sidebar[style*="flex: 0 0 40%;"] {
-    flex: 0 0 95% !important;
-  }
-}
-
 /*---------------------------------------------------------------------------*/
 /* FONTS. TEXT STYLING, AND COLORS */
 
