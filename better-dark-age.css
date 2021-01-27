@@ -1695,6 +1695,10 @@ body > div:nth-child(10) > div > div > div > button > span > svg > path {
   border-top-color: var(--body-text) !important;
 }
 
+.rm-option:hover {
+  cursor: default;
+}
+
 /*---------------------------------------------------------------------------*/
 /* ATTRIBUTE TABLE */
 
