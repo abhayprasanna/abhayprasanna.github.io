@@ -30,3 +30,7 @@ To add more levels just target
     --indent17: #987174AD;
     --indent18: #8B5F78AD;
 }
+
+.rm-multibar {
+  z-index:8;
+}
