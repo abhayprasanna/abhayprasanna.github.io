@@ -4,108 +4,108 @@ Add colors for " .rm-level-n > div " incrementally (n = indent level)
 */
 /* Level 1 */
 .rm-level-1 > div, .rm-level-19 > div, .rm-level-37 > div {
-    border-left-color: var(--indent1) !important;
+    border-right-color: var(--indent1) !important;
     box-shadow: var(--box-shadow-values) var(--indent1) inset;
 }
 
 /* Level 2 */
 .rm-level-2 > div, .rm-level-20 > div, .rm-level-38 > div {
-    border-left-color: var(--indent2) !important;
+    border-right-color: var(--indent2) !important;
     box-shadow: var(--box-shadow-values) var(--indent2) inset;
 }
 
 /* Level 3 */
 .rm-level-3 > div, .rm-level-21 > div, .rm-level-39 > div {
-    border-left-color: var(--indent3) !important;
+    border-right-color: var(--indent3) !important;
     box-shadow: var(--box-shadow-values) var(--indent3) inset;
 }
 
 /* Level 4 */
 .rm-level-4 > div, .rm-level-22 > div, .rm-level-40 > div {
-    border-left-color: var(--indent4) !important;
+    border-right-color: var(--indent4) !important;
     box-shadow: var(--box-shadow-values) var(--indent4) inset;
 }
 
 /* Level 5 */
 .rm-level-5 > div, .rm-level-23 > div, .rm-level-41 > div {
-    border-left-color: var(--indent5) !important;
+    border-right-color: var(--indent5) !important;
     box-shadow: var(--box-shadow-values) var(--indent5) inset;
 }
 
 /* Level 6 */
 .rm-level-6 > div, .rm-level-24 > div, .rm-level-42 > div {
-    border-left-color: var(--indent6) !important;
+    border-right-color: var(--indent6) !important;
     box-shadow: var(--box-shadow-values) var(--indent6) inset;
 }
 
 /* Level 7 */
 .rm-level-7 > div, .rm-level-25 > div, .rm-level-43 > div {
-    border-left-color: var(--indent7) !important;
+    border-right-color: var(--indent7) !important;
     box-shadow: var(--box-shadow-values) var(--indent7) inset;
 }
 
 /* Level 8 */
 .rm-level-8 > div, .rm-level-26 > div, .rm-level-44 > div {
-    border-left-color: var(--indent8) !important;
+    border-right-color: var(--indent8) !important;
     box-shadow: var(--box-shadow-values) var(--indent8) inset;
 }
 
 /* Level 9 */
 .rm-level-9 > div, .rm-level-27 > div, .rm-level-45 > div {
-    border-left-color: var(--indent9) !important;
+    border-right-color: var(--indent9) !important;
     box-shadow: var(--box-shadow-values) var(--indent9) inset;
 }
 
 /* Level 10 */
 .rm-level-10 > div, .rm-level-28 > div, .rm-level-46 > div {
-    border-left-color: var(--indent10) !important;
+    border-right-color: var(--indent10) !important;
     box-shadow: var(--box-shadow-values) var(--indent10) inset;
 }
 
 /* Level 11 */
 .rm-level-11 > div, .rm-level-29 > div, .rm-level-47 > div {
-    border-left-color: var(--indent11) !important;
+    border-right-color: var(--indent11) !important;
     box-shadow: var(--box-shadow-values) var(--indent11) inset;
 }
 
 /* Level 12 */
 .rm-level-12 > div, .rm-level-30 > div, .rm-level-48 > div {
-    border-left-color: var(--indent12) !important;
+    border-right-color: var(--indent12) !important;
     box-shadow: var(--box-shadow-values) var(--indent12) inset;
 }
 
 /* Level 13 */
 .rm-level-13 > div, .rm-level-31 > div, .rm-level-49 > div {
-    border-left-color: var(--indent13) !important;
+    border-right-color: var(--indent13) !important;
     box-shadow: var(--box-shadow-values) var(--indent13) inset;
 }
 
 /* Level 14 */
 .rm-level-14 > div, .rm-level-32 > div, .rm-level-50 > div {
-    border-left-color: var(--indent14) !important;
+    border-right-color: var(--indent14) !important;
     box-shadow: var(--box-shadow-values) var(--indent14) inset;
 }
 
 /* Level 15 */
 .rm-level-15 > div, .rm-level-33 > div, .rm-level-51 > div {
-    border-left-color: var(--indent15) !important;
+    border-right-color: var(--indent15) !important;
     box-shadow: var(--box-shadow-values) var(--indent15) inset;
 }
 
 /* Level 16 */
 .rm-level-16 > div, .rm-level-34 > div, .rm-level-52 > div {
-    border-left-color: var(--indent16) !important;
+    border-right-color: var(--indent16) !important;
     box-shadow: var(--box-shadow-values) var(--indent16) inset;
 }
 
 /* Level 17 */
 .rm-level-17 > div, .rm-level-35 > div, .rm-level-53 > div {
-    border-left-color: var(--indent17) !important;
+    border-right-color: var(--indent17) !important;
     box-shadow: var(--box-shadow-values) var(--indent17) inset;
 }
 
 /* Level 18 */
 .rm-level-18 > div, .rm-level-36 > div, .rm-level-54 > div {
-    border-left-color: var(--indent18) !important;
+    border-right-color: var(--indent18) !important;
     box-shadow: var(--box-shadow-values) var(--indent18) inset;
 }
