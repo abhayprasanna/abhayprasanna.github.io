@@ -2,8 +2,9 @@
 To add deeper indents:
 Add colors for " .rm-level-n > div " incrementally (n = indent level)
 */
+
 /* Level 1 */
-.rm-level-1 > div, .rm-level-19 > div, .rm-level-37 > div {
+.rm-level-1 > div, .rm-level-19 > div, .rm-level-37 > div, .rm-inline-references > .rm-multibar {
     border-right-color: var(--indent1) !important;
     box-shadow: var(--box-shadow-values) var(--indent1) inset;
 }
