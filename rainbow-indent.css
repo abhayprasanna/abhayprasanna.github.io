@@ -30,10 +30,3 @@ To add more levels just target
     --indent17: #987174AD;
     --indent18: #8B5F78AD;
 }
-
-.block-border-left {
-    border-left-width: 1px !important; /* Default 1px */
-    margin-left: 6px; /* Default 6px */
-    border-radius: 0; /* Set to 0 to get smooth, straight indents */
-    padding: 0 !important; /* Set to 0 to align all indents */
-}
