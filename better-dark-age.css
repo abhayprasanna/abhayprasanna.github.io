@@ -683,7 +683,7 @@ div[style*="background-color: white"] {
   background: var(--sidebar-background) !important;
 }
 
-g rect {
+.roam-body g rect {
   fill: var(--background) !important;
 
 }
