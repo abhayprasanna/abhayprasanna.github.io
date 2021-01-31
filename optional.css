@@ -1,6 +1,7 @@
-/* Hide Roam logo and help button */
+/* Hide Roam logo and help button / support */
 #roam-sidebar-logo,
-#buffer {
+#buffer,
+#freshworks-container {
   display: none;
 }
 
