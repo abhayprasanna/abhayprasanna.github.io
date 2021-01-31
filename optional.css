@@ -17,7 +17,7 @@
 }
 
 /* Fix top bar */
-.roam-topbar {
+.rm-topbar {
   padding-right: 0 !important;
   z-index      : 100 !important;
 }
