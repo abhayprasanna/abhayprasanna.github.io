@@ -3,11 +3,11 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 */
 
 :root {
-    --masonry-startWidth: 25vw; /* 400px; Change this to "unset" if you don't want the sidebar pages to be reset in grid like format each time*/
-    --masonry-minWidth: 25vw;
-    --masonry-maxWidth: 35vw;
+    --masonry-startWidth: 30vw; /* 400px; Change this to "unset" if you don't want the sidebar pages to be reset in grid like format each time*/
+    --masonry-minWidth: 10vw;
+    --masonry-maxWidth: 80vw;
     --masonry-startHeight: unset; /* 242px; Change this to "unset" if you don't want the sidebar pages to be reset in grid like format each time*/
-    --masonry-minHeight: 15vh;
+    --masonry-minHeight: 10vh;
     --right-sidebar-custom-width: 60%; /* 66.6%; When extended to 40/60 width, this will be the new width for the sidebar (set to 60% to keep Roam defaults) */
     --left-sidebar-custom-width: 40%; /* 33.3%; When extended to 40/60 width, this will be the new width for the main left side window (set to 40% to keep Roam defaults) */
  }
