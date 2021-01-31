@@ -1,11 +1,10 @@
 //Set delay to trigger sidebars
 setTimeout(loadToggleSidebars, 1000);
-//Set delay to scroll to bottom of daily notes
-setTimeout(ScrollToBottom, 2500);
 
 //Define function to find first reference section and scroll it into view
 function ScrollToBottom() {
  document.querySelector(".rm-reference-main").scrollIntoView();
+ console.log('Scrolled to bottom!');
 }
 
 //Define function to toggle sidebars using Roam default keyboard shortcuts
@@ -34,5 +33,7 @@ if (typeof firstRun == 'undefined') {
   }
   console.log('Both sidebars open!');
   window.firstRun = false;
+  //Set delay to scroll to bottom of daily notes
+  setTimeout(ScrollToBottom, 2500);
 }
 }
