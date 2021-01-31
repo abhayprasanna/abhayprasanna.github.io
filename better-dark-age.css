@@ -185,11 +185,11 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 
 #right-sidebar,
 .roam-sidebar-container,
-.roam-topbar {
+.rm-topbar {
   background-color: var(--sidebar-background) !important;
 }
 
-.roam-topbar {
+.rm-topbar {
   border-bottom: 0;
   padding-right: 36px !important;
   width        : 100vw;
@@ -198,16 +198,16 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
   right        : 0 !important;
 }
 
-.roam-topbar > div > div:nth-child(n) {
+.rm-topbar > div > div:nth-child(n) {
   margin: 0 !important;
 }
 
-.roam-topbar div[style*="flex: 0 0 4px;"],
-.roam-topbar div[style*="flex: 0 0 3px"] {
+.rm-topbar div[style*="flex: 0 0 4px;"],
+.rm-topbar div[style*="flex: 0 0 3px"] {
   flex: 0 0 0 !important;
 }
 
-.roam-topbar.bp3-popover-wrapper {
+.rm-topbar.bp3-popover-wrapper {
   background: var(--sidebar-background) !important;
   z-index   : 10;
 }
