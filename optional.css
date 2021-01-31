@@ -2,7 +2,7 @@
 #roam-sidebar-logo,
 #buffer,
 #freshworks-container {
-  display: none;
+  display: none !important;
 }
 
 /* Murf attr-table filter results */
