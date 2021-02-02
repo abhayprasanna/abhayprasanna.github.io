@@ -1485,59 +1485,49 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 /*---------------------------------------------------------------------------*/
-/* HELP BUTTON / POPUP */
+/* HELP MODAL (new Feb 2021) */
 
-.bp3-button.bp3-minimal {
-  background-color: transparent !important;
-  padding         : 0 !important;
-}
-
-#buffer {
+.rm-help-popup__drag-handle.bp3-card.bp3-elevation-2 {
   background: transparent !important;
-  right     : 7px !important;
-  bottom    : 10px !important;
-}
-
-#buffer .bp3-popover-target > .bp3-button {
-  background: rgba(0, 0, 0, 0.1);
-  height    : 30px;
-  width     : 30px;
-}
-
-#buffer > div {
-  z-index      : 99999 !important;
   backdrop-filter: blur(30px) !important;
   -webkit-backdrop-filter: blur(30px);
-  border-radius: 10px;
-  padding      : 2px 8px 8px;
-  box-shadow   : 0 8px 14px rgba(0, 0, 0, 0.6);
+  box-shadow   : 0 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 10px !important;
 }
 
-#buffer > div .bp3-button::before {
-  color: var(--body-text) !important;
-
-}
-
-#buffer .help-title {
+.rm-help-title {
   color: var(--page-links) !important;
 }
 
-#buffer .help-sub-title {
-  color: var(--italics-color) !important;
+.bp3-icon-search {
+  color: var(--icons);
 }
 
-#buffer span {
+.rm-help-search__icon-container {
+  border : none;
+  padding-right: 10px;
+}
+
+.rm-help-search__input {
+  border-radius: 10px;
+  border: solid 1px var(--references);
+}
+
+.rm-help-categories,
+.rm-help-function__name {
   color: var(--body-text) !important;
 }
 
-#buffer a {
-  text-decoration: underline;
-  color          : var(--external-links) !important;
-  font-weight    : 500;
+.rm-help-category__name {
+  color: var(--bold-color) !important;
 }
 
-#buffer a:hover {
-  opacity: 0.5;
+.rm-help-function__shortcut {
+  color: var(--italics-color) !important;
+}
+
+.rm-help-popup {
+  background: transparent !important;
 }
 
 /*---------------------------------------------------------------------------*/
