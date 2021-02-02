@@ -1489,10 +1489,6 @@ div::-webkit-scrollbar-thumb:hover {
 
 .rm-help-popup__drag-handle.bp3-card.bp3-elevation-2 {
   background: transparent !important;
-  backdrop-filter: blur(30px) !important;
-  -webkit-backdrop-filter: blur(30px);
-  box-shadow   : 0 2px 4px rgba(0, 0, 0, 0.6);
-  border-radius: 10px !important;
 }
 
 .rm-help-title {
@@ -1528,6 +1524,11 @@ div::-webkit-scrollbar-thumb:hover {
 
 .rm-help-popup {
   background: transparent !important;
+  box-shadow   : 0 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 10px !important;
+  backdrop-filter: blur(30px) !important;
+  -webkit-backdrop-filter: blur(30px);
+  padding: 20px !important;
 }
 
 /*---------------------------------------------------------------------------*/
