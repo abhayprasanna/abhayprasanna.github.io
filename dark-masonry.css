@@ -121,7 +121,7 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 }
 /* When long page titles or block refs are in sidebar they need to be shrunk */
 .sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div.flex-h-box.window-headers > div:nth-child(2) {
-    max-width:  calc(var(--masonry-minWidth) - 10px);
+    max-width:  calc(var(--masonry-startWidth) - 10px);
     max-height: 3em !important;
     overflow: hidden;
 }
@@ -147,5 +147,5 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
   min-width: calc(var(--masonry-minWidth) + 55px);
 }
 #right-sidebar .__________cytoscape_container {
-  width: var(--masonry-minWidth) !important;
+  width: var(--masonry-startWidth) !important;
 }
