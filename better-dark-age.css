@@ -1647,12 +1647,17 @@ body > div:nth-child(10) > div > div > div > button > span > svg > path {
 }
 
 /* Share menu */
-.flex-h-box.permission-change-container > div:nth-child(n) > div > textarea {
+#db-permissions-modal textarea {
   background-color: var(--background) !important;
   padding         : 5px !important;
   border          : transparent;
   border-radius   : 5px;
   margin-top      : 10px;
+}
+
+#db-permissions-modal > div > div:nth-child(3) > div > div.flex-v-box > span, 
+#db-permissions-modal > div > div:nth-child(4) > div > div > span {
+  display: none;
 }
 
 /* Various input boxes */
