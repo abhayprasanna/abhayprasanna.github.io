@@ -1,7 +1,8 @@
-/* Hide Roam logo and help button / support */
+/* Hide Roam logo and help button / support / Intercom */
 #roam-sidebar-logo,
-#buffer,
-#freshworks-container {
+.intercom-lightweight-app,
+#intercom-frame,
+#intercom-container {
   display: none !important;
 }
 
@@ -202,38 +203,6 @@ span.rm-page-ref[data-tag*="rm-"] {
   flex-direction: row;
 }
 
-/* Diagram expands on hover */
-button + div svg:not(:first-child):hover {
-  position: fixed;
-  width: 90vw !important;
-  height: 90vh !important;
-  z-index: 9999;
-  top: 5vh !important;
-  left: 5vw !important;
-}
-/* Makes diagram look better */
-/* Some of these sizes might need to be adjusted */
-button + div svg:not(:first-child) {
-  border-radius: 10px;
-}
-div > span > div > span > div[style*="max-height"]{
-  position: relative;
-  top: -40px;
-}
-div > span > div > span > div[style*="max-height"] > button{
-  position: relative;
-  top: 32px;
-  left: 100px;
-  z-index: 9000;
-  text-decoration: none !important;
-  border: none;
-  background: transparent;
-}
-div > span > div > span > div[style*="max-height"] > div > div{
-  width: 40%;
-  border-radius: 5px 5px 5px 0 !important;
-}
-
 /* David PPT mode custom Serif theme */
 .reveal {
   cursor: url(https://cdn.custom-cursor.com/db/cursor/32/Laser_Cursor.png), default !important;
@@ -243,4 +212,10 @@ div > span > div > span > div[style*="max-height"] > div > div{
   font-size: 2.5em !important;
   border-bottom: solid 2px orangered;
   color: black !important;
+}
+
+/* Unlink finder Partial text color */
+
+.partial-word-match {
+  color: #000000 !important;
 }
