@@ -193,9 +193,14 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
   border-bottom: 0;
   padding-right: 36px !important;
   width        : 100vw;
-  z-index      : 5;
+  z-index      : 1000;
   position     : fixed !important;
   right        : 0 !important;
+}
+
+/* fix to make sure search modal is on top of left sidebar */
+.roam-sidebar-container.noselect:hover {
+    z-index: 1001;
 }
 
 .rm-topbar > div > div:nth-child(n) {
