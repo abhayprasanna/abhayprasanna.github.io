@@ -201,7 +201,7 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 /* fix to ensure search modal is on top of left sidebar and right sidebar close button visible*/
 .roam-sidebar-container.noselect:hover,
 #right-sidebar .bp3-icon-menu-open {
-    z-index: 1001;
+    z-index: 1001 !important;
 }
 
 .rm-topbar > div > div:nth-child(n) {
