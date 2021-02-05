@@ -19,7 +19,7 @@
 
 /* Fix top bar */
 .rm-topbar {
-  margin-right: 0 !important;
+  padding-right: 0 !important;
 }
 
 #right-sidebar .bp3-icon-menu-open {
