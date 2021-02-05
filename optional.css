@@ -20,8 +20,6 @@
 /* Fix top bar */
 .rm-topbar {
   margin-right: 0 !important;
-  padding-left: 0 !important;
-  z-index      : 100 !important;
 }
 
 #right-sidebar .bp3-icon-menu-open {
