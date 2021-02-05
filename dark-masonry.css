@@ -68,7 +68,7 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 }
 .sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
     padding-bottom: 40px;
-    margin-left: -13px !important;
+    margin-left: -8px !important;
 }
 .sidebar-content .rm-reference-main > div {
     margin-left: 0px !important;
