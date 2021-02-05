@@ -191,15 +191,16 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 
 .rm-topbar {
   border-bottom: 0;
-  margin-right : 30px !important;
-  width        : calc((100vw) - 40px);
+  padding-right: 30px !important;
+  width        : 100vw;
   position     : fixed !important;
   right        : 0 !important;
   z-index      : 999;
 }
 
 /* fix to ensure search modal is on top of left sidebar and right sidebar close button visible*/
-.roam-sidebar-container.noselect:hover {
+.roam-sidebar-container.noselect:hover,
+#right-sidebar .bp3-icon-menu-open {
     z-index: 1001 !important;
 }
 
