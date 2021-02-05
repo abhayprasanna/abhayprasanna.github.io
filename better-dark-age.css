@@ -192,6 +192,7 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 .rm-topbar {
   border-bottom: 0;
   margin-right : 30px !important;
+  padding-left : 40px;
   width        : 100vw;
   z-index      : 1000;
   position     : fixed !important;
