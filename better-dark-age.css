@@ -195,6 +195,7 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
   width        : calc((100vw) - 40px);
   position     : fixed !important;
   right        : 0 !important;
+  z-index      : 999;
 }
 
 /* fix to ensure search modal is on top of left sidebar and right sidebar close button visible*/
