@@ -144,7 +144,7 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
   width: unset;
 }
 .rm-dnd-drop-area, .rm-dnd-drop-bar {
-  min-width: calc(var(--masonry-minWidth) + 55px);
+  min-width: var(--masonry-startWidth);
 }
 #right-sidebar .__________cytoscape_container {
   width: var(--masonry-startWidth) !important;
