@@ -24,7 +24,8 @@ function toggletoday() { //creates the URL for today and opens it
   var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
   var yyyy = today.getFullYear();
   today = mm + '-' + dd + '-' + yyyy;
-  let roamuri = "https://roamresearch.com/#/app/abhay/page/";
-  let roamuritoday = roamuri+today;
+  dbname = window.location.href.split('/')[5];
+  let roamuri = "https://roamresearch.com/#/app/";
+  let roamuritoday = roamuri+ dbname + "/page/" + today;
   window.open(roamuritoday,"_self");
 }
