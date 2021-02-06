@@ -1,10 +1,11 @@
 setTimeout(todaybutton, 500); //wait half a second just in case
 
 function todaybutton() { //creates a new left sidebar log button below Daily Notes
-  if (!document.getElementsByClassName("bp3-icon bp3-icon-timeline-events")) {
+  if (!document.getElementById('todayDiv')) {
     var divOne = document.createElement('div');
     divOne.classList.add('log-button');
     divOne.innerHTML = "TODAY";
+    divOne.id = 'todayDiv';
     var spanTwo = document.createElement('span');
     spanTwo.classList.add('bp3-icon', 'bp3-icon-timeline-events', 'icon');
     divOne.prepend(spanTwo);
