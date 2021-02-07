@@ -18,6 +18,12 @@ function todaybutton() { //creates a new left sidebar log button below Daily Not
   }
 }
 
+//Define function to find reference section and scroll it into view
+function ScrollToBottom() {
+ document.querySelector(".rm-reference-main").scrollIntoView();
+ console.log('Scrolled to bottom!');
+}
+
 function toggletoday() { //creates the URL for today and opens it
   var today = new Date();
   var dd = String(today.getDate()).padStart(2, '0');
@@ -28,4 +34,6 @@ function toggletoday() { //creates the URL for today and opens it
   let roamuri = "https://roamresearch.com/#/app/";
   let roamuritoday = roamuri+ dbname + "/page/" + today;
   window.open(roamuritoday,"_self");
+  //Set delay to scroll to bottom of daily note
+  setTimeout(ScrollToBottom, 300);
 }
