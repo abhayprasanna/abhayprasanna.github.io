@@ -10,16 +10,16 @@ function ScrollToBottom() {
 //Define function to toggle sidebars using Roam default keyboard shortcuts
 function loadToggleSidebars() {
   const rightsidebar = new KeyboardEvent("keydown", {
-  bubbles: true, cancelable: true, keyCode: 220, ctrlKey: true, shiftKey: true
+  bubbles: true, cancelable: true, keyCode: 191, ctrlKey: true
   });
 const rightsidebarMac = new KeyboardEvent("keydown", {
-  bubbles: true, cancelable: true, keyCode: 220, metaKey: true, shiftKey: true
+  bubbles: true, cancelable: true, keyCode: 191, metaKey: true
   });
 const leftsidebar = new KeyboardEvent("keydown", {
-  bubbles: true, cancelable: true, keyCode: 220, ctrlKey: true, shiftKey: false
+  bubbles: true, cancelable: true, keyCode: 220, ctrlKey: true
   });
 const leftsidebarMac = new KeyboardEvent("keydown", {
-  bubbles: true, cancelable: true, keyCode: 220, metaKey: true, shiftKey: false
+  bubbles: true, cancelable: true, keyCode: 220, metaKey: true
   });
 
 //Check if first run and only run once
