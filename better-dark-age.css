@@ -1503,8 +1503,23 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 .rm-help-categories,
-.rm-help-function__name {
+.rm-help-function__name,
+.rm-help-markdown-function__markdown {
   color: var(--body-text) !important;
+}
+
+.rm-help-markdown-function .rm-strikethrough,
+.rm-help-markdown-function .mord.mathdefault,
+.rm-help-markdown-function .rm-help-resource__description,
+.rm-help-markdown-function .rm-level1,
+.rm-help-markdown-function .rm-level2,
+.rm-help-component__description {
+  color: var(--body-text);
+}
+
+.rm-help-resource__title,
+.rm-help-component__title {
+  color: var(--attributes-color);
 }
 
 .rm-help-category__name {
