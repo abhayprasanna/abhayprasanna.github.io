@@ -103,21 +103,6 @@ div[style*="height: 720px;"] {
 font-size: 0 !important;
 }
 
-/* Cato Minor's bullet transitions */
-.roam-block-container:focus-within > .rm-block-main > div:nth-child(1) .rm-bullet .rm-bullet__inner {
-  background-color: var(--icons-hover) !important;
-  width: 8px;
-  height: 3px;
-  border-radius: 0px;
-  transition: width 100ms linear, height 100ms linear, border-radius 100ms linear;
-}
-.roam-block-container > .rm-block-main > div:nth-child(1) .rm-bullet .rm-bullet__inner  {
-  background-color: default;
-  width: default;
-  height: default;
-  border-radius: default;
-  transition: width 100ms linear, height 100ms linear, border-radius 100ms linear;
-}
 /* Remove partial iframes from path */
 .parent-path-wrapper > div > span > div > iframe,
 .parent-path-wrapper > div > span > .hoverparent {
