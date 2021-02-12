@@ -203,6 +203,10 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
   z-index      : 10;
 }
 
+#right-sidebar .bp3-icon-menu-open {
+  z-index: 11 !important;
+}
+
 /* fix to ensure search popover does not slide under left sidebar when open */
 .rm-find-or-create-wrapper:focus-within {
   flex: 1 1 30% !important;
