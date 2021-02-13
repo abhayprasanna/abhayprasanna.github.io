@@ -1,6 +1,6 @@
-setTimeout(todaybutton, 500); //wait half a second just in case
+setTimeout(todaybutton, 400); //wait half a second just in case
 
-function todaybutton() { //creates a new left sidebar log button below Daily Notes
+function todaybutton() { //creates a new left sidebar log button above Daily Notes
   if (!document.getElementById('todayDiv')) {
     var divOne = document.createElement('div');
     divOne.classList.add('log-button');
@@ -10,7 +10,7 @@ function todaybutton() { //creates a new left sidebar log button below Daily Not
     spanTwo.classList.add('bp3-icon', 'bp3-icon-timeline-events', 'icon');
     divOne.prepend(spanTwo);
     var sidebarcontent = document.querySelector("#app > div.roam-body > div.roam-app > div.roam-sidebar-container.noselect > div"),
-        sidebartoprow = sidebarcontent.childNodes[1];
+        sidebartoprow = sidebarcontent.childNodes[0];
     if (sidebarcontent && sidebartoprow) {
       sidebartoprow.parentNode.insertBefore(divOne, sidebartoprow.nextSibling);    
     }
