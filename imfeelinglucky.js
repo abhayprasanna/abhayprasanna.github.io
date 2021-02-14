@@ -19,7 +19,8 @@ function randombutton() { //creates a new left sidebar log button below Daily No
 }
 
 function togglerandom() { //creates the URL for random page or block and opens it
-  random = window.roamAlphaAPI.q(`[:find [(rand 1 ?blocks)] :where [?e :block/uid ?blocks]]`);
+  random = window.roamAlphaAPI.q(`[:find [(rand 1 ?blocks)] :where [?e :block/uid ?blocks]]`); //this will return both pages and blocks
+//random = window.roamAlphaAPI.q('[:find [(rand 1 ?page-uid)] :where [?e :node/title] [?e :block/uid ?page-uid] ]')[0] // Thanks to @GitMurf for this one; this will return ONLY pages, NOT blocks - comment out previous line and/or replace with this line if you wwant it that way
   dbname = window.location.href.split('/')[5];
   let roamuri = "https://roamresearch.com/#/app/";
   let roamurirandom = roamuri+ dbname + "/page/" + random[0];
