@@ -86,13 +86,15 @@ div[style*="height: 720px;"] {
 
 /* CCC's YT Timestamps JS customization */
 
-.timestamp-control {
+.timestamp-control,
+.audio-timestamp-control {
   color: var(--icons);
   margin-top: 3px;
   border: none;
   transition   : color 0.3s ease, border 0.3s ease;
 }
-.timestamp-control:hover {
+.timestamp-control:hover,
+.audio-timestamp-control {
   color: var(--icons-hover);
   transition   : color 0.3s ease, border 0.3s ease;
 }
