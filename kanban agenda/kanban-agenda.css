@@ -1,0 +1,142 @@
+:root {
+  --calendar-title: "Daily agenda"; /* Change the title - doesn't affect page link which you'll need to update throughout the code */
+}
+
+/* Highlight working hours - replace 10 and 20 with your start/end times + 3 */
+.roam-article > div > div > div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-column:nth-of-type(n+10):nth-of-type(-n+20),
+#right-sidebar div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-column:nth-of-type(n+10):nth-of-type(-n+20) {
+  background-color: #80BFE6;
+}
+
+/* Hide collapsed partial view of kanban in right sidebar */
+#right-sidebar div[style*="max-height: 4.8em;"] .kanban-board {
+  visibility: hidden;
+}
+
+/* Add some helper text when daily agenda is collapsed in right sidebar */
+#right-sidebar div[style*="max-height: 4.8em;"] .kanban-board:before {
+  content: var(--calendar-title) " (click to view in main page)";
+  visibility: visible;
+  position: relative;
+  bottom: 10px;
+  right: 11px;
+  color: #5C7080;
+  font-style: italic;
+}
+
+/* Hide zoom path kanban partial view */
+.rm-zoom-item .kanban-board {
+  display: none;
+}
+
+/* Hide daily agenda in main page */
+.roam-article > div > div > div div[data-path-page-links*="Daily agenda"] .kanban-board {
+  visibility: hidden;
+  height: 0px;
+}
+
+/* Add some helper text over hidden kanban in main page */
+.roam-article > div > div > div div[data-path-page-links*="Daily agenda"] .kanban-board:before {
+  content: "<--  Focus on block to view, or shift-click to view in sidebar";
+  visibility: visible;
+  font-style: italic;
+  color: #5C7080;
+  position: relative;
+  top: -12px;
+}
+
+/* Style the kanban board and show it on focus in main page */
+.roam-article > div > div > div[data-path-page-links*="Daily agenda"] .kanban-board,
+#right-sidebar div[data-path-page-links*="Daily agenda"] .kanban-board {
+  max-height: 80vh;
+  overflow: scroll;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: solid 1px #182026;
+  background-color: #D3D3D3;
+}
+
+/* Add a title to the Daily agenda */
+.roam-article > div > div > div[data-path-page-links*="Daily agenda"] .kanban-board::before,
+#right-sidebar div[data-path-page-links*="Daily agenda"] .kanban-board::before {
+  content: var(--calendar-title);
+  font-weight: 600;
+  font-size: 2em;
+  margin: 12px 0 18px 7px;
+  position: sticky;
+  top: 0;
+}
+
+/* Make first column of all day cards sticky */
+.roam-article > div > div > div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-column:first-child,
+#right-sidebar div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-column:first-child {
+  position: sticky;
+  top: 0;
+  background-color: #E1E8ED;
+  border-radius: 5px;
+  border: solid 1px #5C7080;
+  box-shadow: 0px 2px 5px #5C7080;
+}
+
+/* Make last column of need to plan cards sticky */
+.roam-article > div > div > div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-column:last-child,
+#right-sidebar div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-column:last-child {
+  position: sticky;
+  bottom: 0;
+  background-color: #E1E8ED;
+  border-radius: 5px;
+  border: solid 1px #5C7080;
+  box-shadow: 0px -2px 5px #5C7080;
+}
+
+/* Change flex direction of column container */
+.roam-article > div > div > div[data-path-page-links*="Daily agenda"] .kanban-column-container,
+#right-sidebar div[data-path-page-links*="Daily agenda"] .kanban-column-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Change flex direction of columns and style them */
+.roam-article > div > div > div[data-path-page-links*="Daily agenda"] .kanban-column,
+#right-sidebar div[data-path-page-links*="Daily agenda"] .kanban-column {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto !important;
+  background: transparent;
+  border-bottom: dashed 1px #182026;
+  margin: 0;
+}
+
+/* Style the column titles */
+.roam-article > div > div > div[data-path-page-links*="Daily agenda"] .kanban-title,
+#right-sidebar div[data-path-page-links*="Daily agenda"] .kanban-title {
+  border-bottom: none;
+  border-right: solid 1px #182026;
+  min-width: 50px;
+  width: 50px;
+  font-size: 0.9em;
+  padding: 4px 2px 4px 2px;
+  margin: 0;
+  font-weight: 600;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+/* Style each card */
+.roam-article > div > div > div[data-path-page-links*="Daily agenda"] .kanban-card,
+#right-sidebar div[data-path-page-links*="Daily agenda"] .kanban-card {
+  margin: auto 4px auto 4px;
+  padding: 4px;
+  max-height: 40px;
+  font-size: 0.9em;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px #5C7080;
+  overflow-y: scroll;
+  min-width: 50px;
+  width: unset;
+}
