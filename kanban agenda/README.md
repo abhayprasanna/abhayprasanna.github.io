@@ -15,36 +15,35 @@ Watch this video to get a good sense for the workflow: [link](https://www.loom.c
 
 It all starts with a simply daily notes template in the format:
 
-- [[roam/templates]]
-    - Daily agenda
-        - [[Daily agenda]]
-            - {{[[kanban]]}}
-                - All day
-                - 00:00
-                - 01:00
-                - 02:00
-                - 03:00
-                - 04:00
-                - 05:00
-                - 06:00
-                - 07:00
-                - 08:00
-                - 09:00
-                - 10:00
-                - 11:00
-                - 12:00
-                - 13:00
-                - 14:00
-                - 15:00
-                - 16:00
-                - 17:00
-                - 18:00
-                - 19:00
-                - 20:00
-                - 21:00
-                - 22:00
-                - 23:00
-                - [[Need to plan]]
+- [[roam/templates]] Daily agenda
+    - [[Daily agenda]]
+        - {{[[kanban]]}}
+            - All day
+            - 00:00
+            - 01:00
+            - 02:00
+            - 03:00
+            - 04:00
+            - 05:00
+            - 06:00
+            - 07:00
+            - 08:00
+            - 09:00
+            - 10:00
+            - 11:00
+            - 12:00
+            - 13:00
+            - 14:00
+            - 15:00
+            - 16:00
+            - 17:00
+            - 18:00
+            - 19:00
+            - 20:00
+            - 21:00
+            - 22:00
+            - 23:00
+            - [[Need to plan]]
 
 
 Activating this template in a new Daily Note will create a kanban board with each column representing an hour of your day. The cards (blocks indented directly below each timestamp) represent events, tasks, meetings, etc. You can take notes indented underneath each card as well. You can then drag and drop the cards around as you wish.
