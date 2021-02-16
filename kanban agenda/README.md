@@ -11,6 +11,8 @@ The {{[[kanban]]}} feature in Roam is quite under-leveraged - this is an attempt
 
 ## Workflow and template
 
+Watch this video to get a good sense for the workflow: [link](https://www.loom.com/share/2598148d5ae74a4bb732c702c5d44be0).
+
 It all starts with a simply daily notes template in the format:
 
 - [[roam/templates]]
