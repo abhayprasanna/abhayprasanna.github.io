@@ -55,7 +55,7 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
     height: calc(100% - 40px);
 }
 /*NOTE: .rm-sidebar-outline and .rm-reference-main are at same level and so need to be addressed with div > div... as opposed to direct .classnames */
-.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2) {
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1) {
     resize: both;
     overflow-y: scroll;
     width: var(--masonry-startWidth);
@@ -66,7 +66,7 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
     max-height: 100%;
     margin-right: 8px !important;
 }
-.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
     padding-bottom: 40px;
     margin-left: -8px !important;
 }
@@ -76,27 +76,27 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
     padding-bottom: 40px;
 }
 /* SCROLLBAR */
-.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar {
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1)::-webkit-scrollbar {
     width: unset;
 }
-.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar:hover {
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1)::-webkit-scrollbar:hover {
     background-color: var(--background);
 }
-.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-resizer {
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1)::-webkit-resizer {
     border-style: solid;
     border-color: transparent var(--references) var(--references) transparent;
     background-color: var(--background);
     border-width: 3px;
 }
-.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar-button,
-.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar-thumb,
-.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar-track,
-.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar-track-piece,
-.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar-corner {
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1)::-webkit-scrollbar-button,
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1)::-webkit-scrollbar-thumb,
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1)::-webkit-scrollbar-track,
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1)::-webkit-scrollbar-track-piece,
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1)::-webkit-scrollbar-corner {
     display: none;
 }
 /*Make the scrollbar smaller but keep the resize button the same*/
-.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2):hover::-webkit-scrollbar-thumb {
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1):hover::-webkit-scrollbar-thumb {
     display: block;
     border-radius: 12px;
     background-color: var(--closed-bullets);
