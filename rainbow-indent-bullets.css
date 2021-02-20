@@ -1,0 +1,36 @@
+/* Rainbow indentation */
+/* 
+Feel free to adjust the color variables!
+This one has 18 colors deep (3 cycles of 3 rainbow flavored palettes).
+This loops 3 times so it goes 54 levels deep!
+To add more levels just target
+.rm-level-n > div for every nth level
+*/
+
+@import url('https://abhayprasanna.github.io/rainbow-indent-bullets-core.css');
+
+:root {
+    --box-shadow-values: 25px 0px 20px -30px; /* Set to "none" to remove shadow */
+    --indent1: #5F388BAD;
+    --indent2: #4A57BAAD;
+    --indent3: #48864DAD;
+    --indent4: #A7A15AAD;
+    --indent5: #AD7E48AD;
+    --indent6: #A5494FAD;
+    --indent7: #634071AD;
+    --indent8: #303472AD;
+    --indent9: #395C45AD;
+    --indent10: #7C7948AD;
+    --indent11: #7D5039AD;
+    --indent12: #A5494FAD;
+    --indent13: #706597AD;
+    --indent14: #657D91AD;
+    --indent15: #6D8D76AD;
+    --indent16: #A09A84AD;
+    --indent17: #987174AD;
+    --indent18: #8B5F78AD;
+}
+
+.rm-multibar {
+  z-index:4;
+}
