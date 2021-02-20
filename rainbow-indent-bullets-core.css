@@ -9,7 +9,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent1) inset;
 }
 .rm-level-0 > div > .rm-block__self .rm-bullet__inner, .rm-level-18 > div > .rm-block__self .rm-bullet__inner, .rm-level-36 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent1) !important;
+    background-color: var(--indent0) !important;
 }
 
 /* Level 2 */
@@ -18,7 +18,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent2) inset;
 }
 .rm-level-1 > div > .rm-block__self .rm-bullet__inner, .rm-level-19 > div > .rm-block__self .rm-bullet__inner, .rm-level-37 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent2) !important;
+    background-color: var(--indent1) !important;
 }
 
 /* Level 3 */
@@ -27,7 +27,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent3) inset;
 }
 .rm-level-2 > div > .rm-block__self .rm-bullet__inner, .rm-level-20 > div > .rm-block__self .rm-bullet__inner, .rm-level-38 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent3) !important;
+    background-color: var(--indent2) !important;
 }
 
 /* Level 4 */
@@ -36,7 +36,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent4) inset;
 }
 .rm-level-3 > div > .rm-block__self .rm-bullet__inner, .rm-level-21 > div > .rm-block__self .rm-bullet__inner, .rm-level-39 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent4) !important;
+    background-color: var(--indent3) !important;
 }
 
 /* Level 5 */
@@ -45,7 +45,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent5) inset;
 }
 .rm-level-4 > div > .rm-block__self .rm-bullet__inner, .rm-level-22 > div > .rm-block__self .rm-bullet__inner, .rm-level-40 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent5) !important;
+    background-color: var(--indent4) !important;
 }
 
 /* Level 6 */
@@ -54,7 +54,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent6) inset;
 }
 .rm-level-5 > div > .rm-block__self .rm-bullet__inner, .rm-level-25 > div > .rm-block__self .rm-bullet__inner, .rm-level-41 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent6) !important;
+    background-color: var(--indent5) !important;
 }
 
 /* Level 7 */
@@ -63,7 +63,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent7) inset;
 }
 .rm-level-6 > div > .rm-block__self .rm-bullet__inner, .rm-level-24 > div > .rm-block__self .rm-bullet__inner, .rm-level-42 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent7) !important;
+    background-color: var(--indent6) !important;
 }
 
 /* Level 8 */
@@ -72,7 +72,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent8) inset;
 }
 .rm-level-7 > div > .rm-block__self .rm-bullet__inner, .rm-level-25 > div > .rm-block__self .rm-bullet__inner, .rm-level-43 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent8) !important;
+    background-color: var(--indent7) !important;
 }
 
 /* Level 9 */
@@ -81,7 +81,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent9) inset;
 }
 .rm-level-8 > div > .rm-block__self .rm-bullet__inner, .rm-level-26 > div > .rm-block__self .rm-bullet__inner, .rm-level-44 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent9) !important;
+    background-color: var(--indent8) !important;
 }
 
 /* Level 10 */
@@ -90,7 +90,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent10) inset;
 }
 .rm-level-9 > div > .rm-block__self .rm-bullet__inner, .rm-level-27 > div > .rm-block__self .rm-bullet__inner, .rm-level-45 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent10) !important;
+    background-color: var(--indent9) !important;
 }
 
 /* Level 11 */
@@ -99,7 +99,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent11) inset;
 }
 .rm-level-10 > div > .rm-block__self .rm-bullet__inner, .rm-level-28 > div > .rm-block__self .rm-bullet__inner, .rm-level-46 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent11) !important;
+    background-color: var(--indent10) !important;
 }
 
 /* Level 12 */
@@ -108,7 +108,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent12) inset;
 }
 .rm-level-11 > div > .rm-block__self .rm-bullet__inner, .rm-level-29 > div > .rm-block__self .rm-bullet__inner, .rm-level-47 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent12) !important;
+    background-color: var(--indent11) !important;
 }
 
 /* Level 13 */
@@ -117,7 +117,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent13) inset;
 }
 .rm-level-12 > div > .rm-block__self .rm-bullet__inner, .rm-level-30 > div > .rm-block__self .rm-bullet__inner, .rm-level-48 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent13) !important;
+    background-color: var(--indent12) !important;
 }
 
 /* Level 14 */
@@ -126,7 +126,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent14) inset;
 }
 .rm-level-13 > div > .rm-block__self .rm-bullet__inner, .rm-level-31 > div > .rm-block__self .rm-bullet__inner, .rm-level-49 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent14) !important;
+    background-color: var(--indent13) !important;
 }
 
 /* Level 15 */
@@ -135,7 +135,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent15) inset;
 }
 .rm-level-14 > div > .rm-block__self .rm-bullet__inner, .rm-level-32 > div > .rm-block__self .rm-bullet__inner, .rm-level-50 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent15) !important;
+    background-color: var(--indent14) !important;
 }
 
 /* Level 16 */
@@ -144,7 +144,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent16) inset;
 }
 .rm-level-15 > div > .rm-block__self .rm-bullet__inner, .rm-level-33 > div > .rm-block__self .rm-bullet__inner, .rm-level-51 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent16) !important;
+    background-color: var(--indent15) !important;
 }
 
 
@@ -154,7 +154,7 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent17) inset;
 }
 .rm-level-16 > div > .rm-block__self .rm-bullet__inner, .rm-level-34 > div > .rm-block__self .rm-bullet__inner, .rm-level-52 > div > .rm-block__self .rm-bullet__inner {
-    background-color: var(--indent17) !important;
+    background-color: var(--indent16) !important;
 }
 
 
@@ -164,5 +164,8 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
     box-shadow: var(--box-shadow-values) var(--indent18) inset;
 }
 .rm-level-17 > div > .rm-block__self .rm-bullet__inner, .rm-level-35 > div > .rm-block__self .rm-bullet__inner, .rm-level-53 > div > .rm-block__self .rm-bullet__inner {
+    background-color: var(--indent17) !important;
+}
+.rm-level-18 > div > .rm-block__self .rm-bullet__inner, .rm-level-36 > div > .rm-block__self .rm-bullet__inner, .rm-level-54 > div > .rm-block__self .rm-bullet__inner {
     background-color: var(--indent18) !important;
 }
