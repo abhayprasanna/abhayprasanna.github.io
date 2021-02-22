@@ -1547,6 +1547,25 @@ div::-webkit-scrollbar-thumb:hover {
   padding: 20px !important;
 }
 
+.rm-help-category-menu-item--selected,
+.rm-help-resource:hover {
+  background-color: var(--background) !important;
+}
+
+.rm-help-category-menu-item:hover {
+  background-color: unset !important;
+  color: var(--links-hover);
+}
+
+.rm-help-category-menu-item--selected:hover {
+  color: var(--links-hover) !important;
+  background-color: var(--background) !important;
+}
+
+.rm-help-version {
+  color: var(--body-text);
+}
+
 /*---------------------------------------------------------------------------*/
 /* GRAPH VIEW */
 
