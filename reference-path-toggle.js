@@ -1,4 +1,4 @@
-/* Original code by Azlen Elza implementing Rob Hasfield and Dhrumil's design */
+/* Original code by Azlen Elza implementing Rob Haisfield and Dhrumil's design */
 /* Source: https://gist.github.com/azlen/cc8d543f0e46e17d978e705650df0e9e */
 /* Change line 66 to adjust the toggle shortcut - default is Ctrl+i which works well on macOS but not Windows */
 
