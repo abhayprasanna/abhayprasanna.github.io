@@ -1,5 +1,4 @@
 @import url('https://abhayprasanna.github.io/better-dark-age.css');
-
 @import url('https://fonts.googleapis.com/css?family=Commissioner|Crimson+Text|Fira+Code|Bitter|Work+Sans');
 
 @media (prefers-color-scheme: light) {
@@ -27,7 +26,9 @@
     --sidebar-text            : #292D31;
     --page-heading            : #283593;
     --daily-heading           : #283593;
-    --headings                : #292D31;
+    --heading1                : #292D31;
+    --heading2                : #292D31;
+    --heading3                : #292D31;  
     --bullets                 : #3F51B5;
     --closed-bullets          : #3F51B577;
     --references              : #3F51B5;
@@ -39,17 +40,12 @@
     --icons-hover             : #E4564A;
     --filter-icon             : #50A14E;
     /* FONT SIZES */
-    --main-font-size          : 1em;
     --page-head-font-size     : 2.2em;
-    --h1-font-size            : 2em;
-    --h2-font-size            : 1.6em;
-    --h3-font-size            : 1.2em;
-    --sidebar-h1-size         : 2.2em;
     /* DROPDOWN MENU */
     --dropdown-menu-background: #EAEAEB;
     --dropdown-menu-highlight : #FAFAFA;
     --dropdown-menu-text      : #292D31;
-    --dropdown-newpage        : #283593;
+    --dropdown-newpage        : #0184BC;
     /* SEARCH BAR */
     --search-bar-background   : #F7F8FA;
     --search-bar-text         : #292D31;
@@ -85,7 +81,9 @@
     --sidebar-text            : #F2F2F2;
     --page-heading            : #9580FF;
     --daily-heading           : #9580FF;
-    --headings                : #F2F2F2;
+    --heading1                : #F2F2F2;
+    --heading2                : #F2F2F2;
+    --heading3                : #F2F2F2;  
     --bullets                 : #7C6EAD;
     --closed-bullets          : #313340;
     --references              : #7C6EAD;
@@ -97,17 +95,12 @@
     --icons-hover             : #92FFFF;
     --filter-icon             : #8AFF80;
     /* FONT SIZES */
-    --main-font-size          : 1em;
     --page-head-font-size     : 2.2em;
-    --h1-font-size            : 2em;
-    --h2-font-size            : 1.6em;
-    --h3-font-size            : 1.2em;
-    --sidebar-h1-size         : 2.2em;
     /* DROPDOWN MENU */
     --dropdown-menu-background: #2B2640;
     --dropdown-menu-highlight : #1B1A23;
     --dropdown-menu-text      : #F2F2F2;
-    --dropdown-newpage        : #9580FF;
+    --dropdown-newpage        : #FF9580;
     /* SEARCH BAR */
     --search-bar-background   : #1B1A23;
     --search-bar-text         : #F2F2F2;
