@@ -110,14 +110,7 @@ font-size: 0 !important;
 .parent-path-wrapper > div > span > .hoverparent {
   opacity: 0;
 }
-/* Old style block focus - header size */
-.roam-article .rm-zoom.zoom-path-view ~ div > div > div:nth-child(1) {
-  font-size: 30px;
-}
-/* Hide controls of focus block */
-.roam-article .rm-zoom.zoom-path-view ~ div > div > div:nth-child(1) > div:nth-child(1) {
-  opacity: 0;
-}
+
 /* Minimal right sidebar */
 #roam-right-sidebar-content > div > div:nth-child(n) > div > div > div:nth-child(n) > span:nth-child(1):not(.bp3-button) {
   display: none;
