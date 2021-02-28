@@ -1,18 +1,17 @@
 @import url('https://abhayprasanna.github.io/better-dark-age.css');
-
 @import url('https://fonts.googleapis.com/css?family=Lato|Crimson+Text|Fira+Code|Alegreya|Work+Sans');
 
 @media (prefers-color-scheme: light) {
-  :root {
+    :root {
     /* FONTS */
     --global-font             : 'Work Sans', sans-serif;
     --secondary-font          : 'Fira Code', monospace;
-    --header-font             : 'Crimson Text', serif;
+    --header-font             : 'Bitter', serif;
     /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
     --reduce-padding-right    : 3400px;
     --reduce-padding-left     : 3400px;
     /* COLORS - One light*/
-    --page-links              : #2979ff;
+    --page-links              : #283593;
     --attributes-color        : #986801;
     --external-links          : #50A14E;
     --links-hover             : #E4564A;
@@ -25,31 +24,28 @@
     --background              : #FAFAFA;
     --sidebar-background      : #EAEAEB;
     --sidebar-text            : #292D31;
-    --page-heading            : #2979ff;
-    --daily-heading           : #2979ff;
-    --headings                : #292D31;
-    --bullets                 : #4078F2;
-    --closed-bullets          : #4078F277;
-    --references              : #4078F2;
+    --page-heading            : #283593;
+    --daily-heading           : #283593;
+    --heading1                : #292D31;
+    --heading2                : #292D31;
+    --heading3                : #292D31;  
+    --bullets                 : #3F51B5;
+    --closed-bullets          : #3F51B577;
+    --references              : #3F51B5;
     --block-reference-text    : #0184BC;
     --namespaces              : #E4564A;
     --all-pages-mentions      : #0184BC;
     --cursor                  : #292D31;
-    --icons                   : #4078F2;
+    --icons                   : #3F51B5;
     --icons-hover             : #E4564A;
     --filter-icon             : #50A14E;
     /* FONT SIZES */
-    --main-font-size          : 1em;
     --page-head-font-size     : 2.2em;
-    --h1-font-size            : 2em;
-    --h2-font-size            : 1.6em;
-    --h3-font-size            : 1.2em;
-    --sidebar-h1-size         : 2.2em;
     /* DROPDOWN MENU */
     --dropdown-menu-background: #EAEAEB;
     --dropdown-menu-highlight : #FAFAFA;
     --dropdown-menu-text      : #292D31;
-    --dropdown-newpage        : #2979ff;
+    --dropdown-newpage        : #0184BC;
     /* SEARCH BAR */
     --search-bar-background   : #F7F8FA;
     --search-bar-text         : #292D31;
@@ -98,17 +94,12 @@
   --icons-hover             : #9EFFFF;
   --filter-icon             : #A5FF90;
   /* FONT SIZES */
-  --main-font-size          : 1em;
   --page-head-font-size     : 2.2em;
-  --h1-font-size            : 2em;
-  --h2-font-size            : 1.6em;
-  --h3-font-size            : 1.2em;
-  --sidebar-h1-size         : 2.2em;
   /* DROPDOWN MENU */
   --dropdown-menu-background: #2D2B55;
   --dropdown-menu-highlight : #1E1E3F;
   --dropdown-menu-text      : #e8e6e3;
-  --dropdown-newpage        : #FAD000;
+  --dropdown-newpage        : #FF9D00;
   /* SEARCH BAR */
   --search-bar-background   : #1E1E3F;
   --search-bar-text         : #e8e6e3;
