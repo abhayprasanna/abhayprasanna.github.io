@@ -1,63 +1,59 @@
 @import url('https://abhayprasanna.github.io/better-dark-age.css');
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Fira+Code|Open+Sans');
 
 @media (prefers-color-scheme: light) {
-  :root {
+    :root {
     /* FONTS */
-    --global-font             : 'Open Sans', sans-serif;
+    --global-font             : 'Work Sans', sans-serif;
     --secondary-font          : 'Fira Code', monospace;
-    --header-font             : 'Montserrat', serif;
+    --header-font             : 'Bitter', serif;
     /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
     --reduce-padding-right    : 3400px;
     --reduce-padding-left     : 3400px;
     /* COLORS - One light*/
-    --page-links              : #2A2352;
-    --attributes-color        : #003D5B;
-    --external-links          : #5500FF;
-    --links-hover             : #8F26D9;
-    --hashtags                : #3498DB;
-    --body-text               : #333333;
-    --italics-color           : #8F26D9;
-    --bold-color              : #0088CC;
-    --highlight-text-color    : #333333;
+    --page-links              : #283593;
+    --attributes-color        : #986801;
+    --external-links          : #50A14E;
+    --links-hover             : #E4564A;
+    --hashtags                : #A626A4;
+    --body-text               : #292D31;
+    --italics-color           : #E4564A;
+    --bold-color              : #0184BC;
+    --highlight-text-color    : #292D31;
     --highlighter             : #FFFF80;
-    --background              : #FFFFFF;
-    --sidebar-background      : #F8E8F8;
-    --sidebar-text            : #333333;
-    --page-heading            : #2A2352;
-    --daily-heading           : #2A2352;
-    --headings                : #333333;
-    --bullets                 : #3E366C;
-    --closed-bullets          : #3E366C77;
-    --references              : #3E366C;
-    --block-reference-text    : #3E366C;
-    --namespaces              : #8F26D9;
-    --all-pages-mentions      : #0088CC;
-    --cursor                  : #333333;
-    --icons                   : #3E366C;
-    --icons-hover             : #8F26D9;
-    --filter-icon             : #5500FF;
+    --background              : #FAFAFA;
+    --sidebar-background      : #EAEAEB;
+    --sidebar-text            : #292D31;
+    --page-heading            : #283593;
+    --daily-heading           : #283593;
+    --heading1                : #292D31;
+    --heading2                : #292D31;
+    --heading3                : #292D31;  
+    --bullets                 : #3F51B5;
+    --closed-bullets          : #3F51B577;
+    --references              : #3F51B5;
+    --block-reference-text    : #0184BC;
+    --namespaces              : #E4564A;
+    --all-pages-mentions      : #0184BC;
+    --cursor                  : #292D31;
+    --icons                   : #3F51B5;
+    --icons-hover             : #E4564A;
+    --filter-icon             : #50A14E;
     /* FONT SIZES */
-    --main-font-size          : 1em;
     --page-head-font-size     : 2.2em;
-    --h1-font-size            : 2em;
-    --h2-font-size            : 1.6em;
-    --h3-font-size            : 1.2em;
-    --sidebar-h1-size         : 2.2em;
     /* DROPDOWN MENU */
-    --dropdown-menu-background: #F8E8F8;
-    --dropdown-menu-highlight : #FFFFFF;
-    --dropdown-menu-text      : #333333;
-    --dropdown-newpage        : #2A2352;
+    --dropdown-menu-background: #EAEAEB;
+    --dropdown-menu-highlight : #FAFAFA;
+    --dropdown-menu-text      : #292D31;
+    --dropdown-newpage        : #0184BC;
     /* SEARCH BAR */
-    --search-bar-background   : #FFFFFF;
-    --search-bar-text         : #333333;
+    --search-bar-background   : #F7F8FA;
+    --search-bar-text         : #292D31;
     /* KANBAN CARD COLORS */
     --kanban-main-background  : #FAFAFA;
-    --kanban-column-background: #F8E8F8;
-    --kanban-card-background  : #FFFFFF;
-    --kanban-text-hover       : #F8E8F8;
+    --kanban-column-background: #EAEAEB;
+    --kanban-card-background  : #FAFAFA;
+    --kanban-text-hover       : #E4564A;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -97,12 +93,7 @@
     --icons-hover             : #8F26D9;
     --filter-icon             : #5F5792;
     /* FONT SIZES */
-    --main-font-size          : 1em;
     --page-head-font-size     : 2.2em;
-    --h1-font-size            : 2em;
-    --h2-font-size            : 1.6em;
-    --h3-font-size            : 1.2em;
-    --sidebar-h1-size         : 2.2em;
     /* DROPDOWN MENU */
     --dropdown-menu-background: #110817;
     --dropdown-menu-highlight : #000000;
