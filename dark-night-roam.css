@@ -11,7 +11,7 @@
     /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
     --reduce-padding-right    : 3400px;
     --reduce-padding-left     : 3400px;
-   /* COLORS - One light*/
+    /* COLORS - One light*/
     --page-links              : #283593;
     --attributes-color        : #986801;
     --external-links          : #50A14E;
@@ -27,7 +27,9 @@
     --sidebar-text            : #292D31;
     --page-heading            : #283593;
     --daily-heading           : #283593;
-    --headings                : #292D31;
+    --heading1                : #292D31;
+    --heading2                : #292D31;
+    --heading3                : #292D31;  
     --bullets                 : #3F51B5;
     --closed-bullets          : #3F51B577;
     --references              : #3F51B5;
@@ -39,17 +41,12 @@
     --icons-hover             : #E4564A;
     --filter-icon             : #50A14E;
     /* FONT SIZES */
-    --main-font-size          : 1em;
     --page-head-font-size     : 2.2em;
-    --h1-font-size            : 2em;
-    --h2-font-size            : 1.6em;
-    --h3-font-size            : 1.2em;
-    --sidebar-h1-size         : 2.2em;
     /* DROPDOWN MENU */
     --dropdown-menu-background: #EAEAEB;
     --dropdown-menu-highlight : #FAFAFA;
     --dropdown-menu-text      : #292D31;
-    --dropdown-newpage        : #283593;
+    --dropdown-newpage        : #0184BC;
     /* SEARCH BAR */
     --search-bar-background   : #F7F8FA;
     --search-bar-text         : #292D31;
@@ -97,17 +94,12 @@
     --icons-hover             : #92FFFF;
     --filter-icon             : #8AFF80;
     /* FONT SIZES */
-    --main-font-size          : 1em;
     --page-head-font-size     : 2.2em;
-    --h1-font-size            : 2em;
-    --h2-font-size            : 1.6em;
-    --h3-font-size            : 1.2em;
-    --sidebar-h1-size         : 2.2em;
     /* DROPDOWN MENU */
     --dropdown-menu-background: #121212;
     --dropdown-menu-highlight : #000000;
     --dropdown-menu-text      : #A49C92;
-    --dropdown-newpage        : #BB86FC;
+    --dropdown-newpage        : #A49C92;
     /* SEARCH BAR */
     --search-bar-background   : #000000;
     --search-bar-text         : #A49C92;
