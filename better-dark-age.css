@@ -1251,13 +1251,27 @@ button[style*="padding: 4px 8px;"] {
 	border-color: var(--references);
 }
 
-button {
+button[style*="background-color: white;"] {
 	background: transparent !important;
 	/* !important needed */
 	border: none !important;
 	/* !important needed */
-	color: var(--body-text) !important;
+	color: var(--references) !important;
 	/* !important needed */
+}
+
+button[style*="background-color: rgba(72, 176, 240, 0.5);"] {
+	background: var(--background) !important;
+	/* !important needed */
+	border: solid 1px var(--icons-hover) !important;
+	/* !important needed */
+	color: var(--references) !important;
+	/* !important needed */
+}
+
+button[style*="background-color: rgba(72, 176, 240, 0.5);"]:hover,
+button[style*="background-color: white;"]:hover {
+	color: var(--icons-hover) !important;
 }
 
 .bp3-icon-standard {
