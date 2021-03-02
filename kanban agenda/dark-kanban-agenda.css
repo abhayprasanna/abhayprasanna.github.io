@@ -2,6 +2,8 @@
 
 :root {
   --calendar-title: "Daily agenda"; /* Change the title - doesn't affect page link which you'll need to update throughout the code */
+  --current-hr-bg: var(--hashtags); /* Only if you use Murf's JS */
+  --sliver-color: var(--background); /* Only if you use Murf's JS */
 }
 
 /* Highlight working hours - replace 10 and 20 with your start/end times + 3 */
