@@ -1,0 +1,123 @@
+/* for use with better dark age themes */
+
+:root {
+  --calendar-title: "Daily agenda"; /* Change the title - doesn't affect page link which you'll need to update throughout the code */
+  --current-hr-bg: var(--hashtags); /* Only if you use Murf's JS */
+  --sliver-color: var(--background); /* Only if you use Murf's JS */
+}
+
+/* Highlight working hours - replace 10 and 20 with your start/end times + 3 */
+div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-column:nth-of-type(n+10):nth-of-type(-n+20) {
+  background-color: var(--sidebar-background);
+}
+
+/* Hide collapsed partial view of kanban in right sidebar */
+#right-sidebar div[style*="max-height: 4.8em;"] .kanban-board {
+  visibility: hidden;
+}
+
+/* Add some helper text when daily agenda is collapsed in right sidebar */
+#right-sidebar div[style*="max-height: 4.8em;"] .kanban-board:before {
+  content: var(--calendar-title) " (click to view in main page)";
+  visibility: visible;
+  position: relative;
+  bottom: 10px;
+  right: 11px;
+  color: var(--body-text);
+  font-style: italic;
+}
+
+/* Hide zoom path kanban partial view */
+.rm-zoom-item .kanban-board {
+  display: none;
+}
+
+/* Style the kanban board */
+div[data-path-page-links*="Daily agenda"] .kanban-board {
+  max-height: 80vh;
+  overflow: scroll;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: solid 1px var(--references);
+  background-color: var(--background);
+}
+
+/* Add a title to the Daily agenda */
+div[data-path-page-links*="Daily agenda"] .kanban-board::before {
+  content: var(--calendar-title);
+  font-weight: 600;
+  font-size: 2em;
+  margin: 12px 0 18px 7px;
+  position: sticky;
+  top: 0;
+  color: var(--bold-color);
+}
+
+/* Make first column of all day cards sticky */
+div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-column:first-child {
+  position: sticky;
+  top: 0;
+  background-color: var(--kanban-column-background);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px var(--references);
+  border-color: transparent;
+}
+
+/* Make last column of need to plan cards sticky */
+div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-column:last-child {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--kanban-column-background);
+  border-radius: 5px;
+  box-shadow: 0px -2px 5px var(--references);
+  border-color: transparent;
+}
+
+/* Change flex direction of column container */
+div[data-path-page-links*="Daily agenda"] .kanban-column-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Change flex direction of columns and style them */
+div[data-path-page-links*="Daily agenda"] .kanban-column {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto !important;
+  background: transparent;
+  border-bottom: dashed 1px var(--body-text);
+  margin: 0;
+}
+
+/* Style the column titles */
+div[data-path-page-links*="Daily agenda"] .kanban-title {
+  border-bottom: none;
+  border-right: solid 1px var(--references);
+  min-width: 50px;
+  width: 50px;
+  font-size: 0.9em;
+  padding: 4px 2px 4px 2px;
+  margin: 0;
+  font-weight: 600;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  color: var(--body-text);
+}
+
+/* Style each card */
+div[data-path-page-links*="Daily agenda"] .kanban-card {
+  margin: auto 4px auto 4px;
+  padding: 4px;
+  max-height: 40px;
+  font-size: 0.9em;
+  border-radius: 3px;
+  border: solid 1px var(--references);
+  overflow-y: scroll;
+  min-width: 50px;
+  width: unset;
+}
