@@ -2121,3 +2121,29 @@ span[style*="color: rgb(206, 217, 224);"] {
 
 
 /*---------------------------------------------------------------------------*/
+
+
+/* New Command Palette and Settings */
+
+.rm-command-palette__scroll-container .bp3-menu .rm-menu-item--active,
+.rm-command-palette__scroll-container .bp3-menu .rm-menu-item--active:hover,
+.rm-settings input.rm-display-name-settings__input,
+.rm-settings input.rm-display-name-settings__input:focus,
+.rm-settings .bp3-tabs .bp3-tab-list,
+.rm-settings .select-wrapper{
+  background-color: var(--background);
+}
+
+.rm-settings .bp3-tabs .bp3-tab[aria-selected="true"], 
+.rm-settings .bp3-tabs .bp3-tab:hover,
+.rm-settings .bp3-tabs .bp3-tab-panel {
+  background-color: var(--sidebar-background) !important;
+	/* !important needed */
+}
+
+.bp3-tab {
+  color: var(--body-text);
+}
+.rm-settings .rm-settings-panel .rm-settings-panel__description {
+  color: var(--italics-color);
+}
