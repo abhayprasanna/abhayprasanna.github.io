@@ -306,6 +306,9 @@ div[style*="border-bottom-color: rgb(138, 155, 168);"] {
 	/* !important needed */
 }
 
+span[style*="color: rgb(129, 145, 157);"] {
+  color: var(--icons) !important;
+}
 
 /* Left sidebar text color (CREDIT - Roam-util)*/
 
