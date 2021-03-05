@@ -21,27 +21,32 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 }
 .sidebar-content {
     overflow: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    display: -webkit-flex;
     -webkit-box-orient: vertical;
-    -webkit-flex-wrap: wrap;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: 100%;
     background-color: var(--sidebar-background) !important;
     padding: 0 !important;
     margin: 0 !important;
-    align-content: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
 }
 .sidebar-content > div:not(.rm-dnd-separator) {
     margin-bottom: 10px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    display: -webkit-flex;
     background-color: var(--background);
     max-height: 100%;
     margin-left: 10px;
-    align-self: flex-start; /* So pages can be diff widths in a single column */
+    -ms-flex-item-align: start;
+        align-self: flex-start; /* So pages can be diff widths in a single column */
     border-radius: 12px;
     border: none;
 }
@@ -54,7 +59,10 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 .sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:first-child {
     height: 40px;
     min-width: calc(var(--masonry-minWidth) + 40px);
-    align-items: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+                -ms-grid-row-align: center !important;
+            align-items: center !important;
 }
 .sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) {
     height: calc(100% - 40px);
@@ -111,12 +119,12 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 }
 /* This allows for the main window to shrink below 40%. Default I have set here is for it to jump to 33% if you shrink all the way so that can do two "columns" of pages in the right sidebar to allow for "triple split screen mode" */
 .roam-main[style^="flex: 0 0 40."] {
-    flex-basis: var(--left-sidebar-custom-width) !important;
-    -webkit-flex-basis: var(--left-sidebar-custom-width) !important;
+    -ms-flex-preferred-size: var(--left-sidebar-custom-width) !important;
+        flex-basis: var(--left-sidebar-custom-width) !important;
 }
 #right-sidebar[style^="position: relative; flex: 0 0 59."] {
-    flex-basis: var(--right-sidebar-custom-width) !important;
-    -webkit-flex-basis: var(--right-sidebar-custom-width) !important;
+    -ms-flex-preferred-size: var(--right-sidebar-custom-width) !important;
+        flex-basis: var(--right-sidebar-custom-width) !important;
 }
 /* Block text widths to extend wider  */
 .roam-block-container {
