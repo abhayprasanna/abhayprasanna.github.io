@@ -22,7 +22,11 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 .sidebar-content {
     overflow: unset;
     display: flex;
+    display: -webkit-flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-wrap: wrap;
     flex-direction: column;
+    -webkit-flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
     background-color: var(--sidebar-background) !important;
@@ -33,6 +37,7 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 .sidebar-content > div:not(.rm-dnd-separator) {
     margin-bottom: 10px !important;
     display: flex;
+    display: -webkit-flex;
     background-color: var(--background);
     max-height: 100%;
     margin-left: 10px;
@@ -107,9 +112,11 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 /* This allows for the main window to shrink below 40%. Default I have set here is for it to jump to 33% if you shrink all the way so that can do two "columns" of pages in the right sidebar to allow for "triple split screen mode" */
 .roam-main[style^="flex: 0 0 40."] {
     flex-basis: var(--left-sidebar-custom-width) !important;
+    -webkit-flex-basis: var(--left-sidebar-custom-width) !important;
 }
 #right-sidebar[style^="position: relative; flex: 0 0 59."] {
     flex-basis: var(--right-sidebar-custom-width) !important;
+    -webkit-flex-basis: var(--right-sidebar-custom-width) !important;
 }
 /* Block text widths to extend wider  */
 .roam-block-container {
