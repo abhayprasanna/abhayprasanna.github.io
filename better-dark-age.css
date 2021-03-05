@@ -595,7 +595,7 @@ a:hover {
 
 .rm-embed-container {
 	margin-left: -20px;
-	background-color: var(--background);
+	background-color: transparent !important;
 }
 
 .rm-embed-edit {
