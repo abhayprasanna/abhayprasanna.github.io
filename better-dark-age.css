@@ -1864,6 +1864,10 @@ span[style*="background-color: rgb(14, 90, 138);"] {
 	font-size: 100%;
 }
 
+.rm-alias-tooltip__content .rm-bq {
+        color: var(--bold-color);
+}
+
 
 /*---------------------------------------------------------------------------*/
 
