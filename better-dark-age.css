@@ -738,7 +738,7 @@ div[style*="background-color: white"] {
 	/* !important needed */
 }
 
-.roam-body g rect {
+svg[style*="background-color: rgb(86, 112, 134);"] g rect {
 	fill: var(--background);
 }
 
@@ -747,12 +747,12 @@ rect[fill*="#fff"] {
 	/* !important needed */
 }
 
-foreignObject {
+svg[style*="background-color: rgb(86, 112, 134);"] foreignObject {
 	cursor: -webkit-grab;
 	cursor: grab;
 }
 
-foreignObject .rm-input {
+svg[style*="background-color: rgb(86, 112, 134);"] foreignObject .rm-input {
 	background-color: transparent !important;
 	/* !important needed */
 	color: var(--background);
