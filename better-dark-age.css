@@ -1344,38 +1344,6 @@ button[style*="background-color: white;"]:hover {
 /*---------------------------------------------------------------------------*/
 
 
-/* WIDTH FIXES */
-
-.rm-block-text,
-.roam-article,
-.roam-block-container,
-.rm-full-width {
-	max-width: 100% !important;
-}
-
-div[style*="padding-right: calc((100% - 568px) / 2); padding-left: calc((100% - 1032px) / 2);"],
-div[style*="padding-right: calc((100% - 800px) / 2); padding-left: calc((100% - 800px) / 2);"] {
-	padding-right: calc((100% - var(--reduce-padding-right)) / 2) !important;
-	/* !important needed */
-	padding-left: calc((100% - var(--reduce-padding-left)) / 2) !important;
-	/* !important needed */
-}
-
-
-/* WIDTH FIXES - safari and mobile or iPad*/
-
-div[style*="padding-right: calc(0.5 * (100% - 568px)); padding-left: calc(0.5 * (100% - 1032px));"],
-div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * (100% - 800px));"] {
-	padding-right: calc(0.5 * (100% - var(--reduce-padding-right))) !important;
-	/* !important needed */
-	padding-left: calc(0.5 * (100% - var(--reduce-padding-left))) !important;
-	/* !important needed */
-}
-
-
-/*---------------------------------------------------------------------------*/
-
-
 /* CODEBLOCK */
 
 
