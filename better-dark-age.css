@@ -630,6 +630,9 @@ a:hover {
 	padding-top: 5px;
 }
 
+.rm-nested-refs {
+        background-color: transparent;
+}
 
 /* Namespace text color [[roam/css]] when using CTRL+C CTRL+L */
 
