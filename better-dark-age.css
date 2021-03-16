@@ -745,7 +745,7 @@ svg[style*="background-color: rgb(86, 112, 134);"] g rect {
 	fill: var(--background);
 }
 
-rect[fill*="#fff"] {
+rect[fill="#fff"] {
 	fill: var(--links-hover) !important;
 	/* !important needed */
 }
@@ -1972,7 +1972,7 @@ span[style*="background-color: rgb(14, 90, 138);"] {
 div::-webkit-resizer {
 	border-style: solid;
 	border-color: transparent var(--references) var(--references) transparent;
-	background-color: var(--background);
+	background-color: transparent;
 }
 
 
@@ -2121,4 +2121,18 @@ span[style*="color: rgb(206, 217, 224);"] {
 }
 .rm-settings .rm-settings-panel .rm-settings-panel__description {
   color: var(--italics-color);
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* Excalidraw adjustments */
+
+.ex-header-wrapper-light {
+  background-color: var(--sidebar-background);
+}
+
+.ex-header-title-light {
+  background-color: var(--background);
 }
