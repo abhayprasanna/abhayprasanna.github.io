@@ -2052,6 +2052,22 @@ div::-webkit-resizer {
 }
 
 
+/* Mobile compact view */
+
+@media (max-device-width : 800px) {
+  .roam-article {
+    padding: 0px 15px 0px 25px !important;
+    /* !important needed */
+  }
+  
+  
+  .rm-find-or-create-wrapper:focus-within {
+	flex: 1 1 auto !important;
+	/* !important needed */
+}
+}
+
+
 /*---------------------------------------------------------------------------*/
 
 
