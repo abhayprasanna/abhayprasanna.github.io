@@ -766,6 +766,10 @@ line[style*="stroke: black;"] {
 	/* !important needed */
 }
 
+button {
+  background-color: var(--icons);
+  color: var(--background);
+}
 
 /* Reaction */
 
