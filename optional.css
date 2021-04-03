@@ -17,15 +17,6 @@
   display: none !important;
 }
 
-/* Fix top bar */
-.rm-topbar {
-  padding-right: 0 !important;
-}
-
-#right-sidebar .bp3-icon-menu-open {
-   visibility: hidden;
-}
-
 /* Hide mobile bar on iPad */
 @media (min-device-width : 1024px) {
   #rm-mobile-bar {
