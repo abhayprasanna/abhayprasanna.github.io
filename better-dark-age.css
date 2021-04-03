@@ -2092,7 +2092,8 @@ div::-webkit-resizer {
 
 /* Grey prompts e.g., click here to start a daily note */
 
-span[style*="color: rgb(206, 217, 224);"] {
+span[style*="color: rgb(206, 217, 224);"],
+.rm-right-sidebar__helper-text {
 	color: var(--bold-color) !important;
 	/* !important needed */
 	font-style: italic !important;
