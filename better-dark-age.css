@@ -236,12 +236,6 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 
 .rm-topbar {
 	border-bottom: 0;
-	padding-right: 30px !important;
-	/* !important needed */
-	width: 100vw;
-	position: fixed;
-	right: 0;
-	z-index: 10;
 }
 
 #right-sidebar .bp3-icon-menu-open {
@@ -250,7 +244,6 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 	padding-top: 5px !important;
 	/* !important needed */
 }
-
 
 /* Compact formatting */
 
@@ -1337,6 +1330,14 @@ button[style*="background-color: white;"]:hover {
 	background: var(--sidebar-background) !important;
 	/* !important needed */
 	font-weight: bold;
+}
+
+.bp3-icon>svg:not([fill]) {
+  fill: var(--icons);
+}
+
+.bp3-icon>svg:not([fill]):hover {
+  fill: var(--icons-hover);
 }
 
 
