@@ -138,11 +138,26 @@
 #right-sidebar div[data-path-page-links*="Daily agenda"] .kanban-card {
   margin: auto 4px auto 4px;
   padding: 4px;
-  max-height: 40px;
+  height: 40px;
   font-size: 0.9em;
   border-radius: 3px;
   border: solid 1px var(--references);
   overflow-y: scroll;
+  overflow-x: hidden;
   min-width: 50px;
+  width: unset;
+}
+
+/* Fix block input in each card */
+.roam-article > div > div > div[data-path-page-links*="Daily agenda"] .kanban-card .rm-block-text,
+#right-sidebar div[data-path-page-links*="Daily agenda"] .kanban-card .rm-block-text {
+  height: 100%;
+  padding: 0;
+  line-height: 1.4;
+}
+
+/* Fix separator issue */
+.roam-article > div > div > div[data-path-page-links*="Daily agenda"] .kanban-board .rm-dnd-separator,
+#right-sidebar div[data-path-page-links*="Daily agenda"] .kanban-board .rm-dnd-separator {
   width: unset;
 }
