@@ -19,7 +19,7 @@ function timebutton() { //creates a new left sidebar log button below Daily Note
   setInterval(function() {
     divTime.innerHTML = new Date().toLocaleTimeString();
     divTime.prepend(spanTime);
-  }, 1);
+  }, 1000);
 }
 
 //Define function to find reference section and scroll it into view
