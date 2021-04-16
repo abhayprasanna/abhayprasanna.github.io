@@ -15,10 +15,11 @@ function timebutton() { //creates a new left sidebar log button below Daily Note
       sidebartoprow.parentNode.insertBefore(divTime, sidebartoprow.nextSibling);    
     }
     divTime.onclick = toggletoday; //run the function onclick
+    divTime.innerText = new Date().toLocaleTimeString();
+    divTime.prepend(spanTime)
   }
   setInterval(function() {
-    divTime.innerHTML = new Date().toLocaleTimeString();
-    divTime.prepend(spanTime);
+    divTime.childNodes[1].nodeValue = new Date().toLocaleTimeString();
   }, 1000);
 }
 
