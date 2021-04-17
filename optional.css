@@ -1,8 +1,5 @@
 /* Hide Roam logo and help button / support / Intercom */
-#roam-sidebar-logo,
-.intercom-lightweight-app,
-#intercom-frame,
-#intercom-container {
+#roam-sidebar-logo {
   display: none !important;
 }
 
