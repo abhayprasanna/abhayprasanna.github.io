@@ -1332,12 +1332,17 @@ button[style*="background-color: white;"]:hover {
 	font-weight: bold;
 }
 
-.bp3-icon>svg:not([fill]) {
+.bp3-icon > svg {
   fill: var(--icons);
 }
 
-.bp3-icon>svg:not([fill]):hover {
+.bp3-icon > svg:hover {
   fill: var(--icons-hover);
+}
+
+.bp3-icon,
+.icon{
+  color: var(--icons) !important;
 }
 
 
@@ -1591,10 +1596,11 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 .rm-help-markdown-function .rm-strikethrough,
-.rm-help-markdown-function .mord.mathdefault,
+.rm-help-markdown-function .mord,
 .rm-help-resource__description,
 .rm-help-markdown-function .rm-level1,
 .rm-help-markdown-function .rm-level2,
+.rm-help-markdown-function .rm-level3,
 .rm-help-component__description {
 	color: var(--body-text);
 }
@@ -1615,11 +1621,9 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 .rm-help-popup {
-	background: transparent;
+	background-color: var(--sidebar-background);
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 	border-radius: 10px;
-	backdrop-filter: blur(30px);
-	-webkit-backdrop-filter: blur(30px);
 	padding: 20px;
 }
 
@@ -1645,7 +1649,6 @@ div::-webkit-scrollbar-thumb:hover {
 .rm-help-version {
 	color: var(--body-text);
 }
-
 
 /*---------------------------------------------------------------------------*/
 
@@ -1731,6 +1734,13 @@ body>div:nth-child(10)>div>div>div>button>span>svg>path {
 	/* !important needed */
 }
 
+.rm-modal-dialog {
+  background-color: var(--sidebar-background);
+}
+
+.bp3-heading {
+  color: var(--page-links);
+}
 
 /* Share menu */
 
@@ -1748,7 +1758,6 @@ body>div:nth-child(10)>div>div>div>button>span>svg>path {
 #db-permissions-modal>div>div:nth-child(4)>div>div>span {
 	display: none;
 }
-
 
 /* Various input boxes */
 
