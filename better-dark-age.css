@@ -2146,11 +2146,26 @@ span[style*="color: rgb(206, 217, 224);"],
 	/* !important needed */
 }
 
-.bp3-tab {
+.bp3-tab,
+ {
   color: var(--body-text);
 }
 .rm-settings .rm-settings-panel .rm-settings-panel__description {
   color: var(--italics-color);
+}
+
+.rm-settings__tab,
+.rm-settings-heading {
+  color: var(--body-text) !important; /* important needed */
+}
+
+.rm-settings .rm-settings-panel .rm-select-wrapper {
+  background-color: var(--background);
+}
+
+.rm-settings input[type="text"],
+.rm-settings input[type="text"]:focus {
+  background-color: var(--background);
 }
 
 
