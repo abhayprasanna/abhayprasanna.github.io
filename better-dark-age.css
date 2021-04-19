@@ -1773,16 +1773,11 @@ body>div:nth-child(10)>div>div>div>button>span>svg>path {
 
 /* FIX SELECTION COLOR AND BLOCK-HIGLIGHTS */
 
-.block-highlight-blue {
+.block-highlight-blue,
+::selection {
 	background-color: var(--closed-bullets) !important;
 	/* !important needed */
 }
-
-::selection {
-	background-color: #BEB9C8 !important;
-	/* !important needed */
-}
-
 
 /* {{or}} dropdown */
 
