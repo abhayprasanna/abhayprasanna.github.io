@@ -1746,6 +1746,14 @@ body>div:nth-child(10)>div>div>div>button>span>svg>path {
   color: var(--page-links);
 }
 
+.bp3-dialog {
+  background-color: var(--sidebar-background);
+}
+
+.bp3-dialog-header {
+  background-color: var(--background);
+}
+
 /* Share menu */
 
 #db-permissions-modal textarea {
