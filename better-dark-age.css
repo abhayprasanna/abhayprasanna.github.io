@@ -238,13 +238,6 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 	border-bottom: 0;
 }
 
-#right-sidebar .bp3-icon-menu-open {
-	z-index: 10;
-	/* !important needed */
-	padding-top: 5px !important;
-	/* !important needed */
-}
-
 /* Compact formatting */
 
 .log-button,
