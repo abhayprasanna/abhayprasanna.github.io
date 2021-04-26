@@ -1,50 +1,23 @@
 /* Hide Roam logo */
 #roam-sidebar-logo {
-  display: none !important;
-}
-
-/* Murf attr-table filter results */
-#filterRowCt {
-  color: var(--italics-color) !important;
+  display: none;
 }
 
 /* Hide graph button and calendar (daily notes) in top bar */
 .bp3-button.bp3-minimal.bp3-icon-calendar.bp3-small,
 .bp3-button.bp3-minimal.bp3-icon-graph.bp3-small {
-  display: none !important;
+  display: none;
+}
+
+.rm-topbar__spacer-sm {
+  display: none;
 }
 
 /* Hide mobile bar on iPad */
 @media (min-device-width : 1024px) {
   #rm-mobile-bar {
-    display: none !important;
+    display: none;
   }
-}
-
-/* Justify as block quote */
-.text-align-justify {
-  background-color : var(--sidebar-background);
-  padding-left     : 2%;
-  padding-right    : 2%;
-  color            : var(--italics-color) !important;
-  border-left-width: 5px;
-  border-left-style: solid;
-  border-left-color: var(--references);
-  font-family      : var(--header-font) !important;
-}
-
-.text-align-justify::before{
-  content: "❝\A";
-  white-space: pre;
-  font-size: 100%;
-  color: var(--references);
-}
-
-.text-align-justify::after{
-  content: "\A❞";
-  white-space: pre;
-  color: var(--references);
-  font-size: 100%;
 }
 
 /* Override image, iframe, pdf resize */
@@ -70,21 +43,6 @@ div[style*="height: 720px;"] {
 .react-resizable-handle-se:hover {
   border-style: solid;
   border-color: transparent var(--icons-hover) var(--icons-hover) transparent;
-}
-
-/* CCC's YT Timestamps JS customization */
-
-.timestamp-control,
-.audio-timestamp-control {
-  color: var(--icons);
-  margin-top: 3px;
-  border: none;
-  transition   : color 0.3s ease, border 0.3s ease;
-}
-.timestamp-control:hover,
-.audio-timestamp-control {
-  color: var(--icons-hover);
-  transition   : color 0.3s ease, border 0.3s ease;
 }
 
 /* Custom Tags */
@@ -118,21 +76,25 @@ font-size: 0 !important;
 .rm-sidebar-outline .rm-block-children.rm-block__children.rm-level-0 {
   padding-top: 10px;
 }
+
 /* Don't let images and iframes extend outside box */
 .rm-inline-img__resize, .react-resizable, .hoverparent {
   max-width: 100%;
   margin: 0 !important;
 }
+
 /* Move the edit icon to the left */
 .hoveronly {
   right: 10px !important;
 }
+
 /* Minimal right sidebar mentions */
 /* Change chevron path separator color */
 #right-sidebar .rm-ref-page-view .rm-zoom .bp3-icon-chevron-right {
   color: var(--bold-color) !important;
   transform: scale(1.5);
 }
+
 /* Hide page title and path */
 #right-sidebar .rm-ref-page-view .flex-h-box.rm-title-arrow-wrapper span {
   height: 1px;
@@ -150,6 +112,7 @@ font-size: 0 !important;
   position: relative;
   right: 25px;
 }
+
 /* Show the path and page title on hover */
 #right-sidebar .rm-ref-page-view .rm-reference-item:hover .rm-zoom {
   display: flex;
