@@ -230,8 +230,10 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 /* Left sidebar */
 
 .roam-sidebar-container {
-	background-color: var(--sidebar-background) !important;
+	background-color: transparent !important;
 	/* !important needed */
+	-webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
 }
 
 .rm-topbar {
