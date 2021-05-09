@@ -25,5 +25,5 @@ function togglerandom() { //creates the URL for random page or block and opens i
   dbname = window.location.href.split('/')[5];
   let roamuri = "https://roamresearch.com/#/app/";
   let roamurirandom = roamuri+ dbname + "/page/" + random[0];
-  window.open(roamurirandom,"_self");
+  window.location.assign(roamurirandom);
 }
