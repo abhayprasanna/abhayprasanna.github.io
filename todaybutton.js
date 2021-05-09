@@ -33,7 +33,7 @@ function toggletoday() { //creates the URL for today and opens it
   dbname = window.location.href.split('/')[5];
   let roamuri = "https://roamresearch.com/#/app/";
   let roamuritoday = roamuri+ dbname + "/page/" + today;
-  window.open(roamuritoday,"_self");
+  window.location.assign(roamuritoday);
   //Set delay to scroll to bottom of daily note
   setTimeout(ScrollToBottom, 300);
 }
