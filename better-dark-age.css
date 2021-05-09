@@ -1006,6 +1006,7 @@ strong[style*='color: rgb(206, 217, 224);'] {
 .bp3-input,
 .rm-pages-toolbar .toolbar-search-group .search-input {
 	background: var(--search-bar-background);
+	color: var(--body-text);
 }
 
 
