@@ -153,3 +153,17 @@ span.rm-page-ref[data-tag*="rm-"] {
 .partial-word-match {
   color: #000000 !important;
 }
+
+/* Sticky tags */
+
+.roam-block-container[data-page-links*=".sticky"] > .rm-block-main {
+  position: sticky;
+  border-radius: 5px;
+  background-color: var(--background);
+  top: 1px;
+  z-index: 11;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+  box-shadow: 0 0px 2px 1px var(--references);
+}
