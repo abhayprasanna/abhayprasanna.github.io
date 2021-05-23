@@ -427,14 +427,17 @@ div[style*="background-color: rgb(57, 75, 89);"] {
 
 .rm-heading-level-1>.rm-block__self .rm-block__input {
 	color: var(--heading1);
+	font-family: var(--header-font);
 }
 
 .rm-heading-level-2>.rm-block__self .rm-block__input {
 	color: var(--heading2);
+	font-family: var(--header-font);
 }
 
 .rm-heading-level-3>.rm-block__self .rm-block__input {
 	color: var(--heading3);
+	font-family: var(--header-font);
 }
 
 
