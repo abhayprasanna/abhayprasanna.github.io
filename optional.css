@@ -77,6 +77,17 @@ font-size: 0 !important;
   padding-top: 10px;
 }
 
+/* Minimal right sidebar mentions */
+
+#right-sidebar .rm-ref-page-view .rm-title-arrow-wrapper,
+#right-sidebar .rm-ref-page-view .rm-zoom {
+  display: none;
+}
+#right-sidebar .rm-ref-page-view {
+  padding-bottom: 0;
+  margin-left: -12px;
+}
+
 /* Don't let images and iframes extend outside box */
 .rm-inline-img__resize, .react-resizable, .hoverparent {
   max-width: 100%;
@@ -86,44 +97,6 @@ font-size: 0 !important;
 /* Move the edit icon to the left */
 .hoveronly {
   right: 10px !important;
-}
-
-/* Minimal right sidebar mentions */
-/* Change chevron path separator color */
-#right-sidebar .rm-ref-page-view .rm-zoom .bp3-icon-chevron-right {
-  color: var(--bold-color) !important;
-  transform: scale(1.5);
-}
-
-/* Hide page title and path */
-#right-sidebar .rm-ref-page-view .flex-h-box.rm-title-arrow-wrapper span {
-  height: 1px;
-  color: transparent;
-}
-/* Add light grey dashed line to separate pages & to help know where to hover */
-#right-sidebar .rm-ref-page-view .flex-h-box.rm-title-arrow-wrapper {
-  border-bottom: 1px dashed var(--references);
-}
-/* Hide parent path until hover */
-#right-sidebar .rm-ref-page-view .rm-zoom {
-  display: none;
-}
-#right-sidebar .rm-ref-page-view .rm-reference-item {
-  position: relative;
-  right: 25px;
-}
-
-/* Show the path and page title on hover */
-#right-sidebar .rm-ref-page-view .rm-reference-item:hover .rm-zoom {
-  display: flex;
-  padding-left: 5px;
-  padding-bottom: 10px;
-}
-#right-sidebar .rm-ref-page-view .flex-h-box.rm-title-arrow-wrapper:hover,
-#right-sidebar .rm-ref-page-view .flex-h-box.rm-title-arrow-wrapper:hover span {
-  height: unset;
-  color: unset;
-  border-bottom: unset;
 }
 
 /* Horizontal layout */
