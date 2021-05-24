@@ -432,7 +432,8 @@ div[style*="background-color: rgb(57, 75, 89);"] {
 
 .rm-heading-level-2>.rm-block__self .rm-block__input {
 	color: var(--heading2);
-	font-family: var(--header-font);
+	font-family: var(--header-font) !important;
+	/* !important needed */
 }
 
 .rm-heading-level-3>.rm-block__self .rm-block__input {
