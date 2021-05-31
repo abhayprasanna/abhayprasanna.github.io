@@ -203,7 +203,6 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 }
 
 #roam-right-sidebar-content {
-	margin-top: 9px;
 	border: 1px solid var(--sidebar-background);
 	border-radius: 12px;
 	background: var(--background);
