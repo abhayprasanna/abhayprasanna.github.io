@@ -17,7 +17,7 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 #roam-right-sidebar-content {
     overflow: auto !important;
     background-color: var(--sidebar-background) !important;
-    margin-top: 8px !important;
+    margin-top: 2px;
 }
 .sidebar-content {
     overflow: unset;
