@@ -2187,3 +2187,17 @@ span[style*="color: rgb(206, 217, 224);"],
 .ex-header-title-light {
   background-color: var(--background);
 }
+
+/*-----Block reference footnote----*/
+
+sup {
+  left: .3em;
+  color: var(--bold-color);
+}
+
+.rm-reference-footnote .rm-active {
+    color: var(--italics-color);
+    background-color: var(--sidebar-background);
+}
+
+/*---------------------------------------------------------------------------*/
