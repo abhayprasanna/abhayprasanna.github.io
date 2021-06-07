@@ -1818,6 +1818,11 @@ span[style*="background-color: rgb(14, 90, 138);"] {
 	border-radius: 5px;
 }
 
+/* TABLE BORDER */
+
+td {
+  border-color: var(--references) !important;
+}
 
 /*---------------------------------------------------------------------------*/
 
