@@ -2051,7 +2051,9 @@ div::-webkit-resizer {
 
 /* Mobile scrollable right sidebar in portrait mode */
 
-@media only screen and (max-width: 390px) {
+@media only screen
+and (max-device-width : 926px)
+and (orientation: portrait) {
 	.roam-body {
 		overflow-x: scroll !important;
 		/* !important needed */
@@ -2071,7 +2073,8 @@ div::-webkit-resizer {
 
 /* Mobile compact view */
 
-@media (max-device-width : 800px) {
+@media only screen
+and (max-device-width : 926px) {
   .roam-article {
     padding: 0px 15px 0px 25px !important;
     /* !important needed */
