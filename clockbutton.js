@@ -25,7 +25,7 @@ function timebutton() { //creates a new left sidebar log button below Daily Note
 
 //Define function to find reference section and scroll it into view
 function ScrollToBottom() {
- document.querySelector(".rm-reference-main").scrollIntoView();
+ document.querySelector(".rm-reference-main:not(.rm-query-content)").scrollIntoView();
  console.log('Scrolled to bottom!');
 }
 
