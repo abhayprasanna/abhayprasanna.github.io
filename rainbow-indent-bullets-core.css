@@ -166,3 +166,10 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
 .rm-level-17 > div > .rm-block__self .rm-bullet__inner, .rm-level-35 > div > .rm-block__self .rm-bullet__inner, .rm-level-53 > div > .rm-block__self .rm-bullet__inner {
     background-color: var(--indent18) !important;
 }
+
+
+/* Focused block */
+.rm-focused > .rm-block-children > .rm-multibar {
+  border-right: dotted;
+  box-shadow: none;
+}
