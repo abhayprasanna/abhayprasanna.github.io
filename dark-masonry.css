@@ -129,7 +129,6 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
 /* Block text widths to extend wider  */
 .roam-block-container {
     max-width: unset !important;
-    width: 98% !important;
 }
 .rm-block-text {
     max-width: unset !important;
