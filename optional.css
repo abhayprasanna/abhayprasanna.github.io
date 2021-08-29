@@ -140,3 +140,44 @@ span.rm-page-ref[data-tag*="rm-"] {
   margin-bottom: 5px;
   box-shadow: 0 0px 2px 1px var(--references);
 }
+
+/* Width fixes */
+
+.rm-block-separator {
+  min-width: unset;
+}
+.rm-full-width,
+.rm-code-block,
+.rm-embed-container {
+  margin-right: -5px;
+}
+
+/* Daily notes color */
+
+[data-original-text] {
+  color: var(--bold-color) !important;
+}
+
+/* Fix the blue outline on safari */
+
+*:focus {
+    outline: none;
+}
+
+/* Maximize video size */
+.rm-spacing--full .rm-video-player__spacing-wrapper {
+    max-width: 100%;
+}
+
+/* Hide videos in right sidebar */
+
+#right-sidebar .rm-iframe__spacing-wrapper {
+  visibility: hidden;
+  max-height: 10px;
+}
+
+#right-sidebar .rm-iframe__spacing-wrapper:before {
+  visibility: visible;
+  content: "<--- Click to see video";
+  font-style: italic;
+}
