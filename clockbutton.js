@@ -36,6 +36,6 @@ function toggletoday() { //creates the URL for today and opens it
   var yyyy = today.getFullYear();
   today = mm + '-' + dd + '-' + yyyy;
   window.roamAlphaAPI.ui.mainWindow.openPage({page:
-											                        {uid: today}});
+				              {uid: today}});
   setTimeout(ScrollToBottom, 300);  //Set delay to scroll to bottom of daily note
 }
