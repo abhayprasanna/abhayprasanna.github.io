@@ -35,9 +35,7 @@ function toggletoday() { //creates the URL for today and opens it
   var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
   var yyyy = today.getFullYear();
   today = mm + '-' + dd + '-' + yyyy;
-  dbname = window.location.href.split('/')[5];
-  let roamuri = "https://roamresearch.com/#/app/"; //Use https://roamresearch.com/#/offline/ for local graphs
-  let roamuritoday = roamuri+ dbname + "/page/" + today;
-  window.location.assign(roamuritoday);
+  window.roamAlphaAPI.ui.mainWindow.openPage({page:
+											                        {uid: today}});
   setTimeout(ScrollToBottom, 300);  //Set delay to scroll to bottom of daily note
 }
