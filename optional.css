@@ -181,3 +181,8 @@ span.rm-page-ref[data-tag*="rm-"] {
   content: "<--- Click to see video";
   font-style: italic;
 }
+
+/* roamjs twitter count */
+.roamjs-twitter-count > span {
+     color: var(--italics-color) !important;
+}
