@@ -108,7 +108,6 @@ span[style*="color: red"]:hover {
 	cursor: nw-resize;
 }
 
-
 /* Filter icon */
 
 .bp3-icon.bp3-icon-filter[style*="color: rgb(168, 42, 42);"] {
@@ -1338,6 +1337,12 @@ button[style*="background-color: white;"]:hover {
 .bp3-icon,
 .icon{
   color: var(--icons) !important;
+}
+
+/* Block reference active override - should ideally fix all these importants.... */
+.rm-active.bp3-button.bp3-small.bp3-minimal {
+  color: var(--italics-color) !important;
+  border-color: var(--italics-color) !important;
 }
 
 
