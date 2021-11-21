@@ -8,7 +8,7 @@ This is a super simple SmartBlock to make an API call to GPT-3's DaVinci Complet
 
 Step 1: Get your API key from OpenAI - https://beta.openai.com/account/api-keys
 
-Step 2: Create the SmartBlock
+Step 2: Create the SmartBlock and update the core settings variables
 
 #SmartBlock GPT3
 
