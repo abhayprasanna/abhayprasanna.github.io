@@ -4,7 +4,7 @@
 
 ### GPT-3 RoamJS SmartBlock
 
-This is a super simple SmartBlock to make an API call to GPT-3's DaVinci Completion engine. When you invoke the SmartBlock, it uses the text in the current block as the prompt, and fills in the results. Have fun, be safe!
+This is a super simple SmartBlock to make an API call to GPT-3's DaVinci Completion engine. When you invoke the SmartBlock, it uses the text in the current block as the prompt, and fills in the results. You probably want to prime it heavily to get good results (see https://beta.openai.com/docs/guides/completion/prompt-design for examples). You might want to branch these off into different SmartBlocks with various priming / temperature settings. Have fun, be safe!
 
 Step 1: Get your API key from OpenAI - https://beta.openai.com/account/api-keys
 
