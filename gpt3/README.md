@@ -46,3 +46,8 @@ $.ajax({
 ```javascript
 return output;```
 %>
+```
+
+#### When you're done, it should look something like this:
+
+![](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/gpt3/GPT-3%20SmartBlock%20Screenshot.png?raw=true)
