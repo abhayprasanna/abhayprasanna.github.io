@@ -1,6 +1,6 @@
 # HERE BE DRAGONS
 
-## **USE AT YOUR OWN RISK**
+## **USE AT YOUR OWN RISK AND COSTS**
 
 ### GPT-3 RoamJS SmartBlock
 
