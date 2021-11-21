@@ -18,6 +18,7 @@ Step 2: Create the SmartBlock
 <%JA:```javascript
 var token_limit = 10; //Change to whatever you would like, careful of costs!
 var api_key = "Bearer REPLACE-WITH-API-KEY"; //Put your API key here
+var temp_setting = 0.3; //Description and other settings here https://beta.openai.com/docs/api-reference/completions/create
 $.ajax({
     url: "https://api.openai.com/v1/engines/davinci/completions",
     beforeSend: function(xhr) { 
@@ -28,7 +29,7 @@ $.ajax({
     contentType: 'application/json',
     processData: false,
     async: false,
-    data: JSON.stringify({"prompt": blockText, "max_tokens": token_limit}),
+    data: JSON.stringify({"prompt": blockText, "max_tokens": token_limit, "temperature": temp_setting}),
     success: function (data) {
       results = JSON.stringify(data);
       output = JSON.parse(results).choices[0].text;
