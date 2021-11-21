@@ -17,7 +17,7 @@ Step 2: Create the SmartBlock
 <%CURRENTBLOCKCONTENT:blockText%>
 <%JA:```javascript
 var token_limit = 10; //Change to whatever you would like, careful of costs!
-var api_key = "Bearer REPLACE-WITH-API-KEY";
+var api_key = "Bearer REPLACE-WITH-API-KEY"; //Put your API key here
 $.ajax({
     url: "https://api.openai.com/v1/engines/davinci/completions",
     beforeSend: function(xhr) { 
