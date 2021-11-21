@@ -21,7 +21,6 @@ var api_key = "Bearer REPLACE-WITH-API-KEY"; //Put your API key here
 $.ajax({
     url: "https://api.openai.com/v1/engines/davinci/completions",
     beforeSend: function(xhr) { 
-      xhr.setRequestHeader("Content-Type", "application/json");
       xhr.setRequestHeader("Authorization", api_key);
     },
     type: 'POST',
