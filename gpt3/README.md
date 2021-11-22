@@ -13,7 +13,7 @@ Step 2: Create the SmartBlock and update the core settings variables
 #SmartBlock GPT3
 
 ```
-<<%NOBLOCKOUTPUT%>
+<%NOBLOCKOUTPUT%>
 <%CURRENTBLOCKCONTENT:blockText%>
 <%JA:```javascript
 var token_limit = 10; //Change to whatever you would like, careful of costs!
