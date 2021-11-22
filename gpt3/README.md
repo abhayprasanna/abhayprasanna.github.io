@@ -4,7 +4,11 @@
 
 ### GPT-3 RoamJS SmartBlock
 
-This is a super simple SmartBlock to make an API call to GPT-3's DaVinci Completion engine. When you invoke the SmartBlock, it uses the text in the current block as the prompt, and fills in the results. You probably want to prime it heavily to get good results (see https://beta.openai.com/docs/guides/completion/prompt-design for examples). You might want to branch these off into different SmartBlocks with various priming / temperature settings. Note that token_limit (or max_tokens) refers to how much text will be returned, but you will also be charged for the amount of text you send (i.e., what's in the block already).
+This is a super simple SmartBlock to make an API call to GPT-3's DaVinci Completion engine. When you invoke the SmartBlock, it uses the text in the current block as the prompt, and fills in the results.
+
+You probably want to prime it heavily to get good results (see https://beta.openai.com/docs/guides/completion/prompt-design for examples). You might want to branch these off into different SmartBlocks with various priming / temperature settings. 
+
+Note that token_limit (or max_tokens) refers to how much text will be returned, but you will also be charged for the amount of text you send (i.e., what's in the block already).
 
 Have fun, be safe!
 
@@ -18,6 +22,24 @@ Step 2: Create the SmartBlock and update the core settings variables
 <%NOBLOCKOUTPUT%>
 <%CURRENTBLOCKCONTENT:blockText%>
 <%JA:```javascript
+
+// Load jQuery if Roam42 is not installed.
+// You can delete these lines if you have Roam42 installed, otherwise activate them by removing the /* */ commenting symbols
+/* var existing = document.getElementById("jQuery-script");
+if (!existing) {
+  setTimeout(function() {
+      const script = document.createElement("script");
+      script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
+      script.id = "jQuery-script";
+      script.async = true;
+      script.type = 'text/javascript';
+      script.addEventListener('load', () => {
+        console.log(`jQuery ${$.fn.jquery} has been loaded successfully!`);
+      });
+      document.getElementsByTagName("head")[0].appendChild(script);
+	}, 250); }
+*/
+
 var token_limit = 10; //Change to whatever you would like, careful of costs!
 var api_key = "Bearer REPLACE-WITH-API-KEY"; //Put your API key here
 var temp_setting = 0.3; //Description and other settings here https://beta.openai.com/docs/api-reference/completions/create
