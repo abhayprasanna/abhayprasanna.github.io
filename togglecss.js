@@ -1,8 +1,8 @@
-var cssId = "masonry";
-var cssLink = "https://gitmurf.github.io/masonry-vanilla/masonry-main.css";
+var cssId = "masonry"; //Change to whatever
+var cssLink = "https://gitmurf.github.io/masonry-vanilla/masonry-main.css"; //Change to the location of your CSS import URL
 
 //Add button (thanks Tyler Wince!)
-var nameToUse = "toggleMasonry";
+var nameToUse = "toggleMasonry"; //Change to whatever
 //Find icons to use at: https://blueprintjs.com/docs/#icons
 var bpIconName = "th-derived";
 
@@ -20,8 +20,7 @@ if (!checkForButton) {
     "bp3-icon-" + bpIconName,
     "bp3-button",
     "bp3-minimal",
-    "bp3-small",
-    "masonry-icon"
+    "bp3-small"
   );
   spanTwo.appendChild(mainIcon);
   var roamTopbar = document.getElementsByClassName("rm-topbar");
@@ -31,11 +30,11 @@ if (!checkForButton) {
   flexDiv.className = "rm-topbar__spacer-sm";
   nextIconButton.insertAdjacentElement("afterend", mainButton);
   mainButton.insertAdjacentElement("afterend", flexDiv);
-  mainButton.addEventListener("click", toggleMasonry);
+  mainButton.addEventListener("click", toggleCSS);
 }
 
 //function
-async function toggleMasonry() {
+async function toggleCSS() {
   if (!document.getElementById(cssId)) {
     var head = document.getElementsByTagName("head")[0];
     var link = document.createElement("link");
