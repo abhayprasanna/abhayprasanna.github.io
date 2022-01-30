@@ -83,28 +83,16 @@
 .rm-block-ref,
 span[style*="color: red"] {
 	color: var(--body-text);
-	border-bottom: none;
-	border-right: solid 3px var(--references);
-	border-left: solid 3px var(--references);
-	border-radius: 5px;
-}
-
-span[style*="color: red"] {
-	color: var(--block-reference-text) !important;
-	/* !important needed */
-	border-bottom: none;
-	border-right: solid 3px var(--references);
-	border-left: solid 3px var(--references);
-	border-radius: 5px;
+	border-bottom: dashed 1px var(--references);
+	transition: all 0.3s ease;
+	padding: 0px;
 }
 
 .rm-block-ref:hover,
 span[style*="color: red"]:hover {
-	background-color: var(--kanban-column-background);
-	transition: color 0.3s ease;
-}
-
-span[style*="color: red"]:hover {
+	background-color: transparent;
+	border-bottom: solid 1px var(--italics-color);
+	transition: all 0.3s ease;
 	cursor: nw-resize;
 }
 
@@ -165,7 +153,8 @@ Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
 
 .roam-app,
 .roam-body-main.flex-h-box,
-.roam-body {
+.roam-body,
+body {
 	background: var(--sidebar-background);
 }
 
@@ -618,6 +607,11 @@ a:hover {
 
 .rm-nested-refs {
         background-color: transparent;
+}
+
+.kanban-card .rm-embed-container {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* Namespace text color [[roam/css]] when using CTRL+C CTRL+L */
@@ -2090,7 +2084,7 @@ and (orientation: portrait) {
 @media only screen
 and (max-device-width : 926px) {
   .roam-article {
-    padding: 0px 15px 0px 25px !important;
+    padding: 0px 0px 0px 12px !important;
     /* !important needed */
   }
   
