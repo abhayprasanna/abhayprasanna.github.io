@@ -45,12 +45,6 @@ div[style*="height: 720px;"] {
   border-color: transparent var(--icons-hover) var(--icons-hover) transparent;
 }
 
-/* Custom Tags */
-
-.rm-page-ref--tag[data-tag="42SmartBlock"] {
-font-size: 0 !important;
-}
-
 /* Remove partial iframes from path */
 .parent-path-wrapper > div > span > div > iframe,
 .parent-path-wrapper > div > span > .hoverparent {
@@ -182,7 +176,23 @@ span.rm-page-ref[data-tag*="rm-"] {
   font-style: italic;
 }
 
-/* roamjs twitter count */
-.roamjs-twitter-count > span {
-     color: var(--italics-color) !important;
+/* Twitter embeds only on hover */
+
+.twitter-tweet iframe {
+  margin-top: -14px;
+  display:none !important;
+  
 }
+
+.twitter-tweet iframe:hover {
+  display:flex !important; 
+  z-index: 1;
+}
+
+.twitter-tweet {
+  margin: 0px !important;
+}
+
+sub + button:hover + div > div.twitter-tweet > iframe {
+  display:flex !important;
+} 
