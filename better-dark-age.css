@@ -93,7 +93,6 @@ span[style*="color: red"]:hover {
 	background-color: transparent;
 	border-bottom: solid 1px var(--italics-color);
 	transition: all 0.3s ease;
-	cursor: nw-resize;
 }
 
 /* Filter icon */
