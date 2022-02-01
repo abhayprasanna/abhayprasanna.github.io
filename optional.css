@@ -81,6 +81,12 @@ div[style*="height: 720px;"] {
   padding-bottom: 0;
   margin-left: -12px;
 }
+#roam-right-sidebar-content .rm-reference-main strong {
+  display: none;
+}
+#roam-right-sidebar-content .rm-reference-main {
+  padding: 0px !important;
+}
 
 /* Don't let images and iframes extend outside box */
 .rm-inline-img__resize, .react-resizable, .hoverparent {
