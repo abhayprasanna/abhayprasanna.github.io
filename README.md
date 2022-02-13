@@ -43,6 +43,6 @@ Here are some [optional CSS](https://github.com/abhayprasanna/abhayprasanna.gith
 [Applying custom themes in Roam Research](https://www.youtube.com/watch?v=UY-sAC2eGyI)
 [Troubleshooting typical roam/css issues](https://www.loom.com/share/e7328f19276b43d48d3dbdd7e4a124d4)
 
-Please feel free to reach out to me via Roam Slack (@abhay) or Twitter (@AbhayPrasanna) if you have any questions/suggestions/requests!
+Please feel free to reach out to me via Roam Slack (@abhay) or Twitter (@abhayance) if you have any questions/suggestions/requests!
 
 Cheers!
