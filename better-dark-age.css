@@ -179,16 +179,6 @@ body {
 	min-height: 100%;
 }
 
-
-/* Spacing between right sidebar items */
-
-#roam-right-sidebar-content>div>div:nth-child(n)>div {
-	padding-top: 11px !important;
-	/* !important needed */
-	padding-bottom: 11px !important;
-	/* !important needed */
-}
-
 #roam-right-sidebar-content {
 	border: 1px solid var(--sidebar-background);
 	border-radius: 12px;
@@ -198,6 +188,10 @@ body {
 
 #right-sidebar .rm-title-textarea {
 	width: 95%;
+}
+
+#right-sidebar > .flex-h-box {
+  margin-bottom: 8px;
 }
 
 .roam-main {
@@ -449,7 +443,6 @@ div[style*="background-color: rgb(57, 75, 89);"] {
 	font-family: var(--header-font);
 	font-weight: 500 !important;
 	/* !important needed */
-	font-size: 1.5em;
 }
 
 
@@ -1991,6 +1984,10 @@ td {
 
 
 /* Resize styling */
+
+#right-sidebar .rm-resize-handle {
+  left: -4px !important;
+}
 
 .rm-resize-handle:hover {
 	border-left: dotted var(--icons-hover);
