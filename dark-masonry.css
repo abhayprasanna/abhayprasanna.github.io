@@ -164,8 +164,5 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
   width: var(--masonry-startWidth) !important;
 }
 #right-sidebar > .flex-h-box {
-  margin-bottom: 6px;
-}
-#right-sidebar .rm-resize-handle {
-  left: 0px !important;
+  margin-bottom: 6px !important;
 }
