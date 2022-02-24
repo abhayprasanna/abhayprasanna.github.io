@@ -13,6 +13,7 @@ Other acknowledgements: Jack Laing, @Azlen, @GitMurf, Hasan Yalcinkaya, Palash K
 ## 🌈 Rainbow indents
 
 To include *rainbow indents* please add this CSS snippet (make sure @import lines are together up top)
+
 `@import url('https://abhayprasanna.github.io/rainbow-indent-bullets.css');`
 
 ![](rainbow-indent.png)
@@ -20,6 +21,7 @@ To include *rainbow indents* please add this CSS snippet (make sure @import line
 ## 🧱 Masonry Mode
 
 To apply "Masonry mode" transformation to the right sidebar, add this CSS snippet (make sure @import lines are together up top)
+
 `@import url('https://abhayprasanna.github.io/dark-masonry.css');`
 Alternatively, you can add an optional button to toggle Masonry mode for the right sidebar instead, using this custom JavaScript extension - [Toggle Masonry CSS](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/togglecss.js)
 
@@ -34,11 +36,17 @@ There are several variants available (just import the appropriate CSS file from 
 # Instructions for Installation
 
 **Dracula Pro**: `@import url('https://abhayprasanna.github.io/dark-age-dracula.css');`
+
 **Night Owl**: `@import url('https://abhayprasanna.github.io/night-owl-roam.css');`
+
 **Material Palenight** `@import url('https://abhayprasanna.github.io/material-palenight-roam.css');`
+
 **Dark Night**: `@import url('https://abhayprasanna.github.io/dark-night-roam.css');`
+
 **Shades of Purple**: `@import url('https://abhayprasanna.github.io/shades-of-purple.css');`
+
 **Complice**: `@import url('https://abhayprasanna.github.io/complice-roam.css');`
+
 
 If you want to make any changes, copy [this code](http://abhayprasanna.github.io/dark-age-dracula.css) and paste it into a css code block in your [[roam/css]].
 
