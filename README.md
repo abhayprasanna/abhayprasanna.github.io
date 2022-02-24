@@ -12,13 +12,16 @@ Other acknowledgements: Jack Laing, @Azlen, @GitMurf, Hasan Yalcinkaya, Palash K
 
 ## 🌈 Rainbow indents
 
-To include *rainbow indents* please add [this CSS snippet](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/rainbow-indent.css).
+To include *rainbow indents* please add this CSS snippet (make sure @import lines are together up top)
+`@import url('https://abhayprasanna.github.io/rainbow-indent-bullets.css');`
 
 ![](rainbow-indent.png)
 
 ## 🧱 Masonry Mode
 
-You can add an optional button to toggle Masonry mode for the right sidebar using this custom JavaScript extension - [Toggle Masonry CSS](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/togglecss.js)
+To apply "Masonry mode" transformation to the right sidebar, add this CSS snippet (make sure @import lines are together up top)
+`@import url('https://abhayprasanna.github.io/dark-masonry.css');`
+Alternatively, you can add an optional button to toggle Masonry mode for the right sidebar instead, using this custom JavaScript extension - [Toggle Masonry CSS](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/togglecss.js)
 
 ![](dark-masonry.png)
 
@@ -30,7 +33,14 @@ There are several variants available (just import the appropriate CSS file from 
 
 # Instructions for Installation
 
-Copy [this code](http://abhayprasanna.github.io/dark-age-dracula.css) and paste it into a css code block in your [[roam/css]].
+**Dracula Pro**: `@import url('https://abhayprasanna.github.io/dark-age-dracula.css');`
+**Night Owl**: `@import url('https://abhayprasanna.github.io/night-owl-roam.css');`
+**Material Palenight** `@import url('https://abhayprasanna.github.io/material-palenight-roam.css');`
+**Dark Night**: `@import url('https://abhayprasanna.github.io/dark-night-roam.css');`
+**Shades of Purple**: `@import url('https://abhayprasanna.github.io/shades-of-purple.css');`
+**Complice**: `@import url('https://abhayprasanna.github.io/complice-roam.css');`
+
+If you want to make any changes, copy [this code](http://abhayprasanna.github.io/dark-age-dracula.css) and paste it into a css code block in your [[roam/css]].
 
 This works by linking to an outside .css file, actually located [here](https://abhayprasanna.github.io/better-dark-age.css) to handle all the styling, as it keeps the roam/css page much cleaner/faster.
 
