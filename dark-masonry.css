@@ -65,7 +65,7 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
             align-items: center !important;
 }
 .sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) {
-    height: calc(100% - 40px);
+    height: calc(100% - 35px);
 }
 /*NOTE: .rm-sidebar-outline and .rm-reference-main are at same level and so need to be addressed with div > div... as opposed to direct .classnames */
 .sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1) {
