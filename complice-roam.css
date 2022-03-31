@@ -1,12 +1,12 @@
 @import url('https://abhayprasanna.github.io/better-dark-age.css');
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Fira+Code|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+Mono|Open+Sans');
 
 @media (prefers-color-scheme: light) {
     :root {
     /* FONTS */
-    --global-font             : 'Work Sans', sans-serif;
-    --secondary-font          : 'Fira Code', monospace;
-    --header-font             : 'Bitter', serif;
+    --global-font             : 'Open Sans', sans-serif;
+    --secondary-font          : 'Noto Sans Mono', monospace;
+    --header-font             : 'Montserrat', serif;
     /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
     --reduce-padding-right    : 3400px;
     --reduce-padding-left     : 3400px;
@@ -60,7 +60,7 @@
   :root {
     /* FONTS */
     --global-font             : 'Open Sans', sans-serif;
-    --secondary-font          : 'Fira Code', monospace;
+    --secondary-font          : 'Noto Sans Mono', monospace;
     --header-font             : 'Montserrat', serif;
     /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
     --reduce-padding-right    : 3400px;
