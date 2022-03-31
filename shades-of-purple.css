@@ -1,11 +1,11 @@
 @import url('https://abhayprasanna.github.io/better-dark-age.css');
-@import url('https://fonts.googleapis.com/css?family=Lato|Crimson+Text|Fira+Code|Alegreya|Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato|Crimson+Text|Noto+Sans+Mono|Alegreya|Work+Sans');
 
 @media (prefers-color-scheme: light) {
     :root {
     /* FONTS */
     --global-font             : 'Work Sans', sans-serif;
-    --secondary-font          : 'Fira Code', monospace;
+    --secondary-font          : 'Noto Sans Mono', monospace;
     --header-font             : 'Bitter', serif;
     /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
     --reduce-padding-right    : 3400px;
@@ -61,7 +61,7 @@
 :root {
   /* FONTS */
   --global-font             : 'Lato', sans-serif;
-  --secondary-font          : 'Fira Code', monospace;
+  --secondary-font          : 'Noto Sans Mono', monospace;
   --header-font             : 'Alegreya', serif;
   /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
   --reduce-padding-right    : 3400px;
