@@ -1454,6 +1454,11 @@ button[style*="background-color: white;"]:hover {
     }
 }
 
+.rm-inline-code-block .rm-code-block .cm-editor .cm-scroller,
+.rm-inline-code-block .rm-code-block .cm-editor .cm-scroller .cm-line {
+  font-family: var(--secondary-font) !important;
+}
+
 
 /* ToDo Checkbox Fixes */
 
