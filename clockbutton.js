@@ -1,6 +1,7 @@
 // Creates a button on left sidebar that displays current time, and takes you to the bottom of Today's Daily Note on-click
 
 setTimeout(timebutton, 500); //wait half a second just in case
+const prefix = window.location.href.split('/')[5] + ' - ';
 
 function timebutton() { //creates a new left sidebar log button below Daily Notes
   if (!document.getElementById('timeDiv')) {
@@ -20,13 +21,11 @@ function timebutton() { //creates a new left sidebar log button below Daily Note
   }
   setInterval(function() {
     divTime.childNodes[1].nodeValue = new Date().toLocaleTimeString();
+    // change tab name
+        if(!document.hasFocus() && !document.title.includes(prefix)) {
+          document.title = prefix + document.title;
+        }
   }, 1000);
-}
-
-//Define function to find reference section and scroll it into view
-function ScrollToBottom() {
- document.querySelector(".rm-reference-main:not(.rm-query-content)").scrollIntoView();
- console.log('Scrolled to bottom!');
 }
 
 function toggletoday() { //creates the URL for today and opens it
@@ -36,6 +35,5 @@ function toggletoday() { //creates the URL for today and opens it
   var yyyy = today.getFullYear();
   today = mm + '-' + dd + '-' + yyyy;
   window.roamAlphaAPI.ui.mainWindow.openPage({page:
-				              {uid: today}});
-  setTimeout(ScrollToBottom, 300);  //Set delay to scroll to bottom of daily note
+											  {uid: today}});
 }
