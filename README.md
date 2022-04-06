@@ -27,6 +27,11 @@ Alternatively, you can add an optional button to toggle Masonry mode for the rig
 
 ![](dark-masonry.png)
 
+Works on mobile too!
+
+https://user-images.githubusercontent.com/67134545/161998251-81b29fa7-ef05-4c1a-88da-fd2c3fcc31e0.mov
+
+
 ## 🎨 Color Variants
 
 There are several variants available (just import the appropriate CSS file from this folder instead). This theme also switches to One Light theme when your OS is not in Dark Mode. Feel free to customize the fonts, colors, etc.
