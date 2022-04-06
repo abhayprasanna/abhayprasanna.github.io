@@ -44,7 +44,7 @@ Alternatively, you can add an optional button to toggle Masonry mode for the rig
 
 ![](dark-masonry.png)
 
-Works on mobile too!
+Works on mobile too! Designed to work speciically with @thesved's [Long Tap JS extension](https://github.com/thesved/ViktoRoam/blob/master/js/longtap.js) to enable you to open the sidebar. You can also install [this optional JS](opensidebars.js) to add a right sidebar button to mobile.
 
 https://user-images.githubusercontent.com/67134545/161998251-81b29fa7-ef05-4c1a-88da-fd2c3fcc31e0.mov
 
