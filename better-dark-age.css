@@ -2271,6 +2271,9 @@ h4,
      .roam-sidebar-container {
          -webkit-backdrop-filter: blur(15px);
          backdrop-filter: blur(15px);
+    }
+     div:not(input) {
+	     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */}
 }
 }
 
