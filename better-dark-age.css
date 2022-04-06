@@ -229,14 +229,6 @@ td {
 	line-height: normal;
 }
 
-
-/* fix to ensure search popover does not slide under left sidebar when open */
-
-.rm-find-or-create-wrapper:focus-within {
-	flex: 1 1 30% !important;
-	/* !important needed */
-}
-
 div[style*="border-bottom: 1px solid rgb(138, 155, 168);"] {
 	border-bottom: 1px solid var(--references) !important;
 	/* !important needed */
@@ -1020,7 +1012,7 @@ div[style*="padding: 6px; color: rgb(206, 217, 224);"] {
 }
 
 
-/* Search box input text color */
+/* Search box */
 
 .bp3-input-group input {
 	color: var(--search-bar-text);
@@ -1033,6 +1025,10 @@ div[style*="padding: 6px; color: rgb(206, 217, 224);"] {
 	color: var(--highlight-text-color);
 }
 
+.rm-find-or-create-wrapper:focus-within {
+	flex: 1 1 75% !important;
+	/* !important needed */
+}
 
 /* Dropdown page menu hover highlight */
 
@@ -2057,48 +2053,6 @@ div::-webkit-resizer {
 /*---------------------------------------------------------------------------*/
 
 
-/* Mobile scrollable right sidebar in portrait mode */
-
-@media only screen
-and (max-device-width : 926px)
-and (orientation: portrait) {
-	.roam-body {
-		overflow-x: scroll !important;
-		/* !important needed */
-		display: flex;
-		background-color: var(--sidebar-background);
-		max-width: 100%;
-	}
-	.roam-main {
-		min-width: 95vw;
-	}
-	#right-sidebar[style*="flex: 0 0 40%;"] {
-		flex: 0 0 95% !important;
-		/* !important needed */
-	}
-}
-
-
-/* Mobile compact view */
-
-@media only screen
-and (max-device-width : 926px) {
-  .roam-article {
-    padding: 0px 5px 0px 25px !important;
-    /* !important needed */
-  }
-  
-  
-  .rm-find-or-create-wrapper:focus-within {
-	flex: 1 1 auto !important;
-	/* !important needed */
-}
-}
-
-
-/*---------------------------------------------------------------------------*/
-
-
 /* Encrypted block */
 
 .rm-encrypted-block {
@@ -2266,6 +2220,50 @@ h4,
 }
  .rm-video-player__container:hover .rm-video-player__comment-button {
      opacity:.5;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* 2022 April - Mobile app optimization */
+@media only screen and (max-device-width : 926px) {
+     .roam-body {
+         overflow-x: scroll !important;
+        /* !important needed */
+    }
+     .roam-main {
+         min-width: 98vw;
+    }
+     #right-sidebar[style*="flex: 0 0 40%;"] {
+         flex: 0 0 95% !important;
+        /* !important needed */
+    }
+     .rm-resize-handle {
+         display: none;
+    }
+     .sidebar-content {
+         margin: 0px;
+    }
+     #roam-right-sidebar-content {
+         margin-right: 0px;
+         border-radius: 0px;
+         border-left: dashed 1px var(--references);
+    }
+     #right-sidebar[style*="flex: 0 0 0px;"] {
+         display: none;
+    }
+     .roam-article {
+         padding: 0px 10px 120px 20px !important;
+        /* !important needed */
+    }
+     .roam-body-main {
+         margin-left: 0px;
+         margin-right: 0px;
+         border-radius: 0px;
+    }
+     .rm-topbar {
+         padding-left: 6px;
+         padding-right: 4px;
+    }
 }
 
 /*---------------------------------------------------------------------------*/
