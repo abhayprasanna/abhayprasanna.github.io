@@ -2084,7 +2084,7 @@ and (orientation: portrait) {
 @media only screen
 and (max-device-width : 926px) {
   .roam-article {
-    padding: 0px 0px 0px 12px !important;
+    padding: 0px 5px 0px 25px !important;
     /* !important needed */
   }
   
