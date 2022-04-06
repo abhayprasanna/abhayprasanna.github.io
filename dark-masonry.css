@@ -44,7 +44,8 @@ Courtesy : Murf, Daniel van der Merwe, Rob Hasfield
     display: flex;
     background-color: var(--background);
     max-height: 100%;
-    margin-left: 10px;
+    margin-left: 2px;
+    margin-right: 7px;
     -ms-flex-item-align: start;
         align-self: flex-start; /* So pages can be diff widths in a single column */
     border-radius: 12px;
