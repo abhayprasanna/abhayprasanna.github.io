@@ -18,6 +18,12 @@ Other acknowledgements: Jack Laing, @Azlen, @GitMurf, Hasan Yalcinkaya, Palash K
 
 [Click here for other color variants](#-color-variants)
 
+### How to setup your roam/css page:
+
+[Applying custom themes in Roam Research](https://www.youtube.com/watch?v=UY-sAC2eGyI)
+
+[Troubleshooting typical roam/css issues](https://www.loom.com/share/e7328f19276b43d48d3dbdd7e4a124d4)
+
 
 # Additional features
 
@@ -72,10 +78,6 @@ If you do in fact want to manipulate the source code, just [navigate to the sour
 
 Here are some [optional CSS](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/optional.css) additions and tweaks you can play with.
 
-### How to setup your roam/css page:
-
-[Applying custom themes in Roam Research](https://www.youtube.com/watch?v=UY-sAC2eGyI)
-[Troubleshooting typical roam/css issues](https://www.loom.com/share/e7328f19276b43d48d3dbdd7e4a124d4)
 
 Please feel free to reach out to me via Roam Slack (@abhay) or Twitter (@abhayance) if you have any questions/suggestions/requests!
 
