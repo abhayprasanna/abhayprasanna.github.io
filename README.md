@@ -8,6 +8,17 @@ Love this theme? Say thanks via [PayPal](https://www.paypal.me/abhayprasanna) or
 
 Other acknowledgements: Jack Laing, @Azlen, @GitMurf, Hasan Yalcinkaya, Palash Karia, and many others!
 
+# ⚡️ Quick install
+
+```
+@import url('https://abhayprasanna.github.io/dark-age-dracula.css'); /* change to whatever color variant your want */
+@import url('https://abhayprasanna.github.io/rainbow-indent-bullets.css; /* delete to turn off rainbow indents */
+@import url('https://abhayprasanna.github.io/dark-masonry.css'); /* delete to turn off masonry */
+```
+
+[Click here for other color variants](#-color-variants)
+
+
 # Additional features
 
 ## 🌈 Rainbow indents
