@@ -2273,8 +2273,12 @@ h4,
          backdrop-filter: blur(15px);
     }
      div:not(input) {
-	     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */}
-}
+	 -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */}
+    }
+     :root {
+         --masonry-startWidth: 75vw !important;
+         --masonry-startHeight: 100vh !important; 
+    }
 }
 
 /*---------------------------------------------------------------------------*/
