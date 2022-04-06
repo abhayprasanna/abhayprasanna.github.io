@@ -2267,6 +2267,10 @@ h4,
          padding-left: 6px;
          padding-right: 4px;
     }
+     .roam-sidebar-container {
+         -webkit-backdrop-filter: blur(15px);
+         backdrop-filter: blur(15px);
+}
 }
 
 /*---------------------------------------------------------------------------*/
