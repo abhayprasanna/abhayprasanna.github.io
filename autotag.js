@@ -1,4 +1,5 @@
 /* ======= AUTOTAG MODE ========
+ * ONLY WORKS IN CHROME - won't work in Safari for now
  * Pre-requisites -
    * For NLP dates: Roam42 https://roamjs.com/extensions/roam42
    * For PageSynonyms: Page Synonyms https://roamjs.com/extensions/page-synonyms
