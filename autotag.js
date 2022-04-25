@@ -3,7 +3,7 @@
  * Pre-requisites -
    * For NLP dates: Roam42 https://roamjs.com/extensions/roam42
    * For PageSynonyms: Page Synonyms https://roamjs.com/extensions/page-synonyms
- * Change line 74 to change the keyboard shortcut to toggle on and off (default is alt+i)
+ * Change line 78 to change the keyboard shortcut to toggle on and off (default is alt+i)
  * Hat-tips: Azlen for arrive.js idea; Tyler Wince for Unlink Finder; Chris TftHacker for Roam42; Murf for demystifying JS; David Vargas for everything!
  */
  
