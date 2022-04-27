@@ -1,9 +1,8 @@
-/* ======= AUTOTAG MODE ========
- * ONLY WORKS IN CHROME or ROAM DESKTOP APP - won't work in Safari for now
+/* ======= AUTOTAG MODE  v0.2========
  * Pre-requisites -
    * For NLP dates: Roam42 https://roamjs.com/extensions/roam42
    * For PageSynonyms: Page Synonyms https://roamjs.com/extensions/page-synonyms
- * Change line 78 to change the keyboard shortcut to toggle on and off (default is alt+i)
+ * Change line 91 to change the keyboard shortcut to toggle on and off (default is alt+i)
  * Hat-tips: Azlen for arrive.js idea; Tyler Wince for Unlink Finder; Chris TftHacker for Roam42; Murf for demystifying JS; David Vargas for everything!
  */
  
@@ -13,6 +12,8 @@ let caseinsensitive = !0, // change to 0 to only tag references with exact case,
     processdates = !0, // change to 0 to not process roam42 NLP dates
     processalias = !0, // change to 0 to not process Page Synonyms JS aliases
     minpagelength = 2; // change to whatever the minimum page length should be to be tagged
+
+// Exclusions: Add #autotag-exclude to a block on any page you want to exclude
 
 /* ======= ARRIVE.JS v2.4.1 ======== 
  * https://github.com/uzairfarooq/arrive
@@ -36,6 +37,17 @@ function autotag() {
         .getElementById("autotag-icon")
         .classList.replace("bp3-icon-eye-off", "bp3-icon-eye-on");
 }
+function getAllExcludes() {
+  return excludePages = window.roamAlphaAPI
+    .q(
+      `[:find (pull ?parentPage [*]) 
+              :where [?referencedPage :node/title "autotag-exclude"] 
+                     [?referencingBlock :block/refs ?referencedPage]
+                     [?parentPage :block/children ?referencingBlock]
+             ]`
+    )
+    .map((p) => p[0]["title"]);
+}
 function getAllPages() {
   return window.roamAlphaAPI
     .q("[:find ?t :where [?e :node/title ?t] ]")
@@ -46,18 +58,19 @@ function getAllPages() {
 }
 function linkReferences(e) {
   let t = getAllPages();
+  let r = getAllExcludes();
   for (l = 0; l < t.length; l++) {
     if (t[l].length < minpagelength) { continue };
-    if (e.toLowerCase().includes(t[l].toLowerCase())) {
+    if (!r.includes(t[l]) && e.toLowerCase().includes(t[l].toLowerCase())) {
       let n = "[[" + t[l] + "]]";
       (e = e
-        .split(new RegExp("(?<!\\w)" + t[l] + "(?!\\w)(?![^\\[\\]]*\\])", "gm"))
-        .join(n)),
-        1 == caseinsensitive &&
-          (e = e.replace(
-            new RegExp("(?<!\\w)" + t[l] + "(?!\\w)(?![^\\[\\]]*\\])", "gmi"),
-            "[$&](" + n + ")"
-          ));
+  .split(new RegExp("(?!\\B\\w)" + t[l] + "(?!\\w)(?![^\\][]*])", "g"))
+  .join(n)),
+  1 == caseinsensitive &&
+    (e = e.replace(
+      new RegExp("(?!\\B\\w)" + t[l] + "(?!\\w)(?![^\\][]*])", "gi"),
+      "[$&](" + n + ")"
+    ));
     }
   }
   return e;
