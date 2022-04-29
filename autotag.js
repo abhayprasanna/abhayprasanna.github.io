@@ -1,4 +1,4 @@
-/* ======= AUTOTAG MODE  v0.3========
+/* ======= AUTOTAG MODE  v0.3.1========
  * Pre-requisites -
    * For NLP dates: Roam42 https://roamjs.com/extensions/roam42
    * For PageSynonyms: Page Synonyms https://roamjs.com/extensions/page-synonyms
@@ -55,7 +55,7 @@ function getAllPages() {
     });
 }
 function linkReferences(e, t) {
-  let o = getAllPages(),
+  let o = getAllPages(), n = [];
     a = window.roamAlphaAPI
       .q(
         "[:find (pull ?t [*]) :in $ ?b :where [?e :block/uid ?b] [?e :block/refs ?t] ]",
