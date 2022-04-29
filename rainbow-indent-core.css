@@ -5,109 +5,109 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
 
 /* Level 1 */
 .rm-level-1 > .rm-multibar, .rm-level-19 > .rm-multibar, .rm-level-37 > .rm-multibar, .rm-inline-references > .rm-multibar {
-    border-right-color: var(--indent1) !important;
+    border-right-color: var(--indent1);
     box-shadow: var(--box-shadow-values) var(--indent1) inset;
 }
 
 /* Level 2 */
 .rm-level-2 > .rm-multibar, .rm-level-20 > .rm-multibar, .rm-level-38 > .rm-multibar {
-    border-right-color: var(--indent2) !important;
+    border-right-color: var(--indent2);
     box-shadow: var(--box-shadow-values) var(--indent2) inset;
 }
 
 /* Level 3 */
 .rm-level-3 > .rm-multibar, .rm-level-21 > .rm-multibar, .rm-level-39 > .rm-multibar {
-    border-right-color: var(--indent3) !important;
+    border-right-color: var(--indent3);
     box-shadow: var(--box-shadow-values) var(--indent3) inset;
 }
 
 /* Level 4 */
 .rm-level-4 > .rm-multibar, .rm-level-22 > .rm-multibar, .rm-level-40 > .rm-multibar {
-    border-right-color: var(--indent4) !important;
+    border-right-color: var(--indent4);
     box-shadow: var(--box-shadow-values) var(--indent4) inset;
 }
 
 /* Level 5 */
 .rm-level-5 > .rm-multibar, .rm-level-23 > .rm-multibar, .rm-level-41 > .rm-multibar {
-    border-right-color: var(--indent5) !important;
+    border-right-color: var(--indent5);
     box-shadow: var(--box-shadow-values) var(--indent5) inset;
 }
 
 /* Level 6 */
 .rm-level-6 > .rm-multibar, .rm-level-24 > .rm-multibar, .rm-level-42 > .rm-multibar {
-    border-right-color: var(--indent6) !important;
+    border-right-color: var(--indent6);
     box-shadow: var(--box-shadow-values) var(--indent6) inset;
 }
 
 /* Level 7 */
 .rm-level-7 > .rm-multibar, .rm-level-25 > .rm-multibar, .rm-level-43 > .rm-multibar {
-    border-right-color: var(--indent7) !important;
+    border-right-color: var(--indent7);
     box-shadow: var(--box-shadow-values) var(--indent7) inset;
 }
 
 /* Level 8 */
 .rm-level-8 > .rm-multibar, .rm-level-26 > .rm-multibar, .rm-level-44 > .rm-multibar {
-    border-right-color: var(--indent8) !important;
+    border-right-color: var(--indent8);
     box-shadow: var(--box-shadow-values) var(--indent8) inset;
 }
 
 /* Level 9 */
 .rm-level-9 > .rm-multibar, .rm-level-27 > .rm-multibar, .rm-level-45 > .rm-multibar {
-    border-right-color: var(--indent9) !important;
+    border-right-color: var(--indent9);
     box-shadow: var(--box-shadow-values) var(--indent9) inset;
 }
 
 /* Level 10 */
 .rm-level-10 > .rm-multibar, .rm-level-28 > .rm-multibar, .rm-level-46 > .rm-multibar {
-    border-right-color: var(--indent10) !important;
+    border-right-color: var(--indent10);
     box-shadow: var(--box-shadow-values) var(--indent10) inset;
 }
 
 /* Level 11 */
 .rm-level-11 > .rm-multibar, .rm-level-29 > .rm-multibar, .rm-level-47 > .rm-multibar {
-    border-right-color: var(--indent11) !important;
+    border-right-color: var(--indent11);
     box-shadow: var(--box-shadow-values) var(--indent11) inset;
 }
 
 /* Level 12 */
 .rm-level-12 > .rm-multibar, .rm-level-30 > .rm-multibar, .rm-level-48 > .rm-multibar {
-    border-right-color: var(--indent12) !important;
+    border-right-color: var(--indent12);
     box-shadow: var(--box-shadow-values) var(--indent12) inset;
 }
 
 /* Level 13 */
 .rm-level-13 > .rm-multibar, .rm-level-31 > .rm-multibar, .rm-level-49 > .rm-multibar {
-    border-right-color: var(--indent13) !important;
+    border-right-color: var(--indent13);
     box-shadow: var(--box-shadow-values) var(--indent13) inset;
 }
 
 /* Level 14 */
 .rm-level-14 > .rm-multibar, .rm-level-32 > .rm-multibar, .rm-level-50 > .rm-multibar {
-    border-right-color: var(--indent14) !important;
+    border-right-color: var(--indent14);
     box-shadow: var(--box-shadow-values) var(--indent14) inset;
 }
 
 /* Level 15 */
 .rm-level-15 > .rm-multibar, .rm-level-33 > .rm-multibar, .rm-level-51 > .rm-multibar {
-    border-right-color: var(--indent15) !important;
+    border-right-color: var(--indent15);
     box-shadow: var(--box-shadow-values) var(--indent15) inset;
 }
 
 /* Level 16 */
 .rm-level-16 > .rm-multibar, .rm-level-34 > .rm-multibar, .rm-level-52 > .rm-multibar {
-    border-right-color: var(--indent16) !important;
+    border-right-color: var(--indent16);
     box-shadow: var(--box-shadow-values) var(--indent16) inset;
 }
 
 /* Level 17 */
 .rm-level-17 > .rm-multibar, .rm-level-35 > .rm-multibar, .rm-level-53 > .rm-multibar {
-    border-right-color: var(--indent17) !important;
+    border-right-color: var(--indent17);
     box-shadow: var(--box-shadow-values) var(--indent17) inset;
 }
 
 /* Level 18 */
 .rm-level-18 > .rm-multibar, .rm-level-36 > .rm-multibar, .rm-level-54 > .rm-multibar {
-    border-right-color: var(--indent18) !important;
+    border-right-color: var(--indent18);
     box-shadow: var(--box-shadow-values) var(--indent18) inset;
 }
 
