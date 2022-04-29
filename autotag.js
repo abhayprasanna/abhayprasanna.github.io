@@ -55,7 +55,7 @@ function getAllPages() {
     });
 }
 function linkReferences(e, t) {
-  let o = getAllPages(), n = [];
+  let o = getAllPages(), n = [],
     a = window.roamAlphaAPI
       .q(
         "[:find (pull ?t [*]) :in $ ?b :where [?e :block/uid ?b] [?e :block/refs ?t] ]",
