@@ -1,4 +1,4 @@
-/* ======= AUTOTAG MODE  v0.3.1========
+/* ======= AUTOTAG MODE  v0.3.2========
  * Pre-requisites -
    * For NLP dates: Roam42 https://roamjs.com/extensions/roam42
    * For PageSynonyms: Page Synonyms https://roamjs.com/extensions/page-synonyms
@@ -80,7 +80,7 @@ function linkReferences(e, t) {
       let t = 0;
       (e = e.replace(
         new RegExp(
-          "\\[[^\\][]*](?:\\([^()]*\\))?|\\{[^{}]*}|\\[\\[[^\\[\\s]*|(?!\\B\\w)(" +
+          "\\[[^\\][]*](?:\\([^()]*\\))?|(?:\\[.*?\\])|\\{[^{}]*}|\\[\\[[^\\[\\s]*|(?!\\B\\w)(" +
             o[l].replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&") +
             ")(?!\\w)",
           "g"
@@ -90,7 +90,7 @@ function linkReferences(e, t) {
         1 == caseinsensitive &&
           (e = e.replace(
             new RegExp(
-              "\\[[^\\][]*](?:\\([^()]*\\))?|\\{[^{}]*}|\\[\\[[^\\[\\s]*|(?!\\B\\w)(" +
+              "\\[[^\\][]*](?:\\([^()]*\\))?|(?:\\[.*?\\])||\\{[^{}]*}|\\[\\[[^\\[\\s]*|(?!\\B\\w)(" +
                 o[l].replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&") +
                 ")(?!\\w)",
               "gi"
@@ -116,7 +116,7 @@ function blockAlias(e) {
   window.roamjs.extension.pageSynonyms.aliasBlock({ blockUid: e });
 }
 (window.onkeydown = function (e) {
-  if ((e = e || event).altKey && 73 === e.keyCode) {
+  if ((e = e || event).ctrlKey && 73 === e.keyCode) {
     if ((attoggle = !attoggle))
       (blockUid = "initial"),
         document
