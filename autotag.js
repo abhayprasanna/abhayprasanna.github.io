@@ -1,8 +1,8 @@
-/* ======= AUTOTAG MODE  v0.3.2========
+/* ======= AUTOTAG MODE  v0.4========
  * Pre-requisites -
    * For NLP dates: Roam42 https://roamjs.com/extensions/roam42
    * For PageSynonyms: Page Synonyms https://roamjs.com/extensions/page-synonyms
- * Hat-tips: Azlen for arrive.js idea; Tyler Wince for Unlink Finder; Chris TftHacker for Roam42; Murf for demystifying JS; David Vargas for everything!
+ * Hat-tips: Azlen for arrive.js idea; Tyler Wince for Unlink Finder; Chris TftHacker for Roam42; Murf for demystifying JS and refactoring the regex; David Vargas for everything!
  */
  
 /* ======= OPTIONS ======= */
@@ -13,7 +13,7 @@ let caseinsensitive = !0, // change to 0 to only tag references with exact case,
     minpagelength = 2; // change to whatever the minimum page length should be to be tagged
 
 // Exclusions: Create an [[autotag-exclude]] page. Add pages you want to exclude, comma-spaced without [[ ]], to the first block on that page
-// Change line 119 to change the keyboard shortcut to toggle on and off (default is alt+i)
+// Change line 134 to change the keyboard shortcut to toggle on and off (default is alt+i)
 
 /* ======= ARRIVE.JS v2.4.1 ======== 
  * https://github.com/uzairfarooq/arrive
@@ -26,157 +26,172 @@ var Arrive=function(e,t,n){"use strict";function r(e,t,n){l.addMethod(t,n,e.unbi
 /* ======= CODE ========  */
 
 let blockUid = "initial",
-  attoggle = !0,
-  blockText = "initial";
+   attoggle = !0,
+   blockText = "initial";
+
 function autotag() {
-  (attoggle = !attoggle)
-    ? ((blockUid = "initial"),
+   (attoggle = !attoggle) ?
+   ((blockUid = "initial"),
       document
-        .getElementById("autotag-icon")
-        .classList.replace("bp3-icon-eye-on", "bp3-icon-eye-off"))
-    : document
-        .getElementById("autotag-icon")
-        .classList.replace("bp3-icon-eye-off", "bp3-icon-eye-on");
+      .getElementById("autotag-icon")
+      .classList.replace("bp3-icon-eye-on", "bp3-icon-eye-off")) :
+   document
+      .getElementById("autotag-icon")
+      .classList.replace("bp3-icon-eye-off", "bp3-icon-eye-on");
 }
+
 function getAllExcludes() {
-  return window.roamAlphaAPI
-    .q(
-      '[ :find (pull ?e [* {:block/children [*]}]) :where [?e :node/title "autotag-exclude"]]'
-    )[0][0]
-    .children[0].string.split(",")
-    .map((e) => e.trim());
-}
-function getAllPages() {
-  return window.roamAlphaAPI
-    .q("[:find ?t :where [?e :node/title ?t] ]")
-    .map((e) => e[0])
-    .sort(function (e, t) {
-      return t.length - e.length;
-    });
-}
-function linkReferences(e, t) {
-  let o = getAllPages(), n = [],
-    a = window.roamAlphaAPI
+   return window.roamAlphaAPI
       .q(
-        "[:find (pull ?t [*]) :in $ ?b :where [?e :block/uid ?b] [?e :block/refs ?t] ]",
-        t
-      )
-      .map((e) => e[0].title);
-  for (
-    0 !==
-      window.roamAlphaAPI.q(
-        '[:find (pull ?e [*]) :where [?e :node/title "autotag-exclude"] ]'
-      ).length && (n = getAllExcludes()),
-      l = 0;
-    l < o.length;
-    l++
-  )
-    if (
-      !(o[l].length < minpagelength) &&
-      !n.includes(o[l]) &&
-      !a.includes(o[l]) &&
-      e.toLowerCase().includes(o[l].toLowerCase())
-    ) {
-      let t = 0;
-      (e = e.replace(
-        new RegExp(
-          "\\[[^\\][]*](?:\\([^()]*\\))?|(?:\\[.*?\\])|\\{[^{}]*}|\\[\\[[^\\[\\s]*|(?!\\B\\w)(" +
-            o[l].replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&") +
-            ")(?!\\w)",
-          "g"
-        ),
-        (e, n) => (void 0 === n || t ? e : ((t = !0), "[[" + n + "]]"))
-      )),
-        1 == caseinsensitive &&
-          (e = e.replace(
-            new RegExp(
-              "\\[[^\\][]*](?:\\([^()]*\\))?|(?:\\[.*?\\])|\\{[^{}]*}|\\[\\[[^\\[\\s]*|(?!\\B\\w)(" +
-                o[l].replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&") +
-                ")(?!\\w)",
-              "gi"
-            ),
-            (e, n) =>
-              void 0 === n || t
-                ? e
-                : ((t = !0), "[" + n + "]([[" + o[l] + "]])")
-          ));
-    }
-  return e;
+         '[ :find (pull ?e [* {:block/children [*]}]) :where [?e :node/title "autotag-exclude"]]'
+      )[0][0]
+      .children[0].string.split(",")
+      .map((e) => e.trim());
 }
+
+function getAllPages() {
+   return window.roamAlphaAPI
+      .q("[:find ?t :where [?e :node/title ?t] ]")
+      .map((e) => e[0])
+      .sort(function (e, t) {
+         return t.length - e.length;
+      });
+}
+
+function linkReferences(e) {
+  let t = getAllPages(),
+    l = [];
+  0 !==
+    window.roamAlphaAPI.q(
+      '[:find (pull ?e [*]) :where [?e :node/title "autotag-exclude"] ]'
+    ).length && (l = getAllExcludes());
+  let n = t.filter((t) => {
+    let n = t.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&");
+    if (l.includes(t) || t.length <= minpagelength) return !1;
+    let g = new RegExp(n, "i");
+    return (
+      !!e.match(g) &&
+      ((g = new RegExp(`\\[\\[${n}\\]\\]|#\\b${n}\\b`)), !e.match(g))
+    );
+  });
+  n = n.sort((e, t) => t.length - e.length);
+  let g = new RegExp(
+      "(\\[[^\\]]+\\]\\([^ ]+\\)|{{[^}]+}}|\\S*::|\\[\\[[^\\]]+\\]\\]|\\[[^\\]]+\\]|\\[[^\\]]+$)",
+      "g"
+    ),
+    i = e,
+    a = [];
+  return (
+    n.forEach((e) => {
+      let t = e.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&"),
+        l = i.split(g),
+        n = "";
+      l.forEach((l) => {
+        let i = l;
+        if (!l.match(g) && !a.includes(e)) {
+          let l = new RegExp(`^\\b${t}\\b|[^\\[]\\b${t}\\b`, "i");
+          if (i.match(l)) {
+            let n = i.length;
+            (l = new RegExp(`(^|[^\\[])\\b(${t})\\b`)),
+              i.match(l)
+                ? (i = i.replace(l, "$1[[$2]]"))
+                : caseinsensitive &&
+                  ((l = new RegExp(`(^|[^\\[])\\b(${t})\\b`, "i")),
+                  (i = i.replace(l, `$1[$2]([[${e}]])`))),
+              i.length !== n && a.push(e);
+          }
+        }
+        n += i;
+      }),
+        (i = n);
+    }),
+    i
+  );
+}
+
 function NLPdates(e) {
-  return "object" == typeof roam42 && 1 == processdates
-    ? roam42.dateProcessing.parseTextForDates(e)
-    : e;
+   return "object" == typeof roam42 && 1 == processdates ?
+      roam42.dateProcessing.parseTextForDates(e) :
+      e;
 }
+
 function blockUpdate(e, t) {
-  window.roamAlphaAPI.updateBlock({ block: { uid: e, string: t } });
+   window.roamAlphaAPI.updateBlock({
+      block: {
+         uid: e,
+         string: t
+      }
+   });
 }
+
 function blockAlias(e) {
-  if (1 != processalias) return e;
-  window.roamjs.extension.pageSynonyms.aliasBlock({ blockUid: e });
+   if (1 != processalias) return e;
+   window.roamjs.extension.pageSynonyms.aliasBlock({
+      blockUid: e
+   });
 }
 (window.onkeydown = function (e) {
-  if ((e = e || event).altKey && 73 === e.keyCode) {
-    if ((attoggle = !attoggle))
-      (blockUid = "initial"),
-        document
-          .getElementById("autotag-icon")
-          .classList.replace("bp3-icon-eye-on", "bp3-icon-eye-off");
-    else {
-      let e = window.roamAlphaAPI.ui.getFocusedBlock();
-      null !== e && (blockUid = e["block-uid"]),
-        document
-          .getElementById("autotag-icon")
-          .classList.replace("bp3-icon-eye-off", "bp3-icon-eye-on");
-    }
-  }
+   if ((e = e || event).ctrlKey && 73 === e.keyCode) {
+      if ((attoggle = !attoggle))
+         (blockUid = "initial"),
+         document
+         .getElementById("autotag-icon")
+         .classList.replace("bp3-icon-eye-on", "bp3-icon-eye-off");
+      else {
+         let e = window.roamAlphaAPI.ui.getFocusedBlock();
+         null !== e && (blockUid = e["block-uid"]),
+            document
+            .getElementById("autotag-icon")
+            .classList.replace("bp3-icon-eye-off", "bp3-icon-eye-on");
+      }
+   }
 }),
-  document.leave("textarea.rm-block-input", function () {
-    if (!attoggle) {
-      (blockText = NLPdates(
-        (blockText = linkReferences(
-          (blockText = window.roamAlphaAPI.q(
-            " [:find ?s    :in $ ?b   :where [?e :block/uid ?b] [?e :block/string ?s]   ]",
-            blockUid
-          )[0][0]),
-          blockUid
-        ))
-      )),
-        blockUpdate(blockUid, blockText);
-      let e = blockUid;
-      setTimeout(function () {
-        blockAlias(e);
-      }, 100);
-    }
-  }),
-  document.arrive("textarea.rm-block-input", function () {
-    attoggle ||
-      (blockUid = window.roamAlphaAPI.ui.getFocusedBlock()["block-uid"]);
-  });
+document.leave("textarea.rm-block-input", function () {
+      if (!attoggle) {
+         (blockText = NLPdates(
+            (blockText = linkReferences(
+               (blockText = window.roamAlphaAPI.q(
+                  " [:find ?s    :in $ ?b   :where [?e :block/uid ?b] [?e :block/string ?s]   ]",
+                  blockUid
+               )[0][0]),
+               blockUid
+            ))
+         )),
+         blockUpdate(blockUid, blockText);
+         let e = blockUid;
+         setTimeout(function () {
+            blockAlias(e);
+         }, 100);
+      }
+   }),
+   document.arrive("textarea.rm-block-input", function () {
+      attoggle ||
+         (blockUid = window.roamAlphaAPI.ui.getFocusedBlock()["block-uid"]);
+   });
 var nameToUse = "autotag",
-  bpIconName = "eye-off",
-  checkForButton = document.getElementById(nameToUse + "-icon");
+   bpIconName = "eye-off",
+   checkForButton = document.getElementById(nameToUse + "-icon");
 if (!checkForButton) {
-  var mainButton = document.createElement("span");
-  (mainButton.id = nameToUse + "-button"),
-    mainButton.classList.add("bp3-popover-wrapper");
-  var spanTwo = document.createElement("span");
-  spanTwo.classList.add("bp3-popover-target"), mainButton.appendChild(spanTwo);
-  var mainIcon = document.createElement("span");
-  (mainIcon.id = nameToUse + "-icon"),
-    mainIcon.classList.add(
-      "bp3-icon-" + bpIconName,
-      "bp3-button",
-      "bp3-minimal",
-      "bp3-small"
-    ),
-    spanTwo.appendChild(mainIcon);
-  var roamTopbar = document.getElementsByClassName("rm-topbar"),
-    nextIconButton = roamTopbar[0].lastElementChild,
-    flexDiv = document.createElement("div");
-  (flexDiv.id = nameToUse + "-flex-space"),
-    (flexDiv.className = "rm-topbar__spacer-sm"),
-    nextIconButton.insertAdjacentElement("afterend", mainButton),
-    mainButton.insertAdjacentElement("afterend", flexDiv),
-    mainButton.addEventListener("click", autotag);
+   var mainButton = document.createElement("span");
+   (mainButton.id = nameToUse + "-button"),
+   mainButton.classList.add("bp3-popover-wrapper");
+   var spanTwo = document.createElement("span");
+   spanTwo.classList.add("bp3-popover-target"), mainButton.appendChild(spanTwo);
+   var mainIcon = document.createElement("span");
+   (mainIcon.id = nameToUse + "-icon"),
+   mainIcon.classList.add(
+         "bp3-icon-" + bpIconName,
+         "bp3-button",
+         "bp3-minimal",
+         "bp3-small"
+      ),
+      spanTwo.appendChild(mainIcon);
+   var roamTopbar = document.getElementsByClassName("rm-topbar"),
+      nextIconButton = roamTopbar[0].lastElementChild,
+      flexDiv = document.createElement("div");
+   (flexDiv.id = nameToUse + "-flex-space"),
+   (flexDiv.className = "rm-topbar__spacer-sm"),
+   nextIconButton.insertAdjacentElement("afterend", mainButton),
+      mainButton.insertAdjacentElement("afterend", flexDiv),
+      mainButton.addEventListener("click", autotag);
 }
