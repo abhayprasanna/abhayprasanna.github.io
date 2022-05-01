@@ -131,7 +131,7 @@ function blockAlias(e) {
    });
 }
 (window.onkeydown = function (e) {
-   if ((e = e || event).altKey && 73 === e.keyCode) {
+   if (e.altKey && e.key === 'i') {
       if ((attoggle = !attoggle))
          (blockUid = "initial"),
          document
