@@ -113,6 +113,6 @@ Add colors for " .rm-level-n > .rm-multibar " incrementally (n = indent level)
 
 /* Focused block */
 .rm-focused > .rm-block-children > .rm-multibar {
-  border-right: dotted;
+  border-right-style: dotted;
   box-shadow: none;
 }
