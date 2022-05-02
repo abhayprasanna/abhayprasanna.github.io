@@ -1,4 +1,4 @@
-/* ======= AUTOTAG MODE  v0.4========
+/* ======= AUTOTAG MODE  v0.4.1========
  * Pre-requisites -
    * For NLP dates: Roam42 https://roamjs.com/extensions/roam42
    * For PageSynonyms: Page Synonyms https://roamjs.com/extensions/page-synonyms
@@ -76,7 +76,7 @@ function linkReferences(e) {
   });
   n = n.sort((e, t) => t.length - e.length);
   let g = new RegExp(
-      "(\\[[^\\]]+\\]\\([^ ]+\\)|{{[^}]+}}|\\S*::|\\[\\[[^\\]]+\\]\\]|\\[[^\\]]+\\]|\\[[^\\]]+$)",
+      "(\\[[^\\]]+\\]\\([^ ]+\\)|{{[^}]+}}|\\S*::|\\[\\[[^\\]]+\\]\\]|\\[[^\\]]+\\]|\\[[^\\]]+$|https?://[^\\s]+|www\\.[^\\s]+)",
       "g"
     ),
     i = e,
