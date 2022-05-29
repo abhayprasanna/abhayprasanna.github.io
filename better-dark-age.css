@@ -111,12 +111,6 @@ span[style*="color: red"]:hover {
 	padding: 5px 20px 5px;
 }
 
-.rm-inline-references:before {
-	color: var(--block-reference-text);
-	content: "Block References";
-	font-weight: 500;
-}
-
 .rm-zoom-mask {
 	color: var(--body-text);
 }
@@ -529,12 +523,6 @@ a:hover {
 	box-shadow: 0 0 2px 1px var(--references);
 }
 
-.rm-embed--page.rm-embed-container::before {
-	content: "Page Embed";
-	color: var(--block-reference-text);
-	font-weight: 500;
-}
-
 .rm-embed__content .rm-reference-container {
 	border: none;
 }
@@ -574,13 +562,6 @@ a:hover {
 	padding: 3px 10px 3px 3px;
 	border-radius: 5px;
 	box-shadow: 0 0 2px 1px var(--references);
-}
-
-.rm-embed-inner-block-hide:before {
-	content: "Block Embed";
-	color: var(--block-reference-text);
-	padding-left: 8px;
-	font-weight: 500;
 }
 
 .rm-embed-inner-block-hide .roam-block-container.rm-not-focused.block-bullet-view {
