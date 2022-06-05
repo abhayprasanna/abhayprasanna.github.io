@@ -217,11 +217,6 @@ body {
 	border-bottom: 0;
 }
 
-.log-button:hover,
-.page:hover {
-  background-color: var(--background) !important;
-}
-
 /* Compact formatting */
 
 :root {
@@ -329,8 +324,8 @@ span[style*="color: rgb(129, 145, 157);"] {
 .log-button:hover,
 .page:hover,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover,
-.roam-sidebar-container .rm-db-title-container .rm-db-title .bp3-icon.bp3-icon-chevron-down.expand-icon:hover {
-	background-color: unset !important;
+.roam-sidebar-container .rm-db-title-container .rm-db-title:hover {
+	background-color: var(--background) !important;
 	/* !important needed */
 	color: var(--icons-hover) !important;
 	/* !important needed */
