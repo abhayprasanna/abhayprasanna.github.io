@@ -217,7 +217,47 @@ body {
 	border-bottom: 0;
 }
 
+.log-button:hover,
+.page:hover {
+  background-color: var(--background) !important;
+}
+
 /* Compact formatting */
+
+:root {
+--left-sidebar-width: 150px;
+}
+
+.roam-sidebar-container {
+  width: var(--left-sidebar-width) !important;
+}
+.roam-app .roam-sidebar-container[style*="bottom: 0px;"] ~ .flex-h-box {
+  margin-left: var(--left-sidebar-width) !important;
+}
+
+.top-row,
+.page {
+  font-size: 0.95em !important;
+  padding: 5px 5px 5px 5px !important;
+}
+
+.log-button,
+.starred-pages-wrapper {
+  font-size: 0.95em !important;
+  padding: 5px 5px 5px 10px !important;
+}
+
+#roam-sidebar-logo {
+  transform: scale(0.7);
+  position: relative;
+  left: -20px;
+}
+
+#roam-sidebar-logo > div > span:nth-child(4) {
+  position: relative;
+  left: 8px;
+  top: 1px;
+}
 
 .log-button,
 .page,
