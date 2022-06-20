@@ -1,10 +1,38 @@
 @import url('https://abhayprasanna.github.io/better-dark-age.css');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Mono|IBM+Plex+Sans|IBM+Plex+Serif');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Mono|IBM+Plex+Serif');
+
+@font-face {
+  font-family: 'iAWriterQuattroS';
+  src: url("https://abhayprasanna.github.io/advaita/iAWriterQuattroS-Regular.woff") format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'iAWriterQuattroS';
+  src: url("https://abhayprasanna.github.io/advaita/iAWriterQuattroS-Italic.woff") format('woff');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'iAWriterQuattroS';
+  src: url("https://abhayprasanna.github.io/advaita/iAWriterQuattroS-Bold.woff") format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'iAWriterQuattroS';
+  src: url("https://abhayprasanna.github.io/advaita/iAWriterQuattroS-BoldItalic.woff") format('woff');
+  font-style: italic;
+  font-weight: 700;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
     /* FONTS */
-    --global-font             : 'IBM Plex Sans', sans-serif;
+    --global-font             : 'iAWriterQuattroS', sans-serif;
     --secondary-font          : 'Noto Sans Mono', monospace;
     --header-font             : 'IBM Plex Serif', serif;
     /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
@@ -59,7 +87,7 @@
 @media (prefers-color-scheme: dark) {
 :root {
     /* FONTS */
-    --global-font             : 'IBM Plex Sans', sans-serif;
+    --global-font             : 'iAWriterQuattroS', sans-serif;
     --secondary-font          : 'Noto Sans Mono', monospace;
     --header-font             : 'IBM Plex Serif', serif;
     /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
