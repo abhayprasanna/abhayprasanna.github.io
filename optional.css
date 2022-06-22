@@ -30,6 +30,15 @@ div[style*="height: 720px;"] {
   height: 85vh !important;
 }
 
+.react-resizable[style*="width: 500px; height: 500px;"] {
+  width: 100% !important;
+  height: 85vh !important;
+}
+
+.hoverparent[style*="width: 500px;"] {
+  width: 100% !important;
+}
+
 .react-resizable-handle-se {
   opacity: 0;
   border-style: solid;
