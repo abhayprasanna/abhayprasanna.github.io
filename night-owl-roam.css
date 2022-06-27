@@ -1,5 +1,5 @@
 @import url('https://abhayprasanna.github.io/better-dark-age.css');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Mono|IBM+Plex+Serif');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Mono|Roboto+Slab');
 
 @font-face {
   font-family: 'iAWriterQuattroS';
@@ -34,7 +34,7 @@
     /* FONTS */
     --global-font             : 'iAWriterQuattroS', sans-serif;
     --secondary-font          : 'Noto Sans Mono', monospace;
-    --header-font             : 'IBM Plex Serif', serif;
+    --header-font             : 'Roboto Slab', serif;
     /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
     --reduce-padding-right    : 3400px;
     --reduce-padding-left     : 3400px;
@@ -89,7 +89,7 @@
     /* FONTS */
     --global-font             : 'iAWriterQuattroS', sans-serif;
     --secondary-font          : 'Noto Sans Mono', monospace;
-    --header-font             : 'IBM Plex Serif', serif;
+    --header-font             : 'Roboto Slab', serif;
     /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
     --reduce-padding-right    : 3400px;
     --reduce-padding-left     : 3400px;
