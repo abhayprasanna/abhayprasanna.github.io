@@ -20,8 +20,7 @@
   }
 }
 
-/* Override image, iframe, pdf resize */
-
+/* Override image, iframe, pdf sizing */
 div[style*="width: 580px;"],
 div[style*="width: 720px;"] {
   width: 100% !important;
@@ -39,6 +38,24 @@ div:not(.rm-inline-img__resize) > .react-resizable[style*="width: 500px;"] {
   width: 100% !important;
 }
 
+/* Right sidebar hide iframes pdfs */
+#right-sidebar div:not(.rm-inline-img__resize) > .react-resizable {
+  display: none;
+}
+
+#right-sidebar .hoverparent[style*="width: 500px"]:not(.rm-inline-img__resize):before {
+  content: "<--- Click to view PDF in main page";
+  color: var(--body-text);
+  font-style: italic;
+}
+
+#right-sidebar .hoverparent[style*="width: 720px"]:not(.rm-inline-img__resize):before {
+  content: "<--- Click to view iframe in main page";
+  color: var(--body-text);
+  font-style: italic;
+}
+
+/* Restyle grabber */
 .react-resizable-handle-se {
   opacity: 0;
   border-style: solid;
@@ -108,12 +125,7 @@ div:not(.rm-inline-img__resize) > .react-resizable[style*="width: 500px;"] {
 }
 
 /* Horizontal layout */
-
-span.rm-page-ref[data-tag*="rm-"] {
-    display: none;
-}
-
-.roam-block-container[data-page-links*="rm-h"] .rm-block-children {
+.roam-block-container[data-page-links*=".rm-h"] .rm-block-children {
   display: flex;
   flex-direction: row;
 }
@@ -154,12 +166,6 @@ span.rm-page-ref[data-tag*="rm-"] {
 .rm-code-block,
 .rm-embed-container {
   margin-right: -5px;
-}
-
-/* Daily notes color */
-
-[data-original-text] {
-  color: var(--bold-color) !important;
 }
 
 /* Fix the blue outline on safari */
