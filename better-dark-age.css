@@ -1552,6 +1552,14 @@ div::-webkit-scrollbar-thumb:hover {
 	background: var(--sidebar-background);
 }
 
+.flowchart-link {
+  stroke: var(--references) !important;
+}
+
+#flowchart-pointEnd {
+  fill: var(--body-text) !important;
+}
+
 
 /*---------------------------------------------------------------------------*/
 
