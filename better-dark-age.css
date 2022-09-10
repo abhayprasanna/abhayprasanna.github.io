@@ -2351,7 +2351,7 @@ button {
 /* Embed path styling */
 
 .rm-embed-path.rm-embed-container {
-  padding: 0px 20px 10px 0px !important; /* !important needed */
+  padding: 9px 20px 10px 0px !important; /* !important needed */
   border-radius: 5px;
   box-shadow: 0 0 2px 1px var(--references);
 }
