@@ -2303,3 +2303,45 @@ h4,
 }
 
 /*---------------------------------------------------------------------------*/
+
+/* September 2022 Roam Depot styling */
+
+.rm-extensions-settings,
+.rm-settings,
+.rm-extensions-marketplace,
+.rm-extensions-marketplace .rm-extension-small:hover,
+.rm-extensions-marketplace .rm-extensions-marketplace-search__settings input {
+  background-color: var(--sidebar-background);
+}
+
+.rm-extensions-marketplace .rm-extensions-marketplace-search {
+  background-color: var(--background);
+}
+
+.rm-extensions-marketplace .rm-extensions-marketplace-search__settings input:focus {
+  box-shadow: 0 0 4px 1px var(--references);
+  background-color: var(--sidebar-background);
+}
+
+hr {
+  border-color: var(--references);
+}
+
+button {
+  font-family: var(--secondary-font);
+}
+
+.rm-extension-full__name, .h1, h1 {
+  font-family: var(--header-font);
+  color: var(--page-links);
+}
+
+.h2, h2 {
+  font-family: var(--header-font);
+  color: var(--bold-color);
+}
+
+.h3, h3 {
+  font-family: var(--header-font);
+  color: var(--italics-color);
+}
