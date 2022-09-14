@@ -212,3 +212,15 @@ div:not(.rm-inline-img__resize) > .react-resizable[style*="width: 500px;"] {
 sub + button:hover + div > div.twitter-tweet > iframe {
   display:flex !important;
 } 
+
+/* Referenced block quote width fix */
+
+.rm-block-ref >.rm-bq {
+    max-width: 95% !important;
+}
+
+/* Today buttons hover effect fix */
+
+.flex-items:hover {
+background: transparent;
+}     
