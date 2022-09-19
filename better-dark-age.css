@@ -342,7 +342,6 @@ span[style*="color: rgb(129, 145, 157);"] {
 #rm-mobile-bar {
 	background-color: var(--sidebar-background) !important;
 	/* !important needed */
-	position: fixed;
 }
 
 #rm-mobile-bar .bp3-button i::before,
