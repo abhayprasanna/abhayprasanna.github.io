@@ -224,3 +224,13 @@ sub + button:hover + div > div.twitter-tweet > iframe {
 .flex-items:hover {
 background: transparent;
 }     
+
+/* Highlight children on hover */
+
+.rm-block-main:hover + .rm-block-children {
+  box-shadow: var(--references) 40px 0 50px -40px inset;
+  -webkit-transition: box-shadow 300ms linear;
+  -ms-transition: box-shadow 300ms linear;
+  transition: box-shadow 300ms linear;
+  transition-delay: 300ms;
+}
