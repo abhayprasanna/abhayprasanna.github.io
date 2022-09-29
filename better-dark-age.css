@@ -1281,6 +1281,9 @@ button[style*="background-color: white;"]:hover {
 	transition: color 0.3s ease;
 }
 
+.bp3-tooltip .bp3-popover-arrow-fill {
+    fill: var(--references);
+}
 
 /* Button Styling */
 
