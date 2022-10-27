@@ -246,3 +246,7 @@ background: transparent;
 .rm-block > .rm-block-main:has(.roam-block > span:empty) > .controls {
   visibility: hidden;
 }
+
+.rm-block > .rm-block-main:has(.roam-block > span:empty):hover > .controls {
+  visibility: visible;
+}
