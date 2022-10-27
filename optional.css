@@ -234,3 +234,15 @@ background: transparent;
   transition: box-shadow 300ms linear;
   transition-delay: 300ms;
 }
+
+/* Hide calendar button on top right */
+
+.rm-topbar .bp3-button:has(.bp3-icon-calendar) {
+  display: none;
+}
+
+/* Hide bullets when block is empty */
+
+.rm-block > .rm-block-main:has(.roam-block > span:empty) > .controls {
+  visibility: hidden;
+}
