@@ -20,24 +20,6 @@
   }
 }
 
-/* Override image, iframe, pdf sizing */
-div[style*="width: 580px;"],
-div[style*="width: 720px;"] {
-  width: 100% !important;
-}
-div[style*="height: 720px;"] {
-  height: 85vh !important;
-}
-
-div:not(.rm-inline-img__resize) > .react-resizable[style*="width: 500px;"] {
-  width: 100% !important;
-  height: 85vh !important;
-}
-
-.hoverparent[style*="width: 500px;"]:not(.rm-inline-img__resize) {
-  width: 100% !important;
-}
-
 /* Right sidebar hide iframes pdfs */
 #right-sidebar div:not(.rm-inline-img__resize) > .react-resizable {
   display: none;
@@ -53,28 +35,6 @@ div:not(.rm-inline-img__resize) > .react-resizable[style*="width: 500px;"] {
   content: "<--- Click to view iframe in main page";
   color: var(--body-text);
   font-style: italic;
-}
-
-/* Restyle grabber */
-.react-resizable-handle-se {
-  opacity: 0;
-  border-style: solid;
-  border-color: transparent var(--references) var(--references) transparent;
-}
-
-.react-resizable:hover .react-resizable-handle-se {
-  opacity: 1;
-}
-
-.react-resizable-handle-se:hover {
-  border-style: solid;
-  border-color: transparent var(--icons-hover) var(--icons-hover) transparent;
-}
-
-/* Remove partial iframes from path */
-.parent-path-wrapper > div > span > div > iframe,
-.parent-path-wrapper > div > span > .hoverparent {
-  opacity: 0;
 }
 
 /* Minimal right sidebar */
@@ -114,16 +74,6 @@ div:not(.rm-inline-img__resize) > .react-resizable[style*="width: 500px;"] {
   padding: 0px !important;
 }
 
-/* Don't let images and iframes extend outside box */
-.rm-inline-img__resize, .react-resizable, .hoverparent {
-  max-width: 100%;
-}
-
-/* Move the edit icon to the left */
-.hoveronly {
-  right: 10px !important;
-}
-
 /* Horizontal layout */
 .roam-block-container[data-page-links*=".rm-h"] .rm-block-children {
   display: flex;
@@ -141,12 +91,6 @@ div:not(.rm-inline-img__resize) > .react-resizable[style*="width: 500px;"] {
   color: black !important;
 }
 
-/* Unlink finder Partial text color */
-
-.partial-word-match {
-  color: #000000 !important;
-}
-
 /* Sticky tags */
 
 .roam-block-container[data-page-links*=".sticky"] > .rm-block-main {
@@ -155,28 +99,6 @@ div:not(.rm-inline-img__resize) > .react-resizable[style*="width: 500px;"] {
   backdrop-filter: blur(15px);
   top: 0px;
   z-index: 11;
-}
-
-/* Width fixes */
-
-.rm-block-separator {
-  min-width: unset;
-}
-.rm-full-width,
-.rm-code-block,
-.rm-embed-container {
-  margin-right: -5px;
-}
-
-/* Fix the blue outline on safari */
-
-*:focus {
-    outline: none;
-}
-
-/* Maximize video size */
-.rm-spacing--full .rm-video-player__spacing-wrapper {
-    max-width: 100%;
 }
 
 /* Hide videos in right sidebar */
@@ -213,137 +135,8 @@ sub + button:hover + div > div.twitter-tweet > iframe {
   display:flex !important;
 } 
 
-/* Referenced block quote width fix */
-
-.rm-block-ref >.rm-bq {
-    max-width: 95% !important;
-}
-
-/* Today buttons hover effect fix */
-
-.flex-items:hover {
-background: transparent;
-}     
-
-/* Highlight children on hover */
-
-.rm-block-main:hover + .rm-block-children {
-  box-shadow: var(--references) 40px 0 50px -40px inset;
-  -webkit-transition: box-shadow 300ms linear;
-  -ms-transition: box-shadow 300ms linear;
-  transition: box-shadow 300ms linear;
-  transition-delay: 300ms;
-}
-
 /* Hide calendar button on top right */
 
 .rm-topbar .bp3-button:has(.bp3-icon-calendar) {
   display: none;
-}
-
-/* Hide bullets when block is empty */
-
-.rm-block > .rm-block-main:has(.roam-block > span:empty) > .controls {
-  visibility: hidden;
-}
-
-.rm-block > .rm-block-main:has(.roam-block > span:empty):hover > .controls {
-  visibility: visible;
-}
-
-/* HR linebreak remove controls */
-
-.rm-block__self:has(.rm-hr) > .controls {
- visibility: hidden;
-}
-
-.rm-block__self:has(.rm-hr):hover > .controls {
- visibility: visible;
-}
-
-.rm-hr {
-  margin-left: -15px;
-}
-
-
-/* Unlink Finder styling */
-
-.rm-unlink-aliases .group {
-    background-color: var(--background);
-    border-bottom: dashed 1px var(--references);
-}
-
-
-/* Block ref footnote redesign */
-
-.rm-block__ref-count-footnote{
-  color: var(--body-text);
-  padding: 3px;
-  border-radius: 5px;
-  border: solid 0.5px var(--references);
-  margin-right: 4px;
-}
-
-.rm-block__ref-count-footnote::before{
-    content: '\2193 ';
-    margin-right: 3px;
-    border-radius: 5px;
-}
-
-.rm-block__ref-count-footnote:hover {
-  background: var(--icons-hover);
-  padding: 3px;
-  border-radius: 5px;
-  transition: 0.5s;
-}
-
-.rm-reference-footnote .rm-active{
-  content: ' \2193 ';
-  color: rgb(255,255,255);
-  background-color: var(--icons);
-  padding: 3px;
-  border-radius: 5px;
-}
-
-sup {
-    top: 0 !important; 
-}
-
-sub, sup {
-    position: relative;
-    margin-left: 3px;
-    font-size: 80%;
-    line-height: 0;
-    vertical-align: baseline;
-}
-
-/* Roam AI background fix */
-.py-1.px-1 {
-  color: #202B33;
-}
-
-/* Better Right Sidebar Search */
-
-.rm-sidebar-search > div {
-  background-color: var(--background) !important;
-}
-
-.rm-sidebar-card > div > div > .rm-search-query-title > div > input {
-  background-color: var(--sidebar-background);
-  border-radius: 18px;
-  width: calc(100% - 100px) !important;
-}
-
-.rm-sidebar-card > div > div > .rm-search-query-title > div {
-  color: var(--bold-color);
-  font-weight: 700;
-}
-
-.rm-sidebar-card > div > div > .rm-search-query-title > div > button {
-  font-size: 0;
-}
-
-.rm-sidebar-card > div > div > .rm-search-query-title > div > button::after {
-  content: "Go";
-  font-size: 14px !important;
 }
