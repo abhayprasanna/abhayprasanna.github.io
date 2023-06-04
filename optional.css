@@ -250,3 +250,73 @@ background: transparent;
 .rm-block > .rm-block-main:has(.roam-block > span:empty):hover > .controls {
   visibility: visible;
 }
+
+/* HR linebreak remove controls */
+
+.rm-block__self:has(.rm-hr) > .controls {
+ visibility: hidden;
+}
+
+.rm-block__self:has(.rm-hr):hover > .controls {
+ visibility: visible;
+}
+
+.rm-hr {
+  margin-left: -15px;
+}
+
+
+/* Unlink Finder styling */
+
+.rm-unlink-aliases .group {
+    background-color: var(--background);
+    border-bottom: dashed 1px var(--references);
+}
+
+
+/* Block ref footnote redesign */
+
+.rm-block__ref-count-footnote{
+  color: var(--body-text);
+  padding: 3px;
+  border-radius: 5px;
+  border: solid 0.5px var(--references);
+}
+
+.rm-block__ref-count-footnote::before{
+    content: '\2193 ';
+    margin-right: 3px;
+    border-radius: 5px;
+}
+
+.rm-block__ref-count-footnote:hover {
+  background: var(--icons-hover);
+  padding: 3px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.rm-reference-footnote .rm-active{
+  content: ' \2193 ';
+  color: rgb(255,255,255);
+  background-color: var(--icons);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+sup {
+    top: 0 !important; 
+}
+
+sub, sup {
+    position: relative;
+    margin-left: 3px;
+    font-size: 80%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+/* Roam AI background fix */
+.py-1.px-1 {
+  color: #202B33;
+}
