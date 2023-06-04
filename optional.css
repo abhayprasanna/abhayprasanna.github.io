@@ -3,16 +3,6 @@
   display: none;
 }
 
-/* Hide graph button and calendar (daily notes) in top bar */
-.bp3-button.bp3-minimal.bp3-icon-calendar.bp3-small,
-.bp3-button.bp3-minimal.bp3-icon-graph.bp3-small {
-  display: none;
-}
-
-.rm-topbar__spacer-sm {
-  display: none;
-}
-
 /* Hide mobile bar on iPad */
 @media (min-device-width : 1024px) {
   #rm-mobile-bar {
