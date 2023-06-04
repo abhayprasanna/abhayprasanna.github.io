@@ -281,6 +281,7 @@ background: transparent;
   padding: 3px;
   border-radius: 5px;
   border: solid 0.5px var(--references);
+  margin-right: 4px;
 }
 
 .rm-block__ref-count-footnote::before{
@@ -319,4 +320,30 @@ sub, sup {
 /* Roam AI background fix */
 .py-1.px-1 {
   color: #202B33;
+}
+
+/* Better Right Sidebar Search */
+
+.rm-sidebar-search > div {
+  background-color: var(--background) !important;
+}
+
+.rm-sidebar-card > div > div > .rm-search-query-title > div > input {
+  background-color: var(--sidebar-background);
+  border-radius: 18px;
+  width: calc(100% - 100px) !important;
+}
+
+.rm-sidebar-card > div > div > .rm-search-query-title > div {
+  color: var(--bold-color);
+  font-weight: 700;
+}
+
+.rm-sidebar-card > div > div > .rm-search-query-title > div > button {
+  font-size: 0;
+}
+
+.rm-sidebar-card > div > div > .rm-search-query-title > div > button::after {
+  content: "Go";
+  font-size: 14px !important;
 }
