@@ -2572,3 +2572,10 @@ sub, sup {
   content: "Go";
   font-size: 14px !important;
 }
+
+/* New Linked References search highlights hardcoded yellow color June 2023 */
+
+span[style*="background-color: yellow"] {
+  color: var(--highlight-text-color);
+  background-color: var(--highlighter) !important;
+}
