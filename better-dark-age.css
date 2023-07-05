@@ -174,7 +174,6 @@ body {
 }
 
 #roam-right-sidebar-content {
-	border: 1px solid var(--sidebar-background);
 	border-radius: 12px;
 	background: var(--background);
 	margin-right: 6px;
