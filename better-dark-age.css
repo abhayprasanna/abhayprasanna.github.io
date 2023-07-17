@@ -2370,21 +2370,20 @@ button {
 
 
 /* Override image, iframe, pdf sizing */
-div[style*="width: 580px;"],
-div[style*="width: 720px;"] {
-  width: 100% !important;
-}
-div[style*="height: 720px;"] {
-  height: 85vh !important;
-}
-
-div:not(.rm-inline-img__resize) > .react-resizable[style*="width: 500px;"] {
-  width: 100% !important;
-  height: 85vh !important;
+div[style="width: 580px;"], 
+div[style="width: 720px;"], 
+.hoverparent[style*="width: 500px;"]:not(.rm-inline-img__resize), 
+div:not(.rm-inline-img__resize) > .react-resizable[style*="width: 500px;"] { 
+width: 100% !important; 
 }
 
-.hoverparent[style*="width: 500px;"]:not(.rm-inline-img__resize) {
-  width: 100% !important;
+div[style*="height: 720px;"], 
+div:not(.rm-inline-img__resize) > .react-resizable[style*="width: 500px;"] { 
+height: 85vh !important; 
+}
+
+.rm-inline-img__resize, .react-resizable, .hoverparent {
+max-width: 100%; 
 }
 
 /* Restyle grabber */
@@ -2407,11 +2406,6 @@ div:not(.rm-inline-img__resize) > .react-resizable[style*="width: 500px;"] {
 .parent-path-wrapper > div > span > div > iframe,
 .parent-path-wrapper > div > span > .hoverparent {
   opacity: 0;
-}
-
-/* Don't let images and iframes extend outside box */
-.rm-inline-img__resize, .react-resizable, .hoverparent {
-  max-width: 100%;
 }
 
 /* Move the edit icon to the left */
