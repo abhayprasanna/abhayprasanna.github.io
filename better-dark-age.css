@@ -2468,16 +2468,6 @@ background: transparent;
   transition-delay: 300ms;
 }
 
-/* Hide bullets when block is empty */
-
-.rm-block > .rm-block-main:has(.roam-block > span:empty) > .controls {
-  visibility: hidden;
-}
-
-.rm-block > .rm-block-main:has(.roam-block > span:empty):hover > .controls {
-  visibility: visible;
-}
-
 /* HR linebreak remove controls */
 
 .rm-block__self:has(.rm-hr) > .controls {
