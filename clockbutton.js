@@ -4,8 +4,9 @@ setTimeout(timebutton, 500); //wait half a second just in case
 const prefix = window.location.href.split('/')[5] + ' - ';
 
 function timebutton() { //creates a new left sidebar log button below Daily Notes
-  if (!document.getElementById('timeDiv')) {
-    var divTime = document.createElement('div');
+  var divTime = document.getElementById('timeDiv');
+  if (!divTime) {
+    divTime = document.createElement('div');
     divTime.classList.add('log-button');
     divTime.id = 'timeDiv';
     var spanTime = document.createElement('span');
