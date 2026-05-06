@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="An annotated reading of Christopher Smart's A Song to David, contextualized by his confinement for religious mania.">
+<title>A Song to David — Annotated</title>
+<style>
+  :root {
+    --bg: #faf7f1;
+    --ink: #1a1a1a;
+    --accent: #7a1f1f;
+    --note-bg: #fff8e7;
+    --note-border: #c9a45c;
+    --muted: #555;
+    --hl: #f4d35e;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  header {
+    background: #1a1a1a;
+    color: #faf7f1;
+    padding: 1.6rem 1.2rem;
+    border-bottom: 4px solid var(--accent);
+  }
+  @media (min-width: 700px) { header { padding: 2rem 3rem; } }
+  header h1 { margin: 0; font-size: 1.7rem; letter-spacing: 0.5px; }
+  @media (min-width: 700px) { header h1 { font-size: 2.2rem; } }
+  header .byline { margin-top: 0.4rem; font-style: italic; color: #ddd; font-size: 0.95rem; }
+  header .intro {
+    margin-top: 1.2rem;
+    max-width: 900px;
+    font-size: 0.95rem;
+    color: #eee;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    max-width: 1300px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+  @media (min-width: 900px) {
+    main {
+      grid-template-columns: minmax(360px, 1fr) minmax(320px, 1fr);
+      gap: 2rem;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+  }
+  .poem { font-size: 1.05rem; }
+  .stanza {
+    margin-bottom: 1.2rem;
+    padding: 0.6rem 0.7rem;
+    border-left: 3px solid transparent;
+    border-radius: 4px;
+    transition: background 0.2s, border-color 0.2s;
+    cursor: pointer;
+  }
+  .stanza:hover, .stanza.active {
+    background: #f1ead8;
+    border-left-color: var(--accent);
+  }
+  .line { display: block; }
+  .hl {
+    background: linear-gradient(transparent 60%, var(--hl) 60%);
+    border-bottom: 1px dotted var(--accent);
+    cursor: help;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+  }
+  /* Custom popover replaces native title tooltip so it works on touch + desktop */
+  .gloss-popover {
+    position: absolute;
+    z-index: 1000;
+    max-width: min(320px, 92vw);
+    background: #1a1a1a;
+    color: #faf7f1;
+    padding: 0.7rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    border-left: 3px solid var(--hl);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.15s, transform 0.15s;
+  }
+  .gloss-popover.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  aside.annotations {
+    align-self: start;
+  }
+  @media (min-width: 900px) {
+    aside.annotations {
+      position: sticky;
+      top: 1rem;
+      max-height: 92vh;
+      overflow-y: auto;
+    }
+  }
+  .note {
+    background: var(--note-bg);
+    border-left: 4px solid var(--note-border);
+    padding: 0.9rem 1.1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    display: none;
+  }
+  .note.active { display: block; }
+  .note h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .note p { margin: 0.5rem 0; font-size: 0.95rem; color: #222; }
+  .note .tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    background: var(--accent);
+    color: white;
+    padding: 0.15rem 0.55rem;
+    border-radius: 3px;
+    margin-right: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .default-note { display: block; }
+  /* Mobile: annotations appear as modal overlay */
+  @media (max-width: 899px) {
+    aside.annotations {
+      position: fixed;
+      inset: auto 0 0 0;
+      max-height: 70vh;
+      overflow-y: auto;
+      background: var(--bg);
+      border-top: 3px solid var(--accent);
+      box-shadow: 0 -8px 24px rgba(0,0,0,0.2);
+      padding: 1rem 1rem 1.4rem;
+      transform: translateY(100%);
+      transition: transform 0.25s ease;
+      z-index: 900;
+    }
+    aside.annotations.open { transform: translateY(0); }
+    .close-btn {
+      position: absolute;
+      top: 0.5rem; right: 0.7rem;
+      background: transparent;
+      border: none;
+      font-size: 1.6rem;
+      color: var(--ink);
+      cursor: pointer;
+      line-height: 1;
+    }
+  }
+  @media (min-width: 900px) {
+    .close-btn { display: none; }
+  }
+  footer {
+    text-align: center;
+    padding: 1.6rem 1rem;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>A Song to David</h1>
+  <div class="byline">Christopher Smart (1722–1771) · published 1763 (excerpt)</div>
+  <div class="intro">
+    Smart composed much of <em>A Song to David</em> during or immediately after his confinement in Mr. Potter's private madhouse and later St Luke's Hospital for Lunatics in London (roughly 1757–1763), where he was committed for what contemporaries called "religious mania" — a compulsion to pray aloud in public and summon strangers to kneel with him in the street. Samuel Johnson, his friend, drily remarked, "I did not think he ought to be shut up. His infirmities were not noxious to society. He insisted on people praying with him; and I'd as lief pray with Kit Smart as anyone else." The 516-line Pindaric hymn, built on elaborate numerological scaffolding, was once dismissed as the ravings of a madman and is now regarded as one of the great devotional poems in English. Tap a stanza to surface commentary; tap the underlined words for glosses.
+  </div>
+</header>
+
+<main>
+  <section class="poem">
+
+    <div class="stanza" data-note="n1">
+      <span class="line">Sweet is the dew that falls betimes,</span>
+      <span class="line">And drops upon the leafy <span class="hl" data-gloss="Lime trees (Tilia), a common English churchyard tree — not citrus. Their blossoms are fragrant and associated with calm and contemplation.">limes</span>;</span>
+      <span class="line">Sweet <span class="hl" data-gloss="Mount Hermon in the Levant, mentioned in Psalm 133: 'as the dew of Hermon.' Smart grafts a Psalmic image directly onto English pastoral.">Hermon's</span> fragrant air:</span>
+      <span class="line">Sweet is the lily's silver bell,</span>
+      <span class="line">And sweet the wakeful <span class="hl" data-gloss="Candles (Latin 'taper'). 'Wakeful tapers' evokes monks or worshippers keeping vigil before dawn prayer.">tapers</span> smell</span>
+      <span class="line">That watch for early pray'r.</span>
+    </div>
+
+    <div class="stanza" data-note="n2">
+      <span class="line">Sweet the young nurse with love intense,</span>
+      <span class="line">Which smiles o'er sleeping innocence;</span>
+      <span class="line">Sweet when the lost arrive:</span>
+      <span class="line">Sweet the musician's ardour beats,</span>
+      <span class="line">While his <span class="hl" data-gloss="'Vague' here retains the Latin sense of 'wandering' — the mind roves in search of sweetness. Possibly self-referential: Smart writing from an institution where his own mind was judged to wander.">vague mind's</span> in quest of sweets,</span>
+      <span class="line">The choicest flow'rs to hive.</span>
+    </div>
+
+    <div class="stanza" data-note="n3">
+      <span class="line">Sweeter in all the strains of love,</span>
+      <span class="line">The language of thy <span class="hl" data-gloss="Turtle dove — biblical emblem of faithful love and of the Holy Spirit (Song of Songs 2:12). Not the reptile.">turtle dove</span>,</span>
+      <span class="line">Pair'd to thy swelling chord;</span>
+      <span class="line">Sweeter with ev'ry grace <span class="hl" data-gloss="'Endued' — archaic for 'endowed' or 'invested with.'">endu'd</span>,</span>
+      <span class="line">The glory of thy gratitude,</span>
+      <span class="line"><span class="hl" data-gloss="'Breathed out' — gratitude exhaled as prayer. Smart frequently conflates breath, song, and devotion.">Respir'd</span> unto the Lord.</span>
+    </div>
+
+    <div class="stanza" data-note="n4">
+      <span class="line">Strong is the horse upon his speed;</span>
+      <span class="line">Strong in pursuit the rapid <span class="hl" data-gloss="A kite or bird of prey (Middle English 'glede'). Smart's bestiary draws from the KJV and natural history alike.">glede</span>,</span>
+      <span class="line">Which makes at once his game:</span>
+      <span class="line">Strong the tall ostrich on the ground;</span>
+      <span class="line">Strong thro' the turbulent profound</span>
+      <span class="line">Shoots <span class="hl" data-gloss="Greek/Latin for swordfish (Xiphias gladius). Smart's classical learning — he was a Pembroke, Cambridge scholar — surfaces even in mania.">xiphias</span> to his aim.</span>
+    </div>
+
+    <div class="stanza" data-note="n5">
+      <span class="line">Strong is the lion—like a coal</span>
+      <span class="line">His eye-ball—like a <span class="hl" data-gloss="The sloped outer wall of a fortress bastion — an image of immovable defensive strength.">bastion's mole</span></span>
+      <span class="line">His chest against the foes:</span>
+      <span class="line">Strong, the <span class="hl" data-gloss="'Gier-eagle' — the vulture of Leviticus 11:18, from Hebrew 'racham.' Smart often uses KJV marginalia directly.">gier-eagle</span> on his sail,</span>
+      <span class="line">Strong against tide, th' enormous whale</span>
+      <span class="line">Emerges as he goes.</span>
+    </div>
+
+    <div class="stanza" data-note="n6">
+      <span class="line">But stronger still, in earth and air,</span>
+      <span class="line">And in the sea, the man of pray'r;</span>
+      <span class="line">And far beneath the tide;</span>
+      <span class="line">And in the seat to faith assign'd,</span>
+      <span class="line"><span class="hl" data-gloss="Direct quotation of Matthew 7:7 ('Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you'). Compressed into three hammer-blow clauses.">Where ask is have, where seek is find,</span></span>
+      <span class="line">Where knock is open wide.</span>
+    </div>
+
+    <div class="stanza" data-note="n7">
+      <span class="line"><span class="hl" data-gloss="Beauteous — the third of Smart's adjectival anaphoras (Sweet / Strong / Beauteous / Precious / Glorious), each governing a cluster of stanzas in a deliberate numerological pattern.">Beauteous</span> the fleet before the gale;</span>
+      <span class="line">Beauteous the multitudes in mail,</span>
+      <span class="line">Rank'd arms and crested heads:</span>
+      <span class="line">Beauteous the garden's <span class="hl" data-gloss="Shade, leafy cover (from Latin 'umbra'). A painterly, Miltonic word choice.">umbrage</span> mild,</span>
+      <span class="line">Walk, water, <span class="hl" data-gloss="The landscaped 'wilderness' of an 18th-c. English garden — wildness deliberately composed. Echoes Capability Brown-era aesthetics.">meditated wild</span>,</span>
+      <span class="line">And all the bloomy beds.</span>
+    </div>
+
+    <div class="stanza" data-note="n8">
+      <span class="line">Beauteous the moon full on the lawn;</span>
+      <span class="line">And beauteous, when the veil's withdrawn,</span>
+      <span class="line">The <span class="hl" data-gloss="Bride imagery from Song of Songs and Revelation 21 (the Church as bride of Christ). Not erotic in intent — though Smart's hymnic eroticism unsettled contemporaries.">virgin to her spouse</span>:</span>
+      <span class="line">Beauteous the temple deck'd and fill'd,</span>
+      <span class="line">When to the <span class="hl" data-gloss="Hebraism ('shir hashirim' = 'song of songs,' 'heaven of heavens' = highest heaven). Smart studied Hebrew intensely during confinement.">heav'n of heav'ns</span> they build</span>
+      <span class="line">Their heart-directed vows.</span>
+    </div>
+
+    <div class="stanza" data-note="n9">
+      <span class="line">Beauteous, yea beauteous more than these,</span>
+      <span class="line">The <span class="hl" data-gloss="David himself — shepherd boy anointed king of Israel, traditional author of the Psalms. The poem's dedicatee and Smart's personal model of the divinely inspired poet.">shepherd king</span> upon his knees,</span>
+      <span class="line">For his momentous trust;</span>
+      <span class="line">With wish of infinite conceit,</span>
+      <span class="line">For man, beast, mute, the small and great,</span>
+      <span class="line">And <span class="hl" data-gloss="Genesis 3:19 — 'dust thou art, and unto dust shalt thou return.' The prostrate body humbled to its material origin.">prostrate dust to dust</span>.</span>
+    </div>
+
+    <div class="stanza" data-note="n10">
+      <span class="line">Precious the bounteous <span class="hl" data-gloss="Mark 12:41–44 — the poor widow who gives two small coins; Jesus declares her gift greater than the rich men's offerings. A touchstone for Smart, who lived on charity in confinement.">widow's mite</span>;</span>
+      <span class="line">And precious, for extreme delight,</span>
+      <span class="line">The largess from the <span class="hl" data-gloss="A rude, niggardly person — so the miser's rare generosity is 'precious' because unexpected. KJV usage (Isaiah 32:5).">churl</span>:</span>
+      <span class="line">Precious the ruby's blushing blaze,</span>
+      <span class="line">And <span class="hl" data-gloss="'Alba' = white (Latin). Possibly the diamond or white pearl. Some editors read it as a reference to the white-stone imagery of Revelation 2:17.">alba's</span> blest imperial rays,</span>
+      <span class="line">And pure <span class="hl" data-gloss="Sky-blue (from Latin 'caeruleus'). Smart's gemstone taxonomy is as much symbolic as mineralogical.">cerulean</span> pearl.</span>
+    </div>
+
+    <div class="stanza" data-note="n11">
+      <span class="line">Precious the penitential tear;</span>
+      <span class="line">And precious is the sigh sincere,</span>
+      <span class="line">Acceptable to God:</span>
+      <span class="line">And precious are the winning flow'rs,</span>
+      <span class="line">In gladsome Israel's <span class="hl" data-gloss="Sukkot, the Feast of Tabernacles/Booths (Leviticus 23:40), when Israelites wove bowers of branches. Smart's Hebraism again foregrounds Jewish scripture as living liturgy.">feast of bow'rs</span>,</span>
+      <span class="line">Bound on the hallow'd sod.</span>
+    </div>
+
+    <div class="stanza" data-note="n12">
+      <span class="line">More precious that diviner part</span>
+      <span class="line">Of David, ev'n the Lord's own heart,</span>
+      <span class="line">Great, beautiful, and new:</span>
+      <span class="line">In all things where it was intent,</span>
+      <span class="line">In all extremes, in each event,</span>
+      <span class="line"><span class="hl" data-gloss="Legal/logical language: 'proof answering true to true' — David's heart as evidentiary match to God's. Smart loved such forensic metaphysics.">Proof—answ'ring true to true</span>.</span>
+    </div>
+
+    <div class="stanza" data-note="n13">
+      <span class="line">Glorious the sun in <span class="hl" data-gloss="Mid-course across the sky. 'Career' retains its original sense of a swift running course (Latin 'carrus').">mid career</span>;</span>
+      <span class="line">Glorious th' assembled fires appear;</span>
+      <span class="line">Glorious the comet's train:</span>
+      <span class="line">Glorious the trumpet and alarm;</span>
+      <span class="line">Glorious th' almighty <span class="hl" data-gloss="The 'outstretched arm' of Exodus 6:6 — God's deliverance of Israel. A Passover formula.">stretch'd-out arm</span>;</span>
+      <span class="line">Glorious th' enraptur'd <span class="hl" data-gloss="The sea (archaic, poetic). The ocean itself is 'enraptured' — participating in praise.">main</span>:</span>
+    </div>
+
+    <div class="stanza" data-note="n14">
+      <span class="line">Glorious the <span class="hl" data-gloss="Aurora borealis. A striking 18th-c. inclusion — natural spectacle as theological evidence, in the tradition of physico-theology (Derham, Ray).">northern lights a-stream</span>;</span>
+      <span class="line">Glorious the song, when God's the theme;</span>
+      <span class="line">Glorious the thunder's roar:</span>
+      <span class="line">Glorious <span class="hl" data-gloss="Hosanna shouted from the lion's den — Daniel delivered. The 'den' may also evoke the asylum cell; Smart likely heard his own hosannas echoing from confinement.">hosanna from the den</span>;</span>
+      <span class="line">Glorious the <span class="hl" data-gloss="'Catholic' = universal (lowercase-c). Smart affirms the amen of the universal Church, not Roman Catholicism specifically.">catholic amen</span>;</span>
+      <span class="line">Glorious the martyr's gore:</span>
+    </div>
+
+    <div class="stanza" data-note="n15">
+      <span class="line">Glorious—more glorious is the crown</span>
+      <span class="line">Of Him that brought salvation down</span>
+      <span class="line">By meekness, call'd thy Son;</span>
+      <span class="line">Thou that stupendous truth believ'd,</span>
+      <span class="line">And now the matchless deed's achiev'd,</span>
+      <span class="line"><span class="hl" data-gloss="The poem's famous closing hammer-stroke: three perfect trochees, each a completed act. Often quoted as the summary of Smart's entire vision — faith as finished work.">Determin'd, dar'd, and done.</span></span>
+    </div>
+
+  </section>
+
+  <aside class="annotations" id="annotations">
+    <button class="close-btn" aria-label="Close commentary">×</button>
+
+    <div class="note default-note" id="default">
+      <span class="tag">How to read</span>
+      <h3>Tap a stanza</h3>
+      <p>Each stanza on the left reveals a commentary note. Tap any <span class="hl">highlighted phrase</span> for a quick gloss of vocabulary, scripture, or historical context.</p>
+      <p>Smart's method is <em>litany</em>: he piles adjectives (<em>Sweet, Strong, Beauteous, Precious, Glorious</em>) in mathematically ordered groups, each culminating in a stanza that breaks the pattern upward toward God. The architecture is itself a form of prayer.</p>
+    </div>
+
+    <div class="note" id="n1">
+      <span class="tag">Opening litany</span>
+      <h3>The "Sweet" sequence begins</h3>
+      <p>Smart opens the first of five anaphoric movements. "Sweet" governs six stanzas. The tempo is domestic — dew, limes, lilies, candles — before climbing toward prayer. Note the synaesthesia: the <em>smell</em> of a taper, the <em>sound</em> of a bell, all folded into "sweetness."</p>
+      <p>"Sweet" still carried theological weight in Smart's era — cf. Psalm 34:8, "O taste and see that the Lord is good."</p>
+    </div>
+
+    <div class="note" id="n2">
+      <span class="tag">Speculation</span>
+      <h3>The "vague mind" as self-portrait</h3>
+      <p>The "musician's ardour" searching with a "vague mind" for "sweets to hive" reads uncomfortably like Smart's account of his own compositional state in the asylum. Contemporaries reported he wrote <em>Jubilate Agno</em> by scratching lines into the wainscoting with a key. The bee-gathering metaphor is classical (Seneca, Horace) but here it feels personal: mania as pollination.</p>
+    </div>
+
+    <div class="note" id="n3">
+      <span class="tag">Scripture</span>
+      <h3>Song of Songs register</h3>
+      <p>The "turtle dove" and "swelling chord" import the erotic-devotional idiom of <em>Canticles</em>. Smart is licensing an intimate, almost bridal relation to God — precisely the kind of speech that got him institutionalized when uttered in public spaces.</p>
+    </div>
+
+    <div class="note" id="n4">
+      <span class="tag">Bestiary</span>
+      <h3>"Strong" sequence — the natural world</h3>
+      <p>Smart shifts from the domestic to the wild. The glede (kite), ostrich, and xiphias (swordfish) form a deliberately eclectic bestiary, mixing KJV marginalia with classical zoology. Smart's <em>Jubilate Agno</em> contains hundreds of such verses, each beginning "Let" or "For," praising individual creatures — including his famous cat Jeoffry.</p>
+    </div>
+
+    <div class="note" id="n5">
+      <span class="tag">Military + biblical</span>
+      <h3>Lion, vulture, whale</h3>
+      <p>The lion (Judah), gier-eagle (Levitical clean-list), and whale (Jonah, Leviathan) triangulate a biblical cosmos of strength. "Bastion's mole" drags in the vocabulary of 18th-century military engineering — Smart was writing during the Seven Years' War (1756–1763), and martial imagery was everywhere.</p>
+    </div>
+
+    <div class="note" id="n6">
+      <span class="tag">Pivot</span>
+      <h3>"The man of pray'r" outranks nature</h3>
+      <p>The turning stanza of the "Strong" movement. All of creation's power is subordinated to the praying human — a direct inversion of the physico-theological pieties of Smart's day, which treated nature as evidence <em>for</em> God. Here prayer itself is the strongest natural force. Given Smart's confinement, this is not abstract theology; it is his personal manifesto. His "infirmity" was compulsive public prayer.</p>
+    </div>
+
+    <div class="note" id="n7">
+      <span class="tag">"Beauteous" sequence</span>
+      <h3>From war to gardens</h3>
+      <p>Smart juxtaposes the beauty of a battle fleet and ranked soldiery with the tended garden — both are "meditated wild," designed by human art to resemble natural order. The Augustan aesthetic (Pope's Twickenham, Shenstone's Leasowes) is being baptized into devotion.</p>
+    </div>
+
+    <div class="note" id="n8">
+      <span class="tag">Hebraism</span>
+      <h3>The temple and the bride</h3>
+      <p>"Heaven of heavens" is a calque from biblical Hebrew, signaling Smart's immersion in the original languages — he was translating the Psalms into English verse during and after his confinement. The virgin-to-spouse image is orthodox typology (Christ and Church) but rendered with unusual intimacy.</p>
+    </div>
+
+    <div class="note" id="n9">
+      <span class="tag">David arrives</span>
+      <h3>The shepherd king on his knees</h3>
+      <p>The poem's title subject finally appears in the "Beauteous" climax. David — warrior, adulterer, poet, penitent — is Smart's avatar: the divinely chosen singer whose gift is inseparable from his failures. Smart identified with David's composition of the Psalms <em>under affliction</em>, an affliction he interpreted his own madness as mirroring.</p>
+    </div>
+
+    <div class="note" id="n10">
+      <span class="tag">"Precious" sequence</span>
+      <h3>Widow's mite to ruby</h3>
+      <p>The yoking of the widow's two coins to imperial gemstones is characteristic Smart: valuation reversed by grace. The churl's unexpected largesse may be autobiographical — during his asylum years Smart depended on the erratic generosity of unlikely patrons.</p>
+    </div>
+
+    <div class="note" id="n11">
+      <span class="tag">Liturgy</span>
+      <h3>Tears, sighs, Sukkot</h3>
+      <p>Smart folds Christian penitential practice (the "sigh sincere") into Jewish festival observance (Sukkot, the Feast of Booths). Unusual for a mid-18th-century Anglican: Smart treats Hebrew liturgy as ongoing revelation, not as superseded type. His Psalm translations carry the same conviction.</p>
+    </div>
+
+    <div class="note" id="n12">
+      <span class="tag">David's heart</span>
+      <h3>"A man after mine own heart"</h3>
+      <p>Echoes 1 Samuel 13:14 and Acts 13:22. "Proof—answ'ring true to true" invokes logical proof: David's interior matches God's interior point-for-point. Smart's compressed forensic diction here anticipates Hopkins by a century.</p>
+    </div>
+
+    <div class="note" id="n13">
+      <span class="tag">"Glorious" climax begins</span>
+      <h3>Cosmos as choir</h3>
+      <p>The final anaphora ascends: sun, stars, comets, trumpet, God's arm, the enraptured sea. Smart lived through Halley's-Comet fervor (the 1759 return was the first predicted comet in history) and the cosmic imagery reflects a moment when astronomy and doxology were not yet estranged.</p>
+    </div>
+
+    <div class="note" id="n14">
+      <span class="tag">Speculation</span>
+      <h3>"Hosanna from the den"</h3>
+      <p>Read biographically, the "den" is the asylum; the "hosanna" is Smart's own compulsive praise. "Catholic amen" insists — against the Protestant suspicion that would have him locked up — that his voice belongs to the <em>universal</em> Church. Smart defends his sanity by enlarging the definition of worship until it contains him.</p>
+    </div>
+
+    <div class="note" id="n15">
+      <span class="tag">Coda</span>
+      <h3>Determin'd, dar'd, and done</h3>
+      <p>The full <em>Song to David</em> ends on this three-word drumbeat. Each verb marks a stage: divine resolution, incarnate risk, completed act. For Smart, just released from seven years of confinement and not yet fallen into the debtor's prison where he would die, it was also a personal creed — the poem itself had been determined, dared, and finally done. Robert Browning later called the <em>Song</em> the one instance in English poetry of a writer who "pierced the screen" between ordinary and visionary speech.</p>
+    </div>
+
+  </aside>
+</main>
+
+<footer>
+  Annotated reader · Text via the Poetry Foundation · Commentary is interpretive and in places speculative.
+</footer>
+
+<script>
+  // Stanza click toggles notes
+  const stanzas = document.querySelectorAll('.stanza');
+  const notes = document.querySelectorAll('.note');
+  const defaultNote = document.getElementById('default');
+  const annotations = document.getElementById('annotations');
+  const closeBtn = document.querySelector('.close-btn');
+  const isMobile = () => window.matchMedia('(max-width: 899px)').matches;
+
+  function showNote(id) {
+    notes.forEach(n => n.classList.remove('active'));
+    defaultNote.classList.remove('default-note');
+    const note = document.getElementById(id);
+    if (note) note.classList.add('active');
+    if (isMobile()) annotations.classList.add('open');
+  }
+
+  stanzas.forEach(st => {
+    st.addEventListener('click', (e) => {
+      // Don't trigger stanza selection when tapping a gloss span
+      if (e.target.closest('.hl')) return;
+      stanzas.forEach(s => s.classList.remove('active'));
+      st.classList.add('active');
+      showNote(st.getAttribute('data-note'));
+    });
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => annotations.classList.remove('open'));
+  }
+
+  // Custom popover for glosses — works on both hover (desktop) and tap (mobile)
+  let popover = null;
+  let currentTarget = null;
+
+  function createPopover(text, rect) {
+    removePopover();
+    popover = document.createElement('div');
+    popover.className = 'gloss-popover';
+    popover.textContent = text;
+    document.body.appendChild(popover);
+
+    const pw = popover.offsetWidth;
+    const ph = popover.offsetHeight;
+    const margin = 8;
+    const scrollY = window.scrollY;
+    const scrollX = window.scrollX;
+
+    let top = rect.bottom + scrollY + margin;
+    let left = rect.left + scrollX + (rect.width / 2) - (pw / 2);
+
+    // Flip above if not enough space below
+    if (rect.bottom + ph + margin > window.innerHeight && rect.top > ph + margin) {
+      top = rect.top + scrollY - ph - margin;
+    }
+    // Clamp horizontally
+    const minLeft = scrollX + margin;
+    const maxLeft = scrollX + window.innerWidth - pw - margin;
+    if (left < minLeft) left = minLeft;
+    if (left > maxLeft) left = maxLeft;
+
+    popover.style.top = top + 'px';
+    popover.style.left = left + 'px';
+    requestAnimationFrame(() => popover.classList.add('visible'));
+  }
+
+  function removePopover() {
+    if (popover) {
+      popover.remove();
+      popover = null;
+    }
+    currentTarget = null;
+  }
+
+  document.querySelectorAll('.hl').forEach(el => {
+    // Desktop hover
+    el.addEventListener('mouseenter', () => {
+      if (isMobile()) return;
+      const text = el.getAttribute('data-gloss');
+      if (text) createPopover(text, el.getBoundingClientRect());
+    });
+    el.addEventListener('mouseleave', () => {
+      if (isMobile()) return;
+      removePopover();
+    });
+    // Tap/click toggle — works on mobile and desktop
+    el.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const text = el.getAttribute('data-gloss');
+      if (!text) return;
+      if (currentTarget === el) {
+        removePopover();
+      } else {
+        currentTarget = el;
+        createPopover(text, el.getBoundingClientRect());
+      }
+    });
+  });
+
+  // Dismiss popover on outside tap
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.hl') && !e.target.closest('.gloss-popover')) {
+      removePopover();
+    }
+  });
+  window.addEventListener('scroll', removePopover, { passive: true });
+  window.addEventListener('resize', removePopover);
+</script>
+</body>
+</html>
